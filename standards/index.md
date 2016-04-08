@@ -2,21 +2,21 @@
 title: Standards
 ---
 
-At its core, Frictionless Data is driven by the development of the [Data Package](/guides/data-package/) standard, a simple format for packaging data for transport.  Associated standards include [Tabular Data Package](/guides/tabular-data-package/), a format for packaging tabular data, and [JSON Table Schema](/guides/json-table-schema/), a standard for defining a *schema* for tabular data.
+At its core, Frictionless Data is driven by the development of the [Data Package]({{ site.baseurl }}/guides/data-package/) standard, a simple format for packaging data for transport.  Associated standards include [Tabular Data Package]({{ site.baseurl }}/guides/tabular-data-package/), a format for packaging tabular data, and [JSON Table Schema]({{ site.baseurl }}/guides/json-table-schema/), a standard for defining a *schema* for tabular data.
 
-![Data Package Standards](/img/data-package.png)
+![Data Package Standards]({{ site.baseurl }}/img/data-package.png)
 
 ## Data Package
 
-- [Overview](/guides/data-package/)
-- [Full Standard](/standards/data-package/)
+- [Overview]({{ site.baseurl }}/guides/data-package/)
+- [Full Standard]({{ site.baseurl }}/standards/data-package/)
 
 ## Tabular Data Package
 
-- [Overview](/guides/tabular-data-package/)
-- [Full Standard](/standards/tabular-data-package/)
+- [Overview]({{ site.baseurl }}/guides/tabular-data-package/)
+- [Full Standard]({{ site.baseurl }}/standards/tabular-data-package/)
 
 ## JSON Table Schema
 
-- [Overview](/guides/json-table-schema/)
-- [Full Standard](/standards/json-table-schema/)
+- [Overview]({{ site.baseurl }}/guides/json-table-schema/)
+- [Full Standard]({{ site.baseurl }}/standards/json-table-schema/)

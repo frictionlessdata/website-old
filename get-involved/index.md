@@ -6,10 +6,10 @@ Frictionless Data is a major project of [Open Knowledge International](https://o
 
 In order to make creating, using, and sharing data as easy and frictionless as possible, we need **concrete use cases** and **feedback** from people working across a variety of data-intensive fields:
 
-- Are you a researcher that needs a specific [tool or integration with your existing software](/tools/) to do your work more effectively?  
-- Are you a developer working on tooling and have features that our [standards](/standards/) should support?
+- Are you a researcher that needs a specific [tool or integration with your existing software]({{ site.baseurl }}/tools/) to do your work more effectively?  
+- Are you a developer working on tooling and have features that our [standards]({{ site.baseurl }}/standards/) should support?
 
-[Let us know](https://discuss.okfn.org/c/frictionless-data).  We’d love to hear about it.  For examples of what has already been built, see the [tools](/tools/) page.  For information on where we’re going, see our [roadmap](/roadmap/). 
+[Let us know](https://discuss.okfn.org/c/frictionless-data).  We’d love to hear about it.  For examples of what has already been built, see the [tools]({{ site.baseurl }}/tools/) page.  For information on where we’re going, see our [roadmap]({{ site.baseurl }}/roadmap/). 
 
 We're also [looking for volunteer "curators"](http://okfnlabs.org/blog/2015/01/03/data-curators-wanted-for-core-datasets.html) interested in helping us create a set of high quality, useful datasets published as Data Packages.
 

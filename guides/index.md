@@ -6,6 +6,6 @@ In this section, we will present some guides and best practice patterns that sho
 
 ## Standards Overviews
 
-- [Data Package](/guides/data-package/)
-- [Tabular Data Package](/guides/tabular-data-package/)
-- [JSON Table Schema](/guides/json-table-schema/)
+- [Data Package]({{ site.baseurl }}/guides/data-package/)
+- [Tabular Data Package]({{ site.baseurl }}/guides/tabular-data-package/)
+- [JSON Table Schema]({{ site.baseurl }}/guides/json-table-schema/)

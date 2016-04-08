@@ -8,6 +8,6 @@ its name implies, Tabular Data Package is designed to contain data
 that exists in tables.  The standard requires its tabular data to be
 stored in well-formatted CSV files and enforces this through a
 JSON-based schema description language called
-[JSON Table Schema](/guides/json-table-schema/).
+[JSON Table Schema]({{ site.baseurl }}/guides/json-table-schema/).
 
-Read the [full standard](/standards/tabular-data-package/).
+Read the [full standard]({{ site.baseurl }}/standards/tabular-data-package/).

@@ -35,6 +35,6 @@ An example schema would look like the following.  Note that a minimum age of 18 
       }
      }]
    
-[Tooling](/tools/) that supports JSON Table Schema can ensure that CSVs adhere to their stated schemas, and flag validation errors based on the format and constraints specified in the schema.  For an example, see [GoodTables](/tools/goodtables/).
+[Tooling]({{ site.baseurl }}/tools/) that supports JSON Table Schema can ensure that CSVs adhere to their stated schemas, and flag validation errors based on the format and constraints specified in the schema.  For an example, see [GoodTables]({{ site.baseurl }}/tools/goodtables/).
 
-Read the [full standard](/standards/json-table-schema/).
+Read the [full standard]({{ site.baseurl }}/standards/json-table-schema/).
