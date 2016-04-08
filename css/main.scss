@@ -233,14 +233,14 @@ pre,
     }
     
     h3 {
-      font-size: 1.4em;
+      font-size: 1.2em;
       font-family: $serif;
       font-weight: 400;
       margin-bottom: .4em;
     }
     
     h4 {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin-bottom: .4em;
     }
     
@@ -1333,9 +1333,8 @@ html.mm-background .mm-page,
 .home {
   
   .banner {
-    background-image:url(../img/home-banner-bg.jpg);
-    background-size: 1314px 333px;
-    background-position:center bottom;
+    background-image:url(../img/hero-team.jpg);
+    background-size: cover;
     position:relative;
     z-index:0;
     overflow:hidden;
@@ -1380,7 +1379,7 @@ html.mm-background .mm-page,
         left:50%;
         bottom:0;
         margin-left:-658px;
-        @include retina-image('../img/home-banner', auto 215px, jpg);
+        //        @include retina-image('../img/home-banner', auto 215px, jpg);
         background-repeat:no-repeat;
         background-position:center bottom;
         height:215px;

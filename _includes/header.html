@@ -13,26 +13,35 @@
     </li>
 
     <li>
-      <a href="{{ site.baseurl }}/pages/">Pages</a>
-      <ul>
-        <li {% if url_last == 'pages' %}class="Selected"{% endif %}>
-          <a href="{{ site.baseurl }}/pages/">Page One</a>
-        </li>
-        <li {% if url_last == 'page-two' %}class="Selected"{% endif %}>
-          <a href="{{ site.baseurl }}/pages/page-two/">Page Two</a>
-        </li>
-        <li {% if url_last == 'page-three' %}class="Selected"{% endif %}>
-          <a href="{{ site.baseurl }}/pages/page-three/">Page Three</a>
-        </li>
-      </ul>
+      <a href="{{ site.baseurl }}/about/">About</a>
     </li>
     
-    <li {% if url_parts contains 'posts' %}class="Selected"{% endif %}>
-      <a href="{{ site.baseurl }}/posts/">Posts</a>
+    <li {% if url_parts contains 'standards' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/standards/">Standards</a>
     </li>
     
-    <li {% if url_last ==  'credits' %}class="Selected"{% endif %}>
-      <a href="{{ site.baseurl }}/credits/">Credits</a>
+    <li {% if url_last ==  'tools' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/tools/">Tools</a>
+    </li>
+
+    <li {% if url_last ==  'roadmap' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/roadmap/">Roadmap</a>
+    </li>
+    
+    <li {% if url_last ==  'guides' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/guides/">Guides</a>
+    </li>
+    
+    <li {% if url_last ==  'get-involved' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/get-involved/">Get Involved</a>
+    </li>
+
+    <li {% if url_last ==  'faq' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/faq/">FAQ</a>
+    </li>
+
+    <li {% if url_last ==  'blog' %}class="Selected"{% endif %}>
+      <a href="http://okfnlabs.org/blog/">Blog</a>
     </li>
 
 </nav>

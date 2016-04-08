@@ -8,33 +8,31 @@ js:
 <div class="home">
   <section class="banner" data-adaptive-background='1' data-ab-css-background='1'>
     <div class="wrapper">
-      <h1>{{ site.title }}</h1>
+      <h1 style="text-shadow: 2px 3px 30px rgb(34, 34, 34);">{{ site.title }}</h1>
       <p>{{ site.description }}</p>
     </div>
   </section>
 
   <div class="wrapper">
-
-      <div>
-        <h2>Page One</h2>
-        <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <a href="{{ "/pages/" | prepend: site.baseurl }}">Read more</a>
+    <div>
+        <h2>Standards</h2>
+        <p>We’re defining standards and guides around <em>Data Package</em>, a containerization format for data that provides the foundation for <em>frictionless</em> data transport.</p>
+        <a href="{{ "/standards/" | prepend: site.baseurl }}">Read the Standards</a>
       </div>
-
       <div>
         <div>
-          <h2>Page Two</h2>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-          <a href="{{ "/pages/page-two" | prepend: site.baseurl }}">Read more</a>
+          <h2>Tooling & Integration</h2>
+          <p>We’re developing tools and integrations to make it easy to integrate Data Packages into your data processing and publishing workflows.</p>
+          <a href="{{ "/tools/" | prepend: site.baseurl }}">Browse Tools</a>
        </div>
       </div>
       <div>
         <div>
-          <h2>Page Three</h2>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
-          <a href="{{ "/pages/page-three" | prepend: site.baseurl }}">Read more</a>
+          <h2>Community</h2>
+          <p>We’re building a community of users and contributors to solve real problems.  We need your support to make truly "frictionless" data work a reality.</p>
+          <a href="{{ "/get-involved/" | prepend: site.baseurl }}">Get Involved</a>
         </div>
       </div>
-
   </div>
 </div>
+

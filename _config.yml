@@ -1,14 +1,16 @@
 # Site settings
-title: Site Long Title
-short_title: Site Title
+title: Frictionless Data
+short_title: Frictionless Data
 description: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend metus eget justo tincidunt, nec consequat turpis pretium. Etiam varius tellus tortor, in mattis ex convallis vel.
+  Lightweight standards and tooling to make it effortless to get, share, and validate data.
 baseurl: ""
-url: "http://opendatahandbook.org" # the base hostname & protocol for your site
-github_username:  okfn
-github_repo:  opendatahandbook
+url: "http://frictionlessdata.io" # the base hostname & protocol for your site
+github_username:  frictionlessdata
+github_repo:  frictionlessdata.io
 paypal: admin@okfn.org
-contact: https://discuss.okfn.org/c/network-and-community/open-data-handbook
+contact: http://discuss.okfn.org/c/frictionless-data
+gems:
+  - jekyll-redirect-from
 
 devs:
   -
@@ -22,16 +24,10 @@ contributors:
 
 supporters:
   -
-    name: Shuttleworth Foundation
-    logo: shuttleworth.png
-    footer_logo: shuttleworth-footer.png
-    url: https://www.shuttleworthfoundation.org/
-  -
-    name: The World Bank
-    logo: worldbank.png
-    footer_logo: worldbank-footer.png
-    url: http://www.worldbank.org/
-
+    name: Sloan Foundation
+    logo: sloan.png
+    footer_logo: sloan-footer.png
+    url: https://www.sloan.org/
 
 #googleanalytics: UA-XXXXX-X
 
@@ -42,16 +38,24 @@ permalink: pretty
 defaults:
   -
     scope:
-      path: "pages"
+      path: ""
     values:
       layout: page
-      section: pages
   -
     scope:
-      path: "posts"
+      path: "standards"
     values:
-      layout: post
-      section: posts
+      section: standards
+  -
+    scope:
+      path: "tools"
+    values:
+      section: tools
+  -
+    scope:
+      path: "guides"
+    values:
+      section: guides
 
 
 related_projects:
@@ -76,3 +80,4 @@ related_projects:
   -
       name: Introducing Open Data
       link: http://okfn.org/opendata/
+

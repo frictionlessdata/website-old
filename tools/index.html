@@ -1,0 +1,13 @@
+---
+title: Tools and Integrations
+---
+
+<table>
+  <tr><th>Tool</th><th>Type</th><th>Language</th></th>
+  {% for tool in site.data.tools %}
+  <tr>
+    <td><a href="{% if tool.url %}{{tool.url}}{% else %}http://github.com/{{ tool.github_org }}/{{ tool.github_repo }}{% endif %}">{{ tool.title }}</a></td><td>{{ tool.type }}</td><td>{{ tool.language }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
