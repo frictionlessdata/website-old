@@ -1,12 +1,12 @@
-slug,title,language,github_org,github_repo,url,description,type
-goodtables,GoodTables,Python,frictionlessdata,goodtables,http://goodtables.okfnlabs.org/,Validate and process tabular data. ,webservice
-jsontableschema-py,jsontableschema-py,Python,frictionlessdata,jsontableschema-py,,A Python library for working with JSON Table Schema. ,library
-datapackagist,DataPackagist,Python,frictionlessdata,datapackagist,http://datapackagist.okfnlabs.org/,A web app for creating editing and validating Data Packages.,webservice
-jsontableschema-sql-py,jsontableschema-sql-py,Python,frictionlessdata,jsontableschema-sql-py,,Generate SQL tables load and extract data  based on JSON Table Schema descriptors.,library
-datapackage-py,datapackage-py,Python,frictionlessdata,datapackage-py,,A Python library for working with Data Package.,library
-testsuite-py,testsuite-py,Python,frictionlessdata,testsuite-py,,Integration test suite for Frictionless Data core packages and plugins.,library
-tabulator-py,tabulator-py,Python,frictionlessdata,tabulator-py,,A Python library for reading tabular data from various formats.,library
-jsontableschema-bigquery-py,jsontableschema-bigquery-py,Python,frictionlessdata,jsontableschema-bigquery-py,,Generate BigQuery tables and load and extract data based on JSON Table Schema descriptors.,library
-datapackage-js,datapackage-js,JavaScript,frictionlessdata,datapackage-js,,A model for working with Data Packages in Node and the browser.,library
-jsontableschema-js,jsontableschema-js,JavaScript,frictionlessdata,jsontableschema-js,,A utility library for working with JSON Table Schema in Javascript.,library
-openspending,OpenSpending,,openspending,openspending,http://openspending.org,The project aims to build and use open source tools and datasets to gather and analyse the financial transactions of governments around the world.,webservice
+slug,title,language,github_org,github_repo,url,description,type,maintainer,maintainer_url
+goodtables,GoodTables,Python,frictionlessdata,goodtables,http://goodtables.okfnlabs.org/,Validate and process tabular data. ,webservice,"Open Knowledge Int'l",http://okfn.org/
+jsontableschema-py,jsontableschema-py,Python,frictionlessdata,jsontableschema-py,,A Python library for working with JSON Table Schema. ,library,"Open Knowledge Int'l",http://okfn.org/
+datapackagist,DataPackagist,Python,frictionlessdata,datapackagist,http://datapackagist.okfnlabs.org/,A web app for creating editing and validating Data Packages.,webservice,"Open Knowledge Int'l",http://okfn.org/
+jsontableschema-sql-py,jsontableschema-sql-py,Python,frictionlessdata,jsontableschema-sql-py,,Generate SQL tables load and extract data  based on JSON Table Schema descriptors.,library,"Open Knowledge Int'l",http://okfn.org/
+datapackage-py,datapackage-py,Python,frictionlessdata,datapackage-py,,A Python library for working with Data Package.,library,"Open Knowledge Int'l",http://okfn.org/
+testsuite-py,testsuite-py,Python,frictionlessdata,testsuite-py,,Integration test suite for Frictionless Data core packages and plugins.,library,"Open Knowledge Int'l",http://okfn.org/
+tabulator-py,tabulator-py,Python,frictionlessdata,tabulator-py,,A Python library for reading tabular data from various formats.,library,"Open Knowledge Int'l",http://okfn.org/
+jsontableschema-bigquery-py,jsontableschema-bigquery-py,Python,frictionlessdata,jsontableschema-bigquery-py,,Generate BigQuery tables and load and extract data based on JSON Table Schema descriptors.,library,"Open Knowledge Int'l",http://okfn.org/
+datapackage-js,datapackage-js,JavaScript,frictionlessdata,datapackage-js,,A model for working with Data Packages in Node and the browser.,library,"Open Knowledge Int'l",http://okfn.org/
+jsontableschema-js,jsontableschema-js,JavaScript,frictionlessdata,jsontableschema-js,,A utility library for working with JSON Table Schema in Javascript.,library,"Open Knowledge Int'l",http://okfn.org/
+openspending,OpenSpending,,openspending,openspending,http://openspending.org,The project aims to build and use open source tools and datasets to gather and analyse the financial transactions of governments around the world.,webservice,"Open Knowledge Int'l",http://okfn.org/
