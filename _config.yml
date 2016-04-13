@@ -29,7 +29,7 @@ supporters:
     footer_logo: sloan-footer.png
     url: https://www.sloan.org/
 
-#googleanalytics: UA-XXXXX-X
+googleanalytics: UA-33874954-38
 
 markdown: kramdown
 
