@@ -13,3 +13,6 @@ dpmr,(Tabular) Data Package Manager for R,R,christophergandrud,dpmr,http://chris
 rodprot,RODProt,R,QBRC,RODProt,,An R Client for Interacting with data encoded in one of the 'Open Data Protocols' standards. ,library,,
 datapak,datapak,Ruby,textkit,datapak,,datapak gem - yet another library to work with tabular data packages (*.csv files w/ datapackage.json),library,Gerald Bauer,https://github.com/geraldb
 datapackage-rb,datapackage.rb,Ruby,theodi,datapackage.rb,,Ruby library and tools for working with datapackages,library,,
+datapackage-go,datapackage (go),Go,the42,datapackage,,Tools to handle Data Packages in Go,library,,
+datapackage-matlab,datapackage (MATLAB),MATLAB,KrisKusano,datapackage,http://www.mathworks.com/matlabcentral/fileexchange/47506-read-tabular-data-package,Tools to handle Data Packages in MATLAB,library,,
+json-table,JSON Table,PHP,FootworkSolutions,json_table,,,library,,
