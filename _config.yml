@@ -12,16 +12,6 @@ contact: http://discuss.okfn.org/c/frictionless-data
 gems:
   - jekyll-redirect-from
 
-devs:
-  -
-      name: Sam Smith
-      github: mintcanary
-
-contributors:
-  -
-      name: Rufus Pollock
-      link: http://rufuspollock.org/
-
 supporters:
   -
     name: Sloan Foundation
@@ -32,6 +22,8 @@ supporters:
 googleanalytics: UA-33874954-38
 
 markdown: kramdown
+kramdown:
+  input: GFM
 
 permalink: pretty
 
