@@ -9,6 +9,7 @@ github_username:  frictionlessdata
 github_repo:  frictionlessdata.io
 paypal: admin@okfn.org
 contact: http://discuss.okfn.org/c/frictionless-data
+editsitehowto: /about/edit-site/
 gems:
   - jekyll-redirect-from
 
@@ -33,6 +34,7 @@ defaults:
       path: ""
     values:
       layout: page
+      edit: true
   -
     scope:
       path: "standards"
