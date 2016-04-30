@@ -13,17 +13,15 @@ You have two options for publishing your geodata:
 * **Generic Data Package**. This allows you to publish geodata in any kind of
   format (KML, Shapefiles, Spatialite etc). If you choose this option you will
   want to follow the standard [instructions for packaging any kind of data as a
-  Data Package][any].
+  Data Package][pub-any].
 
 We recommend Geo Data Package if that is possible as it makes it much easier
 for you to use 3rd party tools with your Data Package. For example, the [data
-package viewer][viewer] on this site will automatically preview a Geo Data Package.
+package viewer][dp-viewer] on this site will automatically preview a Geo Data Package.
 
 > *Note: this document focuses on *vector* geodata &ndash; i.e. points, lines polygons etc (not
 imagery or raster data).*
 
-[any]: /doc/publish-any/
-[viewer]: /tools/view
 
 ## Geo Data Packages
 
@@ -48,3 +46,6 @@ Example of using `point` geometries with described properties in real world situ
 [view-2]: http://data.okfn.org/tools/view?url=https%3A%2F%2Fgithub.com%2Fpeterdesmet%2Ftraffic-signs-hansbeke
 
 <script src="http://gist-it.appspot.com/github/datasets/ex-geojson/blob/master/datapackage.json"></script>
+
+{%include markdown-link-refs.html %}
+
