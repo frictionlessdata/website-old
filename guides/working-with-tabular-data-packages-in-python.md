@@ -90,7 +90,6 @@ resource in the Data Package.
 
 {% highlight python %}
 from datapackage import push_datapackage
-from jsontableschema.plugins.sql import Storage
 push_datapackage(descriptor=dp.metadata,backend='sql',engine=engine)
 {% endhighlight %}
 
