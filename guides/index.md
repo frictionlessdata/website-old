@@ -9,24 +9,18 @@ creating and using Data Packages and associated tools.
 
 Guides on publishing data as Data Packages.
 
-* [Publishing data as Data Packages - Overview][intro]
+* [Publishing data as Data Packages - Overview][publish]
   * [Tabular Data][pub-tabular]
-  * [Geospatial Data (Geodata)][pub-geodata]
+  * [Geospatial Data (Geodata)][pub-geo]
   * [Any Kind of Data][pub-any]
 * [Publish Online: Overview][pub-online]
-* [Publishing FAQs and Best Practice Patterns][faq]
+* [Publishing FAQs and Best Practice Patterns][pub-faq]
 
-[online]: /guides/publish/online/
-[intro]: /guides/publish/
-[faq]: /guides/publish/faq/
-[tabular]: /guides/publish/tabular/
-[geodata]: /guides/publish/geo/
-[any]: /guides/publish/any/
 
 ## Guides to Specifications
 
 * [Data Package][dp]
-* [Tabular Data Package][tabular]
+* [Tabular Data Package][tdp]
 * [JSON Table Schema][jts]
 
 General:

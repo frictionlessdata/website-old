@@ -25,6 +25,8 @@ googleanalytics: UA-33874954-38
 markdown: kramdown
 kramdown:
   input: GFM
+  parse_block_html: true
+
 
 permalink: pretty
 
