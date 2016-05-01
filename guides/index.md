@@ -10,10 +10,10 @@ creating and using Data Packages and associated tools.
 Guides on publishing data as Data Packages.
 
 * [Publishing data as Data Packages - Overview][intro]
-  * [Tabular Data][tabular]
-  * [Geospatial Data (Geodata)][geodata]
-  * [Any Kind of Data][any]
-* [Publish Online: Overview][online]
+  * [Tabular Data][pub-tabular]
+  * [Geospatial Data (Geodata)][pub-geodata]
+  * [Any Kind of Data][pub-any]
+* [Publish Online: Overview][pub-online]
 * [Publishing FAQs and Best Practice Patterns][faq]
 
 [online]: /guides/publish/online/
@@ -26,18 +26,17 @@ Guides on publishing data as Data Packages.
 ## Guides to Specifications
 
 * [Data Package][dp]
-  * [Full Data Package specification](http://dataprotocols.org/data-packages/)
 * [Tabular Data Package][tabular]
-* [CSV - Comma Separated Values][csv]
+* [JSON Table Schema][jts]
 
-[dp]: /guides/data-package/
-[tabular]: /guide/tabular-data-package/
-[jts]: /guide/json-table-schema/
-[csv]: /doc/csv/
+General:
+
+* [CSV - Comma Separated Values][csv]
+* [JSON][json]
 
 ## Tools
 
 * [Tools and Plugins for working with Data Packages][tools]
 
-[tools]: /tools/
+{%include markdown-link-refs.html %}
 
