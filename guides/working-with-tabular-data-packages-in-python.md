@@ -2,7 +2,6 @@
 title: Working with Data Packages in Python
 ---
 
-
 This tutorial will show you how to install the Python libraries for
 working with Data Packages, load a Data Package from the Open
 Knowledge "Core" Datasets repository, and push the Data Package into a
@@ -28,12 +27,6 @@ You can create a
 using your preferred method and install the relevant libraries.
 
 {% highlight bash %}
-# create virtual environment
-pyvenv tutorial
-cd tutorial
-source bin/activate
-
-# install libraries
 pip install git+git://github.com/frictionlessdata/datapackage-py.git
 pip install jsontableschema_sql
 pip install sqlalchemy
@@ -43,13 +36,18 @@ pip install sqlalchemy
 
 You can start using the library by importing `datapackage` and load a
 published Data Package using its URL.  In this case, we are using the
-[Annual Consumer Price Index (CPI)](http://data.okfn.org/data/core/cpi)
-source from the
-[World Bank](http://data.worldbank.org/indicator/FP.CPI.TOTL):
+[S&P 500 Index Data](http://data.okfn.org/data/core/s-and-p-500)
+dataset from the
+[Open Knowledge "Core" Datasets repository](http://data.okfn.org/data).
+This dataset includes dividend, earnings and P/E ratio data on a
+monthly basis since 1870. The S&P 500 (Standard and Poor's 500) is a
+free-float, capitalization-weighted index of the top 500 publicly
+listed stocks in the US.
 
 {% highlight python %}
 import datapackage
-dp = datapackage.DataPackage('http://data.okfn.org/data/core/s-and-p-500/datapackage.json')
+url = 'http://data.okfn.org/data/core/s-and-p-500/datapackage.json'
+dp = datapackage.DataPackage(url)
 {% endhighlight %}
 
 Now that you have your Data Package loaded, you can get access general
@@ -60,19 +58,11 @@ which fields are supported, see
 [the full Data Package standard](http://dataprotocols.org/data-packages/#metadata).
 
 {% highlight python %}
-print("The title of this Data Package is {} and the description for this dataset is {}".format(dp.metadata['title'],dp.metadata['description']))
-{% endhighlight %}
+print(dp.metadata['title'])
+> Standard and Poors (S&P) 500 Index Data including Dividend, Earnings and P/E Ratio 
 
-In this case, the output will be:
-
-{% highlight bash %}
-> The title of this Data Package is Standard and Poors (S&P) 500 Index
-Data including Dividend, Earnings and P/E Ratio and the description
-for this dataset is S&P 500 index data including level, dividend,
-earnings and P/E ratio on a monthly basis since 1870. The S&P 500
-(Standard and Poors 500) is a free-float, capitalization-weighted
-index of the top 500 publicly listed stocks in the US (top 500 by
-market cap).
+print(dp.metadata['description'])
+> S&P 500 index data including level, dividend, earnings and P/E ratio on a monthly basis since 1870. The S&P 500 (Standard and Poors 500) is a free-float, capitalization-weighted index of the top 500 publicly listed stocks in the US (top 500 by market cap).
 {% endhighlight %}
 
 ## Loading into an SQL database 

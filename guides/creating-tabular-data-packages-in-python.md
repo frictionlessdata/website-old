@@ -3,8 +3,8 @@ title: Creating Data Packages in Python
 ---
 
 This tutorial will show you how to install the Python libraries for
-working with Data packages and JSON Table Schema, load a CSV file,
-infer its schema, and write a Data Package.
+working with Data Packages and JSON Table Schema, load a CSV file,
+infer its schema, and write a Tabular Data Package.
 
 ## Setup 
 
