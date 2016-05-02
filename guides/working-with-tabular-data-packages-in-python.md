@@ -9,28 +9,21 @@ local SQL database.
 
 ## Setup 
 
-For this tutorial, we will need both the main
-[Data Package library](https://github.com/frictionlessdata/datapackage-py)
-library and the
-[JSON Table Schema SQL Storage library](https://github.com/frictionlessdata/jsontableschema-sql-py).
-In addition, we will provide the SQL storage backend using
-[SQLAlchemy](http://www.sqlalchemy.org/).
+For this tutorial, we will need the main Python Data Package library:
 
-**Note:** *The `datapackage` package on PyPI as of 30 April is
-  deprecated and
-  [is being replaced](https://github.com/trickvi/datapackage/issues/70). Until
-  then, the library can be installed directly from its
-  [GitHub repository](https://github.com/frictionlessdata/datapackage-py).*
+<https://github.com/frictionlessdata/datapackage-py>
 
-You can create a
-[Python virtual environment](https://docs.python.org/3/library/venv.html)
-using your preferred method and install the relevant libraries.
+You can install it as follows:
 
 {% highlight bash %}
+# you may want to create a virtual environment first
+# see https://docs.python.org/3/library/venv.html
 pip install git+git://github.com/frictionlessdata/datapackage-py.git
-pip install jsontableschema_sql
-pip install sqlalchemy
 {% endhighlight %}
+
+**Note:** *The `datapackage` package on PyPI as of 30 April is out of date so
+you have to install from source. This will soon be fixed and you can install
+the package from PyPI.*
 
 ## Reading Basic Metadata
 
@@ -67,33 +60,31 @@ print(dp.metadata['description'])
 
 ## Loading into an SQL database 
 
-One of the key benefits of
-[Tabular Data Package](/guides/tabular-data-package/) format is that
-that schema information, as specified using
-[JSON Table Schema](/guides/json-table-schema/) is also specified with
-the data.  Now you can easily import your Data Package into the SQL
-backend of your choice.  In this case, we are creating an
-[SQLite](http://sqlite.org/) database in a new file named
-`datapackage.db` using the [SQLAlchemy](http://www.sqlalchemy.org/)
-library.
+[Tabular Data Packages][tdp] contains schema information about its data using [JSON Table Schema][jts]. This means you can easily import your Data Package into the SQL backend of your choice. In this case, we are creating an [SQLite](http://sqlite.org/) database in a new file named `datapackage.db`.
 
-{% highlight python %}
-from sqlalchemy import create_engine
-engine = create_engine('sqlite:///datapackage.db')
+To load the data into SQL we will need the JSON Table Schema SQL Storage library:
+
+<https://github.com/frictionlessdata/jsontableschema-sql-py>
+
+You can install it by doing:
+
+{% highlight bash %}
+pip install jsontableschema_sql
 {% endhighlight %}
 
-With the SQL database connection created, we can now "push" the Data
-Package into the database.  Schema information (e.g. types,
-constraints, and relations between tables) is specified using
-[JSON Table Schema](/guides/json-table-schema/) and provided for each
-resource in the Data Package.
+Now you can load your data as follows:
 
 {% highlight python %}
+# create the database connection (using SQLAlchemy)
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///datapackage.db')
+
+# now push the data to the database
 from datapackage import push_datapackage
 push_datapackage(descriptor=dp.metadata,backend='sql',engine=engine)
 {% endhighlight %}
 
-You can inspect your newly created database using the `sqlite3` command:
+All the schema information (e.g. types, constraints, and relations between tables) in the [JSON Table Schema](/guides/json-table-schema/) for each resource will be used. You can see this if you inspect your newly created database using the `sqlite3` command:
 
 {% highlight sql %}
 $ sqlite3 datapackage.db 
@@ -113,4 +104,6 @@ CREATE TABLE data__data___data (
 	"PE10" FLOAT
 );
 {% endhighlight %}
+
+{%include markdown-link-refs.html %}
 
