@@ -41,7 +41,3 @@ Following "Node" style we have partitioned the Javascript library into pieces, s
 * <https://github.com/frictionlessdata?utf8=%E2%9C%93&query=js>
 
 {%include markdown-link-refs.html %}
-
-And here's an overview of the Python libraries available:
-
-<img src="{{ site.baseurl }}/img/python-libraries.svg" alt="Python libraries">
