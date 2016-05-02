@@ -6,8 +6,12 @@ title: User Stories
 
 ## Detailed User Stories
 
-- [Denormalize](./denormalize/)
+- [Automated Denormalization](./denormalize/)
 - [Continuous Data Integration](./continuous-data-integration/)
+- Data Editor (for Tabular Data Packages)
+- Tableau-Lite for Data Packages
+- "Give Me an API"
+- Join-It
 
 ## General User Stories
 
