@@ -28,7 +28,7 @@ Additional functionality such as JTS and JTS integration:
 
 `tabulator` is a utility library that provides a consistent interface for reading tabular data:
 
-https://github.com/frictionlessdata/tabulator-py
+<https://github.com/frictionlessdata/tabulator-py>
 
 Here's an overview of the Python libraries available:
 
