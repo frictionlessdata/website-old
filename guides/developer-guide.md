@@ -16,7 +16,7 @@ Here's a diagram that illustrates some of the core components of a full Data Pac
 
 ### Python
 
-The Python library is largely "all-in-one":
+The main Python library for working with Data Packages is `datapackage`:
 
 See <http://github.com/frictionlessdata/datapackage-py>
 
@@ -26,6 +26,9 @@ Additional functionality such as JTS and JTS integration:
 * <https://github.com/frictionlessdata/jsontableschema-sql-py>
 * <https://github.com/frictionlessdata/jsontableschema-bigquery-py>
 
+Here's an overview of the Python libraries available:
+
+<img src="{{ site.baseurl }}/img/python-libraries.svg" alt="Python libraries">
 ### Javascript
 
 Following "Node" style we have partitioned the Javascript library into pieces, see this list of libraries:
