@@ -7,6 +7,7 @@ title: User Stories
 ## Detailed User Stories
 
 - [Denormalize](./denormalize/)
+- [Continuous Data Integration](./continuous-data-integration/)
 
 ## General User Stories
 
