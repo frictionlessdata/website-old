@@ -26,9 +26,14 @@ Additional functionality such as JTS and JTS integration:
 * <https://github.com/frictionlessdata/jsontableschema-sql-py>
 * <https://github.com/frictionlessdata/jsontableschema-bigquery-py>
 
+`tabulator` is a utility library that provides a consistent interface for reading tabular data:
+
+https://github.com/frictionlessdata/tabulator-py
+
 Here's an overview of the Python libraries available:
 
-<img src="{{ site.baseurl }}/img/python-libraries.svg" alt="Python libraries">
+<img src="https://docs.google.com/drawings/d/1akNQUw1xOmdMOFAaJd-83O2gbB5kWcqg5lSYzmo0M5o/pub?w=646&h=793" alt="Python libraries">
+
 ### Javascript
 
 Following "Node" style we have partitioned the Javascript library into pieces, see this list of libraries:
