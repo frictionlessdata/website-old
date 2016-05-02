@@ -37,5 +37,9 @@ Guides on publishing data as Data Packages.
 
 * [Tools and Plugins for working with Data Packages][tools]
 
+## Contributing
+
+* [Developer Guide](/guides/developer-guide/)
+
 {%include markdown-link-refs.html %}
 
