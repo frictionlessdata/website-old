@@ -2,6 +2,8 @@
 title: Continuous Data Integration
 ---
 
+![Data Valid](/img/data_ci.png)
+
 As a **Publisher or a Recipient of data** I want to make sure the data has
 a good structure and conforms to its schema **so that** i am producing and
 using high quality data and I don’t waste my time or that of users
