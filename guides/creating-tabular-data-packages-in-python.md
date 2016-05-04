@@ -13,14 +13,8 @@ For this tutorial, we will need both the main
 library and `infer` from 
 [JSON Table Schema](https://github.com/frictionlessdata/jsontableschema-sql-py).
 
-**Note:** *The `datapackage` package on PyPI as of 30 April is
-  deprecated and
-  [is being replaced](https://github.com/trickvi/datapackage/issues/70). Until
-  then, the library can be installed directly from its
-  [GitHub repository](https://github.com/frictionlessdata/datapackage-py).*
-
 {% highlight bash %}
-pip install git+git://github.com/frictionlessdata/datapackage-py.git
+pip install datapackage
 pip install jsontableschema
 {% endhighlight %}
 
