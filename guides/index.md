@@ -8,8 +8,9 @@ creating and using Data Packages and associated tools.
 ## Working with Data Packages
 
 * [Developer Guide](./developer-guide/)
-* [Working with Data Packages in Python](./working-with-tabular-data-packages-in-python/)
+* [Quick Start in Python](./quick-start-in-python/)
 * [Creating Data Packages in Python](./creating-tabular-data-packages-in-python/)
+* [Creating Data Packages in JavaScript](./creating-tabular-data-packages-in-javascript/)
 
 ## Publishing Data
 

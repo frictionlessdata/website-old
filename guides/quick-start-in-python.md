@@ -1,11 +1,13 @@
 ---
-title: Working with Data Packages in Python
+title: Quick Start in Python
+redirect_from: 
+  - ./working-with-tabular-data-packages-in-python/
 ---
 
-This tutorial will show you how to install the Python libraries for
-working with Data Packages, load a Data Package from the Open
-Knowledge "Core" Datasets repository, and push the Data Package into a
-local SQL database.
+This tutorial will show you how to install the Python libraries
+for working with Tabular Data Packages and demonstrate a very simple
+example of loading a Tabular Data Package from the web and pushing it
+directly into a local SQL database.
 
 ## Setup 
 
@@ -16,19 +18,16 @@ For this tutorial, we will need the main Python Data Package library:
 You can install it as follows:
 
 {% highlight bash %}
-# you may want to create a virtual environment first
-# see https://docs.python.org/3/library/venv.html
-pip install git+git://github.com/frictionlessdata/datapackage-py.git
+pip install datapackage
 {% endhighlight %}
-
-**Note:** *The `datapackage` package on PyPI as of 30 April is out of date so
-you have to install from source. This will soon be fixed and you can install
-the package from PyPI.*
 
 ## Reading Basic Metadata
 
-You can start using the library by importing `datapackage` and load a
-published Data Package using its URL.  In this case, we are using the
+You can start using the library by importing `datapackage`.  Data
+Packages can be loaded either from a local path or directly from the
+web.
+
+In this case, we are using the
 [S&P 500 Index Data](http://data.okfn.org/data/core/s-and-p-500)
 dataset from the
 [Open Knowledge "Core" Datasets repository](http://data.okfn.org/data).
@@ -43,19 +42,21 @@ url = 'http://data.okfn.org/data/core/s-and-p-500/datapackage.json'
 dp = datapackage.DataPackage(url)
 {% endhighlight %}
 
-Now that you have your Data Package loaded, you can get access general
-information about it (e.g. title, source, description) using the
-`metadata` dict attribute.  Note that these fields are optional and
-may not be specified for all Data Packages.  For more information on
-which fields are supported, see
-[the full Data Package standard](http://dataprotocols.org/data-packages/#metadata).
+At the most basic level, Data Packages provide a standardized format
+for general metadata (for example, the dataset title, source, author,
+and/or description) about your dataset.  Now that you have loaded this
+Data Package, you have access to this metadata using the `metadata`
+dict attribute.  Note that these fields are optional and may not be
+specified for all Data Packages.  For more information on which fields
+are supported, see
+[the full Data Package standard][dp-spec].
 
 {% highlight python %}
 print(dp.metadata['title'])
-> Standard and Poors (S&P) 500 Index Data including Dividend, Earnings and P/E Ratio 
+> "Standard and Poors (S&P) 500 Index Data including Dividend, Earnings and P/E Ratio" 
 
 print(dp.metadata['description'])
-> S&P 500 index data including level, dividend, earnings and P/E ratio on a monthly basis since 1870. The S&P 500 (Standard and Poors 500) is a free-float, capitalization-weighted index of the top 500 publicly listed stocks in the US (top 500 by market cap).
+> "S&P 500 index data including level, dividend, earnings and P/E ratio on a monthly basis since 1870. The S&P 500 (Standard and Poors 500) is a free-float, capitalization-weighted index of the top 500 publicly listed stocks in the US (top 500 by market cap)."
 {% endhighlight %}
 
 ## Loading into an SQL database 
@@ -84,10 +85,12 @@ from datapackage import push_datapackage
 push_datapackage(descriptor=dp.metadata,backend='sql',engine=engine)
 {% endhighlight %}
 
-All the schema information (e.g. types, constraints, and relations between tables) in the [JSON Table Schema](/guides/json-table-schema/) for each resource will be used. You can see this if you inspect your newly created database using the `sqlite3` command:
+If you have `sqlite3` installed, you can inspect and play with your
+newly created database.  Note that column type information has been
+translated from the JSON Table Schema format to native SQLite types:
 
 {% highlight sql %}
-$ sqlite3 datapackage.db 
+$ sqlite3 s-and-p-datapackage.db 
 SQLite version 3.8.10.2 2015-05-20 18:17:19
 Enter ".help" for usage hints.
 sqlite> .schema
