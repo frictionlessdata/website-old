@@ -1,5 +1,9 @@
 FrictionlessData.io - the Frictionless Data project website.
 
+## Contributing
+
+See <http://frictionlessdata.io/about/edit-site/>
+
 ## Theme
 
 This uses the Handbook Theme:
