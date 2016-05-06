@@ -55,27 +55,28 @@ the same number of columns in each row).
 As mentioned above, CSV files can have quite a bit of variation in
 structure. Key options are:
 
-* Delimiter: rather than ',' can be ';', '\t' (tab), '|' etc
-* Record / line terminator: is '\n' (unix), '\n\r' (dos) or something else ...
+* Field delimiter: rather than comma `,` people often use things like `\t`
+  (tab), `;` or `|`
+* Record terminator / line terminator: is `\n` (unix), `\n\r` (dos) or something else ...
 * How do you quote records that contain your delimiter
 
-You can read more in the [CSV Dialect Description Format][csvddf] which all
-defines a small JSON-oriented structure for specifying what options a CSV uses.
+You can read more in the [CSV Dialect Description Format][spec-csvddf] which defines
+a small JSON-oriented structure for specifying what options a CSV uses.
 
-### What is Bad about CSV?
+### What is Missing in CSV?
 
 * CSV lacks any way to specify type information: that is, there is no way to
-  distinguish "1" the string from 1 the number. (This shortcoming can be
-  addressed by adding some form of simple schema. See e.g. [Simple Data
-  Format][sdf] for an approach whereby CSV is combined with a schema or you can
-  even inline schema information - see [Linked CSV][linked-csv] for an example
-  of this approach).
-* No support for relationships between different "tables" (this is similar to
-  the previous point - again see [Simple Data Format][sdf] for a way to address
-  this with additional schema information) information)
-* Works best for tabular data - not good for data with nesting or where
-  structure is not especially tabular (though remember most data can be put
-  into tabular form if you try hard enough!)
+  distinguish "1" the string from 1 the number. This shortcoming can be
+  addressed by adding some form of simple schema. For example [JSON Table
+  Schema][jts] provides a very simple way to describe your schema externally
+  whilst [Linked CSV][linked-csv] is an example of doing this "inline" (that
+  is, in the CSV).
+* No support for relationships between different "tables". This is similar to
+  the previous point and again [JSON Table Schema][jts] provides a way to address
+  this by providing additional schema information externally.
+* CSV is really only for tabular data -- it is not so good for data with
+  nesting or where structure is not especially tabular (though remember most
+  data can be put into tabular form if you try hard enough!)
 
 ### Links
 
@@ -170,15 +171,14 @@ StackExchange](http://opendata.stackexchange.com/questions/748/is-there-a-git-fo
 and to [James Smith](http://theodi.org/blog/adapting-git-simple-data).
 
 [rfc]: http://tools.ietf.org/html/rfc4180
-[csvddf]: http://www.dataprotocols.org/en/latest/csv-dialect.html
 [wiki]: http://en.wikipedia.org/wiki/Comma-separated_values
 [csvkit]: http://csvkit.readthedocs.org/
 [messytables]: http://messytables.readthedocs.org
 [git-for-data]: http://blog.okfn.org/2013/07/02/git-and-github-for-data/
-[sdf]: http://data.okfn.org/standards/simple-data-format
 [linked-csv]: http://jenit.github.io/linked-csv/
 [chrome-csv]: https://chrome.google.com/webstore/detail/recline-csv-viewer/ibfcfelnbfhlbpelldnngdcklnndhael
 [OpenRefine]: http://openrefine.org/
 [datax]: http://explorer.okfnlabs.org/
 
+{%include markdown-link-refs.html %}
 
