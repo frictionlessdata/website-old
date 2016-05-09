@@ -82,7 +82,7 @@ engine = create_engine('sqlite:///datapackage.db')
 
 # now push the data to the database
 from datapackage import push_datapackage
-push_datapackage(descriptor=dp.metadata,backend='sql',engine=engine)
+push_datapackage(descriptor=url,backend='sql',engine=engine)
 {% endhighlight %}
 
 If you have `sqlite3` installed, you can inspect and play with your
