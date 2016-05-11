@@ -2,6 +2,8 @@
 title: Tools and Integrations
 ---
 
+This page lists user-friendly tools for creating and working with Data Packages.  It also lists integrations for working with Data Packages using popular existing tools.  If you are a developer, you can find software libraries to load and manage Data Packages in your language of choice.
+
 * ToC
 {:toc}
 
@@ -30,7 +32,7 @@ title: Tools and Integrations
 * Creating and using Data Packages in Python *coming soon*
 * Creating and using Data Packages in R *coming soon*
 
-## Code Libraries
+## Libraries
 
 ### Javascript and NodeJS
 
