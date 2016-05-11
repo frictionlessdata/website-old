@@ -12,6 +12,10 @@ creating and using Data Packages and associated tools.
 * [Creating Data Packages in Python](./creating-tabular-data-packages-in-python/)
 * [Creating Data Packages in JavaScript](./creating-tabular-data-packages-in-javascript/)
 
+## Validating Data
+
+* [Validating Data](./validating-data/)
+
 ## Publishing Data
 
 Guides on publishing data as Data Packages.
