@@ -1,5 +1,6 @@
 ---
 title: Standards
+redirect_from: /standards/
 ---
 
 At its core, Frictionless Data is driven by the development of the [Data Package specification][dp], a simple format for packaging data for sharing between tools and people. Associated specifications include [Tabular Data Package][tdp], a format for packaging tabular data, and [JSON Table Schema][jts], a standard for defining a *schema* for tabular data.
