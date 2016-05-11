@@ -57,6 +57,12 @@ Two libraries are available:
 * <https://github.com/textkit/datapak> - work with tabular data packages (lets you download, load or query datasets using SQL via ActiveRecord - thus, works with any SQL database; defaults to an in-memory SQLite database).
 * <https://github.com/theodi/datapackage.rb> -- parse and validate both data packages and tabular data packages. (May be obsolete as no updated since Feb 2014)
 
+### PHP
+
+A validator and storage library for working with [JSON Table Schema](http://frictionlessdata.io/guides/json-table-schema/) is available here:
+
+* <https://github.com/FootworkSolutions/json_table> 
+
 ### Go
 
 <https://github.com/the42/datapackage> - provides struct specifications for Data Package as well as a command line tool to create Data Packages.
