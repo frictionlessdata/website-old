@@ -1,0 +1,23 @@
+{
+  "fields": [
+    {
+      "name": "Name",
+      "type": "string",
+      "description": "User’s name"
+    },
+    {
+      "name": "Email",
+      "type": "string",
+      "format": "email",
+      "description": "User’s email"
+    },
+    {
+      "name": "Age",
+      "type": "integer",
+      "description": "User’s age",
+      "constraints": {
+        "minimum": 18
+      }
+    }
+  ]
+}
