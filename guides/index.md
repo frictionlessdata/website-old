@@ -7,7 +7,7 @@ creating and using Data Packages and associated tools.
 
 ## Working with Data Packages
 
-* [Quick Start in Python](./quick-start-in-python/)
+* [Using Data Packages in Python](./using-data-packages-in-python/)
 * [Creating Data Packages in Python](./creating-tabular-data-packages-in-python/)
 * [Creating Data Packages in JavaScript](./creating-tabular-data-packages-in-javascript/)
 

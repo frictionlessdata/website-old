@@ -1,7 +1,7 @@
 ---
-title: Quick Start in Python
+title: Using Data Packages in Python
 redirect_from: 
-  - ./working-with-tabular-data-packages-in-python/
+  - /guides/quick-start-in-python/
 ---
 
 This tutorial will show you how to install the Python libraries for
@@ -25,8 +25,8 @@ pip install datapackage
 ## Reading Basic Metadata
 
 In this case, we are using an example Data Package
-([datapackage.json](http://frictionlessdata.io/example-datasets/periodic-table/datapackage.json),
-[data.csv](http://frictionlessdata.io/example-datasets/periodic-table/data.csv))
+([datapackage.json](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json),
+[data.csv](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/data.csv))
 containing the periodic table.  This dataset includes the atomic
 number, symbol, element name, atomic mass, and the metallicity of the
 element.
@@ -45,7 +45,7 @@ web.
 
 {% highlight python %}
 import datapackage
-url = 'http://frictionlessdata.io/example-datasets/periodic-table/datapackage.json'
+url = 'https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json'
 dp = datapackage.DataPackage(url)
 {% endhighlight %}
 
