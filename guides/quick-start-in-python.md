@@ -56,7 +56,7 @@ Data Package, you have access to this metadata using the `metadata`
 dict attribute.  Note that these fields are optional and may not be
 specified for all Data Packages.  For more information on which fields
 are supported, see
-[the full Data Package standard][dp-spec].
+[the full Data Package standard][spec-dp].
 
 {% highlight python %}
 print(dp.metadata['title'])
@@ -107,7 +107,6 @@ CREATE TABLE ___data___data (
 );
 {% endhighlight %}
 
-{%include markdown-link-refs.html %}
 
 ## Loading into BigQuery
 
@@ -181,3 +180,5 @@ engine = create_engine(REDSHIFT_URL)
 from datapackage import push_datapackage
 push_datapackage(descriptor=url,backend='sql',engine=engine)
 {% endhighlight %}
+
+{%include markdown-link-refs.html %}
