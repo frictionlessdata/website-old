@@ -74,7 +74,7 @@ To load the data into SQL we will need the JSON Table Schema SQL Storage library
 You can install it by doing:
 
 {% highlight bash %}
-pip install jsontableschema_sql
+pip install jsontableschema-sql
 {% endhighlight %}
 
 Now you can load your data as follows:
@@ -128,7 +128,7 @@ Table Schema BigQuery Storage library:
 You can install it as follows:
 
 {% highlight bash %}
-pip install jsontableschema_bigquery
+pip install jsontableschema-bigquery
 {% endhighlight %}
 
 The code snippet below should be enough to push your dataset into the cloud!
