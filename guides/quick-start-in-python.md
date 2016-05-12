@@ -155,3 +155,29 @@ dataset on BigQuery.
 ![BigQuery Schema](/img/bigquery-schema.png)
 
 ![BigQuery Preview](/img/bigquery-preview.png)
+
+## Loading into Amazon RedShift
+
+Similar to Google's BigQuery, Amazon RedShift requires
+[some setup](http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html)
+on AWS. Once you've created your cluster, however, all you need to do
+is use your cluster endpoint to create a connection string for
+SQLAlchemy.  
+
+*Note: using the
+[sqlalchemy-redshift dialect](https://sqlalchemy-redshift.readthedocs.io/en/latest/index.html)
+is optional as the `postgres://` dialect is sufficient to load your
+table into AWS RedShift.*
+
+![AWS RedShift](/img/aws-redshift-cluster-endpoint.png)
+
+{% highlight python %}
+# create the database connection (using SQLAlchemy)
+REDSHIFT_URL = 'postgres://<user>:<pass>@<host>.redshift.amazonaws.com:5439/<database>'
+from sqlalchemy import create_engine
+engine = create_engine(REDSHIFT_URL)
+
+# now push the data to the database
+from datapackage import push_datapackage
+push_datapackage(descriptor=url,backend='sql',engine=engine)
+{% endhighlight %}
