@@ -36,7 +36,7 @@ dp.metadata['title'] = 'Periodic Table'
 ## Inferring a CSV Schema 
 
 Let's say we have a file called `data.csv`
-([download](/example-datasets/periodic-table/data.csv)) in our working
+([download](https://github.com/frictionlessdata/example-data-packages/blob/master/periodic-table/data.csv)) in our working
 directory that looks like this:
 
 |  atomic number | symbol | name          | atomic mass | metal or nonmetal?    |
@@ -86,7 +86,7 @@ with open('datapackage.json', 'w') as f:
 {% endhighlight %}
 
 The `datapackage.json`
-([download](/example-datasets/periodic-table/datapackage.json)) is
+([download](https://github.com/frictionlessdata/example-data-packages/blob/master/periodic-table/datapackage.json)) is
 inlined below.  Note that atomic number has been correctly inferred as
 an `integer` and atomic mass as a `number` (float) while every other
 column is a `string`.
