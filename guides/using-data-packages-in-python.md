@@ -7,8 +7,11 @@ redirect_from:
 This tutorial will show you how to install the Python libraries for
 working with Tabular Data Packages and demonstrate a very simple
 example of loading a Tabular Data Package from the web and pushing it
-directly into a local SQL database.  A short example of pushing your
-dataset to Google's BigQuery follows.
+directly into a local SQL database.  Short examples of pushing your
+dataset to Google's BigQuery and Amazon's RedShift follow.
+
+* Table of Contents
+{:toc}
 
 ## Setup 
 
@@ -24,12 +27,14 @@ pip install datapackage
 
 ## Reading Basic Metadata
 
-In this case, we are using an example Data Package
+In this case, we are using an example Tabular Data Package containing
+the periodic table stored on
+[GitHub](https://github.com/frictionlessdata/example-data-packages/tree/master/periodic-table)
 ([datapackage.json](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json),
-[data.csv](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/data.csv))
-containing the periodic table.  This dataset includes the atomic
-number, symbol, element name, atomic mass, and the metallicity of the
-element.
+[data.csv](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/data.csv)).
+This dataset includes the atomic number, symbol, element name, atomic
+mass, and the metallicity of the element.  Here are the first five
+rows:
 
 |  atomic number | symbol | name          | atomic mass | metal or nonmetal?    |
 |----------------+--------+---------------+----------------------------+-----------------------|
@@ -63,9 +68,50 @@ print(dp.metadata['title'])
 > "Periodic Table" 
 {% endhighlight %}
 
+## Reading Data
+
+Now that you have loaded your Data Package, you can read its data.  A
+Data Package can contain multiple files which are accessible via the
+`resources` attribute.  The `resources` attribute is an array of
+objects containing information (e.g. path, schema, description) about
+each file in the package.
+
+You can access the data in a given resource in the `resources` array
+by reading the `data` attribute.  For example, using our our Periodic
+Table Data Package, we can return all elements with an atomic number
+of less than 10 by doing the following:
+
+{% highlight python %}
+print([e['name'] for e in dp.resources[0].data if int(e['atomic number']) < 10])
+
+> ['Hydrogen', 'Helium', 'Lithium', 'Beryllium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen', 'Fluorine']
+{% endhighlight %}
+
+If you don't want to load all data in memory at once, you can lazily
+access the data using the `iter()` method on the resource:
+
+{% highlight python %}
+rows = dp.resources[0].iter()
+rows.next()
+
+> {'metal or nonmetal?': 'nonmetal', 'symbol': 'H', 'name': 'Hydrogen', 'atomic mass': '1.00794', 'atomic number': '1'}
+
+rows.next()
+
+> {'metal or nonmetal?': 'noble gas', 'symbol': 'He', 'name': 'Helium', 'atomic mass': '4.002602', 'atomic number': '2'}
+
+rows.next()
+
+> {'metal or nonmetal?': 'alkali metal', 'symbol': 'Li', 'name': 'Lithium', 'atomic mass': '6.941', 'atomic number': '3'}
+{% endhighlight %}
+
 ## Loading into an SQL database 
 
-[Tabular Data Packages][tdp] contains schema information about its data using [JSON Table Schema][jts]. This means you can easily import your Data Package into the SQL backend of your choice. In this case, we are creating an [SQLite](http://sqlite.org/) database in a new file named `datapackage.db`.
+[Tabular Data Packages][tdp] contains schema information about its
+data using [JSON Table Schema][jts]. This means you can easily import
+your Data Package into the SQL backend of your choice. In this case,
+we are creating an [SQLite](http://sqlite.org/) database in a new file
+named `datapackage.db`.
 
 To load the data into SQL we will need the JSON Table Schema SQL Storage library:
 
