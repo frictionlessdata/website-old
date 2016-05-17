@@ -101,9 +101,9 @@ Package object.
 for feature in world['features']:
     matches = [gdp['Value'] for gdp in gdp_dp.resources[0].data if gdp['Country Code'] == feature['properties']['ISO_A3']]
     if matches:
-        feature['properties']['GDP (2014)'] = matches[0]
+        feature['properties']['GDP (2014)'] = float(matches[0])
     else:
-        feature['properties']['GDP (2014)'] = "None"
+        feature['properties']['GDP (2014)'] = 0
 {% endhighlight %}
 
 Finally, we can output our consolidated GeoJSON dataset into a new
@@ -130,8 +130,14 @@ with open('datapackage.json','w') as f:
     f.write(new_dp.to_json())
 {% endhighlight %}
 
-We can rely on GitHub to render our GeoJSON for us.  When you click a
-country, it's property list will show up featuring "ADMIN", "ISO_A3",
-and the newly added "GDP (2014)" property.
+We can now quickly render this GeoJSON file into a
+[chloropleth map](https://en.wikipedia.org/wiki/Choropleth_map) using
+[QGIS](http://qgis.org/en/site/):
+
+![GDP Map Example](/img/gdp_map_example.png)
+
+Or we can rely on GitHub to render our GeoJSON for us.  When you click
+a country, it's property list will show up featuring "ADMIN",
+"ISO_A3", and the newly added "GDP (2014)" property.
 
 <script src="https://embed.github.com/view/geojson/frictionlessdata/example-data-packages/master/_other_example_files/world_gdp_2014.geojson"></script>
