@@ -1,5 +1,5 @@
 ---
-title: Standards
+title: Data Packages
 redirect_from: /standards/
 ---
 
