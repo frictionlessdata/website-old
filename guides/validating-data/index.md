@@ -2,26 +2,25 @@
 title: Validating Data
 ---
 
-Driving broad improvements in data quality is an important goal in
-making data transport truly *frictionless*.  Data in the wild is often
-poorly structured, improperly formatted, or otherwise in need of
-manual "wrangling" before it can actually be used in a given tool (see
-[Bad Data](http://okfnlabs.org/bad-data/) for real examples of data
-quality issues).  Our approach is to build [tools](/tools/) and
-[standards](/standards/) to make data quality more **visible** so that
-data managers, developers, and other end users can define what "good"
-data should look like and, as easily as possible, assess their data
-against those expectations.
+Tabular data (e.g. data stored in [CSV](/guides/csv/) and Excel worksheets) is one of the most common forms of data available on the web. This guide will walk through validating tabular data using Frictionless Data tooling.
 
-Tabular data (e.g. data stored in [CSV](/guides/csv/) and Excel
-worksheets) is one of the most common forms of data available on the
-web.  This guide will walk through several options for validating
-tabular data within the Frictionless Data ecosystem.
+This guide show how you can validate your tabular data and check both:
+
+* Structure: are there too many rows or columns in some places?
+* Schema: does the data fit its schema. Are the values in the date column actually dates? Are all the numbers greater than zero?
+
+We will walk through two methods of performing validation:
+
+* Webservice: an online service called GoodTables. This option requires no technical knowledge or expertise.
+* Using the Python GoodTables library. This allows you full control over the validation process but requires knowledge of Python.
+
+* ToC
+{:toc}
 
 ## Good Tables
 
-[Good Tables](http://goodtables.okfnlabs.org/) is a free hosted
-service for validating tabular data.  Good Tables checks your data for
+[Good Tables](http://goodtables.okfnlabs.org/) is a free, open-source, hosted
+service for validating tabular data. Good Tables checks your data for
 its *structure*, and, optionally, its adherence to a specified *schema*.
 Good Tables will give quick and simple feedback on where your tabular
 data may not yet be quite perfect.
