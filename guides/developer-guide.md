@@ -15,20 +15,31 @@ If you have a question or want help the best way to get assistance is to join ou
 <https://gitter.im/frictionlessdata/chat>
 
 
+## Example and Test Data Packages
+
+We have prepared a variety of example and test data packages for use in development:
+
+* Standard test data packages in the Python test suite: <https://github.com/frictionlessdata/testsuite-py/tree/master/datasets>
+* Exemplar data packages (used in tutorials): <https://github.com/frictionlessdata/example-data-packages>
+* Core Data Packages -- variety of of high quality "real-world" reference and indicator datasets as data packages: <http://data.okfn.org/data>
+
+
 ## Key Concepts and Pre-requisites
 
 This entity diagram gives an overview of how the main different objects fit together. The top row is a generic Data Package and the row below shows the case of Tabular Data Package.
 
+This guide will focus on [Tabular Data Packages][tdp] as that is the most commonly used form of Data Packages and is suited to most tools.
+
 <img src="https://docs.google.com/drawings/d/1hSu1ip0EzL1w4jLGBM3sh8vIHrb19Fg7UQUvuK2rnhc/pub?w=628&h=651" alt="" />
 
+
 This guide will assume you already have some high-level familiarity with the [Data Package family of specifications][dp-main]. Please a take a few minutes to take a look at the [overview][dp-main] if you are not yet familiar with those specs.
+
 
 
 ## Implementing a Data Package Tool Stack
 
 Here's a diagram that illustrates some of the core components of a full Data Package implementation.
-
-JSON Table Schema support is needed only if you are planning support for [Tabular Data Packages][tdp]. Since most implementations will want to support them we have included it in the diagram.
 
 The *italicised items* are there to indicate that this functionality is less important and is often not included in implementations.
 
@@ -62,7 +73,7 @@ var location = /my/data/package/
 # this "imports" the Data Package providing a native DataPackage object to work with
 # Note: you usually will not load the data itself
 var myDataPackage = new DataPackage(location)
-var myDataResource = myDataPackage.getResource(indexOrName)
+var myDataResource = myDataPackage.getResource(indexOrNameOfResource)
 
 # this would return an iterator over row objects if the data was in rows
 # optional support for casting data to the right type based on JSON Table Schema
@@ -136,9 +147,13 @@ var jtsValidator = new JTSValidator(schema)
 schema.validate(resource.stream())
 ```
 
-### Specific Tool
+**Validating Metadata**
 
-For a particular tool or platform often all you need is simple import or export:
+
+
+### Specific Tools and Platforms
+
+For a particular tool or platform usually all you need is simple import or export:
 
 ```
 # import into SQL (implemented in some language)
