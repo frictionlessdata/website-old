@@ -15,9 +15,13 @@ If you have a question or want help the best way to get assistance is to join ou
 <https://gitter.im/frictionlessdata/chat>
 
 
-## Pre-requisites
+## Key Concepts and Pre-requisites
 
-This guide assumes you already have some high-level familiarity with the [Data Package family of specifications][dp-main]. Please a take a few minutes to take a look at the [overview][dp-main] if you are not yet familiar with those specs.
+This entity diagram gives an overview of how the main different objects fit together. The top row is a generic Data Package and the row below shows the case of Tabular Data Package.
+
+<img src="https://docs.google.com/drawings/d/1hSu1ip0EzL1w4jLGBM3sh8vIHrb19Fg7UQUvuK2rnhc/pub?w=628&h=651" alt="" />
+
+This guide will assume you already have some high-level familiarity with the [Data Package family of specifications][dp-main]. Please a take a few minutes to take a look at the [overview][dp-main] if you are not yet familiar with those specs.
 
 
 ## Implementing a Data Package Tool Stack
@@ -26,22 +30,24 @@ Here's a diagram that illustrates some of the core components of a full Data Pac
 
 JSON Table Schema support is needed only if you are planning support for [Tabular Data Packages][tdp]. Since most implementations will want to support them we have included it in the diagram.
 
+The *italicised items* are there to indicate that this functionality is less important and is often not included in implementations.
+
 <img src="https://docs.google.com/drawings/d/1VdcWNb-PnP9QyrlMlvMWBBvSGTy_Rfdcr77Xn1HpUOI/pub?w=331&h=400" alt="" />
 
 ### General Introduction
 
-The main things you want to do are:
+As a Developer the primary actions you want to support are:
 
-* Import data (and metadata) in a Data Package into your tool
-* Export data (and metadata) from your tool to a Data Package 
+* Importing data (and metadata) in a Data Package into your system
+* Exporting data (and metadata) from your system to a Data Package 
 
-In addition you may want to do things like:
+Addition actions include:
 
-* Create a Data Package from scratch
-* Validate the data in a Data Package (is the data how it says it should be)
-* Validate the metadata in a Data Package
-* Visualize the Data Package
-* Publish the Data Package
+* Creating a Data Package from scratch
+* Validating the data in a Data Package (is the data how it says it should be)
+* Validating the metadata in a Data Package
+* Visualizing the Data Package
+* Publishing the Data Package to an online repository
 
 ### Programming Language
 
@@ -52,6 +58,9 @@ This is example pseudo-code for a Data Package library in a programming language
 ```
 # location of Data Package e.g. URL or path on disk
 var location = /my/data/package/
+
+# this "imports" the Data Package providing a native DataPackage object to work with
+# Note: you usually will not load the data itself
 var myDataPackage = new DataPackage(location)
 var myDataResource = myDataPackage.getResource(indexOrName)
 
@@ -67,23 +76,39 @@ var dataframe = myDataResource.asDataFrame()
 **Accessing metadata**
 
 ```
-# you may also want access to Data Package metadata
-# the exact accessor structure is up to you
-print myDataPackage.metadata.title
-
-# this would return the datapackage.json for the Data Package
-myDataPackage.dataPackageJSON()
+# Here we  access to Data Package metadata
+# the exact accessor structure is up to you - here it an attribute called
+# metadata that acts like a dictionary
+print myDataPackage.metadata['title']
 ```
 
 **Exporting a Data Package**
 
+A simple functional style approach that gets across the idea:
+
+```
+# e.g. a location on disk
+var exportLocation = /path/to/where/data/package/should/go
+export_data_package(nativeDataObject, exportLocation)
+```
+
+A more object-oriented model fitting with our previous examples would be:
+
 ```
 var myDataPackage = export_data_package(nativeDataObject)
+myDataPackage.save(exportLocation)
 
 # if the native data is more like a table a data then you might have
 var myDataPackage = new DataPackage()
 myDataPackage.addResourceFromNativeDataObject(nativeDataObject)
+
+# once exported to 
 myDataPackage.saveToDisk(path)
+
+# You can also provide access to the Data Package datapackage.json
+# That way clients of your library can decide how they save this themselves
+var readyForJSONSaving  = myDataPackage.dataPackageJSON()
+saveJson(readyForJSONSaving, '/path/to/save/datapackage.json')
 ```
 
 **Creating a Data Package from scratch**
