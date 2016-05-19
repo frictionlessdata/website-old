@@ -9,14 +9,17 @@ creating and using Data Packages and associated tools.
 
 ### Python Guides
 
-* [Using Data Packages in Python](./using-data-packages-in-python/)
-* [Creating Data Packages in Python](./creating-tabular-data-packages-in-python/)
+* [Using Data Packages](./using-data-packages-in-python/)
+* [Creating Data Packages](./creating-tabular-data-packages-in-python/)
 * [Joining Data](./joining-data-in-python)
-* [Validating Data](./validating-data/)
 
 ### JavaScript Guides
 
 * [Creating Data Packages in JavaScript](./creating-tabular-data-packages-in-javascript/)
+
+## Validating Data 
+
+* [Validating Data](./validating-data/)
 
 ## Publishing Data
 
