@@ -12,6 +12,7 @@ creating and using Data Packages and associated tools.
 * [Using Data Packages](./using-data-packages-in-python/)
 * [Creating Data Packages](./creating-tabular-data-packages-in-python/)
 * [Joining Data](./joining-data-in-python)
+* [Joining Tabular Data](./joining-tabular-data-in-python/)
 
 ### JavaScript Guides
 
