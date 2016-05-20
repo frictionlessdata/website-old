@@ -2,12 +2,36 @@
 title: Joining Tabular Data
 ---
 
-Here's an example of joining two tabular datasets.  In this case, we
-can use a similar GDP dataset (this time with all years) and combine
-it with the Consumer Price Index, a measure of inflation, to yield
-[Real GDP](https://en.wikipedia.org/wiki/Real_gross_domestic_product)
-per country per year, a measure of economic output adjusted for price
-changes.
+In a [separate guide](/guides/joining-data/), I walked through joining
+a tabular dataset with one containing geographic information.  In this
+guide, I will demonstrate an example of joining two tabular datasets.
+In this case, we want to join a dataset containing the *nominal* Gross
+Domestic Product (GDP) per country per year with the Consumer Price
+Index (CPI) per country per year.  By adjusting a given GDP measure by
+the CPI, a measure of inflation, one can yield the *real* GDP, a
+measure of economic output adjusted for price changes over time.  To
+do that, of course, we need to join these independent datasets on the
+common values "Country Code" and "Year".
+
+*Note: There are, of course, various, more robust ways of joining
+ tabular data.  The example listed below is intended to demonstrate
+ how the current libraries and specifications work together to perform
+ this common task.*
+
+## Data 
+
+### GDP
+
+| Country Name | Country Code | Year | Value |
+|---|---|---|---|
+| Afghanistan | AFG | 2004 | 5285461999.33739 |
+| Afghanistan | AFG | 2005 | 6275076016.47174 |
+| Afghanistan | AFG | 2006 | 7057598406.61553 |
+| Afghanistan | AFG | 2007 | 9843842455.48323 |
+| Afghanistan | AFG | 2008 | 10190529882.4878 |
+
+
+### CPI
 
 | Country Name | Country Code | Year | CPI |
 |---|---|---|---|
@@ -17,8 +41,11 @@ changes.
 | Afghanistan | AFG | 2007 | 82.7748069188 |
 | Afghanistan | AFG | 2008 | 108.0666000101 |
 
-The first step is to load the Data Packages as usual.  We also need to
-import `DictWriter` to write the merged rows to our new CSV.
+## Loading the Data
+
+As usual, the first step is to load the Data Packages library
+`datapackage`.  We also need to import `DictWriter` to write our
+merged rows to a new CSV.
 
 {% highlight python %}
 import datapackage
@@ -28,13 +55,14 @@ cpi_dp = datapackage.DataPackage('https://raw.githubusercontent.com/frictionless
 gdp_dp = datapackage.DataPackage('https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/gross-domestic-product-2014/datapackage.json')
 {% endhighlight %}
 
-Given that our data is already in
+Given that our source data has already been packaged in
 [Tabular Data Package](/guides/tabular-data-package/) format, we know
-that we have a [*schema*](/guides/json-table-schema/) which specifies
-information for each column.  Let's merge and preserve that schema
-information now as we'll need it for our new Data Package.  Note that
-we're also adding a new column named 'Real GDP' and giving it a type
-of 'number'.
+that we have a [*schema*](/guides/json-table-schema/) for each CSV
+which specifies useful information for each column.  We'd like to
+merge and preserve this schema information as we'll need it for
+specifying the combined schema in our new Data Package.  Note that
+we're also adding a new derived column named 'Real GDP' and giving it
+a type of `number`.
 
 {% highlight python %}
 field_info = [f for f in cpi_dp.resources[0].metadata['schema']['fields']]
@@ -51,10 +79,13 @@ array containing only the names of the columns to eventually pass to
 fieldnames = [f['name'] for f in field_info]
 {% endhighlight %}
 
-What follows is an example of iterating through each row of each CSV
-and creating a new `merged_row` when 'Year' and 'Country Code' match
-each other on the two datasets.  We are also calculating our 'Real
-GDP' column based in the information found in the original columns.
+## Joining the Data
+
+What follows is a fairly simple example of iterating through each row
+of each CSV and creating a new `merged_row` when 'Year' and 'Country
+Code' match on the two datasets.  We are also calculating our derived
+'Real GDP' column based in the information found in the original
+columns.
 
 {% highlight python %}
 with open('real_gdp.csv', 'w') as csvfile:
@@ -70,11 +101,17 @@ with open('real_gdp.csv', 'w') as csvfile:
     
 {% endhighlight %}
 
-Now that we've created our new CSV, we can easily package it up.  Note
-that we are passing the merged `field_info` array into our `schema`
+## Creating a New Data Package
+
+Now that we've created our new CSV `real_gdp.csv`, we can use the Data
+Package library to package it up with some useful metadata.  Note that
+we are passing the merged `field_info` array into our `schema`
 definition.  Given that we are generating this Data Package "by hand",
 we need to run the `validate` method on the new Data Package object to
-make sure that we are, indeed, creating a valid Data Package.
+make sure that we are, indeed, creating a valid Data Package.  After
+validating the Data Package metadata, we can either write the Data
+Package directly or save the whole thing as a zip file using the
+`save` method.
 
 {% highlight python %}
 dp = datapackage.DataPackage()
@@ -83,6 +120,7 @@ dp.metadata['resources'] = [
     {
      'name': 'data',
      'path': 'real_gdp.csv',
+     'format': 'csv',
      'schema': {
         'fields': field_info
       }
@@ -96,4 +134,6 @@ dp.validate()
     
 with open('datapackage.json', 'w') as f:
     f.write(dp.to_json())
+    
+# dp.save("real_gdp.zip")
 {% endhighlight %}
