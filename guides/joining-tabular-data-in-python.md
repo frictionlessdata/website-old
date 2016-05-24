@@ -2,7 +2,7 @@
 title: Joining Tabular Data
 ---
 
-In a [separate guide](/guides/joining-data/), I walked through joining
+In a [separate guide](/guides/joining-data-in-python/), I walked through joining
 a tabular dataset with one containing geographic information.  In this
 guide, I will demonstrate an example of joining two tabular datasets.
 
