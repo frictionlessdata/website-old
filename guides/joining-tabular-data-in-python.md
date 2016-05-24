@@ -52,7 +52,7 @@ import datapackage
 from csv import DictWriter
 
 cpi_dp = datapackage.DataPackage('https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/cpi/datapackage.json')
-gdp_dp = datapackage.DataPackage('https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/gross-domestic-product-2014/datapackage.json')
+gdp_dp = datapackage.DataPackage('https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/gross-domestic-product-all/datapackage.json')
 {% endhighlight %}
 
 Given that our source data has already been packaged in
@@ -65,9 +65,9 @@ we're also adding a new derived column named 'Real GDP' and giving it
 a type of `number`.
 
 {% highlight python %}
-field_info = [f for f in cpi_dp.resources[0].metadata['schema']['fields']]
-field_info_ext = [f for f in gdp_dp.resources[0].metadata['schema']['fields']]
-field_info.extend(field_info_ext)
+field_info = []
+field_info.extend(cpi_dp.resources[0].metadata['schema']['fields'])
+field_info.extend(gdp_dp.resources[0].metadata['schema']['fields'])
 field_info.append({'name': 'Real GDP', 'type': 'number'})
 {% endhighlight %}
 
