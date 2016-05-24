@@ -5,13 +5,6 @@ title: Joining Tabular Data
 In a [separate guide](/guides/joining-data/), I walked through joining
 a tabular dataset with one containing geographic information.  In this
 guide, I will demonstrate an example of joining two tabular datasets.
-In this case, we want to join a dataset containing the *nominal* Gross
-Domestic Product (GDP) per country per year with the Consumer Price
-Index (CPI) per country per year.  By adjusting a given GDP measure by
-the CPI, a measure of inflation, one can yield the *real* GDP, a
-measure of economic output adjusted for price changes over time.  To
-do that, of course, we need to join these independent datasets on the
-common values "Country Code" and "Year".
 
 *Note: There are, of course, various, more robust ways of joining
  tabular data.  The example listed below is intended to demonstrate
@@ -19,6 +12,14 @@ common values "Country Code" and "Year".
  this common task.*
 
 ## Data 
+
+In this case, we want to join a dataset containing the *nominal* Gross
+Domestic Product (GDP) per country per year with the Consumer Price
+Index (CPI) per country per year.  By adjusting a given GDP measure by
+the CPI, a measure of inflation, one can yield the *real* GDP, a
+measure of economic output adjusted for price changes over time.  To
+do that, of course, we need to join these independent datasets on the
+common values "Country Code" and "Year".
 
 ### GDP
 
