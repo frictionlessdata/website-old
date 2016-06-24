@@ -13,7 +13,7 @@ so-that: I can load my data into tools that don’t support multiple tables
 As an example, I have two files: `spending.csv` and `supplier.csv`
 that I have Data Packaged.  In the `datapackage.json` (see
 [below](#original-data-package)), I have defined a
-[foreign key](http://dataprotocols.org/json-table-schema/#foreign-keys)
+[foreign key](http://specs.frictionlessdata.io/json-table-schema/#foreign-keys)
 relationship between these two resources.
 
 `# spending.csv`

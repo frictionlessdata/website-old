@@ -57,7 +57,7 @@ Briefly, the format allows users to specify not only
 the types of information within each column in a tabular dataset, but
 also expected values.  For more information, see the
 [JSON Table Schema guide](/guides/json-table-schema/) or
-[the full standard](http://dataprotocols.org/json-table-schema/).
+[the full standard](http://specs.frictionlessdata.io/json-table-schema/).
 
 ## Python + GoodTables
 

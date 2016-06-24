@@ -21,7 +21,7 @@ An example schema would look like the following.  Note that a minimum age of 18 
    
 [Tooling][tools] that supports reading and validating tabular data against a JSON Table Schema can help publishers and ordinary users improve the quality of CSV and Excel files online by flagging validation errors based on the types, formats, and constraints specified in the schema.  For an example, see [GoodTables]({{ site.baseurl }}/tools#goodtables/).
 
-Read the [full standard](http://dataprotocols.org/json-table-schema/).
+Read the [full standard](http://specs.frictionlessdata.io/json-table-schema/).
 
 {%include markdown-link-refs.html %}
 

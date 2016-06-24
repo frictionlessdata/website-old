@@ -17,7 +17,7 @@ As suggested by the name, Tabular Data Packages extend and specialize the [Data 
 <div class="row">
 <div class="span3">
 <h3>Full Spec</h3>
-There is a full **<a href="http://www.dataprotocols.org/simple-data-format/">RFC-style specification of Tabular Data Package</a>**
+There is a full **<a href="http://specs.frictionlessdata.io/simple-data-format/">RFC-style specification of Tabular Data Package</a>**
 on the Data Protocols website to complement this quick introduction.
 </div>
 <div class="span3">
@@ -113,7 +113,7 @@ Here is an example of how the datapackage.json would look in this case:
       }
     ]
 
-[dialect]: http://dataprotocols.org/csv-dialect/
+[dialect]: http://specs.frictionlessdata.io/csv-dialect/
 
 
 ## JSON Table Schema
