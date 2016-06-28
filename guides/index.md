@@ -1,5 +1,6 @@
 ---
 title: Documentation, Guides and Tutorials
+redirect_from: /doc/
 ---
 
 In this section, you will find guides, tutorials and documentation for
