@@ -10,7 +10,7 @@ Creating a Data Package is very easy: all you need to do is put a `datapackage.j
 <div class="row">
 <div class="span2">
 <h3>Full Spec</h3>
-There is a full **<a href="http://dataprotocols.org/data-packages/">RFC-style specification of Data Package format</a>**
+There is a full **<a href="http://specs.frictionlessdata.io/data-packages/">RFC-style specification of Data Package format</a>**
 on the Data Protocols website to complement this quick introduction.
 </div>
 <div class="span2">
@@ -72,7 +72,7 @@ Here is a much more extensive example of a datapackage JSON file:
 [full Data Package spec][spec].
 </div>
 
-[spec]: http://dataprotocols.org/data-packages/
+[spec]: http://specs.frictionlessdata.io/data-packages/
 
 <div class="alert alert-info">
 **Note:** the Data Package format is **extensible**: publishers may add their own additional metadata as well as constraints on the format and type of data by adding their own attributes to the `datapackage.json`.

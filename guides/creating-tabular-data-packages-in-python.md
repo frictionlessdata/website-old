@@ -22,7 +22,7 @@ You can start using the library by importing `datapackage`.  You can
 add useful metadata by adding keys to metadata dict attribute.  Below,
 we are adding the required `name` key as well as a human-readable
 `title` key.  For the keys supported, please consult the full
-[Data Package standard](http://dataprotocols.org/data-packages/#metadata).
+[Data Package standard](http://specs.frictionlessdata.io/data-packages/#metadata).
 Note, we will be creating the required `resources` key further down
 below.
 

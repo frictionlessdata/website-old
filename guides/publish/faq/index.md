@@ -7,7 +7,7 @@ FAQs and best practice patterns for publishing data packages.
 * ToC
 {:toc}
 
-Complete specifications are available at http://dataprotocols.org/data-packages.
+Complete specifications are available at http://specs.frictionlessdata.io/data-packages.
 
 ## Data Package Name
 
@@ -108,7 +108,7 @@ structure.
 ### Contributors fields
 
 Add the 'contributors' field (original author of the package - see
-http://dataprotocols.org/data-packages) if you wish to keep the credits for the
+http://specs.frictionlessdata.io/data-packages) if you wish to keep the credits for the
 package.
 
 ----
