@@ -15,6 +15,10 @@
     <li>
       <a href="{{ site.baseurl }}/about/">About</a>
     </li>
+
+    <li {% if url_last ==  'user-stories' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/user-stories/">User Stories</a>
+    </li>
     
     <li {% if url_parts contains 'data-packages' %}class="Selected"{% endif %}>
       <a href="{{ site.baseurl }}/data-packages/">Data Packages</a>
@@ -49,4 +53,5 @@
         Specifications
       </a>
     </li>
+  </ul>
 </nav>
