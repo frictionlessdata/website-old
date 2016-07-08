@@ -2,19 +2,18 @@
 title: User Stories
 ---
 
-*Below is a compilation of potential User Stories for Data Packages.*
+A set of user stories to inform development of the Frictionless Data ecosystem.
 
-## Detailed User Stories
+## Personas
 
-- [Automated Denormalization](./denormalize/)
-- [Continuous Data Integration](./continuous-data-integration/)
-- Data Editor (for Tabular Data Packages)
-- Tableau-Lite for Data Packages
-- "Give Me an API"
-- Join-It
+- Researcher: A person conducting data-intensive research.
+- Publisher: A person or organization looking to publish datasets.
+- Developer: A person working on developing tooling the creates or consumes Data Packages.
 
-## General User Stories
+## User Stories
 
-{% for user-story in site.data.user-stories %}
-**As a** {{ user-story.as-a }}, **I want** {{ user-story.want }} **so that** {{ user-story.so-that }}
-{% endfor %}
+User stories are managed on a Trello board which you can view below.  Click through to leave a comment or subscribe to user stories you're interested in.
+
+<iframe width="100%" height="725px" src="https://trello.com/b/MGC4RpTZ.html"></iframe>
+
+
