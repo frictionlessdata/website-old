@@ -38,11 +38,11 @@ This page lists user-friendly tools for creating and working with Data Packages.
 
 A comprehensive set of Javascript / NodeJS libraries are available.
 
-* <a href="https://github.com/okfn/dpm">data package manager (dpm)</a> - overall library and command line
-* <a href="https://github.com/okfn/datapackage-init">datapackage-init</a> - create Data Packages by creating <code>datapackage.json</code> files
-* <a href="https://github.com/okfn/datapackage-read">datapackage-read</a> - load and access Data Packages (<code>datapackage.json</code>)
-* <a href="https://github.com/okfn/datapackage-validate">datapackage-validate</a> - validate Data Packages (<code>datapackage.json</code>)
-* <a href="https://github.com/okfn/datapackage-render">datapackage-render</a> - render Data Packages and their views to embeddable HTML, images (png) and more
+* <a href="https://github.com/frictionlessdata/dpm">data package manager (dpm)</a> - overall library and command line
+* <a href="https://github.com/frictionlessdata/datapackage-init-js">datapackage-init</a> - create Data Packages by creating <code>datapackage.json</code> files
+* <a href="https://github.com/frictionlessdata/datapackage-read-js">datapackage-read</a> - load and access Data Packages (<code>datapackage.json</code>)
+* <a href="https://github.com/frictionlessdata/datapackage-validate-js">datapackage-validate</a> - validate Data Packages (<code>datapackage.json</code>)
+* <a href="https://github.com/frictionlessdata/datapackage-render-js">datapackage-render</a> - render Data Packages and their views to embeddable HTML, images (png) and more
 
 ### Python
 
