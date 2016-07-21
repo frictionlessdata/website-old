@@ -29,8 +29,8 @@ below.
 {% highlight python %}
 import datapackage
 dp = datapackage.DataPackage()
-dp.metadata['name'] = 'period-table'
-dp.metadata['title'] = 'Periodic Table'
+dp.descriptor['name'] = 'period-table'
+dp.descriptor['title'] = 'Periodic Table'
 {% endhighlight %}
 
 ## Inferring a CSV Schema 
@@ -69,7 +69,7 @@ with io.open(filepath) as stream:
     headers = stream.readline().rstrip('\n').split(',')
     values = csv.reader(stream)
     schema = infer(headers, values)
-    dp.metadata['resources'] = [
+    dp.descriptor['resources'] = [
         {
             'name': 'data',
             'path': filepath,
