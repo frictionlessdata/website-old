@@ -1,0 +1,47 @@
+---
+layout: default
+wide: true
+---
+
+{% assign section = page.section %}
+
+{% assign section_base = site.baseurl | append: section | append: '/' %}
+
+<div class="post">
+  <article class="post-content{% if page.lead %} lead-paragraph{% endif %}">
+    <a href="/{{ section_base }}" class="pre-header">{{ section }}</a>
+
+    
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    {% if page.authors %}
+    <div class="author">An Interview with
+      <ul>
+      {% for author in page.authors %}
+        <li>{{ author }}</li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <img style="margin: 0 auto;" src="/img/case-studies/{{ page.logo }}">
+
+    <p>
+      We’re curious to learn about some of the common issues users
+      face when working with data. In our Case Study series, we are
+      highlighting projects and organisations who are working with the
+      Frictionless Data specifications and tooling in interesting and
+      innovative ways.
+    </p>
+
+    
+    {{ content }}
+  </article>
+
+</div>
+
+{% include page-tools.html %}
+
+
+
+
