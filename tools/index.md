@@ -69,6 +69,7 @@ A validator and storage library for working with [JSON Table Schema](http://fric
 
 ### R
 
+* <a href="https://github.com/ropenscilabs/datapkg">R Data Package Library</a> - by rOpenSci
 * <a href="https://github.com/christophergandrud/dpmr">R Data Package Manager</a> - by Christopher Gandrud
 * <a href="https://github.com/QBRC/RODProt">R Open Data Protocols Library</a> - by QRBC 
 
