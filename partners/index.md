@@ -4,20 +4,6 @@ title: Partners
 
 ## Technical Partners
 
-![ODI](/img/partners/odi.png)
-
-The **ODI** was co-founded in 2012 to address today’s global
-challenges using the web of data. It brings together commercial and
-non-commercial organisations and governments to equip and inspire
-people around the world to innovate with Data.
-
-The ODI are the maintainers of the official Ruby libraries and we will
-collaborate on a number of tools for sharing and working with data.
-
-<http://www.opendata.institute>
-
----
-
 ![rOpenSci](/img/partners/ropensci.png)
 
 **rOpenSci** is a collaborative effort to develop R-based tools for
