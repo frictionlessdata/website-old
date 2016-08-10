@@ -3,7 +3,4 @@ $(document).ready(function(){
     yiqThreshold: 200
   });
 
-  // open menu on loading home page
-  var API = $("#menu").data( "mmenu" );
-  API.open();
 });
