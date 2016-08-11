@@ -52,7 +52,14 @@ defaults:
       path: "guides"
     values:
       section: guides
-
+  -
+    scope:
+      path: ""
+      type: "case_studies"
+    values:
+      section: case-studies
+      layout: case_study
+      lead: true
 
 related_projects:
   -
@@ -77,3 +84,7 @@ related_projects:
       name: Introducing Open Data
       link: http://okfn.org/opendata/
 
+collections:
+  case_studies:
+    output: true
+    permalink: /case-studies/:path/
