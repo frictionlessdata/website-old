@@ -7,13 +7,13 @@ logo: dataship-logo.png
 
 ## What is DataShip?
 
-DataShip is a way to share data and analysis, from simple charts to
-complex machine learning, with anyone in the world easily and for
-free. It allows you to create notebooks that hold and deliver your
-data, as well as text, images and inline scripts for doing analysis
-and visualization. The people you share it with can read, execute and
-even edit a copy of your notebook and publish the remixed version as a
-fork.
+[DataShip](https://dataship.io/) is a way to share data and analysis,
+from simple charts to complex machine learning, with anyone in the
+world easily and for free. It allows you to create notebooks that hold
+and deliver your data, as well as text, images and inline scripts for
+doing analysis and visualization. The people you share it with can
+read, execute and even edit a copy of your notebook and publish the
+remixed version as a fork.
 
 ## What are the challenges you face working with data?
 
