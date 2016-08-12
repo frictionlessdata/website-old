@@ -77,7 +77,7 @@ become important over the next ten years.
 ---
 
 *Have a question or comment?  Visit the forum topic for this case study:*
-https://discuss.okfn.org/t/new-frictionless-data-case-study-published-dataship/3416/
+<https://discuss.okfn.org/t/new-frictionless-data-case-study-published-dataship/3416/>
 
 [^jupyter]: Jupyter Notebook: <http://jupyter.org/>
 [^resource]: Data Package Resource: <http://specs.frictionlessdata.io/data-packages/#resource-information>
