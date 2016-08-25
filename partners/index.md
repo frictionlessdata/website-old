@@ -43,3 +43,19 @@ Together, we are trialling tools for packaging and reading nervous
 system data using R.
 
 <http://sje30.github.io/>
+
+---
+
+![WPRDC](/img/partners/wprdc.png)
+
+**The Western Pennsylvania Regional Data Center (WPRDC)** provides a
+technological and legal infrastructure for regional data sharing to
+support an open data ecosystem. The WPRDC manages an open data portal
+(using [CKAN](http://ckan.org/)), and provides a number of services to
+data publishers and users in public sector agencies, academic
+institutions, and non-profit organizations.
+
+We are working with the WPRDC to pilot various tools for making data
+quality more visible on CKAN.
+
+<https://www.wprdc.org/>
