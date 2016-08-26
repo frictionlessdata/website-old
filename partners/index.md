@@ -47,15 +47,12 @@ system data using R.
 ---
 
 ![WPRDC](/img/partners/wprdc.png)
+![UPCUSR](/img/partners/upcusr.png)
 
-**The Western Pennsylvania Regional Data Center (WPRDC)** provides a
-technological and legal infrastructure for regional data sharing to
-support an open data ecosystem. The WPRDC manages an open data portal
-(using [CKAN](http://ckan.org/)), and provides a number of services to
-data publishers and users in public sector agencies, academic
-institutions, and non-profit organizations.
+**The Western Pennsylvania Regional Data Center** provides a shared technological and legal infrastructure to support research, analysis, decision making, and community engagement.
 
-We are working with the WPRDC to pilot various tools for making data
-quality more visible on CKAN.
+We will be working with the University of Pittsburgh Center for Urban and Social Research to pilot a number of frictionless data tools on the portal  including the Data Quality Dashboard, GoodTables and integrations with CKAN. 
 
 <https://www.wprdc.org/>
+
+<http://ucsur.pitt.edu/>
