@@ -90,7 +90,7 @@ var dataframe = myDataResource.asDataFrame()
 # Here we  access to Data Package metadata
 # the exact accessor structure is up to you - here it an attribute called
 # metadata that acts like a dictionary
-print myDataPackage.metadata['title']
+print myDataPackage.descriptor['title']
 ```
 
 **Exporting a Data Package**

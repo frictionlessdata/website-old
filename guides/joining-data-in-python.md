@@ -118,8 +118,8 @@ with open('world_gdp_2014.geojson', 'w') as f:
     json.dump(world, f)
     
 new_dp = datapackage.DataPackage()
-new_dp.metadata['name'] = 'consolidated-dataset'
-new_dp.metadata['resources'] = [
+new_dp.descriptor['name'] = 'consolidated-dataset'
+new_dp.descriptor['resources'] = [
   {
     'name': 'data',
     'path': 'world_gdp_2014.geojson'
