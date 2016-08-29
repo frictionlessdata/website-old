@@ -64,7 +64,7 @@ are supported, see
 [the full Data Package standard][spec-dp].
 
 {% highlight python %}
-print(dp.metadata['title'])
+print(dp.descriptor['title'])
 > "Periodic Table" 
 {% endhighlight %}
 

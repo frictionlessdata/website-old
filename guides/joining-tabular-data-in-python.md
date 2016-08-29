@@ -67,8 +67,8 @@ a type of `number`.
 
 {% highlight python %}
 field_info = []
-field_info.extend(cpi_dp.resources[0].metadata['schema']['fields'])
-field_info.extend(gdp_dp.resources[0].metadata['schema']['fields'])
+field_info.extend(cpi_dp.resources[0].descriptor['schema']['fields'])
+field_info.extend(gdp_dp.resources[0].descriptor['schema']['fields'])
 field_info.append({'name': 'Real GDP', 'type': 'number'})
 {% endhighlight %}
 
@@ -116,8 +116,8 @@ Package directly or save the whole thing as a zip file using the
 
 {% highlight python %}
 dp = datapackage.DataPackage()
-dp.metadata['name'] = 'real-gdp'
-dp.metadata['resources'] = [
+dp.descriptor['name'] = 'real-gdp'
+dp.descriptor['resources'] = [
     {
      'name': 'data',
      'path': 'real_gdp.csv',
@@ -129,7 +129,7 @@ dp.metadata['resources'] = [
 ]
 
 resource = dp.resources[0]
-resource.metadata['path'] = 'real_gdp.csv'
+resource.descriptor['path'] = 'real_gdp.csv'
 
 dp.validate()
     
