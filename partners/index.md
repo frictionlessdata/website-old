@@ -36,24 +36,6 @@ collaborate on a number of tools for sharing and working with data.
 
 ---
 
-[![PNNL](/img/partners/pnnl.png)](http://www.pnnl.gov/)
-
-**Pacific Northwest National Laboratory (PNNL)** is one of the United
-States Department of Energy national laboratories, managed by the
-Department of Energy's Office of Science. PNNL scientists conduct
-basic and applied research and development to strengthen
-U.S. scientific foundations for fundamental research and innovation.
-
-Open Knowledge International will be piloting some tools and work on
-fixes and enhancements to specific use cases within the PNNL
-workflow. Work will include the integration of Good Tables for data
-validation on repositories that are used by the Active Data app and
-piloting some tools for editing data directly.
-
-<http://www.pnnl.gov/>
-
----
-
 ## Pilot Partners
 
 [![TEDDINET/DM4T](/img/partners/teddinet.png)](http://www.cs.bath.ac.uk/dm4t/index.shtml)
@@ -114,3 +96,21 @@ Together, we have published the following
 Frictionless Data specifications in this tool.
 
 <https://dataship.io/>
+
+---
+
+[![PNNL](/img/partners/pnnl.png)](http://www.pnnl.gov/)
+
+**Pacific Northwest National Laboratory (PNNL)** is one of the United
+States Department of Energy national laboratories, managed by the
+Department of Energy's Office of Science. PNNL scientists conduct
+basic and applied research and development to strengthen
+U.S. scientific foundations for fundamental research and innovation.
+
+Open Knowledge International will be piloting some tools and work on
+fixes and enhancements to specific use cases within the PNNL
+workflow. Work will include the integration of Good Tables for data
+validation on repositories that are used by the Active Data app and
+piloting some tools for editing data directly.
+
+<http://www.pnnl.gov/>
