@@ -53,6 +53,8 @@ Data tools and specifications.
 
 ---
 
+[![Stephen Eglen, University of Cambridge](/img/partners/cambridge.png)](http://sje30.github.io/)
+
 **Stephen Eglen**, a Reader in Computational Neuroscience at the
 University of Cambridge, is working with us to investigate the
 applicability of the Data Package concept to facilitate data reuse.
