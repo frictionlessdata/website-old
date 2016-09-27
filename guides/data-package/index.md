@@ -91,7 +91,7 @@ Here is a much more extensive example of a datapackage JSON file:
     "name": "Open Data Commons Public Domain",
     "version": "1.0",
     "id": "odc-pddl"
-  }]
+  }],
   "sources": [{
     "name": "World Bank and OECD",
     "web": "http://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
