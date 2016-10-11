@@ -20,3 +20,4 @@ datapackage-matlab,datapackage (MATLAB),MATLAB,KrisKusano,datapackage,http://www
 json-table,JSON Table,PHP,FootworkSolutions,json_table,,,library,,
 jts-erd,JTS ERD,Python,iburadempa,jts_erd,,Create an ERD for a database given as JSON-table-schema ,library,,
 pg-jts,PG JTS,Python,iburadempa,pg_jts,,Create JSON-table-schema from a live PostgreSQL database ,library,,
+catmandu,Catmandu,Perl,LibreCat,Catmandu,http://librecat.org,ETL tools to transforms JSON/YAML/CSV/RDF/XML/etc,libraray,,
