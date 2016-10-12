@@ -19,6 +19,11 @@ supporters:
     logo: sloan.png
     footer_logo: sloan-footer.png
     url: http://www.sloan.org/
+  -
+    name: Google
+    logo: google.png
+    footer_logo: google-footer.png
+    url: http://www.google.org/
 
 googleanalytics: UA-33874954-38
 
