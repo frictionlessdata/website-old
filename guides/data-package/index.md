@@ -32,11 +32,13 @@ Packages including for creating, viewing and validating.
 
 A minimal example Data Package would look like this on disk:
 
-    datapackage.json
-    # a data file (CSV in this case but could be any type of data)
-    data.csv
-    # (Optional!) A README (in markdown format)
-    README.md
+```
+datapackage.json
+# a data file (CSV in this case but could be any type of data)
+data.csv
+# (Optional!) A README (in markdown format)
+README.md
+```
 
 Any number of additional files such as more data files, scripts (for processing
 or analyzing the data) and other material may be provided but are not required.
@@ -55,12 +57,12 @@ the only required file. It provides:
 As its file extension indicates it must be a [JSON][json] file. Here's a very
 minimal example of a `datapackage.json` file:
 
-```
+```js
 {
   "name": "a-unique-human-readable-and-url-usable-identifier",
   "title": "A nice title",
   "resources": [{
-    # see below for what a resource descriptor looks like
+    // see below for what a resource descriptor looks like
   }]
 }
 ```
@@ -78,7 +80,7 @@ Here is a much more extensive example of a datapackage JSON file:
 **Note:** the Data Package format is **extensible**: publishers may add their own additional metadata as well as constraints on the format and type of data by adding their own attributes to the `datapackage.json`.
 </div>
 
-```
+```js
 {
   "name": "a-unique-human-readable-and-url-usable-identifier",
   "datapackage_version": "1.0-beta",
@@ -102,29 +104,29 @@ Here is a much more extensive example of a datapackage JSON file:
     "web": "http://www.bloggs.com"
   }],
   "maintainers": [{
-    # like contributors
+    // like contributors
   }],
   "publishers": [{
-    # like contributors
+    // like contributors
   }],
   "dependencies": {
     "data-package-name": ">=1.0"
   },
   "resources": [
     {
-      ... see below ...
+      // ... see below ...
     }
   ],
-  # extend your datapackage.json with attributes that are not
-  # part of the data package spec
-  # we add a views attribute to display Recline Dataset Graph Views
-  # in our Data Package Viewer
+  // extend your datapackage.json with attributes that are not
+  // part of the data package spec
+  // we add a views attribute to display Recline Dataset Graph Views
+  // in our Data Package Viewer
   "views" : [
     {
       ... see below ...
     }
   ],
-  # you can add your own attributes to a datapackage.json, too
+  // you can add your own attributes to a datapackage.json, too
   "my-own-attribute": "data-packages-are-awesome",
 }
 ```
@@ -133,11 +135,13 @@ Here is a much more extensive example of a datapackage JSON file:
 
 You list data files in the resources entry of the datapackage.json.
 
-    {
-      # one of url or path should be present
-      path: "relative-path-to-file" # e.g. data/mydata.csv
-      url: "online url" # e.g http://mysite.org/some-data.csv
-    }
+```js
+  {
+    // one of url or path should be present
+    "path": "relative-path-to-file", // e.g. data/mydata.csv
+    "url": "online url" // e.g http://mysite.org/some-data.csv
+  }
+```
 
 <h3 id="views">Views</h3>
 
@@ -212,4 +216,3 @@ Here's the `datapackage.json`:
 [ISO 3166-2 country codes]: https://github.com/datasets/country-codes
 
 {%include markdown-link-refs.html %}
-
