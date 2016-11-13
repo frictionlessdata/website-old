@@ -3,6 +3,7 @@ name: Open Power System Data
 site: http://open-power-system-data.org/
 authors: Lion Hirth and Ingmar Schlecht
 logo: opsd-logo.svg
+forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-open-power-system-data/3865"
 ---
 
 ## What is the Open Power System Data?

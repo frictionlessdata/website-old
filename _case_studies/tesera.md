@@ -3,6 +3,7 @@ name: Tesera
 site: http://tesera.com/
 authors: Spencer Cox
 logo: tesera-logo.png
+forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-tesera/3986"
 ---
 
 ## What is Tesera?
@@ -330,8 +331,6 @@ utility to citizens, scientists, and consultants alike.
 ![Mackenzie DataStream summary statistics](/img/case-studies/mackenzie-4.png)
 *Mackenzie DataStream summary statistics*
 {: .caption}
-
----
 
 [^jupyter]: Jupyter Notebook: <http://jupyter.org/>
 [^resource]: Data Package Resource: <http://specs.frictionlessdata.io/data-packages/#resource-information>

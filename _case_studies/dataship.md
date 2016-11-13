@@ -3,6 +3,7 @@ name: Dataship
 site: http://dataship.io/
 authors: Waylon Flinn
 logo: dataship-logo.png
+forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-dataship/3416/"
 ---
 
 ## What is Dataship?
@@ -73,11 +74,6 @@ examples. The rise of the Internet of Things will only accelerate
 this. People are also beginning to see the value in controlling their
 data themselves. Providing mechanisms for doing this will likely
 become important over the next ten years.
-
----
-
-*Have a question or comment?  Visit the forum topic for this case study:*
-<https://discuss.okfn.org/t/new-frictionless-data-case-study-published-dataship/3416/>
 
 [^jupyter]: Jupyter Notebook: <http://jupyter.org/>
 [^resource]: Data Package Resource: <http://specs.frictionlessdata.io/data-packages/#resource-information>
