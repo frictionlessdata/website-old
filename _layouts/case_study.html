@@ -11,7 +11,6 @@ wide: true
   <article class="post-content{% if page.lead %} lead-paragraph{% endif %}">
     <a href="/{{ section_base }}" class="pre-header">{{ section }}</a>
 
-    
     <h1 class="post-title">{{ page.title }}</h1>
 
     {% if page.authors %}
@@ -24,7 +23,9 @@ wide: true
     </div>
     {% endif %}
 
-    <img style="margin: 0 auto;" src="/img/case-studies/{{ page.logo }}">
+    <a href="{{ page.site }}">
+      <img style="margin: 0 auto;" src="/img/case-studies/{{ page.logo }}">
+    </a>
 
     <p>
       We’re curious to learn about some of the common issues users
