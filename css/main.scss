@@ -5,7 +5,8 @@
 
 $mm_maxWidth: 380px;
 
-@import 
+@import
+  "custom",
   "normalize",
   "bourbon/bourbon",
   "base/base",
