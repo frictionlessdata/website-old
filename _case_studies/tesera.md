@@ -4,6 +4,7 @@ site: http://tesera.com/
 authors: Spencer Cox
 logo: tesera-logo.png
 forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-tesera/3986"
+short_description: Creating data-driven applications in the cloud
 ---
 
 ## What is Tesera?

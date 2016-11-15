@@ -4,6 +4,7 @@ site: http://dataship.io/
 authors: Waylon Flinn
 logo: dataship-logo.png
 forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-dataship/3416/"
+short_description: A way to share data and analysis, from simple charts to complex machine learning, with anyone in the world easily and for free
 ---
 
 ## What is Dataship?
