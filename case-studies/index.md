@@ -11,4 +11,6 @@ specifications and tooling in interesting and innovative ways.
 
 {% for case_study in site.case_studies %}
 * [{{ case_study.authors }}: {{case_study.title}}]({{ case_study.url }})
+
+  *{{ case_study.short_description }}*
 {% endfor %}
