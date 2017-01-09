@@ -199,12 +199,12 @@ See also the following thread https://discuss.okfn.org/t/copyright-on-data-sourc
 
 ## Validate and preview your Data Package
 
-Use the [Online validator](/tools/validate) to check that your datapackage.json
+Use the [Online validator](/tools/#validate) to check that your datapackage.json
 and Data Package are good to go. Simply drop the URL to your Data Package in
 the input box, and press `Validate`. If everything is fine, `Status: Valid` is
 returned.
 
-Then use the [Online Data Package viewer app](/tools/view) to have a preview of
+Then use the [Online Data Package viewer app](/tools/#view) to have a preview of
 your Data Package.
 
 ----
