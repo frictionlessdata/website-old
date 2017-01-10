@@ -7,7 +7,7 @@ FAQs and best practice patterns for publishing data packages.
 * ToC
 {:toc}
 
-Complete specifications are available at http://specs.frictionlessdata.io/data-packages.
+Complete specifications are available at <http://specs.frictionlessdata.io/data-packages>.
 
 ## Data Package Name
 
@@ -28,7 +28,7 @@ For country specific datasets:
 
 ```
 {topic}                  # e.g. gdp
-{topic}-{2-digit-iso}    # e.g. gdp-us 
+{topic}-{2-digit-iso}    # e.g. gdp-us
 ```
 
 For time series data:
@@ -72,7 +72,7 @@ programs, it makes it easier for the human reader if they are properly aligned.
 
 Good alignment:
 
-```
+```json
 {
   "name": "corruption-perceptions-index",
   "title": "Corruption Perceptions Index (CPI)",
@@ -88,10 +88,10 @@ Good alignment:
 
 Bad alignment:
 
-```
+```json
 {
   "name": "corruption-perceptions-index","title": "Corruption Perceptions Index (CPI)",
-  "sources": 
+  "sources":
   [{
     "name": "Transparency International",
     "web": "http://www.transparency.org/research/cpi/overview"}]
@@ -103,12 +103,12 @@ Bad alignment:
 Please make sure to have your `datapackage.json` well structured to ease the
 understanding of your Data Package content. The [Online DataPackage.json
 Creator](http://data.okfn.org/tools/create) can help you create the general
-structure.  
+structure.
 
 ### Contributors fields
 
 Add the 'contributors' field (original author of the package - see
-http://specs.frictionlessdata.io/data-packages) if you wish to keep the credits for the
+<http://specs.frictionlessdata.io/data-packages>) if you wish to keep the credits for the
 package.
 
 ----
@@ -164,7 +164,7 @@ Start with a short description of the dataset (the first sentence and first
 paragraph should be extractable to provide short standalone descriptions).
 
 Unlike other sections **this section SHOULD NOT have a heading** as it starts
-the README. (i.e. you do not need the heading `## Introduction` 
+the README. (i.e. you do not need the heading `## Introduction`
 
 #### Data
 
@@ -186,14 +186,14 @@ Data Package in the License section.
 Since licensing information is often not clear from the data producers, the
 guideline here is to license the Data Package under the Public Domain
 Dedication and License, and then to add any relevant information or disclaimers
-regarding the source data. 
+regarding the source data.
 
 See, for example:
 
-* http://data.okfn.org/data/core/corruption-perceptions-index#readme
-* http://data.okfn.org/data/core/geo-nuts-administrative-boundaries#readme 
+* <http://data.okfn.org/data/core/corruption-perceptions-index#readme>
+* <http://data.okfn.org/data/core/geo-nuts-administrative-boundaries#readme>
 
-See also the following thread https://discuss.okfn.org/t/copyright-on-data-sources/189.
+See also the following thread <https://discuss.okfn.org/t/copyright-on-data-sources/189>
 
 ----
 
@@ -213,7 +213,5 @@ your Data Package.
 
 For examples of well-structured Data Package see:
 
-* For tabular data: http://data.okfn.org/data/core/corruption-perceptions-index
-* For geospatial data: http://data.okfn.org/data/core/geo-nuts-administrative-boundaries
-
-
+* For tabular data: <http://data.okfn.org/data/core/corruption-perceptions-index>
+* For geospatial data: <http://data.okfn.org/data/core/geo-nuts-administrative-boundaries>
