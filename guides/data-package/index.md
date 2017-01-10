@@ -53,11 +53,11 @@ the only required file. It provides:
 * A "manifest" in the the form of a list of the data resources (data files)
   included in this data package along with information on those files (e.g.
   size and schema)
-    
+
 As its file extension indicates it must be a [JSON][json] file. Here's a very
 minimal example of a `datapackage.json` file:
 
-```js
+```json
 {
   "name": "a-unique-human-readable-and-url-usable-identifier",
   "title": "A nice title",
@@ -80,7 +80,7 @@ Here is a much more extensive example of a datapackage JSON file:
 **Note:** the Data Package format is **extensible**: publishers may add their own additional metadata as well as constraints on the format and type of data by adding their own attributes to the `datapackage.json`.
 </div>
 
-```js
+```json
 {
   "name": "a-unique-human-readable-and-url-usable-identifier",
   "datapackage_version": "1.0-beta",
@@ -135,7 +135,7 @@ Here is a much more extensive example of a datapackage JSON file:
 
 You list data files in the resources entry of the datapackage.json.
 
-```js
+```json
   {
     // one of url or path should be present
     "path": "relative-path-to-file", // e.g. data/mydata.csv
