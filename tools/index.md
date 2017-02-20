@@ -61,7 +61,7 @@ Two libraries are available:
 
 A validator and storage library for working with [JSON Table Schema](http://frictionlessdata.io/guides/json-table-schema/) is available here:
 
-* <https://github.com/FootworkSolutions/json_table> 
+* <https://github.com/FootworkSolutions/json_table>
 
 ### Go
 
@@ -71,7 +71,7 @@ A validator and storage library for working with [JSON Table Schema](http://fric
 
 * <a href="https://github.com/ropenscilabs/datapkg">R Data Package Library</a> - by rOpenSci
 * <a href="https://github.com/christophergandrud/dpmr">R Data Package Manager</a> - by Christopher Gandrud
-* <a href="https://github.com/QBRC/RODProt">R Open Data Protocols Library</a> - by QRBC 
+* <a href="https://github.com/QBRC/RODProt">R Open Data Protocols Library</a> - by QRBC
 
 ### MATLAB
 
