@@ -147,4 +147,3 @@ In the meantime you can just import the CSV files in the Data Package directly.
   </tr>
   {% endfor %}
 </table>
-
