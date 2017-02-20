@@ -88,7 +88,7 @@ Data Package Manager (dpm) -- https://github.com/okfn/dpm. Comprehensive command
 
 These "Using with" examples usually require [Tabular Data Packages][tdp] where the data in the Data Package is stored in CSV.
 
-[tdp]: /doc/tabular-data-package/
+[tdp]: /guides/tabular-data-package/
 
 ### Relational Databases
 

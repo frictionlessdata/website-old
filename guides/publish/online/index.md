@@ -8,7 +8,7 @@ find and use.
 It assumes you have already finished packaging up your data as a Data Package
 (if not, [check out the instructions here][publish]).
 
-[publish]: /doc/publish/
+[publish]: /guides/publish/
 
 ## It's Just Files Online
 
