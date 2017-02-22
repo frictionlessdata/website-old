@@ -6,7 +6,7 @@ Frictionless Data is about removing the friction in working with data. We are do
 
 This site hosts information about the project, including user stories, guides, and case studies.  For the specifications themselves, please visit:
 
-http://specs.frictionlessdata.io/
+http://specs.frictionlessdata.io/ (https://github.com/frictionlessdata/specs)
 
 ## Contributing
 
