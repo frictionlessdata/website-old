@@ -29,7 +29,7 @@ This page lists user-friendly tools for creating and working with Data Packages.
 
 ## Guides
 
-* Creating and using Data Packages in Python *coming soon*
+* Creating and using Data Packages in Python: http://frictionlessdata.io/guides/#python-guides
 * Creating and using Data Packages in R *coming soon*
 
 ## Libraries
@@ -38,11 +38,9 @@ This page lists user-friendly tools for creating and working with Data Packages.
 
 A comprehensive set of Javascript / NodeJS libraries are available.
 
+* <a href="https://github.com/frictionlessdata/datapackage-js">datapackage-js</a> - a comprehensive JS library (Node + browser)
+* <a href="https://github.com/frictionlessdata/jsontableschema-js">jsontableschema-js</a> - a comprehensive JS library for working with Table Schema and tabular data in Data Packages (Node + browser)
 * <a href="https://github.com/frictionlessdata/dpm">data package manager (dpm)</a> - overall library and command line
-* <a href="https://github.com/frictionlessdata/datapackage-init-js">datapackage-init</a> - create Data Packages by creating <code>datapackage.json</code> files
-* <a href="https://github.com/frictionlessdata/datapackage-read-js">datapackage-read</a> - load and access Data Packages (<code>datapackage.json</code>)
-* <a href="https://github.com/frictionlessdata/datapackage-validate-js">datapackage-validate</a> - validate Data Packages (<code>datapackage.json</code>)
-* <a href="https://github.com/frictionlessdata/datapackage-render-js">datapackage-render</a> - render Data Packages and their views to embeddable HTML, images (png) and more
 
 ### Python
 
@@ -70,6 +68,9 @@ A validator and storage library for working with [JSON Table Schema](http://fric
 ### R
 
 * <a href="https://github.com/ropenscilabs/datapkg">R Data Package Library</a> - by rOpenSci
+
+No longer actively maintained:
+
 * <a href="https://github.com/christophergandrud/dpmr">R Data Package Manager</a> - by Christopher Gandrud
 * <a href="https://github.com/QBRC/RODProt">R Open Data Protocols Library</a> - by QRBC
 
