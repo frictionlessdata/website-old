@@ -1,150 +1,428 @@
 ---
-title: Tools and Integrations
+title: Tools, Libraries, Platforms, and Integrations
 ---
 
-This page lists user-friendly tools for creating and working with Data Packages.  It also lists integrations for working with Data Packages using popular existing tools.  If you are a developer, you can find software libraries to load and manage Data Packages in your language of choice.
+**New! Apply by 31st July 2017 to the
+ [Frictionless Data Tool Fund](http://toolfund.frictionlessdata.io/):**
 
-* ToC
-{:toc}
+> The Frictionless Data Tool Fund, supported by the Sloan Foundation,
+> is providing a number of minigrants of $5,000 to support individuals
+> or organisations in bootstrapping the implementation of libraries
+> for the Frictionless Data specifications in a range of programming
+> languages.
 
-## Quick Start Tools for Data Packages
+---
 
-### View
+- [Tools and Integrations](#tools-and-integrations)
+- [Libraries](#libraries)
+- [Platforms](#platforms)
+- [Other](#other)
+- [Representations](#representations)
+- [Directory](#directory)
 
-[Online Data Package viewer app][viewer-app] -- provides a nice human-friendly view of a Data Package in seconds.
+## Tools and Integrations
 
-[viewer-app]: http://data.okfn.org/tools/view
+Tools listed here are new apps or integrations with existing apps that
+create or consume
+[Data Packages](https://specs.frictionlessdata.io/data-package/) or
+[Table Schema](http://specs.frictionlessdata.io/table-schema/).
 
-### Create
+### Good Tables (service)
 
-[Data Package your data by creating a `datapackage.json`][create-app] -- the online datapackage.json maker creates the <code>datapackage.json</code> file needed to turn data into a Data Package.
+*Continuous data validation, as a service.*
 
-[create-app]: http://datapackagist.okfnlabs.org/
+Repository: <https://github.com/frictionlessdata/goodtables.io>
 
-### Validate
+### Good Tables (standalone)
 
-[Online validator][validate-app] that checks your <code>datapackage.json</code> and Data Package are good to go.
+*A web service to validate and process tabular data: <http://goodtables.okfnlabs.org/>*
 
-[validate-app]: http://data.okfn.org/tools/validate
+Repository: <https://github.com/frictionlessdata/goodtables-web>
 
-## Guides
+### Data Quality Dashboard
 
-* Creating and using Data Packages in Python: http://frictionlessdata.io/guides/#python-guides
-* Creating and using Data Packages in R *coming soon*
+*Data Quality Dashboards display statistics on a collection of
+published data.*
+
+Repository: <https://github.com/frictionlessdata/data-quality-dashboard>
+
+### Data Package Pipelines
+
+*Framework for processing data packages in pipelines of modular
+components.*
+
+Repository: <https://github.com/frictionlessdata/datapackage-pipelines>
+
+### Data Package Manager (dpm)
+
+*Data Package Manager.*
+
+Repository: <https://github.com/okfn/dpm>
+
+### DataPackagist
+
+*DataPackagist is a webservice for creating Data Packages:
+ <http://datapackagist.openknowledge.io/>*
+
+Repository: <https://github.com/frictionlessdata/datapackagist>
+
+### Comma Chameleon
+
+*A desktop CSV editor for data publishers:
+ <http://comma-chameleon.io/>*
+
+Repository: <https://github.com/theodi/comma-chameleon>
+
+### datapackage-m
+
+*A set of functions written in M for working with Tabular Data
+Packages in Power BI Desktop and Power Query (also known as 'Get &
+Transform') in Excel.*
+
+Repository: <https://github.com/nimblelearn/datapackage-m>
+
+### Metatab
+
+*Python language parser for a tabular format for structured metadata:
+ <http://metatab.org/>*
+
+Repository: <https://github.com/CivicKnowledge/metatab-py>
+
+### CSV Lint
+
+*CSV Lint is a webservice for validating tabular data:
+ <http://csvlint.io/>*
+
+Repository: <https://github.com/theodi/csvlint.rb>
+
+### Datapaka
+
+*An easy interface for documenting data packages.*
+
+Repository: <https://github.com/centraldedados/datapaka>
+
+### SmartCSV.fx
+
+*A simple JavaFX application to load, save and edit a CSV file and
+provide a JSON configuration for columns to check the values in the
+columns.*
+
+Repository: <https://github.com/frosch95/SmartCSV.fx>
+
+### Mira
+
+*Create simple APIs from CSV files.*
+
+Repository: <https://github.com/davbre/mira>
+
+### BIML Enabled Tabular Data Package Importer
+
+*BIML (Business Intelligence Markup Language) project that uses
+datapackage.json to generate SSIS packages that can load the contents
+of a Tabular Data Package into a SQL Server database.*
+
+Repository: <https://github.com/bimlscript/BETDPI>
+
+---
 
 ## Libraries
 
-### Javascript and NodeJS
-
-A comprehensive set of Javascript / NodeJS libraries are available.
-
-* <a href="https://github.com/frictionlessdata/datapackage-js">datapackage-js</a> - a comprehensive JS library (Node + browser)
-* <a href="https://github.com/frictionlessdata/jsontableschema-js">jsontableschema-js</a> - a comprehensive JS library for working with Table Schema and tabular data in Data Packages (Node + browser)
-* <a href="https://github.com/frictionlessdata/dpm">data package manager (dpm)</a> - overall library and command line
+The following libraries at least a subset of the Frictionless Data
+stack: <http://specs.frictionlessdata.io/implementation/>.
 
 ### Python
 
-A comprehensive Python library is available:
+#### datapackage-py
 
-<https://github.com/frictionlessdata/datapackage-py>
+*A Python library for working with Data Packages.*
 
-### Ruby Library
+Repository: <https://github.com/frictionlessdata/datapackage-py>
 
-Two libraries are available:
+#### jsontableschema-py
 
-* <https://github.com/textkit/datapak> - work with tabular data packages (lets you download, load or query datasets using SQL via ActiveRecord - thus, works with any SQL database; defaults to an in-memory SQLite database).
-* <https://github.com/theodi/datapackage.rb> -- parse and validate both data packages and tabular data packages. (May be obsolete as no updated since Feb 2014)
+*A Python library for working with Table Schema.*
 
-### PHP
+Repository: <https://github.com/frictionlessdata/jsontableschema-py>
 
-A validator and storage library for working with [JSON Table Schema](http://frictionlessdata.io/guides/json-table-schema/) is available here:
+#### jsontableschema-sql-py
 
-* <https://github.com/FootworkSolutions/json_table>
+*Table Schema to SQL module for jsontableschema-py.*
 
-### Go
+Repository: <https://github.com/frictionlessdata/jsontableschema-sql-py>
 
-<https://github.com/the42/datapackage> - provides struct specifications for Data Package as well as a command line tool to create Data Packages.
+#### jsontableschema-biqquery-py
+
+*Table Schema to BigQuery module for jsontableschema-py.*
+
+Repository: <https://github.com/frictionlessdata/jsontableschema-bigquery-py>
+
+#### jsontableschema-pandas-py
+
+*Table Schema to Pandas module for jsontableschema-py.*
+
+Repository: <https://github.com/frictionlessdata/jsontableschema-pandas-py>
+
+#### goodtables-py
+
+*Validate and process tabular data in Python.*
+
+Repository: <https://github.com/frictionlessdata/goodtables-py>
+
+#### tabulator-py
+
+*Consistent interface for stream reading and writing tabular data
+ (csv/xls/json/etc).*
+
+Repository: <https://github.com/frictionlessdata/tabulator-py>
+
+#### pandas-datapackage-reader
+
+*Data Package reader for Pandas.*
+
+Repository: <https://github.com/rgieseke/pandas-datapackage-reader>
+
+#### JTS ERD
+
+*Create an ERD for a database given as Table Schema.*
+
+Repository: <http://github.com/iburadempa/jts_erd>
+
+#### PG JTS
+
+*Create Table Schema from a live PostgreSQL database.*
+
+Repository: <https://github.com/iburadempa/pg_jts>
+
+#### CSVDDF-Python
+
+*CSVDDF support for Python.*
+
+Repository: <https://github.com/mk270/csvddf-python>
 
 ### R
 
-* <a href="https://github.com/ropenscilabs/datapkg">R Data Package Library</a> - by rOpenSci
+#### datapkg
 
-No longer actively maintained:
+*R Data Package Library.*
 
-* <a href="https://github.com/christophergandrud/dpmr">R Data Package Manager</a> - by Christopher Gandrud
-* <a href="https://github.com/QBRC/RODProt">R Open Data Protocols Library</a> - by QRBC
+Repository: <https://github.com/ropenscilabs/datapkg>
+
+#### dpmr
+
+*R Data Package Manager.*
+
+Repository: <https://github.com/christophergandrud/dpmr>
+
+#### RODProt
+
+*R Open Data Protocols Library.*
+
+Repository: <https://github.com/QBRC/RODProt>
+
+### JavaScript
+
+#### datapackage-js
+
+*Official JavaScript library for Data Packages in Node and the browser.*
+
+Repository: <https://github.com/frictionlessdata/datapackage-js>
+
+#### jsontableschema-js
+
+*A utility library for working with Table Schema in Javascript.*
+
+Repository: <https://github.com/frictionlessdata/jsontableschema-js>
+
+### Ruby
+
+#### datapackage.rb
+
+*Ruby library and tools for working with Data Packages.*
+
+Repository: <https://github.com/theodi/datapackage.rb>
+
+#### jsontableschema.rb
+
+*A Ruby library for working with Table Schema.*
+
+Repository: <https://github.com/theodi/jsontableschema.rb>
+
+#### csvlint.rb
+
+*A ruby gem to support validating CSV files to check their syntax and contents.*
+
+Repository: <https://github.com/theodi/csvlint.rb>
+
+#### datapak
+
+*Work with tabular data packages (lets you download, load or query
+datasets using SQL via ActiveRecord - thus, works with any SQL
+database; defaults to an in-memory SQLite database).*
+
+Repository: <https://github.com/textkit/datapak>
+
+### PHP
+
+#### json_table
+
+*A validator and storage library for working with Table Schema.*
+
+Repository: <https://github.com/FootworkSolutions/json_table>
+
+### Go
+
+#### Datapackage
+
+*Provides struct specifications for Data Package as well as a command
+line tool to create Data Packages.*
+
+Repository: <https://github.com/the42/datapackage>
 
 ### MATLAB
 
-A function to read data from a Tabular Data Package is available for <a href="http://www.mathworks.com/matlabcentral/fileexchange/47506-read-tabular-data-package">
-        download from MATLAB Central's File Exchange</a>.
+#### datapackage
 
-To contribute to the library, see the project's <a href="https://github.com/KrisKusano/datapackage">GitHub repository</a>.
+*A function to read data from a Tabular Data Package is available for
+download from MATLAB Central’s File Exchange:
+<http://www.mathworks.com/matlabcentral/fileexchange/47506-read-tabular-data-package>*
 
-### Command Line
-
-Data Package Manager (dpm) -- https://github.com/okfn/dpm. Comprehensive command line tool.
-
-## Use Data Packages with ...
-
-These "Using with" examples usually require [Tabular Data Packages][tdp] where the data in the Data Package is stored in CSV.
-
-[tdp]: /guides/tabular-data-package/
-
-### Relational Databases
-
-#### Generic
-
-* <https://github.com/frictionlessdata/jsontableschema-sql-py> - generic JSON Table Schema to SQL library in Python
-* <https://github.com/frictionlessdata/datapackage-py> - general Python library can be used to automate import of Tabular Data Packages into SQL
-* You can also use the Ruby datapak library (see Ruby library section)
-
-#### SQLite
-
-In addition to the generic option there is a simple <a href="https://github.com/okfn/dptools/blob/master/bin/load-sqlite.py">python script (no dependencies) to load a Tabular Data Packages into SQLite</a>.
-
-#### Postgresql
-
-In addition to the generic options There is a <a href="https://github.com/okfn/dptools/blob/master/bin/load-postgresql.py">python script (with no dependencies) to load a Tabular Data Package into Postgresql</a>
-
-#### SQL Server
-
-There is a BIML project <a href="https://github.com/bimlscript/BETDPI"> that uses datapackage.json to generate SSIS packages that can load the contents of a Tabular Data Package into a SQL Server database</a>. Find out more about <a href="http://en.wikipedia.org/wiki/SQL_Server_Integration_Services">SQL Server Integration Services (SSIS)</a>.
-
-### Excel
-
-*In progress*: fully automated Data Package support (see [this issue for updates][excel-support]).
-
-In the meantime you can just open the CSV file by hand!
-
-[excel-support]: https://github.com/frictionlessdata/ideas/issues/41
-
-### Google Spreadsheets
-
-*In progress*: Fully automated Data Package support (see [this issue for updates][gdocs-support]).
-
-In the meantime you can just import the CSV files in the Data Package directly.
-
-[gdocs-support]: https://github.com/okfn/data.okfn.org/issues/24
-
-### BigQuery
-
-* <https://github.com/frictionlessdata/jsontableschema-bigquery-py> - generic JSON Table Schema to BigQuery library in Python
-* <https://github.com/frictionlessdata/datapackage-py> - general Python library can be used to automate import of Tabular Data Packages into BigQuery
+Repository: <https://github.com/KrisKusano/datapackage>
 
 ---
 
-## Catalog of Tools and Integrations
+## Platforms
 
-<table>
-  <tr><th>Tool</th><th>Type</th><th>Language</th><th>Maintainer</th></tr>
-  {% for tool in site.data.tools %}
-  {% capture github_url %}http://github.com/{{ tool.github_org }}/{{ tool.github_repo }}{% endcapture %}
-  <tr>
-    <td><a href="{% if tool.url %}{{tool.url}}{% else %}{{ github_url }}{% endif %}">{{ tool.title }}</a></td>
-    <td>{{ tool.type }}</td>
-    <td>{{ tool.language }}</td>
-    <td><a href="{% if tool.maintainer_url %}{{ tool.maintainer_url }}{% else %}http://github.com/{{ tool.github_org }}{% endif %}">{% if tool.maintainer %}{{ tool.maintainer }}{% else %}{{ tool.github_org }}{% endif %}</a></td>
-  </tr>
-  {% endfor %}
-</table>
+Data Packages are currently being published by the following
+repositories:
+
+### OpenSpending
+
+The
+[Fiscal Data Package](https://specs.frictionlessdata.io/fiscal-data-package/)
+is the native format for datasets published on OpenSpending.
+
+<http://next.openspending.org/>
+
+### data.world:
+
+Data.world provides all datasets as Data Packages.
+
+<https://data.world/>
+
+### Open Power System Data
+
+Open Power System Data develops a free-of-charge platform for open
+data dedicated to electricity system researchers.
+
+<http://open-power-system-data.org/>
+
+Case Study: <http://frictionlessdata.io/case-studies/open-power-system-data/>
+
+Repository: <https://github.com/Open-Power-System-Data>
+
+### datahub.io (and other CKAN instances):
+
+All datasets on datahub.io can be exported as Data Packages.  Other
+CKAN instances can install the `datapackager` extension to gain this
+feature.
+
+<https://datahub.io/>
+
+Repository: <https://github.com/ckan/ckanext-datapackager/issues>
+
+### Central de Dados
+
+Central de Dados is a repository of Open Data in Portugal.
+
+<http://centraldedados.pt/>
+
+Repository: <https://github.com/centraldedados/centraldedados.pt>
+
+### Octopub
+
+Octopub provides a platform to publish CSV data on an automatically
+created webpage.
+
+<https://octopub.io/>
+
+Repository: <https://github.com/theodi/octopub>
+
+### HarvestChoice
+
+HarvestChoice publishes its bulk agricultural data as zipped Data
+Packages.
+
+<http://harvestchoice.org/page/bulk>
+
+### Dataship
+
+Dataship is a way to share data and analysis, from simple charts to
+complex machine learning, with anyone in the world easily and for
+free.
+
+<https://dataship.io/>
+
+Case Study: <http://frictionlessdata.io/case-studies/dataship/>
+
+Repository: <https://github.com/dataship/dataship>
+
+## Other
+
+### Tesera
+
+Tesera publishes a variety of Data Package-aware tools.
+
+<http://tesera.com/>
+
+Case Study: <http://frictionlessdata.io/case-studies/tesera/>
+
+Repository: <http://github.com/tesera>
+
+### Python Test Suite
+
+Repository: <https://github.com/frictionlessdata/testsuite-py>
+
+### Perl module (preliminary)
+
+<https://gist.github.com/icklecows/1ba84a5cd5f0ecb5f30ac480cc9de8db>
+
+### Import for Google Spreadsheets
+
+Automated Data Package support for Google Sheets:
+
+Repository: <https://github.com/okfn/data.okfn.org/issues/24>
+
+---
+
+## Representations
+
+The default representation of a Data Package is JSON.  However, for
+convenience, users may wish to represent Data Package metadata in other formats.
+
+All the tools, libraries, and platforms above assume the JSON
+representation.
+
+### JSON (default):
+
+JSON media types registered with [IANA](https://www.iana.org/).
+
+- <http://www.iana.org/assignments/media-types/application/vnd.tableschema+json>
+- <http://www.iana.org/assignments/media-types/application/vnd.dataresource+json>
+
+### YAML
+
+CSVY uses a YAML version of the Table Schema convention.
+
+<http://csvy.org>
+
+### Metatab
+
+Metatab uses a tabular representation for metadata (which can be
+ translated to Data Package metadata).
+
+<http://metatab.org>
+
+## Directory
+
+* ToC
+{:toc}
