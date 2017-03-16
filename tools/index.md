@@ -115,6 +115,17 @@ Repository: <https://github.com/frosch95/SmartCSV.fx>
 
 Repository: <https://github.com/davbre/mira>
 
+### Data Retriever
+
+*The Data Retriever uses the Data Package format internally.  It is a
+ package manager for data. It downloads, cleans, and stores publicly
+ available data, so that analysts spend less time cleaning and
+ managing data, and more time analyzing it:
+ <http://www.data-retriever.org/>*
+
+Repository: <https://github.com/weecology/retriever>
+
+
 ### BIML Enabled Tabular Data Package Importer
 
 *BIML (Business Intelligence Markup Language) project that uses
