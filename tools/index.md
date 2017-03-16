@@ -399,9 +399,9 @@ Repository: <https://github.com/frictionlessdata/testsuite-py>
 
 ### Import for Google Spreadsheets
 
-Automated Data Package support for Google Sheets:
+Import Tabular Data Packages into Google Spreadsheets:
 
-Repository: <https://github.com/okfn/data.okfn.org/issues/24>
+Repository: <https://github.com/frictionlessdata/datapackage-to-google-spreadsheet>
 
 ---
 
