@@ -1,5 +1,5 @@
 ---
-title: Tools, Libraries, Platforms, and Integrations
+title: Tools, Integrations, Libraries, and Platforms
 ---
 
 **New! Apply by 31st July 2017 to the
@@ -27,13 +27,21 @@ create or consume
 [Data Packages](https://specs.frictionlessdata.io/data-package/) or
 [Table Schema](http://specs.frictionlessdata.io/table-schema/).
 
+### Data Package Viewer (service)
+
+*View Data Package metadata in human-readable form.*
+
+<http://data.okfn.org/tools/view>
+
+Repository: <https://github.com/okfn/data.okfn.org-new>
+
 ### Good Tables (service)
 
 *Continuous data validation, as a service.*
 
 Repository: <https://github.com/frictionlessdata/goodtables.io>
 
-### Good Tables (standalone)
+### Good Tables (service)
 
 *A web service to validate and process tabular data: <http://goodtables.okfnlabs.org/>*
 
@@ -314,28 +322,30 @@ is the native format for datasets published on OpenSpending.
 
 <http://next.openspending.org/>
 
-### data.world:
+### data.world
 
-Data.world provides all datasets as Data Packages.
+[Data.world](https://data.world/) provides all datasets as Data
+Packages.
 
 <https://data.world/>
 
 ### Open Power System Data
 
-Open Power System Data develops a free-of-charge platform for open
-data dedicated to electricity system researchers.
+[Open Power System Data](http://open-power-system-data.org/) develops
+a free-of-charge platform for open data dedicated to electricity
+system researchers.
 
-<http://open-power-system-data.org/>
+<http://data.open-power-system-data.org/>
 
 Case Study: <http://frictionlessdata.io/case-studies/open-power-system-data/>
 
 Repository: <https://github.com/Open-Power-System-Data>
 
-### datahub.io (and other CKAN instances):
+### datahub.io (and other CKAN instances)
 
-All datasets on datahub.io can be exported as Data Packages.  Other
-CKAN instances can install the `datapackager` extension to gain this
-feature.
+All datasets on [datahub.io](https://datahub.io/) can be exported as
+Data Packages.  Other CKAN instances can install the `datapackager`
+extension to gain this feature.
 
 <https://datahub.io/>
 
@@ -343,7 +353,8 @@ Repository: <https://github.com/ckan/ckanext-datapackager/issues>
 
 ### Central de Dados
 
-Central de Dados is a repository of Open Data in Portugal.
+[Central de Dados](http://centraldedados.pt/) is a repository of Open
+Data in Portugal.
 
 <http://centraldedados.pt/>
 
@@ -351,8 +362,8 @@ Repository: <https://github.com/centraldedados/centraldedados.pt>
 
 ### Octopub
 
-Octopub provides a platform to publish CSV data on an automatically
-created webpage.
+[Octopub](https://octopub.io/) provides a platform to publish CSV data
+on an automatically created webpage.
 
 <https://octopub.io/>
 
@@ -360,16 +371,16 @@ Repository: <https://github.com/theodi/octopub>
 
 ### HarvestChoice
 
-HarvestChoice publishes its bulk agricultural data as zipped Data
-Packages.
+[HarvestChoice](http://harvestchoice.org) publishes its bulk
+agricultural data as zipped Data Packages.
 
 <http://harvestchoice.org/page/bulk>
 
 ### Dataship
 
-Dataship is a way to share data and analysis, from simple charts to
-complex machine learning, with anyone in the world easily and for
-free.
+[Dataship](https://dataship.io/) is a way to share data and analysis,
+from simple charts to complex machine learning, with anyone in the
+world easily and for free.
 
 <https://dataship.io/>
 
@@ -381,7 +392,8 @@ Repository: <https://github.com/dataship/dataship>
 
 ### Tesera
 
-Tesera publishes a variety of Data Package-aware tools.
+[Tesera](http://tesera.com/) publishes a variety of Data Package-aware
+tools.
 
 <http://tesera.com/>
 
@@ -413,7 +425,7 @@ convenience, users may wish to represent Data Package metadata in other formats.
 All the tools, libraries, and platforms above assume the JSON
 representation.
 
-### JSON (default):
+### JSON (default)
 
 JSON media types registered with [IANA](https://www.iana.org/).
 
