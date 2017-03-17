@@ -113,7 +113,7 @@ Repository: <https://github.com/centraldedados/datapaka>
 
 *A simple JavaFX application to load, save and edit a CSV file and
 provide a JSON configuration for columns to check the values in the
-columns.*
+columns: <http://frosch95.github.io/SmartCSV.fx/>*
 
 Repository: <https://github.com/frosch95/SmartCSV.fx>
 
