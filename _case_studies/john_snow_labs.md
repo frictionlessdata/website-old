@@ -1,9 +1,10 @@
 ---
 name: John Snow Labs
 site: http://www.johnsnowlabs.com/
-authors: David Talby
-logo: turnkey data to data science, analytics & software teams in healthcare industry
+authors: Ida Lucente(ida@johnsnowlabs.com)
+logo: 
 forum_topic:
+short_description: turnkey data to data science, analytics & software teams in healthcare industry
 ---
 
 ## What does John Snow Labs do?
