@@ -8,11 +8,10 @@ forum_topic:
 
 ## What does John Snow Labs do?
 
-Our company accelerates data science and analytics teams, by providing clean, 
-rich and current data sets for analysis. Our customers typically license between 
+[John Snow Labs](http://www.johnsnowlabs.com/) accelerates data science and analytics teams, 
+by providing clean, rich and current data sets for analysis. Our customers typically license between 
 50 and 500 data sets for a given project, so providing both  data and metadata 
-in a simple, standard format that is easily usable with a wide 
-range of tools is important.
+in a simple, standard format that is easily usable with a wide range of tools is important.
 
 ## What are the challenges you face working with data?
 
@@ -26,17 +25,14 @@ join multiple data sets in one analysis. Null values, dates, currencies, units
 and identifiers are represented differently. Datasets aren’t updated on a 
 standard or public schedule, which often requires manual labor to know when they’ve been updated.  
 And then, data sets from different sources have different licenses - we use over 100 
-data sources which means well over 100 different data 
-licenses that we help our clients be compliant with.
+data sources which means well over 100 different data licenses that we help our clients be compliant with.
 
 
 ## How are you working with the specs?
 
-The most popular data format in which we deliver data is the Data Package. 
-Each of our datasets is available, among other formats,  
-as a pair of data.csv and datapackage.json files, complying 
-with the specs. We currently provide over 
-900 data sets that leverage that Frictionless Data specs.
+The most popular data format in which we deliver data is the Data Package [^datapackage]. 
+Each of our datasets is available, among other formats, as a pair of data.csv and datapackage.json files, complying 
+with the specs [^specs]. We currently provide over 900 data sets that leverage that Frictionless Data specs.
 
 ## How did you hear about Frictionless Data?
 
@@ -65,14 +61,13 @@ data, timestamp data, identifiers, currencies and units.
 We have found a need to extend the type system and properties 
 for each field’s type, in order to enable consistent mapping of 
 schemas to different analytics tools that our customers use 
-(Hadoop, Spark, MySQL, ElasticSearch, etc).
-We recommend adding these to the standard.
+(Hadoop, Spark, MySQL, ElasticSearch, etc). We recommend adding these to the standard.
 
 ## What are the next things you are going to be working on yourself?
 
-We are working with the Open Knowledge International on open sourcing 
+We are working with the [Open Knowledge International](http://www.okfn.org/) on open sourcing 
 some of the libraries and tools we’re building. Internally, we are adding more automated validations, 
-additional output file formats, and automated pipelines to load data into ElasticSearch & Kibana, 
+additional output file formats, and automated pipelines to load data into ElasticSearch[^elasticsearch] & Kibana[^kibana], 
 to enable interactive data discovery & visualization.
 
 ## What do you think are some other potential use cases?
@@ -83,5 +78,7 @@ This single use case expands into as many variations as there are BI & data
 management tools, so we have many years of work ahead of us to address this 
 one core use case.
 
-[^jupyter]: Jupyter Notebook: <http://jupyter.org/>
-
+[^datapackage]: Data Package: <http://frictionlessdata.io/data-packages/>
+[^specs]: Frictionless Data Specifications <http://specs.frictionlessdata.io/>
+[^elasticsearch]: Elastic Search <https://www.elastic.co/>
+[^kibana]: kibana <https://www.elastic.co/products/kibana>
