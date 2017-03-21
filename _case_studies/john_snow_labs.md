@@ -2,7 +2,7 @@
 name: John Snow Labs
 site: http://www.johnsnowlabs.com/
 authors: Ida Lucente(ida@johnsnowlabs.com)
-logo: 
+logo: john-snow-labs.png
 forum_topic:
 short_description: turnkey data to data science, analytics & software teams in healthcare industry
 ---
