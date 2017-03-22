@@ -4,7 +4,7 @@ site: http://www.johnsnowlabs.com/
 authors: Ida Lucente(ida@johnsnowlabs.com)
 logo: john-snow-labs.png
 forum_topic:
-short_description: turnkey data to data science, analytics & software teams in healthcare industry
+short_description: turnkey data to data science, analytics and software teams in healthcare industry
 ---
 
 ## What does John Snow Labs do?
@@ -37,7 +37,7 @@ with the specs [^specs]. We currently provide over 900 data sets that leverage t
 
 ## How did you hear about Frictionless Data?
 
-Two years ago, when we were defining the product requirements & architecture, 
+Two years ago, when we were defining the product requirements and architecture, 
 we researched six different standards for metadata definition 
 over a few months. We found Frictionless Data as part of that research, 
 and after careful consideration have decided to adopt it for all the 
@@ -68,7 +68,7 @@ schemas to different analytics tools that our customers use
 
 We are working with the [Open Knowledge International](http://www.okfn.org/) on open sourcing 
 some of the libraries and tools we’re building. Internally, we are adding more automated validations, 
-additional output file formats, and automated pipelines to load data into ElasticSearch[^elasticsearch] & Kibana[^kibana], 
+additional output file formats, and automated pipelines to load data into ElasticSearch[^elasticsearch] and Kibana[^kibana], 
 to enable interactive data discovery & visualization.
 
 ## What do you think are some other potential use cases?
