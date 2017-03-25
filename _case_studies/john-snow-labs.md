@@ -1,7 +1,7 @@
 ---
 name: John Snow Labs
 site: http://www.johnsnowlabs.com/
-authors: Ida Lucente(ida@johnsnowlabs.com)
+authors: [Ida Lucente](ida@johnsnowlabs.com)
 logo: john-snow-labs.png
 forum_topic:
 short_description: turnkey data to data science, analytics and software teams in healthcare industry
@@ -24,16 +24,18 @@ Second, data files come in different formats, and include dirty and missing data
 Data types are inconsistent across different files, making it hard to 
 join multiple data sets in one analysis. Null values, dates, currencies, units 
 and identifiers are represented differently. Datasets aren’t updated on a 
-standard or public schedule, which often requires manual labor to know when they’ve been updated.  
-And then, data sets from different sources have different licenses - we use over 100 
-data sources which means well over 100 different data licenses that we help our clients be compliant with.
+standard or public schedule, which often requires manual labor to know when 
+they’ve been updated. And then, data sets from different sources have different 
+licenses - we use over 100 data sources which means well over 100 different 
+data licenses that we help our clients be compliant with.
 
 
 ## How are you working with the specs?
 
 The most popular data format in which we deliver data is the Data Package [^datapackage]. 
-Each of our datasets is available, among other formats, as a pair of data.csv and datapackage.json files, complying 
-with the specs [^specs]. We currently provide over 900 data sets that leverage that Frictionless Data specs.
+Each of our datasets is available, among other formats, as a pair of data.csv and datapackage.json files, 
+complying with the specs [^specs]. We currently provide over 900 data sets that 
+leverage the Frictionless Data specs.
 
 ## How did you hear about Frictionless Data?
 
