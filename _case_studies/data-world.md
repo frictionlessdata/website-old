@@ -7,11 +7,10 @@ forum_topic:
 short_description: Allow users to download a version of a data.world dataset that retains the structured metadata and schema for offline analysis
 ---
 
-## Tell us about the advantages of making data available as Data Packages[^datapackage]?
+## How do you use the specs and what advantages did you find in using the Data Package[^datapackage] approach?
 
 We deal with a great diversity of data, both in terms of content and in terms of source format - most people working with data 
 are emailing each other spreadsheets or CSVs, and not formally defining schema or semantics for what’s contained in these data files.  
-How do you use the specs?
 
 When data.world ingests tabular data, we “virtualize” the tables away from their source format, 
 and build layers of type and semantic information on top of the raw data. What this allows us to do is to produce a clean Tabular Data Package[^Package] for any dataset, whether the input is CSV files, Excel Spreadsheets, JSON data, SQLite Database files - any format that we know how to extract tabular information from - we can present it as cleaned-up CSV data with a datapackage.json that describes the schema and metadata of the contents.
