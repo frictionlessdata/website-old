@@ -3,7 +3,7 @@ name: Data.world
 site: http://data.world
 authors: Bryon Jacob
 logo: data-world-logo.png
-forum_topic:
+forum_topic: https://discuss.okfn.org/t/new-frictionless-data-case-study-published-data-world/4942
 short_description: Allow users to download a version of a data.world dataset that retains the structured metadata and schema for offline analysis
 ---
 
