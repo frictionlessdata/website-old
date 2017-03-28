@@ -41,6 +41,10 @@ In a certain sense, a Tabular Data Package is sort of like an open-source, cross
 
 Data science IDE (Interactive Development Environment) producers - [RStudio](https://www.rstudio.com/), [Rodeo](http://rodeo.yhat.com/) (python), [anaconda](https://www.continuum.io/Anaconda-Overview), [Jupyter](http://jupyter.org/) - anything that operates on Data Frames as a fundamental object type should provide first-class tool and API support for Tabular Data Packages.
 
+##What should the reader do after reading this Case Study?
+
+To read more about Data Package integration at data.world, read our post: [Try This: Frictionless data.world](https://meta.data.world/try-this-frictionless-data-world-ad36b6422ceb#.rbbf8k40t).  Sign up, and starting playing with data.
+
 [^package]: Tabular Data Package: <http://frictionlessdata.io/guides/tabular-data-package/>
 [^datapackage]: Data Packages: <http://frictionlessdata.io/data-packages/>
 [^rdf]: RDF: <https://www.w3.org/RDF/>
