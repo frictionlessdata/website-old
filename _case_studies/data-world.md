@@ -1,5 +1,6 @@
 ---
 name: Data.world
+title: data.world
 site: http://data.world
 authors: Bryon Jacob
 logo: data-world-logo.png
