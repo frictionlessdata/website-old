@@ -3,7 +3,7 @@ name: John Snow Labs
 site: http://www.johnsnowlabs.com/
 authors: Ida Lucente
 logo: john-snow-labs.png
-forum_topic:
+forum_topic: https://discuss.okfn.org/t/new-frictionless-data-case-study-published-john-snow-labs/4943
 short_description: turnkey data to data science, analytics and software teams in healthcare industry
 ---
 

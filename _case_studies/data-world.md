@@ -4,15 +4,14 @@ title: data.world
 site: http://data.world
 authors: Bryon Jacob
 logo: data-world-logo.png
-forum_topic:
+forum_topic: https://discuss.okfn.org/t/new-frictionless-data-case-study-published-data-world/4942
 short_description: Allow users to download a version of a data.world dataset that retains the structured metadata and schema for offline analysis
 ---
 
-## Tell us about the advantages of making data available as Data Packages[^datapackage]?
+## How do you use the specs and what advantages did you find in using the Data Package[^datapackage] approach?
 
 We deal with a great diversity of data, both in terms of content and in terms of source format - most people working with data 
 are emailing each other spreadsheets or CSVs, and not formally defining schema or semantics for what’s contained in these data files.  
-How do you use the specs?
 
 When data.world ingests tabular data, we “virtualize” the tables away from their source format, 
 and build layers of type and semantic information on top of the raw data. What this allows us to do is to produce a clean Tabular Data Package[^Package] for any dataset, whether the input is CSV files, Excel Spreadsheets, JSON data, SQLite Database files - any format that we know how to extract tabular information from - we can present it as cleaned-up CSV data with a datapackage.json that describes the schema and metadata of the contents.
@@ -42,6 +41,10 @@ In a certain sense, a Tabular Data Package is sort of like an open-source, cross
 ## Who else do you think we should speak to?
 
 Data science IDE (Interactive Development Environment) producers - [RStudio](https://www.rstudio.com/), [Rodeo](http://rodeo.yhat.com/) (python), [anaconda](https://www.continuum.io/Anaconda-Overview), [Jupyter](http://jupyter.org/) - anything that operates on Data Frames as a fundamental object type should provide first-class tool and API support for Tabular Data Packages.
+
+## What should the reader do after reading this Case Study?
+
+To read more about Data Package integration at data.world, read our post: [Try This: Frictionless data.world](https://meta.data.world/try-this-frictionless-data-world-ad36b6422ceb#.rbbf8k40t).  Sign up, and starting playing with data.
 
 [^package]: Tabular Data Package: <http://frictionlessdata.io/guides/tabular-data-package/>
 [^datapackage]: Data Packages: <http://frictionlessdata.io/data-packages/>
