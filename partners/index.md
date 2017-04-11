@@ -119,15 +119,15 @@ piloting some tools for editing data directly.
 
 [![John Snow Labs](/img/partners/john-snow-labs-logo.png)](http://www.johnsnowlabs.com/)
 
-John Snow Labs Inc. is a DataOps company, accelerating progress in 
-analytics & data science by taking on the headache of preparing data for 
-analysis. John Snow Labs believe in being great partners, in making 
-customers widely successful, and in using data philanthropy 
-to make the world a better place. 
+John Snow Labs Inc. is a DataOps company, accelerating progress in
+analytics & data science by taking on the headache of preparing data
+for analysis. John Snow Labs believe in being great partners, making
+customers successful, and using "data philanthropy" to make the world
+a better place.
 
-we have published the following
-[Case Study](/case-studies/john-snow-labs/) documenting the use of the
-Frictionless Data specifications and are working with them to open source
-some of their work to support some of our other pilot partners.
+We have published the following
+[case study](/case-studies/john-snow-labs/) documenting the use of the
+Frictionless Data specifications and are working with them to open
+source some of their work to support some of our other pilot partners.
 
 <http://www.johnsnowlabs.com/>
