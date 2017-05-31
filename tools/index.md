@@ -37,7 +37,7 @@ Repository: <https://github.com/okfn/data.okfn.org-new>
 
 ### Good Tables (service)
 
-*Continuous data validation, as a service.*
+*Continuous data validation, as a service: <http://goodtables.io/>*
 
 Repository: <https://github.com/frictionlessdata/goodtables.io>
 
