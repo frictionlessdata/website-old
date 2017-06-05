@@ -1,0 +1,19 @@
+---
+layout: specs
+---
+
+  {% for k in page.log %}
+    {% if k.title != 'consolidated' %}
+    <h2>{{ k.title }}</h2>
+    {% endif %}
+    <ul>
+      {% for v in k.changes %}
+      <li>
+        {{ v | markdownify }}
+      </li>
+      {% endfor %}
+    </ul>
+    <hr />
+  {% endfor %}
+
+  {{ content }}

@@ -36,6 +36,39 @@ kramdown:
 
 permalink: pretty
 
+meta:
+  specifications:
+    label: specs
+    title: Specifications
+    toc:
+      chapters:
+        - divider: 'Introduction'
+          title: 'Design Philosophy'
+        - divider: 'Specifications'
+          title: 'Table Schema'
+          slug: 'table-schema'
+        - title: 'Data Resource'
+          slug: 'data-resource'
+        - title: 'Tabular Data Resource'
+          slug: 'tabular-data-resource'
+        - title: 'Data Package'
+          slug: 'data-package'
+        - title: 'Tabular Data Package'
+          slug: 'tabular-data-package'
+        - title: 'Fiscal Data Package'
+          slug: 'fiscal-data-package'
+        - title: 'Data Package Identifier'
+          slug: 'data-package-identifier'
+        - title: 'CSV Dialect'
+          slug: 'csv-dialect'
+        - divider: 'Supplementary information'
+          title: 'Changelog'
+          slug: 'changelog'
+        - title: 'Patterns'
+          slug: 'patterns'
+        - title: 'Implementation'
+          slug: 'implementation'
+
 defaults:
   -
     scope:
