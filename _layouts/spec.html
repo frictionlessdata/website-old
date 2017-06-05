@@ -1,0 +1,83 @@
+---
+layout: specs
+---
+
+  {% if page.mediatype or page.version or page.jsonschema or page.updated or page.created %}
+  <div class="meta panel">
+    <table>
+      {% if page.mediatype %}
+      <tr>
+        <th>
+          Media Type
+        </th>
+        <td>
+          {{ page.mediatype }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if page.jsonschema %}
+      <tr>
+        <th>
+          JSON Schema (for spec)
+        </th>
+        <td>
+          {{ page.jsonschema }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if page.version %}
+      <tr>
+        <th>
+          Version
+        </th>
+        <td>
+          {{ page.version }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if page.updated %}
+      <tr>
+        <th>
+          Last Updated
+        </th>
+        <td>
+          {{ page.updated }}
+        </td>
+      </tr>
+      {% endif %}
+      {% if page.created %}
+      <tr>
+        <th>
+          Created
+        </th>
+        <td>
+          {{ page.created }}
+        </td>
+      </tr>
+      {% endif %}
+    </table>
+  </div>
+  {% endif %}
+
+  <h2>Language</h2>
+  <p>
+    The key words <code>MUST</code>, <code>MUST NOT</code>, <code>REQUIRED</code>, <code>SHALL</code>, <code>SHALL NOT</code>, <code>SHOULD</code>, <code>SHOULD NOT</code>, <code>RECOMMENDED</code>, <code>MAY</code>, and <code>OPTIONAL</code> in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt" title="RFC 2119">RFC 2119</a>.
+  </p>
+
+  {{ content }}
+
+  <h2>Changelog</h2>
+  <p>
+    See the <a href="/specs/changelog/">Changelog</a> for information.
+  </p>
+
+  {% if page.implementations %}
+  <h2>Implementations</h2>
+  <p>The following implementations are available for {{ page.title }}:</p>
+  <ul>
+    {% for k in page.implementations %}
+    <li><a href="{{ k.link }}">{{ k.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <p>See the <a href="/specs/implementation/">implementation</a> page for further information on writing an implementation of a Frictionless Data specification.</p>
+  {% endif %}

@@ -358,8 +358,26 @@ pre,
         font-family:$sans-serif;
       }
 
+      code {
+        background-color: rgba(#fff,0.3);
+        border-color: rgba($base-accent-color, 0.5);
+      }
+
       :last-child {
         margin-bottom:0;
+      }
+
+      &.alert {
+        background-color:rgba($base-accent-color, 0.8);
+        color: #fff;
+
+        p {
+          color: inherit;
+        }
+
+        code {
+          border-color: rgba(#fff, 0.5);
+        }
       }
     }
 
@@ -566,6 +584,17 @@ pre,
           }
         }
       }
+
+      &.divider {
+        background-color: $medium-gray;
+        padding: 4px 10px 4px 20px;
+        font-weight: bold;
+        font-size: 0.9em;
+
+        &:after {
+          border: none;
+        }
+      }
     }
   }
 
@@ -588,6 +617,34 @@ body:not( .filters ) {
 
 .js #menu:not( .mm-menu )  {
   display: none;
+}
+
+
+.meta.panel {
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: $base-spacing;
+
+  table {
+    width: 100%;
+    table-layout: auto;
+    margin: 0;
+
+    tr:nth-child(even){
+      background-color:rgba(#fff,0.7);
+    }
+
+    th,
+    td {
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom-color: $medium-gray;
+    }
+
+    td {
+      word-break: break-all;
+    }
+  }
 }
 
 //////////////////////////////////////////////////////////////////////////////////

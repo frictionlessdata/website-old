@@ -1,0 +1,31 @@
+---
+layout: default
+wide: true
+---
+
+<div class="post">
+  <article class="post-content{% if page.lead %} lead-paragraph{% endif %}">
+    <a href="/specs" class="pre-header">Specifications</a>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.authors %}
+    <div class="author">Written by
+      <ul>
+      {% for author in page.authors %}
+        <li>{{ author }}</li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if page.abstract %}
+    <p class="lead">
+      {{ page.abstract }}
+    </p>
+    {% endif %}
+
+    {{ content }}
+  </article>
+
+</div>
+
+{% include page-tools.html %}

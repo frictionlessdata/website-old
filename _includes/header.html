@@ -1,5 +1,6 @@
 {% assign url_parts = page.url | split: '/' %}
 {% assign url_last = url_parts |last  %}
+{% assign specs = site.meta.specifications %}
 
 <header class="site-header">
   <a href="#menu" class="show-menu"><span class="text">Open the menu</span></a>
@@ -56,10 +57,26 @@
       <a href="http://okfnlabs.org/blog/">Blog</a>
     </li>
 
-    <li>
-      <a href="http://specs.frictionlessdata.io/">
+    <li {% if page.url contains 'specs' %}class="Selected"{% endif %}>
+      <a href="{{ site.baseurl }}/specs/">
         Specifications
       </a>
+      <ul>
+        {% for chapter in specs.toc.chapters %}
+        {% assign chapter_url = site.baseurl | append: '/' | append: specs.label | append: '/' %}
+        {% if chapter.slug %}
+        {% assign chapter_url = chapter_url | append: chapter.slug | append: '/' %}
+        {% endif %}
+        {% if chapter.divider %}
+        <li class="divider">
+          {{ chapter.divider }}
+        </li>
+        {% endif %}
+        <li {% if chapter_url == page.url %} class="Selected"{% endif %}>
+          <a href="{{ chapter_url }}">{{ chapter.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
     </li>
 
     <li>
