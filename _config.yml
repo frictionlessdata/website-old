@@ -66,6 +66,14 @@ defaults:
       section: case-studies
       layout: case_study
       lead: true
+  -
+      scope:
+        path: ""
+        type: “grantee_profiles”
+      values:
+        section: grantee-profiles
+        layout: grantee_profile
+        lead: true
 
 related_projects:
   -
@@ -94,3 +102,6 @@ collections:
   case_studies:
     output: true
     permalink: /case-studies/:path/
+  grantee_profiles:
+    output: true
+    permalink: /grantee-profiles/:path/
