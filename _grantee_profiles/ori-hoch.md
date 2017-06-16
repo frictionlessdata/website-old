@@ -4,7 +4,8 @@ github: https://github.com/OriHoch
 linkedin: https://www.linkedin.com/in/ori-hoch-bb62b033/
 authors: Ori Hoch
 image: ori-hoch-image.png
-discuss: http://gitter.im/frictionlessdata/chat
+gitter_chat: http://gitter.im/frictionlessdata/chat
+discuss: http://discuss.okfn.org/c/frictionless-data
 short_description: "Ori Hoch is a Tool Fund grantee, extending implementation of Frictionless Data tools and libraries in PHP"
 
 ---
