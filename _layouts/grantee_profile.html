@@ -23,9 +23,9 @@ wide: true
     </div>
     {% endif %}
 
-    <a href="{{ page.github }}">
-      <img style="margin: 0 auto;" src="/img/grantee-profiles/{{ page.image }}">
-    </a>   <a href="{{ page.github }}"> . GITHUB </a> .  <a href="{{ page.linkedin }}"> LINKEDIN </a> .
+
+    <img style="margin: 0 auto; float: left" src="/img/grantee-profiles/{{ page.image }}">
+    <h3> {{ page.authors }}</h3><a href="{{ page.github }}"> . GITHUB </a> .  <a href="{{ page.linkedin }}"> LINKEDIN </a> . <a href="{{ page.twitter }}"> TWITTER </a>.
 
     <p>
       This grantee profile is one in our series of Frictionless Data Tool Fund posts,
@@ -35,7 +35,8 @@ wide: true
       Open Knowledge International has commissioned to extend implementation of
       Frictionless Data libraries in additional programming languages.
     </p>
-      <hr>
+
+    <hr>
 
     {{ content }}
 
