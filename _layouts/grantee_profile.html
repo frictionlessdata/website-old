@@ -23,10 +23,6 @@ wide: true
     </div>
     {% endif %}
 
-
-    <img style="margin: 0 auto; float: left" src="/img/grantee-profiles/{{ page.image }}">
-    <h2> {{ page.authors }}</h2><a href="{{ page.github }}"> . GITHUB </a> .  <a href="{{ page.linkedin }}"> LINKEDIN </a> . <a href="{{ page.twitter }}"> TWITTER </a>.
-    <br><br><br>
     <p>
       This grantee profile is one in our series of Frictionless Data Tool Fund posts,
       written to shine a light on Frictionless Data’s Tool Fund grantees, their work
@@ -37,6 +33,12 @@ wide: true
     </p>
 
     <hr>
+
+    <img style="margin: 0 auto; float: left" src="/img/grantee-profiles/{{ page.image }}">
+    <div style = "margin-bottom: 4em">
+      <h2> {{ page.authors }}</h2><a href="{{ page.github }}"> . GITHUB </a> .  <a href="{{ page.linkedin }}"> LINKEDIN </a> . <a href="{{ page.twitter }}"> TWITTER </a>.
+    </div>
+
 
     {{ content }}
 
