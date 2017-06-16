@@ -4,10 +4,7 @@ github: https://github.com/OriHoch
 linkedin: https://www.linkedin.com/in/ori-hoch-bb62b033/
 authors: Ori Hoch
 image: ori-hoch-image.png
-gitter_chat: http://gitter.im/frictionlessdata/chat
-discuss: http://discuss.okfn.org/c/frictionless-data
 short_description: "Ori Hoch is a Tool Fund grantee, extending implementation of Frictionless Data tools and libraries in PHP"
-
 ---
 
 My name is Ori Hoch, I am  35 years old, living in Israel, married with 2 children which I recently took to Midburn - the Israeli regional Burning Man event where I performed in the main burn ceremony doing some fire clubs juggling. Through the Tool Fund, I am working on implementing the PHP libraries for Frictionless Data. I am also working on several other open source data projects: [Open Knesset](https://github.com/hasadna/Open-Knesset), [Open Budget](https://github.com/OpenBudget/budgetkey-data-pipelines), [Beit Hatfutsot](https://github.com/beit-hatfutsot) - all projects are open source and fully transparent - both the code and the development process - which I think is a great way to work. I’m also very interested in community and teamwork - how to get a group of people working together on a common goal, a hard task in normal scenarios which grows even more complex when dealing with volunteers / open source contributors. Of course, besides all the philosophical ideals I’m also a hard-core technologist, which loves diving into complex problems, finding and implementing the right solution.
