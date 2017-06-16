@@ -1,5 +1,5 @@
 ---
-title: Frictionless Data Tool Fund Grantee - PHP
+title: Tool Fund Grantee - PHP
 github: https://github.com/OriHoch
 linkedin: https://www.linkedin.com/in/ori-hoch-bb62b033/
 authors: Ori Hoch
