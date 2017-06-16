@@ -4,7 +4,7 @@ github: https://github.com/danielfireman
 linkedin: https://www.linkedin.com/in/danielfireman/
 twitter: https://twitter.com/daniellfireman
 authors: Daniel Fireman
-image: daniel-fireman-image.png
+image: daniel-fireman-image.jpg
 short_description: "Daniel Fireman is a Tool Fund grantee, extending implementation of Frictionless Data tools and libraries in Go"
 ---
 
@@ -20,4 +20,4 @@ In the coming weeks, I hope to use the Tool Fund grant I received to bring Go’
 
 From the developer's perspective, it is really great to use open source software. This is especially true when the community around the software fosters it's usage and welcome contributors. That ends up increasing the overall quality of the software, which benefits all users.
 
-The source code will be hosted at Github’s [tableschema-go](https://github.com/frictionlessdata/tableschema-go) and [datapackage-go](https://github.com/frictionlessdata/datapackage-go) repositories. We are going to use issues to track development progress and next steps. 
+The source code will be hosted at Github’s [tableschema-go](https://github.com/frictionlessdata/tableschema-go) and [datapackage-go](https://github.com/frictionlessdata/datapackage-go) repositories. We are going to use issues to track development progress and next steps.
