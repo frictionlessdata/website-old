@@ -16,7 +16,7 @@ Go has a lot to deliver in terms of approximating simplicity of reading/writing,
 
 
 
-In the coming weeks, I hope to use the Tool Fund grant I received to bring Go’s performance and concurrence capabilities to data processing and to have a set of tools distributed as standalone and multi-platform binaries which are very easy to download and install. I am currently working on my Ph.D. and one pitfall I have come across is the use of one environment/system to collect/generate data and another to process. I will be working to alleviate this issue in order to make it easier to process tabular data in Go.
+In the coming weeks, I hope to use the Tool Fund grant I received to bring Go’s performance and concurrency capabilities to data processing and to have a set of tools distributed as standalone and multi-platform binaries which are very easy to download and install. I am currently working on my Ph.D. and one pitfall I have come across is the use of one environment/system to collect/generate data and another to process. I will be working to alleviate this issue in order to make it easier to process tabular data in Go.
 
 From the developer's perspective, it is really great to use open source software. This is especially true when the community around the software fosters it's usage and welcome contributors. That ends up increasing the overall quality of the software, which benefits all users.
 
