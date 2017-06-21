@@ -1,7 +1,7 @@
 ---
 title: Tool Fund Grantee - GO
 github: https://github.com/danielfireman
-linkedin: https://www.linkedin.com/in/danielfireman/
+other: https://www.linkedin.com/in/danielfireman/
 twitter: https://twitter.com/daniellfireman
 authors: Daniel Fireman
 image: daniel-fireman-image.jpg

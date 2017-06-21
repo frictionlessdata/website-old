@@ -1,7 +1,7 @@
 ---
 title: Tool Fund Grantee - PHP
 github: https://github.com/OriHoch
-linkedin: https://www.linkedin.com/in/ori-hoch-bb62b033/
+other: https://www.linkedin.com/in/ori-hoch-bb62b033/
 twitter: https://twitter.com/astupidog
 authors: Ori Hoch
 image: ori-hoch-image.png
