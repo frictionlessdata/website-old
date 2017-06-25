@@ -5,11 +5,11 @@ title: Point location data in CSV files
 ## Introduction
 
 * A [Table Schema](http://specs.frictionlessdata.io/table-schema/) describes tabular data.
-* Tabular data is often provided in <a href="#csv">CSV (comma separated values)</a> file.
+* Tabular data is often provided in a [CSV - Comma Separated Values][csv] file.
 * Tabular data may include data about locations.
 * Locations can be represented by points, lines, polygons and more complex geometry.
 * Points are often represented by a longitude, latitude coordinate pair. There is much debate on [which value should go first](https://macwright.org/2015/03/23/geojson-second-bite.html#position) and [tools have their own preferences](https://macwright.org/lonlat/).
-* To keep things simple, you should use [Digital degrees](https://en.wikipedia.org/wiki/Decimal_degrees), not [degrees, minutes, seconds](https://en.wikipedia.org/wiki/Latitude#Preliminaries) or 27.1944° S, 151.2660° E
+* To keep things simple, you should use [Digital degrees](https://en.wikipedia.org/wiki/Decimal_degrees) `-27.1944, 151.32660`, not [degrees, minutes, seconds](https://en.wikipedia.org/wiki/Latitude#Preliminaries) or `27.1944° S, 151.2660° E`
 * Representing locations other than points in a CSV can be complicated as the shape is represented by many coordinate pairs that combine to make the shape (think joining the dots).
 * A coordinate pair may be inadequate to accurately show a location on a map. You may also need a [spatial reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) and a date.
 * A spatial reference system describes the [datum](https://en.wikipedia.org/wiki/Datum_(geodesy)), [geoid](https://en.wikipedia.org/wiki/Geoid), [coordinate system](https://en.wikipedia.org/wiki/Coordinate_system), and [map projection](https://en.wikipedia.org/wiki/Map_projection) of the location data.
@@ -40,12 +40,12 @@ Each method should, in a human and machine-readable way, specify:
 
 The options for representing a point locations in a CSV file are to define a field(s) of type:
 
-1. **[geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), format: default**
+1. **geopoint, format: default**
 2. **geopoint, format: array**
 3. **geopoint, format: object**
-4. **[number](http://specs.frictionlessdata.io/table-schema/#number)** with constraints to represent longitude and latitude coordinate values
-5. **[string](http://specs.frictionlessdata.io/table-schema/#string)**, format: default** containing a well-known place-name with a foreign key reference to another CSV file containing the place-name and geometry. Date may be an additional field included in the foreign key relationship.
-6. **string, format: uri**, providing a reference to a resource that includes the geometry
+4. **number with constraints**  
+5. **string, format: default** and a foreign key reference
+6. **string, format: uri** reference to an external resource with the geometry
 7. **[geojson](http://specs.frictionlessdata.io/table-schema/#geojson), format: default**
 
 Each option is described below with a sample CSV file, Data Package fragment and some thoughts on pros and cons.
@@ -54,7 +54,7 @@ Out of scope for the moment - geocoding using address but similar techniques wil
 
 ### 1. Geopoint, default
 
-A string of the pattern `"lon, lat"`, where lon is the longitude and lat is the latitude (note the space is optional after the ,). E.g. `"90, 45"`.
+The type [Geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), format: default is a string of the pattern `"lon, lat"`, where lon is the longitude and lat is the latitude (note the space is optional after the ,). E.g. `"90, 45"`.
 
 #### CSV
 
@@ -84,7 +84,7 @@ A string of the pattern `"lon, lat"`, where lon is the longitude and lat is the 
 
 #### Thoughts
 
-* Does type validation enforce:
+* Does the geopoint type validation enforce:
     * Longitude ± 180
     * Latitude ± 90
 * How do you [constrain values](https://discuss.okfn.org/t/how-to-constrain-geopoint-values/5574) to a minimum bounding rectangle?
@@ -126,7 +126,7 @@ An array of exactly two items, where each item is a number, and the first item i
 
 #### Thoughts
 
-* Does type validation enforce:
+* Does the geopoint type validation enforce:
     * Longitude ± 180
     * Latitude ± 90
 * How do you [constrain values](https://discuss.okfn.org/t/how-to-constrain-geopoint-values/5574) to a minimum bounding rectangle?
@@ -167,15 +167,15 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 
 #### Thoughts
 
-* Does type validation enforce:
+* Does the geopoint type validation enforce:
     * Longitude ± 180
     * Latitude ± 90
 * How do you [constrain values](https://discuss.okfn.org/t/how-to-constrain-geopoint-values/5574) to a minimum bounding rectangle?
 * The format makes explicit which are lon and lat values
 
-### 4. Longitude and Latitude columns
+### 4. Numbers with constraints
 
-Two columns of type number with constraints to limit latitude and longitude values
+Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#number) with [constraints](http://specs.frictionlessdata.io/table-schema/#constraints) to limit latitude and longitude values
 
 #### CSV
 
@@ -227,9 +227,11 @@ Two columns of type number with constraints to limit latitude and longitude valu
     * If you add a required constraint to both, you can’t have a missing location.
     * If you don’t add required constraint, you could have lat without lon or vise versa.
 
-### 5. Foreign key reference to well-known place-name
+### 5. String and Foreign key reference to well-known place-name
 
 All the previous examples assume you know the coordinates of the location. What if you only know the name? You could refer to an another data resource and use the name to determine the coordinates. This data resource is often called a [Gazetteer](https://en.wikipedia.org/wiki/Gazetteer). [Often](https://en.wikipedia.org/wiki/Gazetteer#List_of_gazetteers) a [website](http://www.icsm.gov.au/cgna/websites.html) or API is placed in front of the data so you can provide a name and the location data is returned
+
+A date may be an additional field included in the foreign key relationship.
 
 #### CSV
 
@@ -329,17 +331,17 @@ Gazetteer.csv
 
 ### 6. Use a Uniform Resource Identifier reference a location
 
-Use a type: string, format: uri, to provide a link to a resource that includes the geometry
+Use a type: [string](http://specs.frictionlessdata.io/table-schema/#string), format: uri, to provide a link to a resource that includes the geometry.
 
 #### CSV
 
 <table>
   <tr>
     <td>office-name</td>
-    <td>Location uriuid</td>
+    <td>Location uri</td>
   </tr>
   <tr>
-    <td>Dalby </td>
+    <td>Dalby</td>
     <td>http://nominatim.openstreetmap.org/details.php?place_id=114278</td>
   </tr>
 </table>
@@ -365,7 +367,6 @@ Use a type: string, format: uri, to provide a link to a resource that includes t
 #### Thoughts
 
 * Is there a way to define the bulk of the uri outside of the column and reduce the column entry to the id? Is this wise or desirable?
-* How do you the format of the location data found at the uri?
 * How can you be confident the uri is permanent?
 
 ### 7. GeoJSON
@@ -405,7 +406,7 @@ Use a field of type GeoJSON to represent location
 
 ## Thoughts
 
-* geometry isn't constrained to a point
+* geometry isn't constrained to a point; it could be a line or polygon.
 
 
 
