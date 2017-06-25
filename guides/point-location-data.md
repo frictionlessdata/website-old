@@ -5,7 +5,7 @@ title: Point location data in CSV files
 ## Introduction
 
 * A [Table Schema](http://specs.frictionlessdata.io/table-schema/) describes tabular data.
-* Tabular data is often provided in a Comma Separated Value (CSV) file.
+* Tabular data is often provided in <a href="#csv">CSV (comma separated values)</a> file.
 * Tabular data may include data about locations.
 * Locations can be represented by points, lines, polygons and more complex geometry.
 * Points are often represented by a longitude, latitude coordinate pair. There is much debate on [which value should go first](https://macwright.org/2015/03/23/geojson-second-bite.html#position) and [tools have their own preferences](https://macwright.org/lonlat/).
@@ -442,3 +442,6 @@ GeoJSON is a geospatial data interchange format based on JavaScript Object Notat
 See [http://www.opengeospatial.org/standards/sfa](http://www.opengeospatial.org/standards/sfa)
 
 Spatial reference systems are defined by the [OGC](https://en.wikipedia.org/wiki/Open_Geospatial_Consortium)'s [Simple feature access](https://en.wikipedia.org/wiki/Simple_feature_access) using [well-known text](https://en.wikipedia.org/wiki/Well-known_text), and support has been implemented by several [standards-based](https://en.wikipedia.org/wiki/Technical_standard) [geographic information systems](https://en.wikipedia.org/wiki/Geographic_information_system). Spatial reference systems can be referred to using a [SRID](https://en.wikipedia.org/wiki/SRID) [integer](https://en.wikipedia.org/wiki/Integer), including EPSG codes defined by the [International Association of Oil and Gas Producers](https://en.wikipedia.org/wiki/International_Association_of_Oil_and_Gas_Producers). It is specified in ISO 19111:2007 Geographic information—Spatial referencing by coordinates, also published as [OGC](https://en.wikipedia.org/wiki/Open_Geospatial_Consortium) Abstract Specification, Topic 2: Spatial referencing by coordinate. From [wikipedia](https://en.wikipedia.org/wiki/Spatial_reference_system#cite_note-1)
+
+
+{%include markdown-link-refs.html %}
