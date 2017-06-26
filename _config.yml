@@ -69,6 +69,14 @@ defaults:
   -
     scope:
       path: ""
+      type: "pilots"
+    values:
+      section: case-studies
+      layout: pilot
+      lead: true
+  -
+    scope:
+      path: ""
       type: "grantee_profiles"
     values:
       section: grantee-profiles
@@ -99,6 +107,9 @@ related_projects:
       link: http://okfn.org/opendata/
 
 collections:
+  pilots:
+    output: true
+    permalink: /case-studies/:path/
   case_studies:
     output: true
     permalink: /case-studies/:path/
