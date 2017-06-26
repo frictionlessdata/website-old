@@ -3,27 +3,28 @@ title: Point location data in CSV files
 ---
 
 ## Introduction
+Some key concepts:
 
 * A [Table Schema](http://specs.frictionlessdata.io/table-schema/) describes tabular data.
 * Tabular data is often provided in a [CSV - Comma Separated Values][csv] file.
 * Tabular data may include data about locations.
 * Locations can be represented by points, lines, polygons and more complex geometry.
 * Points are often represented by a longitude, latitude coordinate pair. There is much debate on [which value should go first](https://macwright.org/2015/03/23/geojson-second-bite.html#position) and [tools have their own preferences](https://macwright.org/lonlat/).
-* To keep things simple, you should use [Digital degrees](https://en.wikipedia.org/wiki/Decimal_degrees) `-27.1944, 151.32660`, not [degrees, minutes, seconds](https://en.wikipedia.org/wiki/Latitude#Preliminaries) or `27.1944° S, 151.2660° E`
+* To keep things simple, you should use [digital degrees](https://en.wikipedia.org/wiki/Decimal_degrees) `-27.1944, 151.32660`, not [degrees, minutes, seconds](https://en.wikipedia.org/wiki/Latitude#Preliminaries) or Northing and Eastings `27.1944° S, 151.2660° E`. Explicitly stating the [axis-order](https://www.w3.org/TR/sdw-bp/#bp-crs) of coordinates is important so the data is located in the correct position.
 * Representing locations other than points in a CSV can be complicated as the shape is represented by many coordinate pairs that combine to make the shape (think joining the dots).
-* A coordinate pair may be inadequate to accurately show a location on a map. You may also need a [spatial reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) and a date.
-* A spatial reference system describes the [datum](https://en.wikipedia.org/wiki/Datum_(geodesy)), [geoid](https://en.wikipedia.org/wiki/Geoid), [coordinate system](https://en.wikipedia.org/wiki/Coordinate_system), and [map projection](https://en.wikipedia.org/wiki/Map_projection) of the location data.
+* A coordinate pair is inadequate to accurately show a location on a map. You also need a [coordinate reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) and a date.
+* A coordinate reference system describes the [datum](https://en.wikipedia.org/wiki/Datum_(geodesy), [geoid](https://en.wikipedia.org/wiki/Geoid), [coordinate system](https://en.wikipedia.org/wiki/Coordinate_system), and [map projection](https://en.wikipedia.org/wiki/Map_projection) of the location data.
 * Dates detailing when the location was recorded are also important because things change over time, e.g. the shape of an [electoral boundary](http://boundaries.ecq.qld.gov.au/have-your-say/the-final-determination), or the [location of a continent](http://www.icsm.gov.au/gda2020/index.html).
 
-The key information that must be provided to describe a location is:
+The key information that must be provided to describe a point location is:
 
-* geometry
-* spatial reference system
+* coordinate pair and their axis-order
+* coordinate reference system
 * date
 
-Assumptions are often made about [spatial reference systems](http://doc.arcgis.com/en/arcgis-online/create-maps/choose-global-local-scene.htm) and [dates](http://doc.arcgis.com/en/arcgis-online/reference/csv-gpx.htm), e.g.
+Assumptions are often made about coordinate reference systems and dates, e.g.
 
-* The spatial reference system may be assumed to be the World Geodetic System 1984 ([WGS84](http://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/geodetic-datums/other/wgs84)), which is currently used for the Global Positioning System (GPS) satellite navigation system. This spatial reference system used by the majority of interactive maps on the web.
+* The coordinate reference system may be assumed to be the World Geodetic System 1984 ([WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System)), which is currently used for the Global Positioning System (GPS) satellite navigation system. This coordinate reference system used by the majority of interactive maps on the web.
 * The date is often assumed to be today.
 
 ## Point data
@@ -34,19 +35,20 @@ How can point location data be:
 
 Each method should, in a human and machine-readable way, specify:
 
-* the spatial reference system and the date associated with the location data or use defined default values.
-* the order of coordinates.
+* the coordinate reference system
+* the order of coordinates
+* the date associated with the location data
 
 
-The options for representing a point locations in a CSV file are to define a field(s) of type:
+The options for representing point locations in a CSV file are to define a field(s) of type:
 
-1. **geopoint, format: default**
-2. **geopoint, format: array**
-3. **geopoint, format: object**
-4. **number with constraints**  
-5. **string, format: default** and a foreign key reference
-6. **string, format: uri** reference to an external resource with the geometry
-7. **[geojson](http://specs.frictionlessdata.io/table-schema/#geojson), format: default**
+1. [geopoint, format: default](#1-geopoint-default)
+2. [geopoint, format: array](#2-geopoint-array)
+3. [geopoint, format: object](#3-geopoint-object)
+4. [number with constraints](#4-numbers-with-constraints)
+5. [string, format: default](#5-string-and-foreign-key-reference-to-well-known-place-name) and a foreign key reference
+6. [string, format: uri](#6-use-a-uniform-resource-identifier-to-reference-a-location) reference to an external resource with the geometry
+7. [geojson, format: default](#7-geojson)
 
 Each option is described below with a sample CSV file, Data Package fragment and some thoughts on pros and cons.
 
@@ -74,6 +76,10 @@ The type [Geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), fo
 ```
 {
   "fields": [
+    {
+      "name": "Office)",
+      "type": "string"
+    },
     {
       "name": "Location (Lon, Lat)",
       "type": "geopoint"
@@ -116,6 +122,10 @@ An array of exactly two items, where each item is a number, and the first item i
 {
   "fields": [
     {
+      "name": "Office)",
+      "type": "string"
+    },
+    {
       "name": "Location (Lon, Lat)",
       "type": "geopoint",
       "format": "array"
@@ -157,6 +167,10 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 {
   "fields": [
     {
+      "name": "Office)",
+      "type": "string"
+    },
+    {
       "name": "Location (Lon, Lat)",
       "type": "geopoint",
       "format": "object"
@@ -171,10 +185,11 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
     * Longitude ± 180
     * Latitude ± 90
 * How do you [constrain values](https://discuss.okfn.org/t/how-to-constrain-geopoint-values/5574) to a minimum bounding rectangle?
-* The format makes explicit which are lon and lat values
+* [Stating how coordinate values are encoded](https://www.w3.org/TR/sdw-bp/#bp-crs) is a W3C spatial data on the web best practice.
+
 
 ### 4. Numbers with constraints
-
+s
 Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#number) with [constraints](http://specs.frictionlessdata.io/table-schema/#constraints) to limit latitude and longitude values
 
 #### CSV
@@ -197,6 +212,10 @@ Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#numb
 ```
 {
   "fields": [
+    {
+      "name": "Office)",
+      "type": "string"
+    },
     {
       "name": "Lat",
       "type": "number",
@@ -229,7 +248,7 @@ Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#numb
 
 ### 5. String and Foreign key reference to well-known place-name
 
-All the previous examples assume you know the coordinates of the location. What if you only know the name? You could refer to an another data resource and use the name to determine the coordinates. This data resource is often called a [Gazetteer](https://en.wikipedia.org/wiki/Gazetteer). [Often](https://en.wikipedia.org/wiki/Gazetteer#List_of_gazetteers) a [website](http://www.icsm.gov.au/cgna/websites.html) or API is placed in front of the data so you can provide a name and the location data is returned
+All the previous examples assume you know the coordinates of the location. What if you only know the name? You can use a name, of type: [string](http://specs.frictionlessdata.io/table-schema/#string), to refer to an another data resource and use the name to determine the coordinates. This data resource is often called a [Gazetteer](https://en.wikipedia.org/wiki/Gazetteer). [Often](https://en.wikipedia.org/wiki/Gazetteer#List_of_gazetteers) a [website](http://www.icsm.gov.au/cgna/websites.html) or API is placed in front of the data so you can provide a name and the location data is returned
 
 A date may be an additional field included in the foreign key relationship.
 
@@ -329,7 +348,7 @@ Gazetteer.csv
 * Haven't come across many Gazetteers in CSV format
 * Should the Gazetteer have a Data Package Identifier?
 
-### 6. Use a Uniform Resource Identifier reference a location
+### 6. Use a Uniform Resource Identifier to reference a location
 
 Use a type: [string](http://specs.frictionlessdata.io/table-schema/#string), format: uri, to provide a link to a resource that includes the geometry.
 
@@ -366,12 +385,14 @@ Use a type: [string](http://specs.frictionlessdata.io/table-schema/#string), for
 
 #### Thoughts
 
+* [Link to Spatial Things from popular repositories](https://www.w3.org/TR/sdw-bp/#bp-linking-2) is a W3C spatial data on the web best practice.
+* Things can move over time, consider [data versioning](https://www.w3.org/TR/sdw-bp/#bp-dataversioning)
 * Is there a way to define the bulk of the uri outside of the column and reduce the column entry to the id? Is this wise or desirable?
-* How can you be confident the uri is permanent?
+
 
 ### 7. GeoJSON
 
-Use a field of type GeoJSON to represent location
+Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geojson) to represent location
 
 #### CSV
 
@@ -406,7 +427,9 @@ Use a field of type GeoJSON to represent location
 
 ## Thoughts
 
-* geometry isn't constrained to a point; it could be a line or polygon.
+* Geometry isn't constrained to a point; it could be a line or polygon.
+* [GeoJSON](https://tools.ietf.org/html/rfc7946#page-12) only supports the WGS84 coordinate reference system.
+* [Stating how coordinate values are encoded](https://www.w3.org/TR/sdw-bp/#bp-crs) is a W3C spatial data on the web best practice. GeoJSON only supports lon, lat axis order.
 
 
 
@@ -420,17 +443,17 @@ See [http://frictionlessdata.io](http://frictionlessdata.io)
 
 See [http://frictionlessdata.io/guides/publish/geo/](http://frictionlessdata.io/guides/publish/geo/)
 
-### CSV GEO AU
-
-See [https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au](https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au)
-
-csv-geo-au is a specification for publishing point or region-mapped Australian geospatial data in CSV format to data.gov.au and other open data portals.
-
 ### Spatial Data on the Web Best Practices
 
 See [http://www.w3.org/TR/sdw-bp](http://www.w3.org/TR/sdw-bp)
 
 This document advises on best practices related to the publication of spatial data on the Web.
+
+### CSV GEO AU
+
+See [https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au](https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au)
+
+csv-geo-au is a specification for publishing point or region-mapped Australian geospatial data in CSV format to data.gov.au and other open data portals.
 
 ### The GeoJSON Format
 
