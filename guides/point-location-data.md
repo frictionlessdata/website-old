@@ -189,7 +189,6 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 
 
 ### 4. Numbers with constraints
-s
 Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#number) with [constraints](http://specs.frictionlessdata.io/table-schema/#constraints) to limit latitude and longitude values
 
 #### CSV
