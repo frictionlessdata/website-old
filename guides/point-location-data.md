@@ -3,7 +3,10 @@ title: Point location data in CSV files
 ---
 
 ## Introduction
-Some key concepts:
+
+This guide explores the options available to represent point location data in a CSV file within a data package.
+
+First, some key concepts:
 
 * A [Table Schema](http://specs.frictionlessdata.io/table-schema/) describes tabular data.
 * Tabular data is often provided in a [CSV - Comma Separated Values][csv] file.
@@ -12,11 +15,11 @@ Some key concepts:
 * Points are often represented by a longitude, latitude coordinate pair. There is much debate on [which value should go first](https://macwright.org/2015/03/23/geojson-second-bite.html#position) and [tools have their own preferences](https://macwright.org/lonlat/).
 * To keep things simple, you should use [digital degrees](https://en.wikipedia.org/wiki/Decimal_degrees) `-27.1944, 151.32660`, not [degrees, minutes, seconds](https://en.wikipedia.org/wiki/Latitude#Preliminaries) or Northing and Eastings `27.1944° S, 151.2660° E`. Explicitly stating the [axis-order](https://www.w3.org/TR/sdw-bp/#bp-crs) of coordinates is important so the data is located in the correct position.
 * Representing locations other than points in a CSV can be complicated as the shape is represented by many coordinate pairs that combine to make the shape (think joining the dots).
-* A coordinate pair is inadequate to accurately show a location on a map. You also need a [coordinate reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) and a date.
+* A coordinate pair is inadequate to accurately show a location on a map. You also need a [coordinate reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) and sometimes a date.
 * A coordinate reference system describes the [datum](https://en.wikipedia.org/wiki/Datum_(geodesy)), [geoid](https://en.wikipedia.org/wiki/Geoid), [coordinate system](https://en.wikipedia.org/wiki/Coordinate_system), and [map projection](https://en.wikipedia.org/wiki/Map_projection) of the location data.
 * Dates detailing when the location was recorded are also important because things change over time, e.g. the shape of an [electoral boundary](http://boundaries.ecq.qld.gov.au/have-your-say/the-final-determination), or the [location of a continent](http://www.icsm.gov.au/gda2020/index.html).
 
-The key information that must be provided to describe a point location is:
+The key information to describe a point location is a:
 
 * coordinate pair and their axis-order
 * coordinate reference system
@@ -33,13 +36,6 @@ How can point location data be:
 1. represented in a CSV file?
 2. described as part of a Data Package?
 
-Each method should, in a human and machine-readable way, specify:
-
-* the coordinate reference system
-* the order of coordinates
-* the date associated with the location data
-
-
 The options for representing point locations in a CSV file are to define a field(s) of type:
 
 1. [geopoint, format: default](#1-geopoint-default)
@@ -52,7 +48,13 @@ The options for representing point locations in a CSV file are to define a field
 
 Each option is described below with a sample CSV file, Data Package fragment and some thoughts on pros and cons.
 
-Out of scope for the moment - geocoding using address but similar techniques will apply.
+Each option should, in a human and machine-readable way, specify:
+
+* the coordinate reference system
+* the axis order of the coordinates (if not specified by the coordinate reference system)
+* the date associated with the location data
+
+(Out of scope for the moment - geocoding using address but similar techniques will apply.)
 
 ### 1. Geopoint, default
 
@@ -60,16 +62,9 @@ The type [Geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), fo
 
 #### CSV
 
-<table>
-  <tr>
-    <td>Office</td>
-    <td>Location (Lon, Lat)</td>
-  </tr>
-  <tr>
-    <td>Dalby </td>
-    <td>"151.2660, -27.1944"</td>
-  </tr>
-</table>
+| Office | Location (Lon, Lat) |
+|--------|---------------------|
+| Dalby  | "151.2660, -27.1944"|
 
 #### Data Package fragment
 
@@ -104,16 +99,10 @@ An array of exactly two items, where each item is a number, and the first item i
 
 #### CSV
 
-<table>
-  <tr>
-    <td>Office</td>
-    <td>Location (Lon, Lat)</td>
-  </tr>
-  <tr>
-    <td>Dalby </td>
-    <td>[151.2660, -27.1944]</td>
-  </tr>
-</table>
+| Office | Location (Lon, Lat) |
+|--------|---------------------|
+| Dalby  | [151.2660, -27.1944]|
+
 
 
 #### Data Package fragment
@@ -150,16 +139,10 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 
 #### CSV
 
-<table>
-  <tr>
-    <td>Office</td>
-    <td>Location (Lon, Lat)</td>
-  </tr>
-  <tr>
-    <td>Dalby </td>
-    <td>{"lon":151.2660, "lat": -27.1944}</td>
-  </tr>
-</table>
+| Office | Location (Lon, Lat)             |
+|--------|---------------------------------|
+| Dalby  |{"lon":151.2660, "lat": -27.1944}|
+
 
 #### Data Package fragment
 
@@ -193,18 +176,10 @@ Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#numb
 
 #### CSV
 
-<table>
-  <tr>
-    <td>Office</td>
-    <td>Lat</td>
-    <td>Lon</td>
-  </tr>
-  <tr>
-    <td>Dalby </td>
-    <td>-27.1944</td>
-    <td>151.2660</td>
-  </tr>
-</table>
+| Office |  Lat   |  Lon   |
+|--------|--------|--------|
+| Dalby  |-27.1944|151.2660|
+
 
 #### Data Package fragment
 
@@ -255,30 +230,18 @@ A date may be an additional field included in the foreign key relationship.
 
 Offices.csv
 
-<table>
-  <tr>
-    <td>office-name</td>
-    <td>town</td>
-  </tr>
-  <tr>
-    <td>Dalby Drop In Centre </td>
-    <td>Dalby</td>
-  </tr>
-</table>
+| office-name          | town  |
+|----------------------|-------|
+| Dalby Drop In Centre | Dalby |
+
 
 
 Gazetteer.csv
 
-<table>
-  <tr>
-    <td>city-or-town</td>
-    <td>location</td>
-  </tr>
-  <tr>
-    <td>Dalby</td>
-    <td>{"lon":151.2660, "lat": -27.1944}</td>
-  </tr>
-</table>
+| city-or-town | location                        |
+|--------------|---------------------------------|
+| Dalby        |{"lon":151.2660, "lat": -27.1944}|
+
 
 #### Data Package fragment
 
@@ -353,16 +316,9 @@ Use a type: [string](http://specs.frictionlessdata.io/table-schema/#string), for
 
 #### CSV
 
-<table>
-  <tr>
-    <td>office-name</td>
-    <td>Location uri</td>
-  </tr>
-  <tr>
-    <td>Dalby</td>
-    <td>http://nominatim.openstreetmap.org/details.php?place_id=114278</td>
-  </tr>
-</table>
+| office-name | Location uri                                                   |
+|-------------|----------------------------------------------------------------|
+| Dalby       | http://nominatim.openstreetmap.org/details.php?place_id=114278 |
 
 #### Data Package fragment
 
@@ -395,17 +351,9 @@ Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geo
 
 #### CSV
 
-<table>
-  <tr>
-    <td>Office</td>
-    <td>Location</td>
-  </tr>
-  <tr>
-    <td>Dalby </td>
-    <td>{"lon":151.2660, "lat": -27.1944}</td>
-  </tr>
-</table>
-
+| Office | Location                          |
+|--------|-----------------------------------|
+| Dalby  | {"lon":151.2660, "lat": -27.1944} |
 #### Data Package fragment
 
 ```
