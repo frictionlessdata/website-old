@@ -4,7 +4,7 @@ title: Point location data in CSV files
 
 ## Introduction
 
-This guide explores the options available to represent point location data in a CSV file within a data package.
+This guide explores the options available to represent point location data in a CSV file within a Data Package.
 
 First, some key concepts:
 
@@ -12,8 +12,8 @@ First, some key concepts:
 * Tabular data is often provided in a [CSV - Comma Separated Values][csv] file.
 * Tabular data may include data about locations.
 * Locations can be represented by points, lines, polygons and more complex geometry.
-* Points are often represented by a longitude, latitude coordinate pair. There is much debate on [which value should go first](https://macwright.org/2015/03/23/geojson-second-bite.html#position) and [tools have their own preferences](https://macwright.org/lonlat/).
-* To keep things simple, you should use [digital degrees](https://en.wikipedia.org/wiki/Decimal_degrees) `-27.1944, 151.32660`, not [degrees, minutes, seconds](https://en.wikipedia.org/wiki/Latitude#Preliminaries) or Northing and Eastings `27.1944° S, 151.2660° E`. Explicitly stating the [axis-order](https://www.w3.org/TR/sdw-bp/#bp-crs) of coordinates is important so the data is located in the correct position.
+* Points are often represented by a longitude, latitude coordinate pair. There is much debate on [which value should go first](https://macwright.org/2015/03/23/geojson-second-bite.html#position) and [tools have their own preferences](https://macwright.org/lonlat/). Explicitly stating the [axis-order](https://www.w3.org/TR/sdw-bp/#bp-crs) of coordinates is important so when the data is used, it represents the correct location.
+* To keep things simple, you should use [digital degrees](https://en.wikipedia.org/wiki/Decimal_degrees) `-27.1944, 151.32660`, not [degrees, minutes, seconds](https://en.wikipedia.org/wiki/Latitude#Preliminaries) or Northing and Eastings `27.1944° S, 151.2660° E`.
 * Representing locations other than points in a CSV can be complicated as the shape is represented by many coordinate pairs that combine to make the shape (think joining the dots).
 * A coordinate pair is inadequate to accurately show a location on a map. You also need a [coordinate reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) and sometimes a date.
 * A coordinate reference system describes the [datum](https://en.wikipedia.org/wiki/Datum_(geodesy)), [geoid](https://en.wikipedia.org/wiki/Geoid), [coordinate system](https://en.wikipedia.org/wiki/Coordinate_system), and [map projection](https://en.wikipedia.org/wiki/Map_projection) of the location data.
@@ -21,7 +21,7 @@ First, some key concepts:
 
 The key information to describe a point location is a:
 
-* coordinate pair and their axis-order
+* coordinate pair and their axis order
 * coordinate reference system
 * date
 
@@ -72,7 +72,7 @@ The type [Geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), fo
 {
   "fields": [
     {
-      "name": "Office)",
+      "name": "Office",
       "type": "string"
     },
     {
@@ -88,22 +88,20 @@ The type [Geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), fo
 * Does the geopoint type validation enforce:
     * Longitude ± 180
     * Latitude ± 90
-* How do you [constrain values](https://discuss.okfn.org/t/how-to-constrain-geopoint-values/5574) to a minimum bounding rectangle?
+* [Currently](https://github.com/frictionlessdata/specs/issues/345) you cannot use the `minimum` or `maximum` constraint to limit longitude or latitude values to a to a minimum bounding rectangle
 * The order of Lon, Lat is defined in the standard but:
     * may not be obvious to the person looking at the file
-    * may not be machine-readable without referring to resources outside the data package
+    * may not be machine-readable without referring to resources outside the Data Package
 
 ### 2. Geopoint, array
 
-An array of exactly two items, where each item is a number, and the first item is lon and the second item is lat e.g. `[90, 45]`
+An array of exactly two items, where each item is a number, and the first item is longitude and the second item is latitude e.g. `[90, 45]`
 
 #### CSV
 
-| Office | Location (Lon, Lat) |
-|--------|---------------------|
-| Dalby  | [151.2660, -27.1944]|
-
-
+| Office | Location (Lon, Lat)  |
+|--------|----------------------|
+| Dalby  | [151.2660, -27.1944] |
 
 #### Data Package fragment
 
@@ -128,10 +126,10 @@ An array of exactly two items, where each item is a number, and the first item i
 * Does the geopoint type validation enforce:
     * Longitude ± 180
     * Latitude ± 90
-* How do you [constrain values](https://discuss.okfn.org/t/how-to-constrain-geopoint-values/5574) to a minimum bounding rectangle?
+* [Currently](https://github.com/frictionlessdata/specs/issues/345) you cannot use the `minimum` or `maximum` constraint to limit longitude or latitude values to a to a minimum bounding rectangle
 * The order of Lon, Lat is defined in the standard but:
     * may not be obvious to the person looking at the file
-    * may not be machine-readable without referring to resources outside the data package
+    * may not be machine-readable without referring to resources outside the Data Package
 
 ### 3. Geopoint, object
 
@@ -167,8 +165,8 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 * Does the geopoint type validation enforce:
     * Longitude ± 180
     * Latitude ± 90
-* How do you [constrain values](https://discuss.okfn.org/t/how-to-constrain-geopoint-values/5574) to a minimum bounding rectangle?
-* [Stating how coordinate values are encoded](https://www.w3.org/TR/sdw-bp/#bp-crs) is a W3C spatial data on the web best practice.
+* [Currently](https://github.com/frictionlessdata/specs/issues/345) you cannot use the `minimum` or `maximum` constraint to limit longitude or latitude values to a to a minimum bounding rectangle
+* The axis order is explicit. [Stating how coordinate values are encoded](https://www.w3.org/TR/sdw-bp/#bp-crs) is a W3C spatial data on the web best practice.
 
 
 ### 4. Numbers with constraints
@@ -187,7 +185,7 @@ Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#numb
 {
   "fields": [
     {
-      "name": "Office)",
+      "name": "Office",
       "type": "string"
     },
     {
@@ -212,13 +210,13 @@ Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#numb
 
 #### Thoughts
 
-* You can [constrain values](https://discuss.okfn.org/t/how-to-constrain-geopoint-values/5574) to a minimum bounding rectangle
+* You can constrain latitude and longitude values to a minimum bounding rectangle
 * Constraints not required so invalid values possible
 * Not obvious to software that the columns are location data unless specific names are used X,Y; Lat,Lon; Latitude,Longitude; and [many other combinations](http://doc.arcgis.com/en/arcgis-online/reference/csv-gpx.htm)
 * Lat, Lon or Lon, Lat - you choose the order
 * No way to force a pair of coordinates and support missing values.
     * If you add a required constraint to both, you can’t have a missing location.
-    * If you don’t add required constraint, you could have lat without lon or vise versa.
+    * If you don’t add required constraint, you could have lat without lon or vice versa.
 
 ### 5. String and Foreign key reference to well-known place-name
 
@@ -308,7 +306,6 @@ Gazetteer.csv
 #### Thoughts
 
 * Haven't come across many Gazetteers in CSV format
-* Should the Gazetteer have a Data Package Identifier?
 
 ### 6. Use a Uniform Resource Identifier to reference a location
 
@@ -341,7 +338,7 @@ Use a type: [string](http://specs.frictionlessdata.io/table-schema/#string), for
 #### Thoughts
 
 * [Link to Spatial Things from popular repositories](https://www.w3.org/TR/sdw-bp/#bp-linking-2) is a W3C spatial data on the web best practice.
-* Things can move over time, consider [data versioning](https://www.w3.org/TR/sdw-bp/#bp-dataversioning)
+* Things can move over time, consider [data versioning](https://www.w3.org/TR/sdw-bp/#bp-dataversioning), another W3C spatial data on the web best practice.
 * Is there a way to define the bulk of the uri outside of the column and reduce the column entry to the id? Is this wise or desirable?
 
 
@@ -376,40 +373,32 @@ Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geo
 
 * Geometry isn't constrained to a point; it could be a line or polygon.
 * [GeoJSON](https://tools.ietf.org/html/rfc7946#page-12) only supports the WGS84 coordinate reference system.
-* [Stating how coordinate values are encoded](https://www.w3.org/TR/sdw-bp/#bp-crs) is a W3C spatial data on the web best practice. GeoJSON only supports lon, lat axis order.
-
-
+* The axis order is explicit. [Stating how coordinate values are encoded](https://www.w3.org/TR/sdw-bp/#bp-crs) is a W3C spatial data on the web best practice. GeoJSON only supports lon, lat axis order.
 
 ## Related Work
 
 ### Frictionless data
 
-See [http://frictionlessdata.io](http://frictionlessdata.io)
+* [Table Schema](http://specs.frictionlessdata.io/table-schema/)
+* [Publishing Geospatial Data as a Data Package](http://frictionlessdata.io/guides/publish/geo/)
 
-### Publishing Geospatial Data as a Data Package
+### World Wide Web Consortium (W3C)
 
-See [http://frictionlessdata.io/guides/publish/geo/](http://frictionlessdata.io/guides/publish/geo/)
+* [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
+* [Spatial Data on the Web Best Practices](http://www.w3.org/TR/sdw-bp)
 
-### Spatial Data on the Web Best Practices
+These documents advise on best practices related to the publication of data and spatial data on the web.
 
-See [http://www.w3.org/TR/sdw-bp](http://www.w3.org/TR/sdw-bp)
+### Australian Government - CSV GEO AU
 
-This document advises on best practices related to the publication of spatial data on the Web.
+[csv-geo-au](https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au) is a specification for publishing point or region-mapped Australian geospatial data in CSV format to data.gov.au and other open data portals.
 
-### CSV GEO AU
+### IETF - GeoJSON
 
-See [https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au](https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au)
+[GeoJSON](https://tools.ietf.org/html/rfc7946) is a geospatial data interchange format based on JavaScript Object Notation (JSON).
 
-csv-geo-au is a specification for publishing point or region-mapped Australian geospatial data in CSV format to data.gov.au and other open data portals.
+### OGC - Simple Feature Access
 
-### The GeoJSON Format
-
-See [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946)
-
-GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON).
-
-### OpenGIS Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture
-
-See [http://www.opengeospatial.org/standards/sfa](http://www.opengeospatial.org/standards/sfa)
+The Open Geospatial Consortium - [OpenGIS Simple Feature Access](http://www.opengeospatial.org/standards/sfa) is also called ISO 19125. It provides a model for geometric objects associated with a Spatial Reference System.
 
 {%include markdown-link-refs.html %}
