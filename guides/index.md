@@ -19,7 +19,7 @@ creating and using Data Packages and associated tools.
 
 * [Creating Data Packages in JavaScript](./creating-tabular-data-packages-in-javascript/)
 
-## Validating Data 
+## Validating Data
 
 * [Validating Data](./validating-data/)
 
@@ -33,6 +33,7 @@ Guides on publishing data as Data Packages.
   * [Any Kind of Data][pub-any]
 * [Publish Online: Overview][pub-online]
 * [Publishing FAQs and Best Practice Patterns][pub-faq]
+* [Describing Point location data in CSV files](point-location-data.md)
 
 ## Guides to Specifications
 
@@ -54,4 +55,3 @@ Guides on publishing data as Data Packages.
 * [Developer Guide](/guides/developer-guide/)
 
 {%include markdown-link-refs.html %}
-

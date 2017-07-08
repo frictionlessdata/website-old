@@ -85,7 +85,7 @@ The type [Geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), fo
 
 #### Thoughts
 
-* Does the geopoint type validation enforce:
+* Does the [geopoint type validation](https://github.com/frictionlessdata/specs/issues/486) enforce:
     * Longitude ± 180
     * Latitude ± 90
 * [Currently](https://github.com/frictionlessdata/specs/issues/345) you cannot use the `minimum` or `maximum` constraint to limit longitude or latitude values to a to a minimum bounding rectangle
@@ -123,7 +123,7 @@ An array of exactly two items, where each item is a number, and the first item i
 
 #### Thoughts
 
-* Does the geopoint type validation enforce:
+* Does the [geopoint type validation](https://github.com/frictionlessdata/specs/issues/486) enforce:
     * Longitude ± 180
     * Latitude ± 90
 * [Currently](https://github.com/frictionlessdata/specs/issues/345) you cannot use the `minimum` or `maximum` constraint to limit longitude or latitude values to a to a minimum bounding rectangle
@@ -162,7 +162,7 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 
 #### Thoughts
 
-* Does the geopoint type validation enforce:
+* Does the [geopoint type validation](https://github.com/frictionlessdata/specs/issues/486) enforce:
     * Longitude ± 180
     * Latitude ± 90
 * [Currently](https://github.com/frictionlessdata/specs/issues/345) you cannot use the `minimum` or `maximum` constraint to limit longitude or latitude values to a to a minimum bounding rectangle
