@@ -141,7 +141,6 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 |--------|---------------------------------|
 | Dalby  |{"lon":151.2660, "lat": -27.1944}|
 
-
 #### Data Package fragment
 
 ```
@@ -177,7 +176,6 @@ Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#numb
 | Office |  Lat   |  Lon   |
 |--------|--------|--------|
 | Dalby  |-27.1944|151.2660|
-
 
 #### Data Package fragment
 
@@ -233,13 +231,11 @@ Offices.csv
 | Dalby Drop In Centre | Dalby |
 
 
-
 Gazetteer.csv
 
 | city-or-town | location                        |
 |--------------|---------------------------------|
 | Dalby        |{"lon":151.2660, "lat": -27.1944}|
-
 
 #### Data Package fragment
 
@@ -351,6 +347,7 @@ Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geo
 | Office | Location                          |
 |--------|-----------------------------------|
 | Dalby  | {"lon":151.2660, "lat": -27.1944} |
+
 #### Data Package fragment
 
 ```
@@ -369,7 +366,7 @@ Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geo
 }
 ```
 
-## Thoughts
+#### Thoughts
 
 * Geometry isn't constrained to a point; it could be a line or polygon.
 * [GeoJSON](https://tools.ietf.org/html/rfc7946#page-12) only supports the WGS84 coordinate reference system.
