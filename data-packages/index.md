@@ -5,7 +5,7 @@ redirect_from: /standards/
 
 Data Package is a simple **container** format used to describe and package a collection of data. The format provides a simple contract for data interoperability that supports frictionless delivery, installation and management of data.
 
-Data Packages can be used to package any kind of data. At the same time, for specific common data types such as tabular data is has support for providing important additional descriptive metadata -- for example, describing the columns and data types in a CSV. 
+Data Packages can be used to package any kind of data. At the same time, for specific common data types such as tabular data it has support for providing important additional descriptive metadata -- for example, describing the columns and data types in a CSV. 
 
 The following core principles inform our approach:
 
@@ -32,7 +32,7 @@ data that builds on Data Package and which uses:
 
 A **Data Package** can "contain" any type of file.  A **Tabular Data
 Package** is a type of Data Package specialized for tabular data and which "contains" one or
-more CSV files.  In a Tabular Data Package, each CSV must have
+more CSV files.  In a Tabular Data Package, each CSV must have a
 *schema* defined using **JSON Table Schema** and, optionally, a
 *dialect* defined using **CSV-DDF**.  An application or library that
 consumes Tabular Data Packages therefore must be able to understand
