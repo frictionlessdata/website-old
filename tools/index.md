@@ -2,9 +2,6 @@
 title: Tools, Integrations, Libraries, and Platforms
 ---
 
-**New! Apply by 31st July 2017 to the
- [Frictionless Data Tool Fund](http://toolfund.frictionlessdata.io/):**
-
 > The Frictionless Data Tool Fund, supported by the Sloan Foundation,
 > is providing a number of minigrants of $5,000 to support individuals
 > or organisations in bootstrapping the implementation of libraries
