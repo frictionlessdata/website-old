@@ -2,14 +2,6 @@
 title: Tools, Integrations, Libraries, and Platforms
 ---
 
-> The Frictionless Data Tool Fund, supported by the Sloan Foundation,
-> is providing a number of minigrants of $5,000 to support individuals
-> or organisations in bootstrapping the implementation of libraries
-> for the Frictionless Data specifications in a range of programming
-> languages.
-
----
-
 - [Tools and Integrations](#tools-and-integrations)
 - [Libraries](#libraries)
 - [Platforms](#platforms)
