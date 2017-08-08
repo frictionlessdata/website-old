@@ -1,15 +1,14 @@
 ---
 title: How to do a thing using a tool
 ---
-solves: https://github.com/frictionlessdata/frictionlessdata.io/issues/42
 
 In this tutorial you'll learn how to {do a thing using a tool} to {provide some benefit} (This first sentence may be inspired by a [user story](http://frictionlessdata.io/user-stories/)).
 
 Clearly state the objective of your tutorial in the title and then once again in more detail at the very beginning of the tutorial. This gives readers an idea of what to expect and helps them determine if they want to continue reading.
 
-** Tutorial time ** : 20 minutes
+**Tutorial time** : 20 minutes
 
-** Audience ** : Beginner Data Packagers {user role} with {skill level}.
+**Audience** : Beginner Data Packagers {user role} with {skill level}.
 
 
 
