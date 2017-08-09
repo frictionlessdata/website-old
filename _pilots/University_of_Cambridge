@@ -57,7 +57,7 @@ We can also, for instance, set a `homepage` for the dataset which is a URL for t
 
 Some of the other metadata Stephen required do not, however, map well to existing specified fields in a Data Package.  For instance, as the Data Package is not specialized for storing biological data, there is no field for “species”.  (The Digital Curation Centre maintains a database of domain-specific metadata standards for biology and other fields.)  The specification is intended to be quite flexible in these circumstances:
 
- Adherence to the specification does not imply that additional, non-specified properties cannot be used: a descriptor MAY include any number of properties in additional to those described as required and optional properties […] This flexibility enables specific communities to extend Data Packages as appropriate for the data they manage.
+>Adherence to the specification does not imply that additional, non-specified properties cannot be used: a descriptor MAY include any number of properties in additional to those described as required and optional properties […] This flexibility enables specific communities to extend Data Packages as appropriate for the data they manage.
 
 As an example, we stored the radius in a new field called `soma-radius` in the “root” level of the Data Package:
 
