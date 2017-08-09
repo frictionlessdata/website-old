@@ -7,7 +7,7 @@ tech:
   - "Frictionless Data specs: http://specs.frictionlessdata.io/"
 repository: "https://github.com/frictionlessdata/pilot-retinal-mosaics"
 short_description: "investigate the applicability of the Data Package concept to facilitate data reuse in the field of Computational Neuroscience"
-logo: /img/partners/pnnl.png
+logo: /img/partners/cambridge.png
 organization: The Department of Applied Mathematics and Theoretical Physics is one of two Mathematics Departments at the University of Cambridge in the United Kingdom.  It carries out research of world-class excellence, spanning broad areas of Applied Mathematics and Theoretical Physics Field.
 ---
 
