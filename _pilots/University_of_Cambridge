@@ -88,13 +88,13 @@ Below is the annotated datapackage.json with the metadata at the top followed by
 
 ```json
 {
-  "name": "example-retinal-mosaic",
-  "title": "Example Retinal Mosaic",
-  "Homepage":
-"http://www.damtp.cam.ac.uk/user/sje30/data/mosaics/w81_scan/",
-  "Image":
-"http://www.damtp.cam.ac.uk/user/sje30/data/mosaics/w81_scan/w81all.png",
-  "description": "This is an example retinal mosaic Data Package. cell type: on center re "soma-radius": 10
+    "name": "example-retinal-mosaic",
+    "title": "Example Retinal Mosaic",
+    "Homepage": "http://www.damtp.cam.ac.uk/user/sje30/data/mosaics/w81_scan/",
+    "Image": "http://www.damtp.cam.ac.uk/user/sje30/data/mosaics/w81_scan/w81all.png",
+    "description": "This is an example retinal mosaic Data Package.",
+    "cell type": "on center",
+    "soma-radius": 10
 }
 ```
 
