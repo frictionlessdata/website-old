@@ -1,5 +1,5 @@
 ---
-title: University of Cambridge Retinal Mosaics
+title: University of Cambridge - Retinal Mosaics
 authors: Stephen Eglen (University of Cambridge), Dan Fowler (OKI)
 field: Computational Neuroscience
 tech:
