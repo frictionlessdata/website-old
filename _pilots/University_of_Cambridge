@@ -32,12 +32,12 @@ cells were sampled; the species from which the cells were sampled is a cat.
 The key question posed by the collection of such data in large quantities is “where to store all these metadata”.  
 More formally, Stephen wanted a way to include the following metadata with sampled data:
 
-1.Cell type: on center retinal ganglion cells
-2.Species: cat
-3.Radius of [soma](https://en.wikipedia.org/wiki/Soma_(biology)): 10 um
-4.Citation to original paper where data were presented: Wässle H, Boycott BB, Illing RB (1981) Morphology and mosaic of on- and off-beta cells in the cat retina and some functional considerations. Proc R Soc Lond B Biol Sci 212:177–195.
-5.Unit of measurement: micron.
-6.(Optionally) A raw image from where the data where taken. e.g. http://www.damtp.cam.ac.uk/user/ sje30/data/mosaics/w81_scan/w81all.png
+ 1.Cell type: on center retinal ganglion cells
+ 2.Species: cat
+ 3.Radius of [soma](https://en.wikipedia.org/wiki/Soma_(biology)): 10 um
+ 4.Citation to original paper where data were presented: Wässle H, Boycott BB, Illing RB (1981) Morphology and mosaic of on- and off-beta cells in the cat retina and some functional considerations. Proc R Soc Lond B Biol Sci 212:177–195.
+ 5.Unit of measurement: micron.
+ 6.(Optionally) A raw image from where the data where taken. e.g. http://www.damtp.cam.ac.uk/user/ sje30/data/mosaics/w81_scan/w81all.png
 
 The long-term goal was to build a website/repository containing about 100+ examples of these “retinal mosaics”. The website would allow people to view the mosaics, download the data files, or run online some simple analysis. 
 
@@ -192,9 +192,9 @@ We have not tried this out on multiple samples (this is forthcoming), so we don�
 the usefulness of this approach, but the exercise raised several important issues to potentially address with the 
 Data Package format:
 
-1.Stephen’s request for a specified location for storing units in a structured way comes up often: https://github.com/frictionlessdata/specs/issues/216
-2.More iterations, with more of a variety of data sources could help in trialling this 
-3.Stephen wanted to store a non-tabular data file (an image) with the tabular datasets that comprise his datasets.  This is currently not allowed, but the subsequent definition of a Tabular Data Resource could pave the way for a method of specifying types of different resources and the kind of processing, validation or otherwise, that could be done with each.
+ 1.Stephen’s request for a specified location for storing units in a structured way comes up often: https://github.com/frictionlessdata/specs/issues/216
+ 2.More iterations, with more of a variety of data sources could help in trialling this 
+ 3.Stephen wanted to store a non-tabular data file (an image) with the tabular datasets that comprise his datasets.  This is currently not allowed, but the subsequent definition of a Tabular Data Resource could pave the way for a method of specifying types of different resources and the kind of processing, validation or otherwise, that could be done with each.
 
 ## Next Steps
 
