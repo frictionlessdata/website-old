@@ -50,6 +50,7 @@ The Data Package specification outlines a number of different fields that can be
 For instance, for this example, we can assign a title to this Data Package by setting the field `title` to “Example Retinal Mosaic”:
 
 `"title" : "Example Retinal Mosaic"`
+
 We can also, for instance, set a `homepage` for the dataset which is a URL for the home on the web that is related to this Data Package.
 
 `"homepage": "http://www.damtp.cam.ac.uk/user/sje30/data/mosaics/w81_scan/"`
