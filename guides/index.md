@@ -53,6 +53,6 @@ Guides on publishing data as Data Packages.
 ## Contributing
 
 * [Developer Guide](/guides/developer-guide/)
-* [Tutorial template](./guides/index.md/tutorial-template/)
+* [Tutorial template](./guides/index.md/tutorial-template.md/)
 
 {%include markdown-link-refs.html %}
