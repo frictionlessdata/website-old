@@ -3,22 +3,15 @@ title: Center for Data Science and Public Policy, Workforce Data Initiative
 site: https://dsapp.uchicago.edu/ 
 authors: Matt Bauman
 logo: chicago.png
-forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-cell-migration-standardization-organization/5353"
-short_description: "Building standards for cell migration data in order to enable data sharing in the field"
+forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-center-for-data-science-and-public-policy/5898"
+short_description: "Supporting state and local workforce boards in managing and publishing data"
 
 ---
 
 ## What is the project?
 
-The Workforce Data Initiative aims to modernize the US workforce through the use of data.   
-One aspect of this initiative is to help state and local workforce boards collect, aggregate, and distribute
-statistics on the effectiveness of training providers and the programs they offer.  
-The US Department of Labor mandates that every eligible training provider (ETP) work with state workforce 
-boards to track the outcomes of their students in order to receive federal funding.  
-We are building a suite of open-source tools using open data specifications in order to help make this a reality; 
-this collection of tools is called the Training Provider Outcomes Toolkit (TPOT).  
-This specific tool, the etp-uploader, is a website that state workforce boards can 
-deploy for training providers to upload their individual-level data.
+The Workforce Data Initiative aims to modernize the US workforce through the use of data. One aspect of this initiative is to help state and local workforce boards collect, aggregate, and distribute statistics on the effectiveness of training providers and the programs they offer. The US Department of Labor mandates that every eligible training provider (ETP) work with state workforce 
+boards to track the outcomes of their students in order to receive federal funding.  We are building a suite of open-source tools using open data specifications in order to help make this a reality; this collection of tools is called the Training Provider Outcomes Toolkit (TPOT). This specific tool, the etp-uploader, is a website that state workforce boards can eploy for training providers to upload their individual-level data.
 
 ## What are the challenges you face working with data?
 
@@ -44,4 +37,4 @@ I’m excited to see the new developments around goodtables-py 1.0 and beyond.  
 
 Abe Gong, author of Great Expectations
 
-The  extension to goodtables-web is open source and available at https://github.com/workforce-data-initiative/etp-uploader with a demo site running at http://send.dataatwork.org
+The  extension to goodtables-web is open source and available [here](https://github.com/workforce-data-initiative/etp-uploader) with a demo also running at [http://send.dataatwork.org](http://send.dataatwork.org)
