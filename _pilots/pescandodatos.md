@@ -1,5 +1,5 @@
 ---
-title: Pescando Datos
+title: Causa Natura - Pescando Datos
 authors: Gabriela Rodriguez (Causa Natura/Engine Room), Adrià Mercader (OKI), Jo Barratt (OKI), Eduardo Rolón (Causa Natura)
 field: Computational Neuroscience
 tech:
@@ -12,6 +12,8 @@ organization: Causa Natura is a non-profit organization based in Mexico. It supp
 Causa Natura
 
 ## Context
+
+Causa Natura is a non-profit organization based in Mexico. It supports public policies to allow management of natural resources respecting human rights, equity, efficiency and sustainability. This project, “Pescando Datos” seeks to advocate for improved public policies for more than just subsidies allocation, through the collection of, analysis, and visualization of data around subsidies available to fishing communities in Mexico.
 
 After an extended period of analysis a web platform is being built in order to explore data and visualize it with launch due for later in 2017. Following a meeting at csv,conf after a presentation by Adrià Mercader on [‘Continuous Data Validation for Everybody’](https://www.youtube.com/watch?v=Gk2F4hncAgY&index=35&list=PLg5zZXwt2ZW5UIz13oI56vfZjF6mvpIXN) we have piloted with Causa Natura to explore how our Good Tables service can support the project. We spoke to Eduardo Rolón, Executive Director of Causa Natura and Gabriela Rodriguez who is working on the platform. 
 Problem We Were Trying To Solve
