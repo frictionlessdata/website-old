@@ -1,7 +1,7 @@
 ---
 title: Causa Natura - Pescando Datos
 authors: Gabriela Rodriguez (Causa Natura/Engine Room), Adrià Mercader (OKI), Jo Barratt (OKI), Eduardo Rolón (Causa Natura)
-field: Computational Neuroscience
+field: Natural resources
 tech:
   - "Good Tables: https://github.com/frictionlessdata/goodtables.io"
 repository: "https://github.com/frictionlessdata/pilot-causanatura"
@@ -75,15 +75,15 @@ And instant feedback is available via GitHub commit statuses and a goodtables.io
 > Gabriela Rodriguez: Right now I have not been using it extensively yet but I have a lot of faith that it could get incorporated in the process of importing data into the github repository. It should be easy to introduce into our workflow. I really like the process of hooks after git-push as I’m trying to get the organization to use github for new data. really like the validation part and that a report is generated each time data is pushed. This is very important and very useful. . This makes it easier for the people who are doing the cleaning of data who may not have  experience with GitHub. 
 
 > Gabriela Rodriguez: The web interface needs a lot of usability work. But the idea is awesome.  There are problems and it is  kind of hard to use at the moment as it takes a long time to sync repositories and the process is not clear.but i think it has a huge poetntial to make a difference to the work we are doing, mostly if people use github to store data then it could makes a difference.
-> 
+
 ## Next Steps
 
-## Areas for further work
+### Areas for further work
 
 > Gabriela Rodriguez: With continuous integration it would be very helpful to be notified with messages about the problems in the data. Perhaps emails notifications would be a good way to go, or integrations with other programmes - Slack for example - would be fantastic.
 
 One thing to note is that all the errors shown following the analysis refer to the structure of the data files (missing headers, duplicate rows, etc). Including schema validation against some of the files would be a very logical next step in testing whether the contents of the data are what is expected). We are now planning to work with Causa Natura to take the steps to identify a subset of the data and create a base schema/data package that will be easily expandable and extendable. 
 
-## Find Out More
+### Find Out More
 
 To explore for the yourself and collaborate, see the Pescando Datos project on [github]( https://github.com/pescandodatos/datos ) and our Good Tables  [reports](http://goodtables.io/github/frictionlessdata/pilot-causanatura) from the project.
