@@ -4,9 +4,9 @@ authors: Gabriela Rodriguez (Causa Natura/Engine Room), Adrià Mercader (OKI), J
 field: Computational Neuroscience
 tech:
   - "Good Tables: https://github.com/frictionlessdata/goodtables.io"
-repository: "https://github.com/frictionlessdata/pilot-retinal-mosaics"
+repository: "https://github.com/frictionlessdata/pilot-causanatura"
 short_description: "using good tables to improve quality of data to support fisher communities and advocacy groups"
-logo: /img/partners/cambridge.png
+logo: /img/pilots/causanatura.png
 organization: Causa Natura is a non-profit organization based in Mexico. It supports public policies to allow management of natural resources respecting human rights, equity, efficiency and sustainability. This project, “Pescando Datos” seeks to advocate for improved public policies for more than just subsidies allocation, through the collection of, analysis, and visualization of data around subsidies available to fishing communities in Mexico.
 ---
 Causa Natura
