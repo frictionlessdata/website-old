@@ -29,6 +29,6 @@ innovative ways.
   *{{ case_study.short_description }}*
 {% endfor %}
 
-* [David Newbury & Daniel Fowler: Collections as Data Facets - Carnegie Museum of Art Collection Data](https://collectionsasdata.github.io/facet2/)
+* [David Newbury and Dan Fowler: Collections as Data Facets - Carnegie Museum of Art Collection Data](https://collectionsasdata.github.io/facet2/)
 
- *In this 'Always Already Computational - Collections as Data' facet, Open Knowledge International’s Dan Fowler and Carnegie Museum of Arts’ (CMOA) David Newburry document the release of CMOA data on Github for public access and creative use, and use of Frictionless Data’s set of specifications in the process.*
+  *In this 'Always Already Computational - Collections as Data' facet, Open Knowledge International’s Dan Fowler and Carnegie Museum of Arts’ (CMOA) David Newbury document the release of CMOA data on Github for public access and creative use, and use of Frictionless Data’s set of specifications in the process.*
