@@ -35,3 +35,8 @@ We currently consider transporting data between and among tools to be comparable
 **5. Built Around Existing Tooling**: Integrate with existing tools while also designing for direct use---for example, when a [Tabular Data Package](/guides/tabular-data-package/) integration is unavailable, fall back to CSV.
 
 **6. Simple**: Keep the formats and metadata simple and lightweight, and make things easy to learn and use by doing the least required.
+
+---
+
+Thanks to Open Knowledge Brasil's Marco Zanchi, [you can now read and share a Portuguese translation of this page](https://medium.com/open-knowledge-brasil/dados-com-menos-atrito-cab9e1db0d61). 
+
