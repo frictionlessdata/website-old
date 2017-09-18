@@ -11,7 +11,7 @@ short_description: "Supporting state and local workforce boards in managing and 
 ## What is the project?
 
 The Workforce Data Initiative aims to modernize the US workforce through the use of data. One aspect of this initiative is to help state and local workforce boards collect, aggregate, and distribute statistics on the effectiveness of training providers and the programs they offer. The US Department of Labor mandates that every eligible training provider (ETP) work with state workforce 
-boards to track the outcomes of their students in order to receive federal funding.  We are building a suite of open-source tools using open data specifications in order to help make this a reality; this collection of tools is called the Training Provider Outcomes Toolkit (TPOT). This specific tool, the etp-uploader, is a website that state workforce boards can eploy for training providers to upload their individual-level data.
+boards to track the outcomes of their students in order to receive federal funding.  We are building a suite of open-source tools using open data specifications in order to help make this a reality; this collection of tools is called the Training Provider Outcomes Toolkit (TPOT). This specific tool, the etp-uploader, is a website that state workforce boards can deploy for training providers to upload their individual-level data.
 
 ## What are the challenges you face working with data?
 
@@ -27,7 +27,7 @@ We have modified the [goodtables-web project](https://github.com/frictionlessdat
 
 ## What else would you like to see developed?
 
-I’m excited to see the new developments around goodtables-py 1.0 and beyond.  It will be nice to eventually move our upload website to the new APIs. One  possible area for improvement in the goodtables-web validator is better error messages when specific data values do not match constraints.  I’ve imagined using adding a custom “data_constraint_error” field to the JSON table schema that would allow for friendlier errors, or perhaps dynamically generating such error messages using the constraints themselves.
+I’m excited to see the new developments around goodtables-py 1.0 and beyond.  It will be nice to eventually move our upload website to the new APIs. One  possible area for improvement in the goodtables-web validator is better error messages when specific data values do not match constraints.  I’ve imagined adding a custom “data_constraint_error” field to the JSON table schema that would allow for friendlier errors, or perhaps dynamically generating such error messages using the constraints themselves.
 
 ## What do you think are some other potential use cases.
 
