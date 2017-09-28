@@ -30,11 +30,11 @@ We are currently using the specifications in the following ways:
 
 In the coming days, We plan on using
 - datapackage-pipelines[^dpp] as a spec for the way we treat joins and multi-step data operations in our system
-- tabulator[^tabulator] in a polyglot persistence scenario[^polyglot] - storing data in both storage buckets and either elasticsearch[^elasticsearch] or another column store like [druid.io](druid.io).
+- tabulator in a polyglot persistence scenario[^polyglot] - storing data in both storage buckets and either elasticsearch[^elasticsearch] or another column store like [druid.io](druid.io).
 
 ![Diagram](/img/case-studies/zegami-1.jpg)
 
-Moving forward it would be interesting to see tableschema[^tableschema] and tabulator[^tabulator] as a communication protocol over websockets. This would allow for a really smooth experience when using handsontable[^handsontable] spreadsheets with a datapackage of some kind. A socket-to-socket version of datapackage-pipelines[^dpp] which runs on container orchestration systems would also be interesting. There are few protocols similar to datapackage-pipelines, such as Dask[^dask] which, although similar, is not serialisable and therefor unsuitable for applications where front end communication is necessary or where the pipelines need to be used by non-coders.
+Moving forward it would be interesting to see tableschema and tabulator as a communication protocol over websockets. This would allow for a really smooth experience when using handsontable[^handsontable] spreadsheets with a datapackage of some kind. A socket-to-socket version of datapackage-pipelines which runs on container orchestration systems would also be interesting. There are few protocols similar to datapackage-pipelines, such as Dask[^dask] which, although similar, is not serialisable and therefor unsuitable for applications where front end communication is necessary or where the pipelines need to be used by non-coders.
 
 We are also keen to know more about repositories around the world that use datapackages[^datapackage] so that we can import the data and show users and owners of those repositories the benefits of browsing and visualising data in Zegami.
 
