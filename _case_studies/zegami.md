@@ -3,7 +3,7 @@ name: Zegami
 site: https://www.zegami.com
 authors: Roger Noble and Andrew Stretton
 logo: zegami-logo.png
-forum_topic:
+forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-zegami/6032"
 short_description: As a visual data exploration and analytics platform, Zegami makes the exploration of large collections of image rich information quick and simple.
 ---
 
