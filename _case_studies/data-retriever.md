@@ -5,10 +5,8 @@ authors: Ethan White
 logo: data-retriever-logo.png
 forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-the-data-retriever/5383"
 short_description: "The Data Retriever is a package manager for data. It downloads, cleans, and stores publicly available data, so that analysts spend less time cleaning and managing data, and more time analyzing it."
-
+context: "Data Retriever uses Frictionless Data specs to generate and package metadata for publicly available data"
 ---
-
-## What is the project?
 
 [The Data Retriever](http://www.data-retriever.org/) automates the
 tasks of finding, downloading, and cleaning up publicly available
@@ -18,7 +16,7 @@ managing data, and more time analyzing it.
 
 We originally built the Data Retriever starting in 2010 with a focus
 on ecological data. Over time, we realized that the common challenges
-with finding, downloading, and cleaning up ecological applied to data
+with finding, downloading, and cleaning up ecological data applied to data
 in most other fields, so we rebranded and starting integrating data
 from other fields as well.
 
@@ -29,8 +27,6 @@ starting work on supporting spatial data as well.
 Retriever automatically installing the [BBS (USGS North American
 Breeding Bird Survey)](https://www.pwrc.usgs.gov/bbs/) dataset*
 {: .caption}
-
-## What are the challenges you face working with data?
 
 Data is often messy and needs cleaning and restructuring before it can
 be effectively used. It is often not feasible to modify and
@@ -45,8 +41,6 @@ relatively clean datasets this means having a simple,
 easy-to-work-with metadata standard to describe existing data. The
 description for each dataset is written in a single file which gets
 read by our plugin infrastructure.
-
-## How do you use the specs?
 
 To describe the structure of simple data, we originally created a
 YAML-like[^yaml] metadata structure.  When the Data
@@ -64,20 +58,16 @@ begin with. For example, we use custom fields for describing how to
 convert
 [**wide** data to **long** data](https://en.wikipedia.org/wiki/Wide_and_narrow_data).
 
-## How were you made aware of Frictionless Data?
-
 We first learned about Frictionless Data through the
 [announcement](https://blog.okfn.org/2016/02/29/sloan-foundation-funds-frictionless-data-tooling-and-engagement-at-open-knowledge/)
-of their funding by the Sloan Foundation.
-
-## What else would you like to see developed?
-
-We would love to see the standard expanded to include information
-about "imperfections" in data. Currently the standard assumes that the
-person creating the metadata can modify the raw data files to comply
+of their funding by the Sloan Foundation. Going forward, we would love to see the Data Package spec expanded to include information
+about "imperfections" in data. It currently assumes that the
+person creating the metadata can modify the raw data files to comply with
 the standard rules of data structure. However this doesn’t work if
 someone else is distributing the data, which is a very common use
-case. The expansion of the standard would include things like a way to
+case.
+
+The expansion of the standard would include things like a way to
 indicate wide versus long data with enough information to uniquely
 describe how to translate from one to the other as well as information
 on single tables that are composed from data in many separate files.
@@ -101,8 +91,6 @@ to
 [open a discussion with the OKFN team](https://github.com/frictionlessdata/specs/issues/421)
 about developing a standard to apply to these changes.
 
-## What are the next things you are going to be working on yourself?
-
 Our next big step is working on the challenge of **simple data
 integration**. One of the major challenges data analysts have after
 they have cleaned up and prepared individual data sources is combining
@@ -111,8 +99,6 @@ data approaches) have proven to difficult, but we are approaching the
 problem by tackling a small number of common use cases and involving
 humans in the metadata development describing the linkages between
 datasets.
-
-## How do these specs compare to others?
 
 The major specification that is available for ecological data is the
 [Ecological Metadata Language (EML)](https://knb.ecoinformatics.org/#external//emlparser/docs/index.html). It
@@ -127,9 +113,7 @@ to data[^philosophy], which is to complement lightweight computational
 methods with human contributions to make data easier to work with
 quickly.
 
-## Are you looking for more contributors?  If so, how can they start?
-
-Definitely. We work hard to make all of our development efforts open
+Community contributions to our work are welcome. We work hard to make all of our development efforts open
 and inclusive (see our
 [Code of Conduct](https://github.com/weecology/retriever/blob/master/docs/code_of_conduct.rst))
 and love it when new developers, data scientists, and domain

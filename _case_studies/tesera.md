@@ -4,12 +4,11 @@ site: http://tesera.com/
 authors: Spencer Cox
 logo: tesera-logo.png
 forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-tesera/3986"
-short_description: Creating data-driven applications in the cloud
+short_description: "Creating data-driven applications in the cloud"
+context: "Tesera uses Frictionless Data specs to package data in readiness for use in different systems and components."
 ---
 
-## What is Tesera?
-
-We are an employee-owned company, founded in 1997.  Our focus is
+Tesera is an employee-owned company, founded in 1997.  Our focus is
 helping our clients create data-driven applications in the cloud.  We
 also maintain two core product lines in addition to our consulting
 practice.  [MRAT.ca](http://www.mrat.ca/) helps municipalities
@@ -23,22 +22,18 @@ and carbon measurement.
 *MRAT.ca and forestinventory.ca*
 {: .caption}
 
-## What are the challenges you face working with data?
-
 We deal with data from a variety of sources ranging from sample plots
 to in situ sensors. We grab samples and measurements to remotely
 sensed information from LiDAR, colour infrared and others.  Many
 proprietary specifications exist across those data sources, and to
 work around this, we’ve adopted CSV as our universal format.  We use
-Data Packages[^datapackages], CSV files, and JSON Table
-Schemas[^jsontableschema] to create database tables, validate data
+Data Packages[^datapackages], CSV files, and  Table
+Schema[^tableschema] to create database tables, validate data
 schemas and domains, import data from S3[^amazons3] to PostgreSQL,
 DynamoDB[^amazondynamodb], and Elastic[^elastic].  In some cases we
-also use these standards to move between application components, in
+also use these Frictionless Data specs to move between application components, in
 particular where multiple technologies (Python, R, Javascript, and
 other) are utilized in a workflow.
-
-## How do you use the specs?
 
 We have adopted the Data Package standard as a simple, elegant way to
 describe and package our CSV data for interoperability between systems
@@ -60,8 +55,6 @@ extensive ad-hoc quality control.**
 *Example of validation error ("not a number") on import driven by JSON Table Schema metadata*
 {: .caption}
 
-## How were you made aware of Frictionless Data?
-
 We discovered Frictionless Data through GitHub by following Max Ogden
 and some of the interesting work he is doing with
 [Dat](http://datproject.org/).  We were looking for simpler, more
@@ -75,8 +68,6 @@ observation data called the
 to make important information accessible to many stakeholders, but in
 reality, nobody was using it.  We were looking for a simpler way to
 enable data access and use for developers and downloaders alike.
-
-## What else would you like to see developed?
 
 We are especially keen on tooling that enables faster
 interoperability, especially within an AWS environment.  We envision a
@@ -107,26 +98,22 @@ imports and exports can readily be executed by Lambda; when they are
 more complex or resource-intensive, Lambda can trigger an ECS task to
 complete the work.
 
-## What are the next things you are going to be working on?
-
 We developed some basic CSV to DynamoDB and ElasticSearch loaders in
 support of a Common Operating Picture toolset for the
 [Fort McMurray Wildfires](https://en.wikipedia.org/wiki/2016_Fort_McMurray_wildfire).
-We’d like to clean those up, along with our existing RDS loaders and
+In the coming days, we would like to clean those up, along with our existing RDS loaders and
 Lambda functions and start moving towards the framework described.  We
 are cleaning up and open sourcing a number of utilities to facilitate
 these workflows with the goal of being able to describe data types in
 CSV files, then automatically map them or input them into a model.
 There may be an opportunity to explicitly identify how spatial feature
-information is carried within a Data Package or JSON Table Schema.
-
-## What do you think are some other potential use cases?
+information is carried within a Data Package or Table Schema.
 
 We are kind of excited about the method and framework itself to have
 almost [Zapier](https://zapier.com/)- or
 [IFTTT](https://ifttt.com)-like capabilities for CSV data where we can
 rapidly accomplish many common use cases enabling resources to be
-prioritized to the business value.  On the application side, we’ve
+prioritized to the business value.  On the application side, we have
 been getting pretty excited about ElasticSearch and Kibana[^kibana]
 and perhaps extending them to bring together more seamless exploration
 of large dynamic geospatial datasets, especially where the data is
@@ -150,9 +137,7 @@ Yield Initiative Plot Sharing App (PGYI) and Mackenzie DataStream.*
 *The Provincial Growth and Yield Initiative Plot Sharing App*
 {: .caption}
 
-#### What is the problem you are trying to solve?
-
-The problem: enabling the 16 government and industrial members of
+With this app, we are enabling the 16 government and industrial members of
 [Forest Growth Organization of Western Canada (FGrOW)](https://fgrow.friresearch.ca/)
 to seamlessly share forest plot measurement data with each other and
 know that the data will be interoperable and meet their
@@ -166,15 +151,13 @@ access to this large and interoperable dataset will enable their
 members to improve their growth and yield models and respond to
 bioclimatic changes as they occur.
 
-#### What was your solution?
-
 We supported FGrOW in creating a set of data standards and then
-created the JSON Table Schemas to enable a validation workflow.  The
+created the Table Schemas to enable a validation workflow.  The
 members upload a set of relational CSV files which are packaged up as
 Data Packages, uploaded to S3, and then validated by the Lambda
 Data Package Validator.  The results of this initial validation are
 returned to the user as errors (cannot proceed) or warnings (something
-is wrong but it can be accepted). 
+is wrong but it can be accepted).
 
 ![PGYI import violations](/img/case-studies/fgrow-import-violations.png)
 *PGYI import violations*
@@ -242,8 +225,6 @@ regions and natural sub-regions.  This database provides the numeric
 power to produce and refine better growth models and enable companies
 to adopt their planning and management to real conditions.
 
-#### What other uses might this project have?
-
 There are many cases where industries might wish to bring together
 measurement data in a consistent way to maximize their productivity.
 **One of the more obvious examples is in agriculture where precision
@@ -254,15 +235,13 @@ scale change, and perhaps adaption to climate change strategies.**
 
 ---
 
-### Mackenzie DataStream 
+### Mackenzie DataStream
 
 <http://www.mackenziedatastream.org/>
 
 ![Mackenzie DataStream App](/img/case-studies/mackenzie-2.png)
 *Mackenzie DataStream App*
 {: .caption}
-
-#### What is the problem you are trying to solve?
 
 [Mackenzie DataStream](http://www.mackenziedatastream.org/) is an open
 access platform for exploring and sharing water data in the Mackenzie
@@ -281,8 +260,6 @@ to overcome challenges of trust and interoperability.
 *The Mackenzie River Basin*
 {: .caption}
 
-#### What was your solution?
-
 Tesera leveraged the Data Package standard as an easy way for
 Government and community partners alike to import data into the
 system.  We used JSON Table Schema to define the structure and
@@ -296,7 +273,7 @@ visible way.
 The backend on this system also relies on the Data Package Validator
 and the Relational Database Loader.  The observation data is then
 exposed to the client via a simple [Express.js](http://expressjs.com/)
-API as JSON.  The Frictionless Data standards help us ensure clean
+API as JSON.  The Frictionless Data specifications help us ensure clean
 consistent data and make visualization a breeze.  We push the data to
 [Plotly](https://plot.ly/) to build the charts as it provides lots of
 options for scientific plotting, as well as a good api, at a minimal
@@ -319,7 +296,6 @@ environmental monitoring data more accessible.
 *Mackenzie DataStream environmental observation data*
 {: .caption}
 
-#### What other uses might this project have?
 
 There are many ways to monitor the environment, but bringing the data
 together according to standards, ensuring that it is loaded correctly,
@@ -340,7 +316,7 @@ utility to citizens, scientists, and consultants alike.
 [^datapackages]: Data Packages: <http://specs.frictionlessdata.io/data-packages/>
 [^dpm]: Data Package Manager (dpm): <https://github.com/frictionlessdata/dpm>
 [^goodtables]: Good Tables: <http://goodtables.okfnlabs.org/>
-[^jsontableschema]: JSON Table Schema: <http://specs.frictionlessdata.io/json-table-schema/>
+[^tableschema]: Table Schema: <http://specs.frictionlessdata.io/json-table-schema/>
 [^amazons3]: Amazon Simple Storage Service (Amazon S3): <https://aws.amazon.com/s3/>
 [^amazonlambda]: Amazon AWS Lambda: <https://aws.amazon.com/lambda/>
 [^github]: GitHub: <https://github.com/>
@@ -351,5 +327,3 @@ utility to citizens, scientists, and consultants alike.
 [^r]: The R Project for Statistical Computing: <https://www.r-project.org/>
 [^jtsconstraints]: JSON Table Schema Field Constraints: <http://specs.frictionlessdata.io/json-table-schema/#field-constraints>
 [wehub]: Water and Environmental Hub: <http://watercanada.net/2013/water-and-environmental-hub/>
-
-

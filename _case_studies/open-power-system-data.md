@@ -4,12 +4,10 @@ site: http://open-power-system-data.org/
 authors: Lion Hirth and Ingmar Schlecht
 logo: opsd-logo.svg
 forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-open-power-system-data/3865"
-short_description: A free-of-charge and open platform providing the data needed for power system analysis and modeling
+short_description: "A free-of-charge and open platform providing the data needed for power system analysis and modeling"
+context: "Open Power System Data uses Frictionless Data specs to avail energy data for analysis and modeling"
 ---
 
-## What is the Open Power System Data?
-
-**Lion Hirth (LH)**:
 [Open Power System Data](http://open-power-system-data.org/) aims at
 providing a **free-of-charge** and **open** platform[^platform] that provides the
 data needed for power system analysis and modeling.
@@ -26,13 +24,11 @@ used by everyone.  We are funded for two years by the German
 government.  After starting work in 2015, we have about one more year
 to go.
 
-## What are the challenges you face working with data?
-
-**LH**: On one hand, people who are interested in European power
+On one hand, people who are interested in European power
 systems are lucky because a lot of data needed for that research is
 available.  If you work on, say, Chinese systems, and you are not
 employed at the Chinese power company, you probably won’t find
-anything.  On the other hand, if you are looking for long enough (and
+anything.  On the other hand, if you search long enough (and
 you know where to look), you can find stuff online (and usually free
 of charge) on European power systems---not everything you want, but a
 big chunk, so in that respect, we are all lucky.  However, this data
@@ -40,9 +36,13 @@ is quite problematic for many reasons.
 
 [![Available Data](/img/case-studies/opsd-1.png)](http://data.open-power-system-data.org/)
 
-*Data availability overview on the platform* 
+*Data availability overview on the platform*
 
-### Inconsistent Data Sources
+Some of the problems we face in working with data include:
+- varied data sources and formats
+- licensing issues
+- 'dirty' data
+### Inconsistent Data Sources and formats
 
 First, it is scattered throughout the Internet and very hard to
 Google.  For example, the Spanish government will only publish their
@@ -96,7 +96,7 @@ to four German transmission system operators and it took us a full
 year of meetings and emails to convince them.  They finally signed on
 to open licensing last month.
 
-### The Devil in the Details
+### 'Dirty' data aka the devil in the details
 
 Some of the most annoying problems are not the major problems, but all
 these surprising minor problems.  As I mentioned earlier, I work a lot
@@ -125,11 +125,9 @@ wrangling for the first time (and you don’t really want to do it, but
 rather you want to learn something about solar power in Switzerland)
 then this is, of course, the a long detour for a lot of our users.
 
-## How do you use the specs?
-
-**LH**: We collect time series data for renewable and thermal power
+We collect time series data for renewable and thermal power
 plants, each of which we compile into a dataset that follows the
-standard for a Tabular Data Package[^tdp], consisting of a
+specification for a Tabular Data Package[^tdp], consisting of a
 `datapackage.json` file for metadata and a CSV file containing the
 actual data. On top of this we include the same data in Excel format
 and also some differently structured CSV files to suit the needs of
@@ -141,9 +139,7 @@ Where the data in each column is homogeneous in terms of the original
 source, as is the case with time series data, the `datapackage.json`
 file is used to document the sources per column.
 
-## How were you made aware of Frictionless Data?
-
-**LH**: We started this project only knowing what we wanted to do in
+We started this project only knowing what we wanted to do in
 vague terms, but very little understanding of how to go about it, so
 we weren’t clear at all about how to publish this data.  The first
 idea that we had was to build a database without any of us knowing
@@ -162,9 +158,7 @@ the
 That it perfectly fit our needs was pretty evident within a few
 minutes, and we decided to go along with this.
 
-## What else would you like to see developed?
-
-**LH**: A lot of our clients are practitioners that use Microsoft
+A lot of our clients are practitioners that use Microsoft
 Excel as a standard tool.  If I look at a data source, and I open a
 well structured Excel sheet with colors and (visually) well structured
 tables, it makes it a lot easier for me to get a first glimpse of the
@@ -190,7 +184,7 @@ publish the data in an Excel file for those who prefer it.  On top of
 that we publish everything in an SQLite database for our clients and
 users who would like it in an SQL database.
 
-**Ingmar Schlecht (IS)**: I think there is potential to expand on the
+We also think there is potential to expand on the
 [Data Package Viewer](http://data.okfn.org/tools/view) tool provided
 by Open Knowledge International. In its current state, we cannot
 really use it, because it hangs on the big datasets we're working
@@ -222,18 +216,14 @@ Advantages I see from those things are:
   which is important for all sorts of things you can do with Data
   Packages.
 
-## What is the Data Processing workflow?
-
-**LH**: Regarding the data flow, I would refer you to our processing
+Regarding the data processing workflow we created, I would refer you to our processing
 scripts[^scripts] on GitHub. I talked a lot about time series data –
 this should give you an
 [overview](https://github.com/Open-Power-System-Data/time_series/blob/master/main.ipynb);
 here are the
 [processing details](https://github.com/Open-Power-System-Data/time_series/blob/master/processing.ipynb).
 
-## What are the next things you are going to be working on yourself?
-
-**LH**: We are going to work on extend the geographic scope and other
+In the coming days, we are going to extend the geographic scope and other
 various details---user friendliness, interpolation, data quality
 issues---so no big changes, just further work in the same direction.
 

@@ -4,7 +4,8 @@ site: https://www.zegami.com
 authors: Roger Noble and Andrew Stretton
 logo: zegami-logo.png
 forum_topic: "https://discuss.okfn.org/t/new-frictionless-data-case-study-published-zegami/6032"
-short_description: As a visual data exploration and analytics platform, Zegami makes the exploration of large collections of image rich information quick and simple.
+short_description: "As a visual data exploration and analytics platform, Zegami makes the exploration of large collections of image rich information quick and simple."
+context: " Zegami is using Frictionless Data specs for data management and syntactic analysis on their visual data analysis platform"
 ---
 
 [Zegami](https://www.zegami.com) makes information more visual and accessible, enabling intuitive exploration, search and discovery of large data sets. Zegami combines the power of machine learning and human pattern recognition to reveal hidden insights and new perspectives.
@@ -45,7 +46,7 @@ In terms of the next steps for us, we are currently working on a SaaS implementa
 [^messytables]: Tools for parsing messy tabular data: <https://github.com/okfn/messytables>
 [^specs]: Frictionless Data Specifications: <https://specs.frictionlessdata.io/>
 [^tableschema]: Table Schema: <http://specs.frictionlessdata.io/json-table-schema/>
-[^tabulator]:Tabulator:  library for reading and writing tabular data <https://github.com/frictionlessdata/tabulator-py>
+[^tabulator]:Tabulator:  library for reading and writing tabular data: <https://github.com/frictionlessdata/tabulator-py>
 [^polyglot]: Polyglot Persistence: <https://en.wikipedia.org/wiki/Polyglot_persistence>
 [^tableschemapy]: Table Schema Python Library: <https://github.com/frictionlessdata/tableschema-py>
 [^elasticsearch]: Elastic Search: <https://www.elastic.co/products/elasticsearch>
