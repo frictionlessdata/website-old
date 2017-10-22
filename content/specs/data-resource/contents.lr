@@ -1,5 +1,15 @@
 title: Data Resource
 ---
+created: 2016-12-11
+---
+description: A simple format to describe and package a single data resource such as a individual table or file.
+---
+media_type: application/vnd.dataresource+json
+---
+updated: 2017-05-02
+---
+version: 1.0-rc.2
+---
 body:
 
 ## Introduction
@@ -267,13 +277,4 @@ appropriate for the data they manage. As an example, the [Tabular Data Package](
 [jts]: /table-schema/
 [iana]: http://www.iana.org/assignments/character-sets/character-sets.xhtml
 [dp]: /data-package/
----
-created: 2016-12-11
----
-description: A simple format to describe and package a single data resource such as a individual table or file.
----
-media_type: application/vnd.dataresource+json
----
-updated: 2017-05-02
----
-version: 1.0-rc.2
+
