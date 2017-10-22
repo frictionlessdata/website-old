@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="container">
+  <div class="main">
+
+    <aside class="menu">
+      <div class="wrapper">
+        <nav id="context-nav">
+          {% include 'includes/nav.html' %}
+        </nav>
+      </div>
+    </aside>
+
+    <article class="content">
+      <h1>{{ this.title }}</h1>
+      {% for k, v in bag('changelog').iteritems() %}
+      {% if k != 'consolidated' %}
+      <h2><a href="/{{ k }}/">{{ k }}</a></h2>
+      {% endif %}
+      <ul>
+        {% for k, item in v.iteritems() %}
+        <li>{{ item|markdown }}</li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+      {% if k == 'consolidated' %}
+      <p>
+        Prior to v1, the changelog for each specification was distinct. See below.
+      </p>
+      {% endif %}
+    </articel>
+  </div>
+
+</div>
+{% endblock %}

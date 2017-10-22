@@ -1,0 +1,15 @@
+title: Good Tables
+---
+description: A web service to validate and process tabular data.
+---
+link1: http://goodtables.okfnlabs.org
+---
+link1_label: Website
+---
+link2: https://github.com/frictionlessdata/goodtables-web
+---
+link2_label: Repository
+---
+tool_category: tools-and-integrations
+---
+tags: service

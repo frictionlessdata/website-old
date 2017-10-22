@@ -1,0 +1,71 @@
+.filter-button-group {
+
+  .btn {
+    margin-top: $spacer/2;
+    &.selected {
+      @include button-variant(theme-color("primary"), theme-color("primary"));
+    }
+  }
+}
+
+.tool-list {
+  margin-right: ($grid-gutter-width / -4);
+  margin-left:  ($grid-gutter-width / -4);
+  padding-top: $spacer;
+  padding-bottom: $spacer*2;
+  font-family: $font-family-sans-serif;
+
+  .tool-item {
+    padding: $grid-gutter-width/4;
+    width: 100%;
+
+    &.featured {
+
+      .inner {
+        @include rev-out(theme-color("primary"));
+        border-color: theme-color("primary");
+      }
+
+      .btn {
+        @include button-variant($body-bg, rgba($body-bg,0));
+        color: theme-color("primary");
+
+        & + .btn {
+          @include button-variant(rgba($body-bg,0.7), rgba($body-bg,0));
+          color: theme-color("primary");
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+
+      &.featured {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: (100% /3);
+
+      &.featured {
+        width: (100% /3)*2;
+      }
+    }
+
+    .inner {
+      border: $card-border-width solid $card-border-color;
+      @include border-radius($card-border-radius);
+      padding: $card-spacer-x;
+    }
+
+    .btn {
+      @include button-variant(theme-color("primary"), theme-color("primary"));
+      @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+
+      & + .btn {
+        @include button-variant(theme-color("dark"), theme-color("dark"));
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{% if bag('implementations', this._slug) %}
+<h2>Implementations</h2>
+<p>The following implementations are available for {{ this._slug }}:</p>
+<ul>
+  {% for k, v in bag('implementations', this._slug).iteritems() %}
+  <li><a href="{{ v }}">{{ k }}</a></li>
+  {% endfor %}
+</ul>
+<p>See the <a href="{{ '/specs/implementation/'|url }}">implementation</a> page for further information on writing an implementation of a Frictionless Data specification.</p>
+{% endif %}

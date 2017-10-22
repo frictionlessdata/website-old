@@ -1,0 +1,159 @@
+<ul>
+ <li>
+   <a class="{% if this._path == '/' %}active{% endif %}" href="{{ '/'|url }}">
+     {{ bag('global_content').home_label }}
+   </a>
+ </li>
+ {% for href, title in bag('sections').iteritems() %}
+
+ {% if href == '/articles' %}
+ <li class="{% if this._path == href %}active{% endif %} {% if this._path.startswith(href) %}active-parent{% endif %}">
+   <a href="{{ href|url }}">
+     {{ title }}
+   </a>
+   <ul>
+   {% for t in site.query('/article-types') %}
+     {% set children = t.children %}
+     {% if children %}
+     <li class="mm-divider">
+       {{ t.name }}
+     </li>
+
+     {% for child in children %}
+     <li class="{% if this._path == child.path %}active{% endif %}">
+       <a href="{{ child.path|url }}">{{ child.title }}</a>
+     </li>
+     {% endfor %}
+     {% endif %}
+  {% endfor %}
+  </ul>
+</li>
+
+{% elif href == '/tools' %}
+<li class="{% if this._path == href %}active{% endif %}">
+  <a href="{{ href|url }}">
+    {{ title }}
+  </a>
+</li>
+
+{% elif href == '/guides' %}
+<li class="{% if this._path == href %}active{% endif %} {% if this._path.startswith(href) %}active-parent{% endif %}">
+  <a href="{{ href|url }}">
+    {{ title }}
+  </a>
+  <ul>
+  {% for t in site.query('/guide-categories') %}
+    {% set children = t.children %}
+    {% if children %}
+    <li class="mm-divider">
+      {{ t.name }}
+    </li>
+
+    {% for child in children %}
+    <li class="{% if this._path == child.path %}active-parent{% endif %}">
+      <a href="{{ child.path|url }}">{{ child.title }}</a>
+      <ul>
+        <li class="{% if this._path == child.path %}active{% endif %}">
+          <a href="{{ child.path|url }}">{{ bag('global_content').introduction }}</a>
+        </li>
+        {% for item in child.body.toc recursive %}
+        <li>
+          <a href="{{ child.path|url }}#{{ item.anchor }}">{{ item.title }}</a>
+          {% if item.children %}
+          <ul>{{ loop(item.children) }}</ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+    {% endif %}
+ {% endfor %}
+ </ul>
+</li>
+
+{% elif href == '/specs' %}
+<li class="{% if this._path.startswith(href) %}active-parent{% endif %}">
+  <a href="{{ href|url }}">
+    {{ title }}
+  </a>
+
+  <ul>
+    <li class="mm-divider">
+      {{ bag('global_content').introduction }}
+    </li>
+    {% set sections = site.get_root().children %}
+    {% for s in sections %}
+    {% if s.path == href %}
+    <li class="{% if this._path == href %}active{% endif %}">
+      <a href="{{ href|url }}">{{ s.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    {% set children = site.get(href).children %}
+    {% if children %}
+    <li class="mm-divider">
+      {{ bag('global_content').specifications }}
+    </li>
+    {% for child in children %}
+    {% if child._model == 'spec' %}
+    <li class="{% if this._path == child.path %}active-parent{% endif %}">
+      <a href="{{ child.path|url }}">{{ child.title }}</a>
+      <ul>
+        <li class="{% if this._path == child.path %}active{% endif %}">
+          <a href="{{ child.path|url }}#meta">{{ bag('global_content').meta }}</a>
+        </li>
+        <li>
+          <a href="{{ child.path|url }}#{{ bag('spec-language').heading | lower | replace(" ", "-") }}">{{ bag('spec-language').heading }}</a>
+        </li>
+        {% for item in child.body.toc recursive %}
+        <li>
+          <a href="{{ child.path|url }}#{{ item.anchor }}">{{ item.title }}</a>
+          {% if item.children %}
+          <ul>{{ loop(item.children) }}</ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    <li class="mm-divider">
+      {{ bag('global_content').supplementary_information }}
+    </li>
+    {% for child in children %}
+    {% if child._model != 'spec' %}
+    <li class="{% if this._path == child.path %}active{% endif %}">
+      <a href="{{ child.path|url }}">{{ child.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    <li>
+      <a href="https://pre-v1.frictionlessdata.io/" rel="external">Pre v1</a>
+    </li>
+ </ul>
+
+</li>
+
+{% else %}
+ <li class="{% if this._path == href %}active{% endif %}">
+   <a href="{{ href|url }}">
+     {{ title }}
+   </a>
+     {% set children = site.get(href).children %}
+     {% if children %}
+     <ul>
+       {% for child in children %}
+         <li class="{% if this._path == child.path %}active{% endif %}">
+           <a href="{{ child.path|url }}">{{ child.title }}</a>
+         </li>
+       {% endfor %}
+     </ul>
+     {% endif %}
+ </li>
+ {% endif %}
+ {% endfor %}
+</ul>

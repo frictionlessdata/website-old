@@ -1,0 +1,169 @@
+.page-template,
+.article-template,
+.guide-template,
+.specs-template,
+.spec-template,
+.changelog-template {
+
+  .page {
+    & > .container {
+      flex-direction: row;
+    }
+  }
+
+  .banner {
+
+    .article-type {
+      display: flex;
+      align-items: center;
+      color: $body-color;
+      background-color: $gray-100;
+      font-weight: bold;
+      font-size: 18px;
+
+      @include media-breakpoint-up(sm) {
+        float: right;
+      }
+
+      svg {
+        width: 2.2em;
+        height: 2.2em;
+        background-color: $gray-200;
+        fill: $body-color;
+        padding: 0.4em;
+      }
+
+      span {
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+      }
+    }
+  }
+
+  .main {
+    @include make-row();
+    flex-grow: 1;
+    width: 100%;
+    @include make-container-max-widths();
+
+    .menu {
+      display: none;
+      @include media-breakpoint-up(xl) {
+        display: flex;
+        @include make-col-ready();
+        @include make-col(3);
+
+        .wrapper {
+          position: relative;
+          flex-grow: 1;
+        }
+      }
+    }
+
+    .content {
+      @include make-col-ready();
+      @include media-breakpoint-up(xl) {
+        @include make-col(9);
+      }
+
+      & > .card {
+        margin-left: -$spacer;
+        margin-right: -$spacer;
+        margin-bottom: $spacer*2;
+        border-radius: $border-radius-sm;
+
+        .table {
+          th,
+          td {
+            padding-left: $spacer;
+            padding-right: $spacer;
+          }
+        }
+      }
+    }
+  }
+
+  P, pre, ul, ol, blockquote, .highlight {
+    // new section
+    & + h2 {
+      margin-top: 1.5em;
+    }
+  }
+
+  p.lead {
+    & + h2 {
+      margin-top: 1em;
+    }
+  }
+}
+
+.callout {
+  @include rev-out;
+  margin: 1em (-$spacer) 2em (-$spacer);
+  padding: $spacer;
+  font-family: $font-family-sans-serif;
+
+  a {
+    color: inherit;
+  }
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    align-items: center;
+  }
+
+  .image {
+    background-color: $body-bg;
+    padding: $spacer;
+    display: block;
+
+    & + .text {
+      padding-top: $spacer;
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 25%;
+      flex-shrink: 0;
+      align-self: flex-start;
+
+      & + .text {
+        padding-top: 0;
+        padding-left: $spacer;
+      }
+    }
+
+    span {
+      display: block;
+      padding-top: 62%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &.profile {
+      padding: 0;
+
+      span {
+        padding-top: 100%;
+        background-size: cover;
+      }
+    }
+  }
+
+  .profile-name {
+    margin-bottom: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footnotes {
+  margin-top: 4em;
+
+  ol {
+    font-size: $font-size-sm;
+    word-wrap: break-word;
+  }
+}

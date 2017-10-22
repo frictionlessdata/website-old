@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="container">
+  <div class="main">
+
+    <aside class="menu">
+      <div class="wrapper">
+        <nav id="context-nav">
+          {% include 'includes/nav.html' %}
+        </nav>
+      </div>
+    </aside>
+
+    <article class="content">
+      <h1>{{ this.title }}</h1>
+      <p class="lead">
+        {{ this.description }}
+      </p>
+      <div class="card">
+        <table class="table">
+          {% if bag('curators', this._slug) %}
+          <tr>
+            <th>{{ bag('global_content').author_s }}</th>
+            <td>
+              {% for handle, name in bag('curators', this._slug).iteritems() %}
+              {{ name }}<span class="separator">, </span>
+              {% endfor %}
+            </td>
+          </tr>
+          {% endif %}
+          {% if this.media_type %}
+          <tr>
+            <th>{{ bag('global_content').media_type }}</th>
+            <td>{{ this.media_type }}</td>
+          </tr>
+          {% endif %}
+          <tr>
+            <th>{{ bag('global_content').json_schema_for_spec }}</th>
+            <td>
+              <a href="https://specs.frictionlessdata.io/schemas/{{this._slug}}.json">specs.frictionlessdata.io/schemas/{{this._slug}}.json
+            </td>
+          </tr>
+          {% if this.version %}
+          <tr>
+            <th>{{ bag('global_content').version }}</th>
+            <td>{{ this.version }}</td>
+          </tr>
+          {% endif %}
+          {% if this.updated %}
+          <tr>
+            <th>{{ bag('global_content').last_updated }}</th>
+            <td>{{ this.updated.strftime('%d %B %Y') }}</td>
+          </tr>
+          {% endif %}
+          {% if this.created %}
+          <tr>
+            <th>{{ bag('global_content').created }}</th>
+            <td>{{ this.created.strftime('%d %B %Y') }}</td>
+          </tr>
+          {% endif %}
+        </table>
+      </div>
+      <h3 id="{{ bag('spec-language').heading | lower | replace(" ", "-") }}">{{ bag('spec-language').heading }}</h3>
+      {{ bag('spec-language').body | markdown }}
+
+      {{ this.body }}
+
+      {% include 'includes/changelog.html' %}
+      {% include 'includes/implementations.html' %}
+    </article>
+  </div>
+</div>
+
+{% endblock %}

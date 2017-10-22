@@ -1,0 +1,149 @@
+.articles-template,
+.article-type-template {
+
+  .intro {
+    padding-top: $spacer*2;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: $spacer*3;
+    }
+  }
+
+  .article-list {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+    overflow: hidden;
+    margin-right: ($grid-gutter-width / -4);
+    margin-left:  ($grid-gutter-width / -4);
+
+    .type-heading {
+      margin-bottom: $spacer*2;
+      font-weight: normal;
+      color: rgba($body-color, 0.75);
+      position: relative;
+      display: inline-block;
+      font-size: 1.5rem;
+
+      &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: rgba($body-color, 0.75);
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        width: 100vw;
+        margin-left: 0.5em;
+      }
+    }
+
+    .article-heading {
+      a {
+        color: inherit;
+
+        &:hover {
+          color: theme-color("primary");
+        }
+      }
+    }
+
+    .article-group {
+      padding-bottom: $spacer*2;
+    }
+
+    .preview {
+      padding-bottom: $spacer;
+      margin-bottom: $spacer;
+      padding: $grid-gutter-width/4 $grid-gutter-width/4 0 $grid-gutter-width/4;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: 50%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: (100% /3);
+      }
+
+      .image {
+        height: 8em;
+        line-height: 5em;
+        background-color: $gray-100;
+        font-family: $font-family-sans-serif;
+        padding: 1.5em;
+        position: relative;
+        text-align: center;
+        margin-bottom: $spacer;
+        border: solid 2px $gray-100;
+
+        a {
+          display: block;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          color: $gray-200;
+          text-decoration: none;
+          font-size: 3em;
+          font-weight: bold;
+        }
+
+        .type {
+          position: absolute;
+          top: 0.5em;
+          left: 0;
+          @include rev-out;
+          line-height: 1;
+          font-weight: 600;
+          font-size: $font-size-sm;
+          padding: 0.2em 0.3em;
+        }
+
+        &.has {
+          background-color: #fff;
+        }
+      }
+
+      & > :last-child {
+        margin-bottom: 0;
+        padding-bottom: $grid-gutter-width/2;
+        border-bottom: solid 1px $gray-100;
+      }
+
+      &.grantee-profiles {
+        .image {
+          padding: 0;
+
+          a {
+            background-size: cover;
+          }
+        }
+      }
+
+      &.pilots {
+        .image {
+          a {
+            background-color: $body-color;
+            mask: url(../icons/rocket.svg);
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            mask-position: center;
+          }
+        }
+      }
+    }
+  }
+
+  .no-cssmask & {
+    .article-list {
+      .pilots.preview {
+        .image {
+          a {
+            background-color: transparent;
+            background-image: url(../icons/rocket.svg);
+          }
+        }
+      }
+    }
+  }
+}

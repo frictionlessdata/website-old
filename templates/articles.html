@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% from "macros/articles.html" import render_post_preview %}
+{% from "macros/pagination.html" import render_pagination %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="banner">
+  <div class="container">
+    <h1>{{ this.title }}</h1>
+    <div class="filter-button-group">
+      <button class="btn selected" data-filter="*">{{ bag('global_content').all }}</button>
+      {% for category in site.query('/article-types') %}
+      {% if category.children %}
+      <button class="btn" data-filter=".cat-{{ category._id }}">{{ category.name }}</button>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="intro">
+    {{ this.body }}
+  </div>
+
+  <div class="article-list">
+
+    {% for article in this.children.order_by('-pub_date') %}
+    {{ render_post_preview(article) }}
+    {% endfor %}
+
+  </div>
+
+  {% endblock %}
+
+</div>

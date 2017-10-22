@@ -1,0 +1,13 @@
+title: SmartCSV.fx
+---
+description: A simple JavaFX application to load, save and edit a CSV file and provide a JSON configuration for columns to check the values in the columns.
+---
+link1: http://frosch95.github.io/SmartCSV.fx/
+---
+link1_label: Website
+---
+link2: https://github.com/frosch95/SmartCSV.fx
+---
+link2_label: Repository
+---
+tool_category: tools-and-integrations

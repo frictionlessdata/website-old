@@ -1,0 +1,9 @@
+title: BIML Enabled Tabular Data Package Importer
+---
+description: BIML (Business Intelligence Markup Language) project that uses datapackage.json to generate SSIS packages that can load the contents of a Tabular Data Package into a SQL Server database.
+---
+link1: https://github.com/bimlscript/BETDPI
+---
+link1_label: Repository
+---
+tool_category: tools-and-integrations

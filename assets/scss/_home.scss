@@ -1,0 +1,192 @@
+.home-template {
+  font-family: $font-family-sans-serif;
+
+  .main-nav {
+    .dropdown-toggle {
+      @include button-variant($gray-900, $gray-900);
+    }
+  }
+
+  .banner {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .image {
+      @include media-breakpoint-up(lg) {
+        flex-basis: 50%;
+        background-size: cover;
+        background-position: center;
+        min-height: 380px;
+        align-self: stretch;
+      }
+    }
+
+    .text {
+      padding-top: $spacer*3;
+      padding-bottom: $spacer*3;
+
+      @include media-breakpoint-up(lg) {
+        flex-basis: 50%;
+        padding-left: $spacer*3
+      }
+
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      & > a {
+        display: table;
+        text-decoration: none;
+        font-size: 1.25em;
+        font-weight: 600;
+        margin-top: $spacer;
+
+        svg {
+          fill: currentColor;
+          width: 2em;
+          height: 2em;
+          margin-right: 0.5em;
+          display: table-cell;
+          vertical-align: middle;
+
+          & + span {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  section:nth-child(even) {
+    background-color: $gray-100;
+
+    & + .about {
+      border-top: none;
+    }
+  }
+
+  .features {
+    padding-top: $spacer*3;
+
+    .container > div {
+      padding-top: $spacer*3;
+      @include make-row();
+    }
+
+    .section-heading {
+      color: rgba($body-color, 0.75);
+      font-weight: normal;
+    }
+
+    .feature {
+      @include make-col-ready();
+      padding-bottom: $spacer*3;
+
+      svg {
+        width: 4rem;
+        height: 4rem;
+        fill: theme-color("primary");
+      }
+
+      a {
+        font-weight: 600;
+      }
+
+      .feature-heading {
+        @include media-breakpoint-up(lg) {
+          font-size: 2rem;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: $font-size-lg;
+      }
+
+    }
+  }
+
+  .about {
+    padding-bottom: $spacer*3;
+    padding-top: $spacer*3;
+    border-top: solid 1px $gray-300;
+
+    .intro {
+      @include media-breakpoint-up(md) {
+        font-size: $font-size-lg;
+      }
+    }
+    .image {
+      padding-top: $spacer*3;
+      padding-bottom: $spacer*2;
+      text-align: center;
+    }
+    .body {
+      padding-top: $spacer*2;
+
+      @include media-breakpoint-up(xl) {
+        column-count: 2;
+        column-gap: $spacer*4;
+        column-rule: 1px solid $gray-200;
+      }
+    }
+  }
+
+  .newsletter {
+    @include rev-out($gray-700);
+    padding-top: $spacer*2;
+    padding-bottom: $spacer;
+
+    #mc_embed_signup_scroll { // using what MailChimp gives me, for ease of updating HTML
+
+      @include media-breakpoint-up(md) {
+        display: flex;
+      }
+
+      .mc-field-group {
+        flex-grow: 1;
+        margin-bottom: $spacer;
+
+        @include media-breakpoint-up(md) {
+          padding-right: $spacer;
+        }
+
+        .text-hide {
+          display: block;
+          margin: 0;
+        }
+
+        input {
+          display: block;
+          width: 100%;
+          padding: $input-btn-padding-y $input-btn-padding-x;
+          font-size: $font-size-base;
+          line-height: $input-btn-line-height;
+          color: $input-color;
+          background-color: $input-bg;
+          // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214.
+          background-image: none;
+          background-clip: padding-box;
+          border: $input-btn-border-width solid $input-bg;
+        }
+      }
+
+      .button {
+        font-weight: $btn-font-weight;
+        border: $input-btn-border-width solid transparent;
+        @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
+        @include button-variant(theme-color("primary"), theme-color("primary"));
+        margin-bottom: $spacer;
+      }
+    }
+  }
+}

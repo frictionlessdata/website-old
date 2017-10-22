@@ -1,0 +1,16 @@
+.ekko-lightbox {
+	.modal-content {
+		// faux close button
+		&:after {
+			content: '\2715';
+			font-weight: $close-font-weight;
+			position: absolute;
+			font-size: 4vmin;
+			right: -5vmin;
+			top: 1vmin;
+			color: $close-color;
+			pointer-events: none;
+			text-shadow: $close-text-shadow;
+		}
+	}
+}

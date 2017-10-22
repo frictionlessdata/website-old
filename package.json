@@ -1,0 +1,19 @@
+{
+  "name": "frictionlessdata",
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "bootstrap": "^4.0.0-beta",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-modernizr": "^1.0.2",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-svgstore": "^1.0.0",
+    "jquery.mmenu": "^6.1.7",
+    "pygments-rouge-css": "^0.1.0"
+  },
+  "scripts": {
+    "build": "grunt icons && grunt sass && grunt postcss && grunt modernizr"
+  }
+}

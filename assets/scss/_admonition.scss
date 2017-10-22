@@ -1,0 +1,33 @@
+.admonition {
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $alert-margin-bottom;
+  border: $alert-border-width solid transparent;
+  @include border-radius($alert-border-radius);
+  font-family: $font-family-sans-serif;
+  font-size: 0.95rem;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.admonition-note {
+  @include alert-variant(theme-color-level(light, 0), theme-color-level(light, 0), theme-color-level(light, 10));
+}
+
+.admonition-info {
+  @include alert-variant(theme-color-level(info, -10), theme-color-level(info, -10), theme-color-level(info, 9));
+}
+
+.admonition-tip {
+  @include alert-variant(theme-color-level(success, -10), theme-color-level(success, -10), theme-color-level(success, 9));
+}
+
+.admonition-warning {
+  @include alert-variant(theme-color-level(warning, -10), theme-color-level(warning, -10), theme-color-level(warning, 9));
+}

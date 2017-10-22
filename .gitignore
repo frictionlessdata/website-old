@@ -1,4 +1,12 @@
-_site
-.sass-cache
-*.pyc
-Gemfile.lock
+build/*
+.*.swp
+.DS_Store
+
+.idea
+.projectile
+TAGS
+
+node_modules/*
+
+icons-demo.html
+icons.svg
