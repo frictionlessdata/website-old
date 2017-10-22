@@ -1,13 +1,13 @@
 [project]
-name = frictionlessdata
-
-[servers.ghpages]
-enabled = yes
-default = yes
-target = ghpages://smth/frictionlessdata
+name = Frictionless Data
 
 [packages]
 lektor-s3 = 0.4.0
 lektor-markdown-highlighter = 0.1
 lektor-markdown-header-anchors = 0.2
 lektor-markdown-admonition = 0.1
+
+[servers.s3]
+name = S3
+enabled = yes
+target = s3://frictionlessdata.io
