@@ -1,18 +1,20 @@
 title: Zegami
 ---
-article_type: case-studies
+interviewee: Roger Noble and Andrew Stretton
+---
+pub_date: 2017-09-28
 ---
 body:
 
 [Zegami](https://www.zegami.com) makes information more visual and accessible, enabling intuitive exploration, search and discovery of large data sets. Zegami combines the power of machine learning and human pattern recognition to reveal hidden insights and new perspectives.
 
-![imagesearch](/img/case-studies/zegami-2.gif) *image search on Zegami*
-{: .caption}
+![imagesearch](zegami-2.gif) <br/> *image search on Zegami*
+
 
 It provides a more powerful tool for visual data than what’s possible with spreadsheets or typical business intelligence tools. By presenting data within a single field of view, Zegami enables users to easily discover patterns and correlations. Facilitating new insights and discoveries that would otherwise not be possible.
 
-![metadatasearch](/img/case-studies/zegami-3.gif) *metadata search on Zegami*
-{: .caption}
+![metadatasearch](zegami-3.gif) <br/> *metadata search on Zegami*
+
 
 For Zegami to shine, our users need to be able to easily import their data so they can get actionable insight with minimal fuss. In building an analytics platform we face the unique challenge of having to support a wide variety of data sources and formats. The challenge is compounded by the fact that the data we deal with is rarely clean.
 
@@ -29,7 +31,7 @@ In the coming days, We plan on using
 - datapackage-pipelines[^dpp] as a spec for the way we treat joins and multi-step data operations in our system
 - tabulator in a polyglot persistence scenario[^polyglot] - storing data in both storage buckets and either elasticsearch[^elasticsearch] or another column store like [druid.io](druid.io).
 
-![Diagram](/img/case-studies/zegami-1.jpg)
+![Diagram](zegami-1.jpg)
 
 Moving forward it would be interesting to see tableschema and tabulator as a communication protocol over websockets. This would allow for a really smooth experience when using handsontable[^handsontable] spreadsheets with a datapackage of some kind. A socket-to-socket version of datapackage-pipelines which runs on container orchestration systems would also be interesting. There are few protocols similar to datapackage-pipelines, such as Dask[^dask] which, although similar, is not serialisable and therefor unsuitable for applications where front end communication is necessary or where the pipelines need to be used by non-coders.
 
@@ -57,12 +59,10 @@ In terms of the next steps for us, we are currently working on a SaaS implementa
 [^pyconuk]: PyCon UK 2017 Schedule: <http://2017.pyconuk.org/schedule/>
 
 ---
-interviewee: Roger Noble and Andrew Stretton
+article_type: case-studies
 ---
-pub_date: 2017-09-28
----
-subject_context: 
----
-summary: As a visual data exploration and analytics platform, Zegami makes the exploration of large collections of image rich information quick and simple.
+subject_context: Zegami is using Frictionless Data specifications for data management and syntactic analysis on their visual data analysis platform
 ---
 subject_img: zegami-logo.png
+---
+summary:  As a visual data exploration and analytics platform, Zegami makes the exploration of large collections of image rich information quick and simple.

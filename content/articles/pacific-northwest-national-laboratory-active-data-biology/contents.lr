@@ -1,6 +1,6 @@
 title: Pacific Northwest National Laboratory - Active Data Biology
 ---
-article_type: pilots
+pub_date: 2017-06-26
 ---
 author: Sam Payne (PNNL), Joon-Yong Lee (PNNL), Dan Fowler (OKI)
 ---
@@ -35,7 +35,7 @@ software directly from the repository and serves up an interactive
 visualization for data exploration. Any insight you choose to record
 gets checked back into the repository.
 
-![ADBio](/img/pilots/adbio.png)
+![ADBio](adbio.png)
 
 When we were first approached by Sam and his team, they outlined
 several use cases for which it might be valuable to have formal Data
@@ -99,12 +99,12 @@ The `metadata.tsv` file is specially formatted compared to other TSV
 the header for describing a column’s *methods* and *descriptions*.
 While this is a neat way of storing metadata for each column, it is
 not particularly standard as ordinarily, we would expect all rows
-below the header contain actual data.  Nevertheless, the provided a
+below the header contain actual data.  Nevertheless, it provided a
 great start to the development of a custom schema.  We used the
 information stored in these rows to generate a
 [Table Schema](http://specs.frictionlessdata.io/table-schema/) for the
-data compatible with our tooling
-([the schema](https://github.com/frictionlessdata/ADB-User-Study/blob/master/metadata-schema.json))
+data compatible with our software
+([the schema](https://github.com/frictionlessdata/ADB-User-Study/blob/master/metadata-schema.json)).
 
 For instance, if a column in the original metadata.tsv file had the
 text `categorical` in its `#methods` row, we knew that this translated
@@ -159,7 +159,7 @@ discussion on the
 [topic](https://github.com/frictionlessdata/specs/issues/97), we had
 not yet established a formal way of specifying.  In part due to
 observed usage and the needs of the pilot, we formalized an approach
-to recording infomation about which values signal missing data in
+to recording information about which values signal missing data in
 [mid-August 2016](https://twitter.com/OKFNLabs/status/765568650699018241).
 We added this information to the Table Schema:
 
@@ -171,18 +171,18 @@ We added this information to the Table Schema:
 ]
 ```
 
-### Tools
+### Software
 
-GoodTables had
+goodtables had
 [existed](http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html)
 as a Python library and web application developed by Open Knowledge
 International to support the validation of tabular datasets both in
 terms of structure and also with respect to a published schema as
-described above.  This tool was put to good use in a local government
+described above. This software was put to good use in a local government
 context.
 
 For this pilot, and in coordination with other work in the project, we
-took the opportunity to drastically improve the tool to support the
+took the opportunity to drastically improve the software to support the
 online, automated validation referenced in the above use case.  We
 took as inspiration the workflow in use in software development
 environments around the world---continuous automated testing---and
@@ -192,11 +192,11 @@ new data publishing workflow that is applicable beyond PNNL’s needs.
 It is designed to be extensible, so that custom checks and custom
 backends (e.g. other places where one might publish a dataset) can
 take advantage of this workflow.  For example, in addition to datasets
-stored on GitHub, the new Good Tables supports the automated
+stored on GitHub, the new goodtables supports the automated
 validation of datasets stored on S3 and we are currently working on
 validation of datasets stored on CKAN.
 
-Good Tables supports validation of tabular data in GitHub repositories
+goodtables supports validation of tabular data in GitHub repositories
 to solve the use case for Active Data Biology.  On every update to the
 dataset, a validation task is run on the stored data.
 
@@ -209,7 +209,7 @@ goodtables.io for their use case, but early reports are positive:
 
 > We created a schema and started testing it. So far so good! I think this is going to work for a lot of projects which want to store data in a repo.
 
-As a real test of the generality of Good Tables, we also tried to apply
+As a real test of the generality of goodtables, we also tried to apply
 it to another project. This second project is a public repository
 describing measurements of metabolites in ion mobility mass
 spectrometry. Here, we are again using flat files for structured
@@ -220,7 +220,7 @@ continually updated. (see
 <https://github.com/PNNL-Comp-Mass-Spec/MetabolomicsCCS> for the
 project itself, and
 <https://github.com/PNNL-Comp-Mass-Spec/metaboliteValidation> for a
-validation script that leverages Good Tables)
+validation script that leverages goodtables)
 
 Of course, technical issues that they have encountered have been
 translated in GitHub issues and are being addressed:
@@ -228,7 +228,12 @@ translated in GitHub issues and are being addressed:
 - <https://github.com/frictionlessdata/goodtables.io/issues/233>
 - <https://github.com/frictionlessdata/goodtables.io/pull/235>
 - <https://github.com/frictionlessdata/goodtables.io/issues/232>
+
 ---
-summary: Using Good Tables to validate metadata stored as part of an biological application on GitHub.
+article_type: pilots
 ---
-pub_date: 2017-06-26
+subject_context: Sam Payne and Joon-Yong Lee work at the Pacific Northwest National Laboratory. Together, we explored use of Frictionless Data's specifications and software to generate schema for tabular data and validate metadata stored as part of a biological application on GitHub.
+---
+subject_img: pnnl.png
+---
+summary: Using goodtables to validate metadata stored as part of an biological application on GitHub.
