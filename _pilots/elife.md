@@ -40,7 +40,8 @@ Here are some high-level statistics for the process:
 
 We analyzed 3910 articles, 1085 of which had data files. The most common format was Microsoft Excel Open XML Format Spreadsheet (xlsx), with 89% of all 4318 files being published on this format. Older versions of Excel and CSV files made up the rest.
 
-![datasets analysed by eLife image](/img/pilots/elife1.png) *A summary of the eLife research articles analysed as part of the Frictionless Data pilot work* {: .caption}
+![datasets analysed by eLife image](/img/pilots/elife1.png) *A summary of the eLife research articles analysed as part of the Frictionless Data pilot work*
+{: .caption}
 
 In terms of  validation, more than 75% of the articles analyzed contained at least one invalid file. Of course valid data is an arbitrary term based on the tests that are set within goodtables and results need to be reviewed to adjust  the checks performed. For instance errors raised by blank rows are really common on Excel files as people add a title on the first row, leaving an empty row before the data, or empty rows are detected at the end of the sheet.
 
