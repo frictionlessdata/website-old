@@ -62,7 +62,7 @@ Other errors raised that might actually point to genuine errors included duplica
 ### How Effective Was It
 Following analysis of a sample of the results, the vast majority of the errors appear to be due to the data being presented in nice-looking tables, using formatting to make particular elements more visually clear, as opposed to a machine-readable format:  
 
-![example tables image shared by Naomi](/img/pilots/elife3.png) *Data from Maddox et al. was shared in a machine-readable format (top), and adapted here to demonstrate how such data are often shared in a format that looks nice to the human reader (bottom).
+![example tables image](/img/pilots/elife3.png) *Data from Maddox et al. was shared in a machine-readable format (top), and adapted here to demonstrate how such data are often shared in a format that looks nice to the human reader (bottom).
 Source: Source data
 The data file is presented as is and adapted from Maddox et al. eLife 2015;4:e04995 under the Creative Commons Attribution License (CC BY 4.0).*
 {: .caption}
@@ -98,4 +98,4 @@ Parts of this post are [cross-posted](https://elifesciences.org/labs/b6de9fb0/da
 [^elife-repo]: eLife Frictionless Data pilot repository on Github: <https://github.com/frictionlessdata/pilot-elife>
 [^dq-spec]: Data Quality Spec: <https://github.com/frictionlessdata/data-quality-spec/blob/master/spec.json>
 [^rlang]: R Programming Language: Popular open-source programming language and platform for data analysis: <https://www.r-project.org>
-[^elifelabs]: Data reusability: a pilot with goodtables: <https://elifesciences.org/labs>
+[^elifelabs]: eLife Labs: <https://elifesciences.org/labs>
