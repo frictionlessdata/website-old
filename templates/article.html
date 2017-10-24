@@ -71,10 +71,12 @@
             {{ this.summary }}
           </p>
           {% if this.website %}
-          <a href="{{ this.website }}" rel="external">{{ this.website.host }}</a> 
+          <a href="{{ this.website }}" rel="external">{{ this.website.host }}</a>
+           <br/>
           {% endif %}
           {% if this.twitter %}
           <a href="{{ this.twitter }}" rel="external">{{ this.twitter.host }}</a>
+          <br/>
           {% endif %}
           {% if this.github %}
           <a href="{{ this.github }}" rel="external">{{ this.github.host }}</a>
