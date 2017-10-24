@@ -18,7 +18,7 @@ Having met at csv,conf,v3 in Portland in May 2017, eLife's [Naomi Penfold](https
 ## The Work
 In order to assess the potential for a goodtables integration at eLife, we first needed to measure the quality of source data shared directly through eLife.
 
-### Tools
+### Software
  To explore the data published in the eLife platform we used goodtables library[^gt-py]. Both the goodtables python library and web service[^gtweb] were developed by Open Knowledge International to support the validation of tabular datasets both in terms of structure and also with respect to a published schema. You can read more about them [in this introductory blog post](http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html).
 
 ### What Did We Do
@@ -79,7 +79,7 @@ Overall, the findings from this pilot demonstrate that there are different ways 
 ## Next Steps
 ### Areas for further work
 
-Tools such as goodtables help to flag the gap between the current situation and the ideal situation, which is machine-readability. Most of the issues identified by goodtables in the datasets shared with eLife relate to structuring the data for human visual consumption: adding space around the table, merging header cells, etc. We encourage researchers to make data as easy to consume as possible, and recognise that datasets built primarily to look good to humans may only be sufficient for low-level reuse.
+Libraries such as goodtables help to flag the gap between the current situation and the ideal situation, which is machine-readability. Most of the issues identified by goodtables in the datasets shared with eLife relate to structuring the data for human visual consumption: adding space around the table, merging header cells, etc. We encourage researchers to make data as easy to consume as possible, and recognise that datasets built primarily to look good to humans may only be sufficient for low-level reuse.
 
 Moving forward, we are interested in tools and workflows that help to improve data quality earlier in the research lifecycle or make it easy to reshape at the point of sharing or reuse.
 
@@ -96,7 +96,7 @@ Parts of this post are [cross-posted](https://elifesciences.org/labs/b6de9fb0/da
 [^elife-repo]: eLife Frictionless Data pilot repository on Github: <https://github.com/frictionlessdata/pilot-elife>
 [^dq-spec]: Data Quality Spec: <https://github.com/frictionlessdata/data-quality-spec/blob/master/spec.json>
 [^rlang]: R Programming Language: Popular open-source programming language and platform for data analysis: <https://www.r-project.org>
-[^elifelabs]: Data reusability: a pilot with goodtables: <https://elifesciences.org/labs>
+[^elifelabs]: eLife Labs: <https://elifesciences.org/labs>
 
 ---
 article_type: pilots
