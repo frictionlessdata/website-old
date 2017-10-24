@@ -94,7 +94,7 @@ Parts of this post are [cross-posted](https://elifesciences.org/labs/b6de9fb0/da
 [^gtweb]: goodtables web service: <http://goodtables.io>
 [^gt-py]: goodtables Python library: <http://github.com/frictionlessdata/goodtables-py>
 [^csv]: csv,conf,v3: <http://csvconf.com>
-[^eLife-api]: eLife Public API: <https://prod--gateway.elifesciences.org>
+[^eLife-api]: eLife Public API: <https://api.elifesciences.org/>
 [^elife-repo]: eLife Frictionless Data pilot repository on Github: <https://github.com/frictionlessdata/pilot-elife>
 [^dq-spec]: Data Quality Spec: <https://github.com/frictionlessdata/data-quality-spec/blob/master/spec.json>
 [^rlang]: R Programming Language: Popular open-source programming language and platform for data analysis: <https://www.r-project.org>
