@@ -1,6 +1,6 @@
 title: Tesera
 ---
-description: [Tesera](http://tesera.com/) publishes a variety of Data Package-aware tools.
+description: Tesera publishes a variety of Data Package-aware tools.
 ---
 link1: http://tesera.com/
 ---
@@ -14,4 +14,4 @@ link3: http://github.com/tesera
 ---
 link3_label: Repository
 ---
-tool_category: other
+tool_category: universe

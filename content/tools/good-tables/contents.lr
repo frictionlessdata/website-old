@@ -1,4 +1,4 @@
-title: Good Tables
+title: goodtables
 ---
 description: A web service to validate and process tabular data.
 ---
@@ -10,6 +10,4 @@ link2: https://github.com/frictionlessdata/goodtables-web
 ---
 link2_label: Repository
 ---
-tool_category: tools-and-integrations
----
-tags: service
+tool_category: platforms

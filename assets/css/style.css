@@ -4426,6 +4426,11 @@ article table {
       background-image: none;
       border-color: #c05111; }
 
+.tool-list-description {
+  padding: 15px;
+  font-family: frictionlessdata, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+}
+
 .tool-list {
   margin-right: -15px;
   margin-left: -15px;

@@ -38,14 +38,16 @@ $(document).ready(function() {
   // filter items on button click
   $('.filter-button-group').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
+    var description = $(this).attr('description');
+    $('#category_description').html(description);
+    $grid.isotope({ filter: filterValue});
   });
   // change active class on buttons
   $('.filter-button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
     $buttonGroup.on( 'click', 'button', function() {
       $buttonGroup.find('.selected').removeClass('selected');
-      $( this ).addClass('selected');
+      $(this).addClass('selected');
     });
   });
 

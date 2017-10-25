@@ -7,22 +7,22 @@
   <div class="container">
     <h1>{{ this.title }}</h1>
     <div class="filter-button-group">
-      <button class="btn selected" data-filter="*">{{ bag('global_content').all }}</button>
+      <button class="btn selected" data-filter="*" description="{{ this.description }}">{{ bag('global_content').all }}</button>
       {% for category in site.query('/tool-categories') %}
       {% if category.children %}
-      <button class="btn" data-filter=".cat-{{ category._id }}">{{ category.name }}</button>
+      <button class="btn" data-filter=".cat-{{ category._id }}" description="{{ category.description }}">{{ category.name }}</button>
       {% endif %}
       {% endfor %}
     </div>
   </div>
 </div>
 
-<div class="container">
 
+<div class="container">
+  <div class="tool-list-description" id="category_description"></div>
   <div class="tool-list">
     {% for category in site.query('/tool-categories') %}
     {% if category.children %}
-
     {% for child in category.children %}
     {% if child.featured %}
     <div class="tool-item cat-{{ category._id }} featured">

@@ -6,13 +6,11 @@ link1: http://goodtables.io/
 ---
 link1_label: Website
 ---
-tool_category: tools-and-integrations
+tool_category: platforms
 ---
 link2: https://github.com/frictionlessdata/goodtables.io
 ---
 link2_label: Repository
----
-featured: yes
 ---
 tags: service
 ---
