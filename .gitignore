@@ -10,3 +10,7 @@ node_modules/*
 
 icons-demo.html
 icons.svg
+
+specs
+assets/schemas
+contents/specs
