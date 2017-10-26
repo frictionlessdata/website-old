@@ -11,7 +11,7 @@ We were very excited when we read about [Frictionless Data](http://frictionlessd
 
 People and organizations working with data are interested in analyzing, visualizing or building apps based on data, but they end up spending most of their time cleaning and preparing the data.
 
-Frictionless Data tools and libraries aim to make data ready for use. There are a lot of open data repositories in different formats and they often include dirty and missing data with null values, dates, currencies, units and identifiers which are represented differently and need effort to make them usable. Moreover datasets from different sources have different licenses, are often not up to date and inconsistencies make including in in one analysis difficult.
+Frictionless Data software and specifications aim to make data ready for use. There are a lot of open data repositories in different formats and they often include dirty and missing data with null values, dates, currencies, units and identifiers which are represented differently and need effort to make them usable. Moreover datasets from different sources have different licenses, are often not up to date and inconsistencies make including in in one analysis difficult.
 
 We received the Frictionless Data Tool Fund grant for the development of libraries in R language. R is a powerful open source programming language and environment for statistical computing and graphics that is widely used among statisticians and data miners for developing statistical software and data analysis.
 

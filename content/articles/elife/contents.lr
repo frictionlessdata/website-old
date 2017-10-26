@@ -19,7 +19,7 @@ Having met at csv,conf,v3 in Portland in May 2017, eLife's [Naomi Penfold](https
 In order to assess the potential for a goodtables integration at eLife, we first needed to measure the quality of source data shared directly through eLife.
 
 ### Software
- To explore the data published in the eLife platform we used goodtables library[^gt-py]. Both the goodtables python library and web service[^gtweb] were developed by Open Knowledge International to support the validation of tabular datasets both in terms of structure and also with respect to a published schema. You can read more about them [in this introductory blog post](http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html).
+ To explore the data published in the eLife platform we used the goodtables library[^gt-py]. Both the goodtables python library and web service[^gtweb] were developed by Open Knowledge International to support the validation of tabular datasets both in terms of structure and also with respect to a published schema. You can read more about them [in this introductory blog post](http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html).
 
 ### What Did We Do
 
@@ -28,7 +28,7 @@ The first stage was to perform validation on all files made available through th
 The process:
 
 * We downloaded a big subset of the articles metadata made available via the eLife public API[^eLife-api].
-* We parsed all metadata files in order to extract the data files linked to each article, regardless of whether it is was an additional file or a figure source . This gave us a direct link to each data file linked to the parent article.
+* We parsed all metadata files in order to extract the data files linked to each article, regardless of whether it was an additional file or a figure source. This gave us a direct link to each data file linked to the parent article.
 * We then ran the validation process on each file, storing the resulting report for future analysis.
 
 All scripts used in the process as well as the outputs can be found in [our pilot repository](https://github.com/frictionlessdata/pilot-elife).
@@ -64,7 +64,7 @@ The data file is presented as is and adapted from Maddox et al. eLife 2015;4:e04
 
 This is not limited to the academic field of course, and the tendency to present data in spreadsheets so it is visually appealing is perhaps more prevalent in other areas. Perhaps because consumers of the data are even less likely to have the data processed by machines or because the data is collated by people with no experience of having to use it in their work.
 
-In general the eLife datasets had better quality than for instance those created by government organisations, where structural issues like missing headers, extra cells, etc are much more common. So although the results here have been good, the community could derive substantial benefit will derive from researchers going that extra mile to make files more machine-friendly and embrace more robust data description techniques like Data Packages.
+In general the eLife datasets had better quality than for instance those created by government organisations, where structural issues like missing headers, extra cells, etc are much more common. So although the results here have been good, the community could derive substantial benefit from researchers going that extra mile to make files more machine-friendly and embrace more robust data description techniques like Data Packages.
 
 Because these types of ‘errors’ are so common we have introduced default `ignore blank rows` and `ignore duplicate rows` options in [our standalone validator](https://try.goodtables.io) since this helps bring more complex errors to the surface and focusses attention on the errors which may be less trivial to resolve. Excluding duplicate and blank rows as well as duplicate headers (the most common but also relatively simple errors), 6.4% (277/4318) of data files had errors remaining, affecting 10% of research articles (112/1085).
 

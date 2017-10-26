@@ -131,7 +131,7 @@ supported to work on the project.
 
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
 [^datapackage]: Data Package: <http://specs.frictionlessdata.io/data-package/>
-[^software]: Frictionless Data Software: <http://frictionlessdata.io/tools/>
+[^software]: Frictionless Data Software: <http://frictionlessdata.io/software/>
 [^xml]: Extensible Markup Language: <https://en.wikipedia.org/wiki/XML>
 [^tdp]: Tabular Data Package: <http://specs.frictionlessdata.io/tabular-data-package/>
 [^tableschema]: Table Schema: <http://specs.frictionlessdata.io/table-schema/>

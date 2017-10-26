@@ -18,13 +18,11 @@ feature3_heading: Case Studies
 ---
 feature1_body: Lightweight containerisation formats for data that provide a minimal yet powerful foundation for data publication, transport, and consumption.
 ---
-feature2_body: Tools and integrations that make it easy to integrate Frictionless Data specifications into your data publication, access, and analysis workflows.
+feature2_body: Apps and integrations that make it easy to integrate Frictionless Data specifications into your data publication, access, and analysis workflows.
 ---
 feature3_body: Labs, libraries, governments, and companies are using Frictionless Data in their data workflows to reduce grunt work and move faster to insight.
 ---
-feature1_link_text:
-
-Go to specifications 
+feature1_link_text: Go to specifications
 ---
 feature2_link_text: Go to software
 ---
@@ -32,9 +30,9 @@ feature3_link_text: Go to articles
 ---
 feature1_link_url: specs
 ---
-feature2_link_url: articles
+feature2_link_url: software
 ---
-feature3_link_url: tools
+feature3_link_url: articles
 ---
 feature1_icon: package
 ---
@@ -70,11 +68,11 @@ We currently consider transporting data between and among tools to be comparable
 
 **4. Open**: Make things that anyone can freely and openly use and reuse with a community that is open to everyone.
 
-**5. Built Around Existing Tooling**: Integrate with existing tools while also designing for direct use---for example, when a [Tabular Data Package](/guides/tabular-data-package/) integration is unavailable, fall back to CSV.
+**5. Built Around Existing Software**: Integrate with existing software while also designing for direct use---for example, when a [Tabular Data Package](/guides/tabular-data-package/) integration is unavailable, fall back to CSV.
 
 **6. Simple**: Keep the formats and metadata simple and lightweight, and make things easy to learn and use by doing the least required.
 ---
-newsletter_intro: Sign up for our newsletter to receive updates on tooling or specification releases, events, and other news related to Frictionless Data.
+newsletter_intro: Sign up for our newsletter to receive updates on software or specification releases, events, and other news related to Frictionless Data.
 ---
 section1_heading: Processing, publication, access, insight. The future of data is frictionless.
 ---

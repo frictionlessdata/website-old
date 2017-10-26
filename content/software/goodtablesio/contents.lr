@@ -1,4 +1,4 @@
-title: GoodTables.io
+title: goodtables.io
 ---
 description: Continuous data validation, as a service.
 ---
@@ -11,6 +11,8 @@ tool_category: platforms
 link2: https://github.com/frictionlessdata/goodtables.io
 ---
 link2_label: Repository
+---
+featured: yes
 ---
 tags: service
 ---
