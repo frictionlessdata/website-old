@@ -12,4 +12,9 @@ This is the Frictionless Data website, hosted at https://frictionlessdata.io
 - `npm run build`
 - `lektor server`
 
+### Updating the specs
+
+- update `package.json:specsBranchOrTag`
+- run `npm run build`
+
 See the [Open Knowledge International coding standards](https://github.com/okfn/coding-standards), which apply for contributions to this website.

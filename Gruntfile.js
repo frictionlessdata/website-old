@@ -1,3 +1,6 @@
+const shell = require('shelljs')
+const config = require('./package.json')
+
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -69,6 +72,21 @@ module.exports = function(grunt) {
 				tasks: ['svgstore']
 			}
 		}
+  });
+
+  // Build specs
+  grunt.registerTask('specs', 'Build specs', () => {
+    shell.config.fatal = true
+    shell.config.verbose = true
+    shell.rm('-rf', 'specs')
+    shell.exec(`git clone --depth=1 --branch=${config.specsBranchOrTag} https://github.com/frictionlessdata/specs.git`)
+    shell.exec('npm install --prefix specs')
+    shell.exec('npm run build --prefix specs')
+    shell.exec('npm run test --prefix specs')
+    shell.cp('-R', 'specs/build/schemas', 'assets')
+    shell.cp('-R', 'specs/build/specs', 'content')
+    shell.rm('-rf', 'specs')
+    grunt.log.writeln('Specs build is integrated!');
   });
 
   // Load the plugins

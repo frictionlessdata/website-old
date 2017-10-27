@@ -1,6 +1,7 @@
 {
   "name": "frictionlessdata",
   "version": "1.0.0",
+  "specsBranchOrTag": "website-integration",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "bootstrap": "4.0.0-beta",
@@ -13,10 +14,10 @@
     "jquery.mmenu": "^6.1.7",
     "jquery": "^3.2.1",
     "popper": "^1.0.0",
-    "pygments-rouge-css": "^0.1.0"
+    "pygments-rouge-css": "^0.1.0",
+    "shelljs": "^0.7.8"
   },
   "scripts": {
-    "build": "grunt icons && grunt sass && grunt postcss && grunt modernizr"
-  },
-  "dependencies": {}
+    "build": "grunt specs && grunt icons && grunt sass && grunt postcss && grunt modernizr"
+  }
 }
