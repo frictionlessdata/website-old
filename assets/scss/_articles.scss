@@ -119,31 +119,3 @@
           }
         }
       }
-
-      &.pilots {
-        .image {
-          a {
-            background-color: $body-color;
-            mask: url(../icons/rocket.svg);
-            mask-repeat: no-repeat;
-            mask-size: contain;
-            mask-position: center;
-          }
-        }
-      }
-    }
-  }
-
-  .no-cssmask & {
-    .article-list {
-      .pilots.preview {
-        .image {
-          a {
-            background-color: transparent;
-            background-image: url(../icons/rocket.svg);
-          }
-        }
-      }
-    }
-  }
-}

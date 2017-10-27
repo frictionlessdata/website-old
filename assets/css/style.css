@@ -4427,7 +4427,7 @@ article table {
       border-color: #c05111; }
 
 .tool-list-description {
-  padding: 15px;
+  padding: 1rem;
   font-family: frictionlessdata, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 }
 
@@ -5936,6 +5936,15 @@ html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu:not(.mm-dropdown) {
     .article-type-template .intro {
       padding-top: 3rem; } }
 
+.articles-template .article-list-description,
+.article-type-template .article-list-description {
+  padding-top: 1rem;
+  font-family: frictionlessdata, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }}
+  @media (min-width: 992px) {
+    .articles-template .article-list-description,
+    .article-type-template .article-list-description {
+      padding-top: 1.5rem; } }
+
 .articles-template .article-list,
 .article-type-template .article-list {
   padding-top: 1rem;
@@ -6037,23 +6046,7 @@ html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu:not(.mm-dropdown) {
       .articles-template .article-list .preview.grantee-profiles .image a,
       .article-type-template .article-list .preview.grantee-profiles .image a {
         background-size: cover; }
-    .articles-template .article-list .preview.pilots .image a,
-    .article-type-template .article-list .preview.pilots .image a {
-      background-color: #262626;
-      -webkit-mask: url(../icons/rocket.svg);
-              mask: url(../icons/rocket.svg);
-      -webkit-mask-repeat: no-repeat;
-              mask-repeat: no-repeat;
-      -webkit-mask-size: contain;
-              mask-size: contain;
-      -webkit-mask-position: center;
-              mask-position: center; }
-
-.no-cssmask .articles-template .article-list .pilots.preview .image a, .no-cssmask
-.article-type-template .article-list .pilots.preview .image a {
-  background-color: transparent;
-  background-image: url(../icons/rocket.svg); }
-
+        
 .page-template .page > .container,
 .article-template .page > .container,
 .guide-template .page > .container,

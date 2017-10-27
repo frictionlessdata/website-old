@@ -8,10 +8,10 @@
   <div class="container">
     <h1>{{ this.title }}</h1>
     <div class="filter-button-group">
-      <button class="btn selected" data-filter="*">{{ bag('global_content').all }}</button>
+      <button class="btn selected" data-filter="*" description="{{ this.body }}">{{ bag('global_content').all }}</button>
       {% for category in site.query('/article-types') %}
       {% if category.children %}
-      <button class="btn" data-filter=".cat-{{ category._id }}">{{ category.name }}</button>
+      <button class="btn" data-filter=".cat-{{ category._id }}" description="{{ category.description }}">{{ category.name }}</button>
       {% endif %}
       {% endfor %}
     </div>
@@ -19,11 +19,7 @@
 </div>
 
 <div class="container">
-
-  <div class="intro">
-    {{ this.body }}
-  </div>
-
+  <div class="article-list-description" id="category_description"></div>
   <div class="article-list">
 
     {% for article in this.children.order_by('-pub_date') %}

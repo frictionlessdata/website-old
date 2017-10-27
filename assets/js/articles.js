@@ -38,6 +38,8 @@ $(document).ready(function() {
   // filter items on button click
   $('.filter-button-group').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
+    var description = $(this).attr('description');
+    $('#category_description').html(description);
     $grid.isotope({ filter: filterValue });
   });
   // change active class on buttons

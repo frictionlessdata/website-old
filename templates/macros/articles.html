@@ -1,9 +1,9 @@
 {% macro render_post_preview(post, from_index=false) %}
   <div class="{{ post.article_type }} preview cat-{{ post.article_type }}">
-    <div class="{% if post.article_type != 'pilots' %}{% if post.subject_img %}has {% endif %}{% endif %}image">
-      <a href="{{ post|url }}" {% if post.article_type != 'pilots' %}{% if post.subject_img %} style="background-image: url({{ post|url }}{{ post.subject_img }});"{% endif %}{% endif %}>
+    <div class="{% if post.article_type != 'other' %}{% if post.subject_img %}has {% endif %}{% endif %}image">
+      <a href="{{ post|url }}" {% if post.article_type != 'other' %}{% if post.subject_img %} style="background-image: url({{ post|url }}{{ post.subject_img }});"{% endif %}{% endif %}>
 
-        {% if post.article_type != 'pilots' %}
+        {% if post.article_type != 'other' %}
         {% if not post.subject_img %}
         <span class="letter">
         {{ post.title|truncate(1, True, '') }}

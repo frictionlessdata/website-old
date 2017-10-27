@@ -5,15 +5,7 @@
 <div class="banner">
   <div class="container">
     <h1>{{ this.title }}</h1>
-    {% if this.article_type == 'pilots' %}
-    {% for t in site.query('/article-types') %}
-    {% if t._id == this.article_type %}
-    <div class="article-type" data-toggle="tooltip" data-placement="top" title="{{ t.description }}">
-      <svg><use xlink:href="#icon-rocket" /></svg><span>{{ t.singular }}</span>
-    </div>
-    {% endif %}
-    {% endfor %}
-    {% endif %}
+
     {% if this.article_type == 'grantee-profiles' %}
     <p>
       {{ this.summary }}
@@ -59,7 +51,7 @@
         <div class="text">{{ this.subject_context }}</div>
       </div>
       {% endif %}
-
+      
       {% if this.article_type == 'grantee-profiles' %}
       <div class="callout">
         {% if this.subject_img %}

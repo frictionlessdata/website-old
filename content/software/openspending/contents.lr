@@ -8,7 +8,11 @@ link1_label: Website
 ---
 link2: http://github.com/openspending
 ---
-link2_label: Github
+link2_label: Repository
+---
+link3: /specs/fiscal-data-package/
+---
+link3_label: Fiscal Data Package
 ---
 tool_category: platforms
 ---
