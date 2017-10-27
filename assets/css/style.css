@@ -5938,12 +5938,12 @@ html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu:not(.mm-dropdown) {
 
 .articles-template .article-list-description,
 .article-type-template .article-list-description {
-  padding-top: 1rem;
+  margin-top: 1rem;
   font-family: frictionlessdata, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }}
   @media (min-width: 992px) {
     .articles-template .article-list-description,
     .article-type-template .article-list-description {
-      padding-top: 1.5rem; } }
+      margin-top: 1.5rem; } }
 
 .articles-template .article-list,
 .article-type-template .article-list {
