@@ -34,8 +34,8 @@ other) are utilized in a workflow.
 
 We have adopted the Data Package standard as a simple, elegant way to
 describe and package our CSV data for interoperability between systems
-and components.  We use this in conjunction with the JSON Table Schema
-which enables us to define rules and constraints[^jtsconstraints] for
+and components.  We use this in conjunction with the Table Schema
+which enables us to define rules and constraints[^tsconstraints] for
 each field in the CSV file.  With this in mind we have set up our
 workflows to essentially connect S3 buckets with analytical processes.
 We have written some simple open-source AWS Lambda[^amazonlambda]
@@ -289,13 +289,13 @@ utility to citizens, scientists, and consultants alike.
 
 
 [^jupyter]: Jupyter Notebook: <http://jupyter.org/>
-[^resource]: Data Package Resource: <http://specs.frictionlessdata.io/data-packages/#resource-information>
+[^resource]: Data Package Resource: <http://frictionlessdata.io/specs/data-packages/#resource-information>
 [^numpy]: NumPy: Python package for scientific computing: <http://www.numpy.org>
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
-[^datapackages]: Data Packages: <http://specs.frictionlessdata.io/data-packages/>
+[^datapackages]: Data Packages: <http://frictionlessdata.io/specs/data-packages/>
 [^dpm]: Data Package Manager (dpm): <https://github.com/frictionlessdata/dpm>
 [^goodtables]: goodtables: <http://goodtables.okfnlabs.org/>
-[^tableschema]: Table Schema: <http://specs.frictionlessdata.io/json-table-schema/>
+[^tableschema]: Table Schema: <http://frictionlessdata.io/specs/json-table-schema/>
 [^amazons3]: Amazon Simple Storage Service (Amazon S3): <https://aws.amazon.com/s3/>
 [^amazonlambda]: Amazon AWS Lambda: <https://aws.amazon.com/lambda/>
 [^github]: GitHub: <https://github.com/>
@@ -304,7 +304,7 @@ utility to citizens, scientists, and consultants alike.
 [^elastic]: Elastic Search: <https://www.elastic.co/products/elasticsearch>
 [^kibana]: Kibana: <https://www.elastic.co/products/kibana>
 [^r]: The R Project for Statistical Computing: <https://www.r-project.org/>
-[^jtsconstraints]: JSON Table Schema Field Constraints: <http://specs.frictionlessdata.io/json-table-schema/#field-constraints>
+[^tsconstraints]: Table Schema Field Constraints: <http://frictionlessdata.io/specs/table-schema/#constraints>
 [^wehub]: Water and Environmental Hub: <http://watercanada.net/2013/water-and-environmental-hub/>
 
 ---

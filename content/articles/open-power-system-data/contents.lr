@@ -153,7 +153,7 @@ simply ignore) the data that is not useful.
 We had a first workshop[^firstworkshop] with potential users, and I
 think one of us, maybe it was Ingmar, Googled you and found out about
 the
-[Data Package specification](http://specs.frictionlessdata.io/data-packages/).
+[Data Package specification](http://frictionlessdata.io/specs/data-package/).
 That it perfectly fit our needs was pretty evident within a few
 minutes, and we decided to go along with this.
 
@@ -228,7 +228,7 @@ issues---so no big changes, just further work in the same direction.
 
 [^cc]: <https://creativecommons.org/>
 [^odbl]: <http://opendatacommons.org/licenses/odbl/>
-[^tdp]: Tabular Data Package specifications: <http://specs.frictionlessdata.io/tabular-data-package/>
+[^tdp]: Tabular Data Package specifications: <http://frictionlessdata.io/specs/tabular-data-package/>
 [^firstworkshop]: First Workshop of Open Power System Data: <http://open-power-system-data.org/workshop-1/>
 [^scripts]: GitHub repository: <https://github.com/Open-Power-System-Data>
 [^platform]: Data Platform: <http://data.open-power-system-data.org/>

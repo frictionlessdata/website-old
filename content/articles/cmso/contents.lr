@@ -83,11 +83,11 @@ this could work for cell migration data, it could work for many cell
 biology disciplines as well. I recommend speaking to more researchers and data producers to determine additional use cases!
 
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
-[^datapackages]: Data Package: <http://specs.frictionlessdata.io/data-package/>
+[^datapackages]: Data Package: <http://frictionlessdata.io/specs/data-package/>
 [^xml]: Extensible Markup Language: <https://en.wikipedia.org/wiki/XML>
-[^tdp]: Tabular Data Package: <http://specs.frictionlessdata.io/tabular-data-package/>
-[^tableschema]: Table Schema: <http://specs.frictionlessdata.io/table-schema/>
-[^philosophy]: Design Philosophy: <http://specs.frictionlessdata.io/#design-philosophy>
+[^tdp]: Tabular Data Package: <http://frictionlessdata.io/specs/tabular-data-package/>
+[^tableschema]: Table Schema: <http://frictionlessdata.io/specs/table-schema/>
+[^philosophy]: Design Philosophy: <http://frictionlessdata.io/specs/#design-philosophy>
 [^python]: Data Package-aware libraries in Python: <https://github.com/frictionlessdata/datapackage-py>, <https://github.com/frictionlessdata/tableschema-py>, <https://github.com/frictionlessdata/goodtables-py>
 
 ---

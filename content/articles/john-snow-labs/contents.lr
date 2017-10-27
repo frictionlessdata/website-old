@@ -65,7 +65,7 @@ management tools, so we have many years of work ahead of us to address this
 one core use case.
 
 [^datapackage]: Data Package: <http://frictionlessdata.io/data-packages/>
-[^specs]: Frictionless Data Specifications <http://specs.frictionlessdata.io/>
+[^specs]: Frictionless Data Specifications <http://frictionlessdata.io/specs/>
 [^elasticsearch]: Elastic Search <https://www.elastic.co/>
 [^kibana]: kibana <https://www.elastic.co/products/kibana>
 

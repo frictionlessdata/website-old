@@ -102,14 +102,14 @@ not particularly standard as ordinarily, we would expect all rows
 below the header contain actual data.  Nevertheless, it provided a
 great start to the development of a custom schema.  We used the
 information stored in these rows to generate a
-[Table Schema](http://specs.frictionlessdata.io/table-schema/) for the
+[Table Schema](http://frictionlessdata.io/specs/table-schema/) for the
 data compatible with our software
 ([the schema](https://github.com/frictionlessdata/ADB-User-Study/blob/master/metadata-schema.json)).
 
 For instance, if a column in the original metadata.tsv file had the
 text `categorical` in its `#methods` row, we knew that this translated
 very well to our
-[enum (short for enumerated list) constraint](http://specs.frictionlessdata.io/table-schema/#constraints).
+[enum (short for enumerated list) constraint](http://frictionlessdata.io/specs/table-schema/#constraints).
 However, this was not enough.  We had to infer from the values below
 in the dataset which values were actually valid categorical values for
 that column.  So, for example, the `PlatinumStatus` column could only
@@ -128,7 +128,7 @@ following constraint definition in Table Schema:
 
 More straightforward was the translation of the `#descriptions` row;
 each description was translated directly into a
-[description attribute](http://specs.frictionlessdata.io/table-schema/#description)
+[description attribute](http://frictionlessdata.io/specs/table-schema/#description)
 on the column:
 
 ```

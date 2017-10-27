@@ -15,7 +15,7 @@ Frictionless Data software and specifications aim to make data ready for use. Th
 
 We received the Frictionless Data Tool Fund grant for the development of libraries in R language. R is a powerful open source programming language and environment for statistical computing and graphics that is widely used among statisticians and data miners for developing statistical software and data analysis.
 
-We are going to implement two Frictionless Data libraries in R - [Table Schema](https://github.com/frictionlessdata/tableschema-r) for publishing and sharing tabular-style data and [Data Package](https://github.com/frictionlessdata/datapackage-r) for describing a coherent collection of data in a single package, keeping the frictionless data [specifications](http://specs.frictionlessdata.io/simple-data-format/). Comments, forks, and pull requests welcome in the two repositories.
+We are going to implement two Frictionless Data libraries in R - [Table Schema](https://github.com/frictionlessdata/tableschema-r) for publishing and sharing tabular-style data and [Data Package](https://github.com/frictionlessdata/datapackage-r) for describing a coherent collection of data in a single package, keeping the frictionless data [specifications](http://frictionlessdata.io/specs/data-package/). Comments, forks, and pull requests welcome in the two repositories.
 
 Users will be able to load a data package into R in seconds so that data can be used for analysis and visualizations, invalid data can be fixed and generally friction is removed in working with data especially when shifting from one language to another. For example you will be able to get and analyze a data package in R which will in turn make visualizations in other graphical interfaces easier.
 

@@ -130,14 +130,14 @@ which is a great opportunity for students interested in being directly
 supported to work on the project.
 
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
-[^datapackage]: Data Package: <http://specs.frictionlessdata.io/data-package/>
+[^datapackage]: Data Package: <http://frictionlessdata.io/specs/data-package/>
 [^software]: Frictionless Data Software: <http://frictionlessdata.io/software/>
 [^xml]: Extensible Markup Language: <https://en.wikipedia.org/wiki/XML>
-[^tdp]: Tabular Data Package: <http://specs.frictionlessdata.io/tabular-data-package/>
-[^tableschema]: Table Schema: <http://specs.frictionlessdata.io/table-schema/>
-[^philosophy]: Design Philosophy: <http://specs.frictionlessdata.io/#design-philosophy>
+[^tdp]: Tabular Data Package: <http://frictionlessdata.io/specs/tabular-data-package/>
+[^tableschema]: Table Schema: <http://frictionlessdata.io/specs//table-schema/>
+[^philosophy]: Design Philosophy: <http://frictionlessdata.io/specs/#design-philosophy>
 [^python]: Data Package-aware libraries in Python: <https://github.com/frictionlessdata/datapackage-py>, <https://github.com/frictionlessdata/tableschema-py>, <https://github.com/frictionlessdata/goodtables-py>
-[^version]: Data Package version field: <http://specs.frictionlessdata.io/data-package/#version>
+[^version]: Data Package version field: <http://frictionlessdata.io/specs/#version>
 [^yaml]: YAML Ain't Markup Language: <https://en.wikipedia.org/wiki/YAML>
 
 ---
