@@ -145,13 +145,13 @@ rows.next()
 
 ## Loading into an SQL database
 
-[Tabular Data Packages](../tabular-data-package/) contains schema information about its
-data using [JSON Table Schema](../json-table-schema/). This means you can easily import
+[Tabular Data Packages](/specs/tabular-data-package/) contains schema information about its
+data using [Table Schema](/specs/table-schema/). This means you can easily import
 your Data Package into the SQL backend of your choice. In this case,
 we are creating an [SQLite](http://sqlite.org/) database in a new file
 named `datapackage.db`.
 
-To load the data into SQL we will need the JSON Table Schema SQL Storage library:
+To load the data into SQL we will need the Table Schema SQL Storage library:
 
 <https://github.com/frictionlessdata/jsontableschema-sql-py>
 
@@ -175,7 +175,7 @@ push_datapackage(descriptor=url,backend='sql',engine=engine)
 
 If you have `sqlite3` installed, you can inspect and play with your
 newly created database.  Note that column type information has been
-translated from the JSON Table Schema format to native SQLite types:
+translated from the Table Schema format to native SQLite types:
 
 ```sql
 $ sqlite3 periodic-table-datapackage.db

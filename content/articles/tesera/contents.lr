@@ -48,7 +48,7 @@ ensure good interoperable data at a foundational level, thereby making
 it easier to use for analysis, visualization, or modeling without
 extensive ad-hoc quality control.**
 
-![Example of validation error ("not a number") on import driven by JSON Table Schema metadata](mackenzie-8.png) <br/> *Example of validation error ("not a number") on import driven by JSON Table Schema metadata*
+![Example of validation error ("not a number") on import driven by Table Schema metadata](mackenzie-8.png) <br/> *Example of validation error ("not a number") on import driven by Table Schema metadata*
 
 We discovered Frictionless Data through GitHub by following Max Ogden
 and some of the interesting work he is doing with
@@ -81,7 +81,7 @@ exports, various approaches were utilized which directly leveraged the
 database or relied on various libraries.  *The friction required to
 load and begin to make use of the data often consumed a large portion
 of project budgets.* By moving towards common methods of import and
-export (as enabled by Data Package and JSON Table Schema and deployed
+export (as enabled by Data Package and Table Schema and deployed
 to Elastic Container Service and/or Lambda), we’ve been able to
 standardize that aspect of our data applications and not have to
 revisit it.
@@ -139,7 +139,7 @@ manager in mind and were formatted as a contribution guidelines
 document.  From this document, the
 [afgo-pgyi](https://github.com/tesera/datatheme-afgo-pgyi) "Data
 Theme" was created which contains the Data Package details as well as
-the several JSON Table Schemas required to assemble a dataset.  Having
+the several Table Schemas required to assemble a dataset.  Having
 access to this large and interoperable dataset will enable their
 members to improve their growth and yield models and respond to
 bioclimatic changes as they occur.
@@ -164,7 +164,7 @@ checks at the database level.
 
 ![PGYI staging violations](fgrow-staging-violations.png) <br/> *PGYI staging violations*
 
-Having previously ensured the data meets the JSON Table Schema and was
+Having previously ensured the data meets the Table Schema and was
 loaded successfully, we have confidence in executing custom database
 functions without having to handle endless data anomalies and
 exceptions.  A simple example check to see if species changes between
@@ -248,11 +248,11 @@ to overcome challenges of trust and interoperability.
 
 Tesera leveraged the Data Package standard as an easy way for
 Government and community partners alike to import data into the
-system.  We used JSON Table Schema to define the structure and
+system.  We used Table Schema to define the structure and
 constraints of the Data Themes which we represented in a simple
 visible way.
 
-![Table fields and validation rules derived from JSON Table Schema](mackenzie-1.png) <br/> *Table fields and validation rules derived from JSON Table Schema*
+![Table fields and validation rules derived from Table Schema](mackenzie-1.png) <br/> *Table fields and validation rules derived from Table Schema*
 
 
 The backend on this system also relies on the Data Package Validator
