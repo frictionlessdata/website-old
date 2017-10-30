@@ -8,8 +8,7 @@ body:
 
 FAQs and best practice patterns for publishing data packages.
 
-
-Complete specifications are available [here](/specs/data-package).
+Complete specifications are available at <http://specs.frictionlessdata.io/data-packages>.
 
 ## Data Package Name
 
@@ -103,12 +102,14 @@ Bad alignment:
 ```
 
 Please make sure to have your `datapackage.json` well structured to ease the
-understanding of your Data Package content. [Data Packagist app]](http://datapackagist.okfnlabs.org/) can help you create the general
+understanding of your Data Package content. The [Online DataPackage.json
+Creator](http://data.okfn.org/tools/create) can help you create the general
 structure.
 
 ### Contributors fields
 
-Add the 'contributors' field (original author of the package - see [Data ](specs/data-package) if you wish to keep the credits for the
+Add the 'contributors' field (original author of the package - see
+<http://specs.frictionlessdata.io/data-packages>) if you wish to keep the credits for the
 package.
 
 ----
@@ -199,12 +200,12 @@ See also the following thread <https://discuss.okfn.org/t/copyright-on-data-sour
 
 ## Validate and preview your Data Package
 
-Use the [Online validator](/software) to check that your datapackage.json
+Use the [Online validator](/tools/#validate) to check that your datapackage.json
 and Data Package are good to go. Simply drop the URL to your Data Package in
 the input box, and press `Validate`. If everything is fine, `Status: Valid` is
 returned.
 
-Then use the [Online Data Package viewer app](/software) to have a preview of
+Then use the [Online Data Package viewer app](/software/#view) to have a preview of
 your Data Package.
 
 ----
@@ -215,3 +216,28 @@ For examples of well-structured Data Package see:
 
 * For tabular data: <http://datahub.io/core/corruption-perceptions-index>
 * For geospatial data: <http://datahub.io/core/geo-nuts-administrative-boundaries>
+
+[dp]: /guides/data-package
+[dp-main]: /data-packages
+[tdp]: /guides/tabular-data-package/
+[jts]: /guides/table-schema/
+[jts-types]: /specs/table-schema/#field-descriptors
+[csv]: /guides/csv/
+[json]: http://en.wikipedia.org/wiki/JSON
+
+[spec-dp]: /specs/data-package/
+[spec-tdp]: /specs/tabular-data-package/
+[spec-jts]: /specs/table-schema/
+[spec-csvddf]: /specs/csv-dialect/
+
+[publish]: /guides/publish/
+[pub-tabular]: /guides/publish-tabular/
+[pub-online]: /guides/publish-online/
+[pub-any]: /guides/publish-any/
+[pub-geo]: /guides/publish-geo/
+[pub-faq]: /guides/publish-faq/
+
+[tools]: /software/
+[dp-creator]: http://data.okfn.org/tools/create
+[dp-viewer]: http://data.okfn.org/tools/view
+[dpm]: https://github.com/okfn/dpm
