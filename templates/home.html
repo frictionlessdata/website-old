@@ -20,21 +20,21 @@
       {% endif %}
       <div>
         <div class="feature">
-          <svg><use xlink:href="#icon-{{ this.feature1_icon }}" /></svg>
+          <a href="{{ this.feature1_link_url }}"><svg><use xlink:href="#icon-{{ this.feature1_icon }}" /></svg></a>
           <h3 class="feature-heading">{{ this.feature1_heading }}</h3>
           {{ this.feature1_body }}
           <a href="{{ this.feature1_link_url }}">{{ this.feature1_link_text }}</a>
         </div>
 
         <div class="feature">
-          <svg><use xlink:href="#icon-{{ this.feature2_icon }}" /></svg>
+          <a href="{{ this.feature2_link_url }}"><svg><use xlink:href="#icon-{{ this.feature2_icon }}" /></svg></a>
           <h3 class="feature-heading">{{ this.feature2_heading }}</h3>
           {{ this.feature2_body }}
           <a href="{{ this.feature2_link_url }}">{{ this.feature2_link_text }}</a>
         </div>
 
         <div class="feature">
-          <svg><use xlink:href="#icon-{{ this.feature3_icon }}" /></svg>
+          <a href="{{ this.feature3_link_url }}"><svg><use xlink:href="#icon-{{ this.feature3_icon }}" /></svg></a>
           <h3 class="feature-heading">{{ this.feature3_heading }}</h3>
           {{ this.feature3_body }}
           <a href="{{ this.feature3_link_url }}">{{ this.feature3_link_text }}</a>

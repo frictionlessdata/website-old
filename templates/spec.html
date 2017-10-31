@@ -14,7 +14,7 @@
     </aside>
 
     <article class="content">
-      <title>{{ this.title }}</title>
+      <h1>{{ this.title }}</h1>
       <p class="lead">
         {{ this.description }}
       </p>
@@ -39,7 +39,7 @@
           <tr>
             <th>{{ bag('global_content').json_schema_for_spec }}</th>
             <td>
-              <a href="/specs/schemas/{{this._slug}}.json">/schemas/{{this._slug}}.json
+              <a href="/schemas/{{this._slug}}.json">/schemas/{{this._slug}}.json
             </td>
           </tr>
           {% if this.version %}
