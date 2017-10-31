@@ -1,10 +1,12 @@
-title: How to do a thing using a tool
+title: Tutorial Template
 ---
-guide_category: general
+guide_category: contributing
 ---
 pub_date: 2017-08-09
 ---
 body:
+
+** How to do a thing using a tool **
 
 In this tutorial you'll learn how to {do a thing using a tool} to {provide some benefit} (This first sentence may be inspired by a [user story](http://frictionlessdata.io/user-stories/)).
 
@@ -72,4 +74,4 @@ Now go {do something}
 
 ### References
 
-- Tabular Data Package specification - <http://specs.frictionlessdata.io/tabular-data-package/>
+- Tabular Data Package specification - </specs/tabular-data-package/>

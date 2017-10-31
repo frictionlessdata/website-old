@@ -87,7 +87,7 @@ biology disciplines as well. I recommend speaking to more researchers and data p
 [^xml]: Extensible Markup Language: <https://en.wikipedia.org/wiki/XML>
 [^tdp]: Tabular Data Package: <http://frictionlessdata.io/specs/tabular-data-package/>
 [^tableschema]: Table Schema: <http://frictionlessdata.io/specs/table-schema/>
-[^philosophy]: Design Philosophy: <http://frictionlessdata.io/specs/#design-philosophy>
+[^philosophy]: Design Philosophy: <http://frictionlessdata.io/specs/>
 [^python]: Data Package-aware libraries in Python: <https://github.com/frictionlessdata/datapackage-py>, <https://github.com/frictionlessdata/tableschema-py>, <https://github.com/frictionlessdata/goodtables-py>
 
 ---

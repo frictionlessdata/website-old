@@ -1,6 +1,6 @@
 title: Publish Your Data Package Online
 ---
-pub_date: 2016-04-30
+pub_date: 2016-08-29
 ---
 guide_category: publishing-data
 ---
@@ -15,8 +15,7 @@ It assumes you have already finished packaging up your data as a Data Package
 Publishing your Data Package is incredibly simple: you just need to post it
 online somewhere that others can access.
 
-> Note: if you just want to to share your Data Package with a few others you
-> can just send it directly, for example via email.
+!!! Note: if you just want to to share your Data Package with a few others you can just send it directly, for example via email.
 
 Since a Data Package is just some files there are as many ways to do
 this as there are ways to put files online.

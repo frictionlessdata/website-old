@@ -1,16 +1,14 @@
 title: Point location data in CSV files
 ---
-guide_category: general
+guide_category: publishing-data
 ---
 body:
-
-## Introduction
 
 This guide explores the options available to represent point location data in a CSV file within a Data Package.
 
 First, some key concepts:
 
-* A [Table Schema](http://specs.frictionlessdata.io/table-schema/) describes tabular data.
+* A [Table Schema](/specs/table-schema/) describes tabular data.
 * Tabular data is often provided in a [CSV - Comma Separated Values][csv] file.
 * Tabular data may include data about locations.
 * Locations can be represented by points, lines, polygons and more complex geometry.
@@ -60,7 +58,7 @@ Each option should, in a human and machine-readable way, specify:
 
 ### 1. Geopoint, default
 
-The type [Geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), format: default is a string of the pattern `"lon, lat"`, where lon is the longitude and lat is the latitude (note the space is optional after the ,). E.g. `"90, 45"`.
+The type [Geopoint](/specs/table-schema/#geopoint), format: default is a string of the pattern `"lon, lat"`, where lon is the longitude and lat is the latitude (note the space is optional after the ,). E.g. `"90, 45"`.
 
 #### CSV
 
@@ -85,7 +83,7 @@ The type [Geopoint](http://specs.frictionlessdata.io/table-schema/#geopoint), fo
 }
 ```
 
-#### Thoughts
+**Thoughts**
 
 * Does the [geopoint type validation](https://github.com/frictionlessdata/specs/issues/486) enforce:
     * Longitude ± 180
@@ -123,7 +121,7 @@ An array of exactly two items, where each item is a number, and the first item i
 }
 ```
 
-#### Thoughts
+** Thoughts **
 
 * Does the [geopoint type validation](https://github.com/frictionlessdata/specs/issues/486) enforce:
     * Longitude ± 180
@@ -161,7 +159,7 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 }
 ```
 
-#### Thoughts
+** Thoughts **
 
 * Does the [geopoint type validation](https://github.com/frictionlessdata/specs/issues/486) enforce:
     * Longitude ± 180
@@ -171,7 +169,7 @@ A JSON object with exactly two keys, lat and lon and each value is a number e.g.
 
 
 ### 4. Numbers with constraints
-Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#number) with [constraints](http://specs.frictionlessdata.io/table-schema/#constraints) to limit latitude and longitude values
+Two columns of type [number](/specs/table-schema/#number) with [constraints](/specs/table-schema/#constraints) to limit latitude and longitude values
 
 #### CSV
 
@@ -208,7 +206,7 @@ Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#numb
 }
 ```
 
-#### Thoughts
+** Thoughts **
 
 * You can constrain latitude and longitude values to a minimum bounding rectangle
 * Constraints not required so invalid values possible
@@ -220,7 +218,7 @@ Two columns of type [number](http://specs.frictionlessdata.io/table-schema/#numb
 
 ### 5. String and Foreign key reference to well-known place-name
 
-All the previous examples assume you know the coordinates of the location. What if you only know the name? You can use a name, of type: [string](http://specs.frictionlessdata.io/table-schema/#string), to refer to an another data resource and use the name to determine the coordinates. This data resource is often called a [Gazetteer](https://en.wikipedia.org/wiki/Gazetteer). [Often](https://en.wikipedia.org/wiki/Gazetteer#List_of_gazetteers) a [website](http://www.icsm.gov.au/cgna/websites.html) or API is placed in front of the data so you can provide a name and the location data is returned
+All the previous examples assume you know the coordinates of the location. What if you only know the name? You can use a name, of type: [string](/specs/table-schema/#string), to refer to an another data resource and use the name to determine the coordinates. This data resource is often called a [Gazetteer](https://en.wikipedia.org/wiki/Gazetteer). [Often](https://en.wikipedia.org/wiki/Gazetteer#List_of_gazetteers) a [website](http://www.icsm.gov.au/cgna/websites.html) or API is placed in front of the data so you can provide a name and the location data is returned
 
 A date may be an additional field included in the foreign key relationship.
 
@@ -301,13 +299,13 @@ Gazetteer.csv
 }
 ```
 
-#### Thoughts
+** Thoughts **
 
 * Haven't come across many Gazetteers in CSV format
 
 ### 6. Use a Uniform Resource Identifier to reference a location
 
-Use a type: [string](http://specs.frictionlessdata.io/table-schema/#string), format: uri, to provide a link to a resource that includes the geometry.
+Use a type: [string](/specs/table-schema/#string), format: uri, to provide a link to a resource that includes the geometry.
 
 #### CSV
 
@@ -333,7 +331,7 @@ Use a type: [string](http://specs.frictionlessdata.io/table-schema/#string), for
  }
  ```
 
-#### Thoughts
+** Thoughts **
 
 * [Link to Spatial Things from popular repositories](https://www.w3.org/TR/sdw-bp/#bp-linking-2) is a W3C spatial data on the web best practice.
 * Things can move over time, consider [data versioning](https://www.w3.org/TR/sdw-bp/#bp-dataversioning), another W3C spatial data on the web best practice.
@@ -342,7 +340,7 @@ Use a type: [string](http://specs.frictionlessdata.io/table-schema/#string), for
 
 ### 7. GeoJSON
 
-Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geojson) to represent location
+Use a field of type [GeoJSON](/specs/table-schema/#geojson) to represent location
 
 #### CSV
 
@@ -368,7 +366,7 @@ Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geo
 }
 ```
 
-#### Thoughts
+** Thoughts **
 
 * Geometry isn't constrained to a point; it could be a line or polygon.
 * [GeoJSON](https://tools.ietf.org/html/rfc7946#page-12) only supports the WGS84 coordinate reference system.
@@ -378,7 +376,7 @@ Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geo
 
 ### Frictionless data
 
-* [Table Schema](http://specs.frictionlessdata.io/table-schema/)
+* [Table Schema](/specs/table-schema/)
 * [Publishing Geospatial Data as a Data Package](http://frictionlessdata.io/guides/publish/geo/)
 
 ### World Wide Web Consortium (W3C)

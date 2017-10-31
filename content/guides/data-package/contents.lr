@@ -1,6 +1,6 @@
 title: Data Package
 ---
-guide_category: general
+guide_category: specifications
 ---
 body:
 
@@ -8,28 +8,21 @@ A Data Package is a simple way of "packaging" up and describing data so that it 
 
 Creating a Data Package is very easy: all you need to do is put a `datapackage.json` "descriptor" file in the top-level directory of your set of data files.
 
-<div class="row">
-<div class="span2">
-<h3>Full Spec</h3>
-There is a full **<a href="http://specs.frictionlessdata.io/data-packages/">RFC-style specification of Data Package format</a>**
+### Full Spec
+There is a full **[RFC-style specification of Data Package format](/specs/data-package/)**
 on the Data Protocols website to complement this quick introduction.
-</div>
-<div class="span2">
-<h3>Tabular Data</h3>
-**<a href="/guides/tabular-data-package/">Tabular Data Package</a>** extends Data Packages for tabular data. It supports providing additional information such as data types
-of columns.
-</div>
-<div class="span2">
-<h3>Tools</h3>
-There is a growing set of <a href="/tools/">online and offline tools</a> for working with Data
-Packages including for creating, viewing and validating.
-</div>
-</div>
 
+
+### Tabular Data
+[Tabular Data Package](/guides/tabular-data-package/) extends Data Packages for tabular data. It supports providing additional information such as data types
+of columns.
+
+Software
+There is a growing set of [online and offline software](/software) for working with Data
+Packages including for creating, viewing and validating.
 
 
 ## Getting Started
-
 A minimal example Data Package would look like this on disk:
 
 ```
@@ -69,16 +62,13 @@ minimal example of a `datapackage.json` file:
 
 Here is a much more extensive example of a datapackage JSON file:
 
-<div class="alert alert-info">
-**Note:** a complete list of potential attributes and their meaning can be found in the
+!! **Note:** a complete list of potential attributes and their meaning can be found in the
 [full Data Package spec][spec].
-</div>
 
-[spec]: http://specs.frictionlessdata.io/data-packages/
+[spec]: /specs/data-package/
 
-<div class="alert alert-info">
-**Note:** the Data Package format is **extensible**: publishers may add their own additional metadata as well as constraints on the format and type of data by adding their own attributes to the `datapackage.json`.
-</div>
+!!! **Note:** the Data Package format is **extensible**: publishers may add their own additional metadata as well as constraints on the format and type of data by adding their own attributes to the `datapackage.json`.
+
 
 ```json
 {
@@ -131,7 +121,7 @@ Here is a much more extensive example of a datapackage JSON file:
 }
 ```
 
-<h3 id="resources">Resources</h3>
+### Resources
 
 You list data files in the resources entry of the datapackage.json.
 
@@ -143,7 +133,7 @@ You list data files in the resources entry of the datapackage.json.
   }
 ```
 
-<h3 id="views">Views</h3>
+### Views
 
 The [Data Package Viewer](http://data.okfn.org/tools/view) will display a [Recline Dataset Graph View](http://okfnlabs.org/recline/docs/views.html) when a `views` entry is provided in the datapackage.json.
 
@@ -178,7 +168,6 @@ managing Data Packages. See the [Data Package software page for more](/software)
 
 
 ## Examples
-
 Many exemplar data packages can be found in the [datasets organization on
 github][datasets]. Specific examples:
 
@@ -186,7 +175,7 @@ github][datasets]. Specific examples:
 
 A Data Package which includes the data locally in the repo (data is CSV).
 
-<https://github.com/datasets/gdp>
+<http://datahub.io/core/gdp>
 
 Here's the `datapackage.json`:
 
@@ -196,7 +185,7 @@ Here's the `datapackage.json`:
 
 This is an example with more than one resource in the data package.
 
-<https://github.com/datasets/s-and-p-500-companies>
+<http://datahub.io/core/s-and-p-500-companies>
 
 Here's the `datapackage.json`:
 

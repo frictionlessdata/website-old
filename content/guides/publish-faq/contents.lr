@@ -1,6 +1,6 @@
 title: Publishing Data Packages - FAQ
 ---
-pub_date: 2016-04-30
+pub_date: 2016-04-20
 ---
 guide_category: publishing-data
 ---
@@ -8,7 +8,7 @@ body:
 
 FAQs and best practice patterns for publishing data packages.
 
-Complete specifications are available at <http://specs.frictionlessdata.io/data-packages>.
+Complete specifications are available at </specs/data-package>.
 
 ## Data Package Name
 
@@ -109,7 +109,7 @@ structure.
 ### Contributors fields
 
 Add the 'contributors' field (original author of the package - see
-<http://specs.frictionlessdata.io/data-packages>) if you wish to keep the credits for the
+</specs/data-package>) if you wish to keep the credits for the
 package.
 
 ----

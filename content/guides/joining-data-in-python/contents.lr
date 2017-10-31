@@ -138,7 +138,7 @@ We can now quickly render this GeoJSON file into a
 [chloropleth map](https://en.wikipedia.org/wiki/Choropleth_map) using
 [QGIS](http://qgis.org/en/site/):
 
-![GDP Map Example](/img/gdp_map_example.png)
+![GDP Map Example](gdp_map_example.png)
 
 Or we can rely on GitHub to render our GeoJSON for us.  When you click
 a country, it's property list will show up featuring "ADMIN",
