@@ -15,7 +15,7 @@ deploy:
   provider: script
   script: lektor deploy s3
   on:
-    branch: website-update
+    branch: master
 env:
   global:
   - secure: qWNZV+l7x+JjkdYG1tRGaUy3R+ytC5kweUwQyT2iT1Pgd8uUiQkrvIt5SNwVmDdPY0c26u8hRKp2gwolP5Eibj08DB3+WMpVaqpIvtR2x/sc9Urk0uvBhvAIg5ZiiXcQYEUSNKx15NlhzhDt2Fg+eMYa8zqBu7OmwgtJw07seimtk9Hv079uMM5EOdX7TglgxhydVvf9gpKxTpo0uI0R3/WZ6PzYoqeTm6c+93k/GaygNX0wWMlK8iRhHOVhf4fNXvUTCg3Vzoqi3VZcnvp7xKVntYN5GYUkUeisrYIp7RyfvTJG7mxOA8/m8yU0tscj8FlQWHoyeD8HevDtPFg2y2goAh2b2HbTBrrP6uOxbeb+0po3F7Gp1QzMl8zVcEt8WhLsLn7+oDMBdVN56/6yUyUy4Exa0ak/na5dKmRdNws+DKMNDdV0fwopKdfb8MkqB2fTjVfodZyYU5LGqKd5iwzAL63f2pNgq68sYt8+IxSZMU183deTTeQ7sff0pGck946s/w8Y4WGWCCJ6D+aa3/nU9oF8/o/EP4vn0fqEubHXs5K3ibWtOHiodZcEcDXEs2pS1Dxngl7Woc72JBReQdoxpKNCGhDvwMnr1HI2OL01OxzSKBDq3flNtQiTbcS7rlbBgQ3xauDXxBgVUXxiK/eL5hSnAhLH0E/TlBhEUeQ=
