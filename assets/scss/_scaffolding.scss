@@ -161,3 +161,10 @@ img {
 .separator:last-child {
   display: none;
 }
+
+.article-list-description,
+.tool-list-description {
+  &:not(:empty) {
+    margin-top: $spacer*2;
+  }
+}
