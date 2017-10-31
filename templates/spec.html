@@ -14,7 +14,7 @@
     </aside>
 
     <article class="content">
-      <h1>{{ this.title }}</h1>
+      <title>{{ this.title }}</title>
       <p class="lead">
         {{ this.description }}
       </p>
@@ -39,7 +39,7 @@
           <tr>
             <th>{{ bag('global_content').json_schema_for_spec }}</th>
             <td>
-              <a href="https://specs.frictionlessdata.io/schemas/{{this._slug}}.json">specs.frictionlessdata.io/schemas/{{this._slug}}.json
+              <a href="/specs/schemas/{{this._slug}}.json">/schemas/{{this._slug}}.json
             </td>
           </tr>
           {% if this.version %}
@@ -62,7 +62,7 @@
           {% endif %}
         </table>
       </div>
-      <h3 id="{{ bag('spec-language').heading | lower | replace(" ", "-") }}">{{ bag('spec-language').heading }}</h3>
+      <h4 id="{{ bag('spec-language').heading | lower | replace(" ", "-") }}">{{ bag('spec-language').heading }}</h4>
       {{ bag('spec-language').body | markdown }}
 
       {{ this.body }}
