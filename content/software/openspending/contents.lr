@@ -1,0 +1,19 @@
+title: OpenSpending
+---
+description: The Fiscal Data Package is the native format for datasets published on OpenSpending.
+---
+link1: http://next.openspending.org/
+---
+link1_label: Website
+---
+link2: http://github.com/openspending
+---
+link2_label: Repository
+---
+link3: /specs/fiscal-data-package/
+---
+link3_label: Fiscal Data Package
+---
+tool_category: platforms
+---
+featured: yes

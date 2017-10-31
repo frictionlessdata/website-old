@@ -1,0 +1,28 @@
+{% macro render_pagination(pagination) %}
+  <ul class="pagination">
+    {% if pagination.has_prev %}
+      <li class="page-item">
+        <a class="page-link" href="{{ pagination.prev|url }}">{{ bag('global_content').previous }}</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link">{{ bag('global_content').previous }}</span>
+      </li>
+    {% endif %}
+    <li class="page-item active">
+      <span class="page-link">
+        {{ pagination.page }}
+        <span class="sr-only">({{ bag('global_content').current }})</span>
+      </span>
+    </li>
+    {% if pagination.has_next %}
+      <li class="page-item">
+        <a class="page-link" href="{{ pagination.next|url }}">{{ bag('global_content').next }}</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link">{{ bag('global_content').next }}</span>
+      </li>
+    {% endif %}
+  </ul>
+{% endmacro %}

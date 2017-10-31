@@ -1,0 +1,85 @@
+title: Frictionless Data Tool Fund
+---
+body:
+----
+### What is the Tool Fund?
+
+The Frictionless Data Tool Fund, supported by the Sloan Foundation, is providing a number of minigrants of $5,000 to support individuals or organisations in bootstrapping the implementation of libraries for the Frictionless Data specifications in a range of programming languages.
+
+The fund welcomed submissions of interest from 1st March 2017 until 31st July 2017.
+
+### How do I apply?
+
+Frictionless Data Tool Fund is no longer accepting applications.
+
+Based on the submissions we received, we will go through an internal process of selecting one implementer per language, and notify all applicants whether they have been successful or not.
+
+### Background
+
+The Tool Fund is part of the [Frictionless Data](http://frictionlessdata.io/) project at [Open Knowledge International](http://okfn.org), where we are addressing issues related to frictions that occur when working with data. We are doing this by developing a set of [tools](http://frictionlessdata.io/tools/), [standards](http://frictionlessdata.io/data-packages/), and [best practices](http://frictionlessdata.io/guides/) built around the [Data Package standard](http://frictionlessdata.io/guides/data-package/), a containerisation format for any kind of data based on existing practices for publishing open-source software.
+
+Last year we convened a working group to progress the [specifications](/specs) to our first 1.0 release, and we now have an excellent foundation to add further implementations to complement our core libraries.
+## What else do I need to know?
+
+At Open Knowledge International, we maintain reference implementations for the specifications in two programming languages: Python and JavaScript, and currently have implementations in R and Ruby, stewarded by our technical partners. We want to build on this solid implementation of 1.0 specifications across a range of programming languages and work with  implementers to further improve the specifications and how they are implemented in order to get us closer to our ideal of “frictionless” data transport across a diversity of data applications
+
+- In order to understand if this is for you, please take a close look at our [Implementation reference documentation](/specs/implementation/) and v1.0 [specifications](/specs)
+- Our Python and JavaScript libraries exhibit the core functionality desired for working with data via the specifications, and demonstrate the type of functionality we expect implementations in other programming languages to have.
+  - [datapackage-py](https://github.com/frictionlessdata/datapackage-py)
+  - [datapackage-js](https://github.com/frictionlessdata/datapackage-js)
+  - [tableschema-py](https://github.com/frictionlessdata/jsontableschema-py)
+  - [tableschema-js](https://github.com/frictionlessdata/jsontableschema-js)
+
+### FAQ
+
+For more questions on the fund, speak directly to us on our [forum](https://discuss.okfn.org/c/frictionless-data) or on our [Gitter chat](https://gitter.im/frictionlessdata/chat)
+
+### What languages are you interested in adding?
+
+We have an initial list of languages we would like to consider which is included below, but if you do not see your preferred language here, please don't let this stop you applying as we will consider and award grants to others.
+
+- C#
+- Swift
+- C++
+- Perl
+- MATLAB
+
+Grants in the following languages have been awarded:
+
+- PHP   [Grantee Profile - Ori Hoch](/articles/ori-hoch/) | [datapackage-php](https://github.com/frictionlessdata/datapackage-php) | [tableschema-php](https://github.com/frictionlessdata/tableschema-php)
+- R   [Grantee Profile -  Open Knowledge Greece](/articles/open-knowledge-greece/) | [datapackage-r](https://github.com/frictionlessdata/datapackage-r) | [tableschema-r](https://github.com/frictionlessdata/tableschema-r)
+- Go   [Grantee Profile - Daniel Fireman](/articles/daniel-fireman/) | [datapackage-go](https://github.com/frictionlessdata/datapackage-go) | [tableschema-go](https://github.com/frictionlessdata/tableschema-go)
+- Java   [Grantee Profile - Georges Labrèche](/articles/georges-labreche/) | [datapackage-java](https://github.com/frictionlessdata/datapackage-java) | [tableschema-java](https://github.com/frictionlessdata/tableschema-java)
+- Clojure   [Grantee Profile - Matt Thompson](/articles/matt-thompson/) | [datapackage-clj](https://github.com/frictionlessdata/datapackage-clj) | [tableschema-clj](https://github.com/frictionlessdata/tableschema-clj)
+
+#### Am I eligible to apply?
+
+The Fund is open to both individuals and organisations based anywhere in the world.
+
+#### When do I need to complete the work?
+All work will need to be delivered by the end of 2017.
+
+#### You already have an Ruby/JS/Python library, can I still apply?
+No. We are only able to support a single implementation of the libraries per language.
+
+#### You already have an R library, yet it is listed among the suggested libraries.
+
+We have an R Library which was created by rOpenSci. Given this is such an important language for us we would like to find a partner to build on this work.
+
+#### My programming language of choice is not included in the list. Can I still apply?
+Yes, please do. The list included in the from is our initial assessment of high-impact languages, but we may have overlooked one or two and are very keen to explore more options.
+
+#### How will we make our choice?
+We will base our choice on evidence of technical capabilities and also favour applicants who demonstrate an interest in practical use of the Frictionless Data Specifications. Preference will also be given to applicants who show an interest working with and maintaining these libraries going forward.
+
+### When is the deadline?
+
+Expressions of interest should be received by the **31st of July 2017**.
+
+#### What will the agreement look like?
+
+The minigrant agreement will include a Memorandum of Understanding between Open Knowledge International and the Applicant, based on some agreed deliverables derived from the Implementation reference documentation.
+
+#### How will Open Knowledge International support me in the work?
+
+One of the reasons that we are initiating this is to further improve the specifications and how we go about implementing them. Our developers will be on hand to work closely with you as you complete the work. We will announce implementers as technical partners on the project website and will be happy to support you by promoting your organization's work through our blog and network channels.

@@ -1,0 +1,121 @@
+.site-footer {
+  @include rev-out($gray-800, rgba(#fff,0.8));
+  font-size: $font-size-sm;
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+  font-family: $font-family-sans-serif;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .footer-links {
+    flex-grow: 1;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin-left: 0.5em;
+    }
+
+    a {
+      svg {
+        fill: currentColor;
+        width: 1.5em;
+        height: 1.5em;
+
+        & + .text {
+          @include text-hide;
+          display: block;
+          height: 0;
+        }
+      }
+    }
+  }
+
+  .supporters {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      text-align: right;
+      flex-grow: 1;
+      align-items: center;
+    }
+
+    h6 {
+      flex-grow: 1;
+      margin: 1em 0 0 0;
+      font-weight: normal;
+      font-size: 0.8em;
+
+      @include media-breakpoint-up(lg) {
+        margin: 0;
+      }
+    }
+
+    a {
+      opacity: 0.8;
+      display: block;
+      padding-top: 0.5em;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 0 0 1em;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    img {
+      height: 1.7em;
+      max-width: 17em;
+    }
+  }
+
+  .footer-primary {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-logo {
+      opacity: 0.8;
+
+      img {
+        width: 150px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .footer-links {
+      a {
+        svg {
+          width: 2em;
+          height: 2em;
+        }
+      }
+    }
+  }
+
+  .footer-secondary {
+    border-top: solid 1px rgba(#fff,0.6);
+    padding-top: $spacer;
+    display: flex;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

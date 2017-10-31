@@ -1,0 +1,170 @@
+.svgstore {
+  display: none;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  & > .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    & > .container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .flexboxtweener & {
+    height: 100vh; // targeting IE, which does not respect min-height
+
+    .page {
+      flex: 1 0 auto; // breaks out of fixed height body
+    }
+  }
+}
+
+.main {
+  padding-top: $spacer*2;
+  padding-bottom: $spacer*2;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: $spacer*3;
+    padding-bottom: $spacer*3;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.more-less {
+  font-weight: 600;
+
+  .slash {
+    @include text-hide;
+  }
+
+  &.collapsed {
+    .less {
+      @include text-hide;
+    }
+  }
+
+  &:not(.collapsed) {
+    .more {
+      @include text-hide;
+    }
+  }
+}
+
+.logo-symbol {
+  display: inline-block;
+  background-color: theme-color("primary");
+  text-align: center;
+
+  & > svg {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.main-nav {
+  @include media-breakpoint-up(sm) {
+    min-width: 25%;
+  }
+
+  .dropdown-toggle {
+    @include button-variant(theme-color("primary"), theme-color("primary"));
+    padding: $spacer $spacer*2 $spacer $spacer;
+    width: 100%;
+    text-align: left;
+
+    &:after {
+      position: absolute;
+      right: $spacer;
+      top: 50%;
+      margin-top: -0.1em;
+    }
+
+    @include media-breakpoint-up(sm) {
+      font-size: $font-size-lg;
+    }
+  }
+
+  .dropdown-menu {
+    right: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.site-header {
+  @include rev-out;
+  font-family: $font-family-sans-serif;
+
+  .container {
+    display: flex;
+    height: 90px;
+    align-items: center;
+  }
+
+  .logo-symbol {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logo-type {
+    flex-grow: 1;
+    padding-left: $spacer*2;
+    display: flex;
+
+    svg {
+      width: 0;
+      height: 0;
+
+      @include media-breakpoint-up(md) {
+        width: 230px;
+        height: 230px*0.145;
+      }
+    }
+
+    .symbol {
+      display: none;
+    }
+  }
+}
+
+.banner {
+  @include rev-out;
+  padding-top: $spacer*2;
+  padding-bottom: $spacer*2;
+  font-size: $font-size-lg;
+  font-family: $font-family-sans-serif;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: $spacer*3;
+    padding-bottom: $spacer*3;
+  }
+}
+
+.separator:last-child {
+  display: none;
+}
+
+.article-list-description,
+.tool-list-description {
+  &:not(:empty) {
+    margin-top: $spacer*2;
+  }
+}

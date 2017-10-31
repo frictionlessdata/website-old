@@ -1,0 +1,66 @@
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; }
+
+.lead {
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
+  font-style: italic;
+
+  strong,
+  b {
+    font-weight: bold;
+  }
+}
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: $hr-border-width solid $hr-border-color;
+}
+
+
+//
+// Emphasis
+//
+
+small {
+  font-size: $small-font-size;
+  font-weight: $font-weight-normal;
+}
+
+mark {
+  padding: $mark-padding;
+  background-color: $mark-bg;
+}
+
+
+// Blockquotes
+blockquote {
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  font-size: $blockquote-font-size;
+  font-style: italic;
+  border-left: solid 0.1em $gray-200;
+  padding-left: 1em;
+}

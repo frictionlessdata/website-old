@@ -1,0 +1,15 @@
+title: Data Package Viewer
+---
+description: View Data Package metadata in human-readable form.
+---
+tool_category: apps
+---
+link1: http://data.okfn.org/tools/view
+---
+link1_label: Website
+---
+link2: https://github.com/okfn/data.okfn.org-new
+---
+link2_label: Repository
+---
+tags: service

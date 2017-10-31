@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% from "macros/guides.html" import render_guide_list %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="banner">
+  <div class="container">
+    <h1>{{ this.title }}</h1>
+    <div class="filter-button-group">
+      <button class="btn selected" data-filter="*" description="{{ this.description }}">{{ bag('global_content').all }}</button>
+      {% for category in site.query('/tool-categories') %}
+      {% if category.children %}
+      <button class="btn" data-filter=".cat-{{ category._id }}" description="{{ category.description }}">{{ category.name }}</button>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="tool-list-description" id="category_description"></div>
+  <div class="tool-list">
+    {% for category in site.query('/tool-categories') %}
+    {% if category.children %}
+    {% for child in category.children %}
+    {% if child.featured %}
+    <div class="tool-item cat-{{ category._id }} featured">
+      <div class="inner"{% if child.featured_colour %} style="background-color: #{{ child.featured_colour }}; border-color: #{{ child.featured_colour }}"{% endif %}>
+        <h3>
+          {{ child.title }}{% for item in child.tags %} <small>{{ item }}</small>{% endfor %}
+        </h3>
+        {{ child.description }}
+
+        {% if child.link1 %}
+        <a href="{{ child.link1 }}" class="btn" rel="external"{% if child.featured_colour %} style="color: #{{ child.featured_colour }}"{% endif %}>{% if child.link1_label %}{{ child.link1_label  }}{% else %}{{ child.link1.host }}{% endif %}</a>
+        {% endif %}
+        {% if child.link2 %}
+        <a href="{{ child.link2 }}" class="btn" rel="external"{% if child.featured_colour %} style="color: #{{ child.featured_colour }}"{% endif %}>{% if child.link2_label %}{{ child.link2_label  }}{% else %}{{ child.link2.host }}{% endif %}</a>
+        {% endif %}
+        {% if child.link3 %}
+        <a href="{{ child.link3 }}" class="btn" rel="external"{% if child.featured_colour %} style="color: #{{ child.featured_colour }}"{% endif %}>{% if child.link3_label %}{{ child.link3_label  }}{% else %}{{ child.link3.host }}{% endif %}</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    {% for child in category.children %}
+    {% if not child.featured %}
+    <div class="tool-item cat-{{ category._id }}">
+      <div class="inner">
+        <h3>
+          {{ child.title }}{% for item in child.tags %} <small>{{ item }}</small>{% endfor %}
+        </h3>
+        {{ child.description }}
+
+        {% if child.link1 %}
+        <a href="{{ child.link1 }}" class="btn" rel="external">{% if child.link1_label %}{{ child.link1_label  }}{% else %}{{ child.link1.host }}{% endif %}</a>
+        {% endif %}
+        {% if child.link2 %}
+        <a href="{{ child.link2 }}" class="btn" rel="external">{% if child.link2_label %}{{ child.link2_label  }}{% else %}{{ child.link2.host }}{% endif %}</a>
+        {% endif %}
+        {% if child.link3 %}
+        <a href="{{ child.link3 }}" class="btn" rel="external">{% if child.link3_label %}{{ child.link3_label  }}{% else %}{{ child.link3.host }}{% endif %}</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% endblock %}
+
+</div>

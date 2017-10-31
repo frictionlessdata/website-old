@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="container">
+  <div class="main">
+
+    <aside class="menu">
+      <div class="wrapper">
+        <nav id="context-nav">
+          {% include 'includes/nav.html' %}
+        </nav>
+      </div>
+    </aside>
+
+    <article class="content">
+      <h1>{{ this.title }}</h1>
+      {{ this.body }}
+    </articel>
+  </div>
+</div>
+{% endblock %}

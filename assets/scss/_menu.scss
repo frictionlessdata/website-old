@@ -1,0 +1,108 @@
+$mm_backgroundColor: $gray-100;
+$mm_textColor: rgba($body-color, 0.9);
+
+// offcanvas
+@import "node_modules/jquery.mmenu/src/core/offcanvas/jquery.mmenu.offcanvas";
+
+// oncanvas
+@import "node_modules/jquery.mmenu/src/core/oncanvas/jquery.mmenu.oncanvas";
+
+// screenreader
+@import "node_modules/jquery.mmenu/src/core/screenreader/jquery.mmenu.screenreader";
+
+// auto height
+@import "node_modules/jquery.mmenu/src/addons/autoheight/jquery.mmenu.autoheight";
+
+// dropdown
+@import "node_modules/jquery.mmenu/src/addons/dropdown/jquery.mmenu.dropdown";
+
+// multiline
+@import "node_modules/jquery.mmenu/src/extensions/multiline/jquery.mmenu.multiline";
+
+// dividers
+.mm-menu .mm-divider {
+  padding: $mm_padding/2 $mm_padding $mm_padding/2 $mm_padding*2;
+  font-weight: 600;
+  color: rgba($body-color, 0.75);
+
+  &:last-child {
+    display: none;
+  }
+}
+
+// overrides
+
+.mm-menu {
+  font-family: $font-family-sans-serif;
+
+  .mm-selected,
+  .active,
+  .active-parent {
+    a:not(.mm-next) {
+      border-left: solid 5px $mm_borderColor;
+      padding-left: ($mm_listitemIndent - 5px);
+    }
+  }
+  .mm-selected,
+  .active {
+    a:not(.mm-next) {
+      border-left-color: theme-color("primary");
+    }
+  }
+
+  a[rel=external] {
+    &:after {
+      content: '';
+      mask: url(../icons/external.svg);
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-left: 0.3em;
+      background-color: $mm_textColor;
+    }
+  }
+
+  .no-cssmask & {
+    a[rel=external] {
+      &:after {
+        background-color: transparent;
+        background-image: url(../icons/external.svg);
+      }
+    }
+  }
+}
+
+.mm-listview > li:not(.mm-divider):after {
+  left: 0;
+}
+
+// oncanvas
+.mm-menu:not(.mm-offcanvas) {
+  background-color: $body-bg;
+  .mm-navbar {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .mm-prev:before {
+    left: 3px;
+  }
+
+  .mm-listview {
+    background-color: $mm_backgroundColor;
+  }
+}
+
+
+#main-nav,
+#context-nav {
+  &:not(.mm-menu) {
+    display: none; // prevent FOUC
+  }
+}
+
+
+// temp fix https://github.com/FrDH/jQuery.mmenu/issues/801
+html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu:not(.mm-dropdown) {
+	display: block;
+}

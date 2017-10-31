@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="banner">
+  <div class="container">
+    <h1>{{ this.title }}</h1>
+
+    {% if this.article_type == 'grantee-profiles' %}
+    <p>
+      {{ this.summary }}
+    </p>
+    {% elif this.interviewee %}
+    <span class="author">
+      {{ bag('global_content').an_interview_with }} {{ this.interviewee }}
+    </span>
+    {% elif this.author %}
+    <span class="author">
+      {{ bag('global_content').written_by }} {{ this.author }}
+    </span>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container">
+  <div class="main">
+
+    <aside class="menu">
+      <div class="wrapper">
+        <nav id="context-nav">
+          {% include 'includes/nav.html' %}
+        </nav>
+      </div>
+    </aside>
+
+    <article class="content">
+      {% if this.article_type != 'pilots' %}
+      {% for t in site.query('/article-types') %}
+      {% if t._id == this.article_type %}
+      <p class="lead">
+        {{ t.description }}
+      </p>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+      {% if this.subject_context %}
+      <div class="callout">
+        {% if this.subject_img %}
+        <a class="image"><span style="background-image: url({{ this.subject_img }});"></span></a>
+        {% endif %}
+        <div class="text">{{ this.subject_context }}</div>
+      </div>
+      {% endif %}
+      
+      {% if this.article_type == 'grantee-profiles' %}
+      <div class="callout">
+        {% if this.subject_img %}
+        <div class="profile image"><span style="background-image: url({{ this.subject_img }});"></span></div>
+        {% endif %}
+        <div class="text">
+          <h2 class="profile-name">{{ this.title }}</h2>
+          <p>
+            {{ this.summary }}
+          </p>
+          {% if this.website %}
+          <a href="{{ this.website }}" rel="external">{{ this.website.host }}</a>
+           <br/>
+          {% endif %}
+          {% if this.twitter %}
+          <a href="{{ this.twitter }}" rel="external">{{ this.twitter.host }}</a>
+          <br/>
+          {% endif %}
+          {% if this.github %}
+          <a href="{{ this.github }}" rel="external">{{ this.github.host }}</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {{ this.body }}
+    </article>
+  </div>
+</div>
+
+{% endblock %}

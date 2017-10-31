@@ -1,0 +1,9 @@
+title: datapackage-m
+---
+description: A set of functions written in M for working with Tabular Data Packages in Power BI Desktop and Power Query (also known as 'Get & Transform') in Excel.
+---
+link1: https://github.com/nimblelearn/datapackage-m
+---
+link1_label: Repository
+---
+tool_category: universe

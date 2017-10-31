@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="banner">
+  <div class="container">
+    <a class="image" style="background-image: url({{ this.banner_image|url }});" href="https://www.youtube.com/watch?v=lWHKVXxuci0&amp;rel=0" data-toggle="lightbox" data-width="1280"></a>
+    <div class="text">
+      <h1>{{ this.banner_main_text }}</h1>
+
+      <a href="https://www.youtube.com/watch?v=lWHKVXxuci0&amp;rel=0" data-toggle="lightbox" data-width="1280"><svg><use xlink:href="#icon-play" /></svg> <span>{{ this.banner_cta_text }}</span></a>
+    </div>
+
+  </div>
+</div>
+
+<div>
+  <section class="features">
+    <div class="container">
+      {% if this.section1_heading %}
+      <h2 class="section-heading">{{ this.section1_heading }}</h2>
+      {% endif %}
+      <div>
+        <div class="feature">
+          <a href="{{ this.feature1_link_url }}"><svg><use xlink:href="#icon-{{ this.feature1_icon }}" /></svg></a>
+          <h3 class="feature-heading">{{ this.feature1_heading }}</h3>
+          {{ this.feature1_body }}
+          <a href="{{ this.feature1_link_url }}">{{ this.feature1_link_text }}</a>
+        </div>
+
+        <div class="feature">
+          <a href="{{ this.feature2_link_url }}"><svg><use xlink:href="#icon-{{ this.feature2_icon }}" /></svg></a>
+          <h3 class="feature-heading">{{ this.feature2_heading }}</h3>
+          {{ this.feature2_body }}
+          <a href="{{ this.feature2_link_url }}">{{ this.feature2_link_text }}</a>
+        </div>
+
+        <div class="feature">
+          <a href="{{ this.feature3_link_url }}"><svg><use xlink:href="#icon-{{ this.feature3_icon }}" /></svg></a>
+          <h3 class="feature-heading">{{ this.feature3_heading }}</h3>
+          {{ this.feature3_body }}
+          <a href="{{ this.feature3_link_url }}">{{ this.feature3_link_text }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if this.section2_heading %}
+  <section class="features">
+    <div class="container">
+      <h2 class="section-heading">{{ this.section2_heading }}</h2>
+      <div>
+        <div class="feature">
+          <svg><use xlink:href="#icon-{{ this.feature4_icon }}" /></svg>
+          <h3 class="feature-heading">{{ this.feature4_heading }}</h3>
+          {{ this.feature4_body }}
+          <a href="{{ this.feature4_link_url }}">{{ this.feature4_link_text }}</a>
+        </div>
+
+        <div class="feature">
+          <svg><use xlink:href="#icon-{{ this.feature5_icon }}" /></svg>
+          <h3 class="feature-heading">{{ this.feature5_heading }}</h3>
+          {{ this.feature5_body }}
+          <a href="{{ this.feature5_link_url }}">{{ this.feature5_link_text }}</a>
+        </div>
+
+        <div class="feature">
+          <svg><use xlink:href="#icon-{{ this.feature6_icon }}" /></svg>
+          <h3 class="feature-heading">{{ this.feature6_heading }}</h3>
+          {{ this.feature6_body }}
+          <a href="{{ this.feature6_link_url }}">{{ this.feature6_link_text }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <article class="about">
+    <div class="container">
+      <h2>{{ this.about_heading }}</h2>
+      <div class="intro">
+        {{ this.about_intro }}
+        <a class="more-less collapsed" data-toggle="collapse" href="#about-body" aria-expanded="false" aria-controls="about-body">
+          Read <span class="more">more</span><span class="slash"> / </span><span class="less">less</span>
+        </a>
+      </div>
+
+      <div class="collapse" id="about-body">
+        {% if this.about_image %}
+        <div class="image">
+          <img src="{{ this.about_image|url }}" width="{{ this.about_image_width }}" alt="">
+        </div>
+        {% endif %}
+        <div class="body">
+          {{ this.about_body }}
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+<section class="newsletter">
+  <div class="container">
+    {{ this.newsletter_intro }}
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="//okfn.us9.list-manage.com/subscribe/post?u=73f922f8e68e21a10efa21f02&amp;id=29466b1489" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" _lpchecked="1">
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address  (required)
+            </label>
+            <input value="" name="EMAIL" class="required email" id="mce-EMAIL" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" type="email">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-FNAME">First Name </label>
+            <input value="" name="FNAME" class="" id="mce-FNAME" type="text">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-LNAME">Last Name </label>
+            <input value="" name="LNAME" class="" id="mce-LNAME" type="text">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none">
+            </div>
+            <div class="response" id="mce-success-response" style="display:none">
+            </div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input name="b_73f922f8e68e21a10efa21f02_29466b1489" tabindex="-1" value="" type="text">
+          </div>
+          <div class="clear">
+            <input value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" type="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--End MailChimp Signup Form -->
+  </div>
+</section>
+
+{% endblock %}

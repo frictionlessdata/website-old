@@ -1,0 +1,13 @@
+title: Data Retriever
+---
+description: The Data Retriever uses the Data Package format internally.  It is a package manager for data. It downloads, cleans, and stores publicly available data, so that analysts spend less time cleaning and managing data, and more time analyzing it.
+---
+link1: http://www.data-retriever.org/
+---
+link1_label: Website
+---
+link2: https://github.com/weecology/retriever
+---
+link2_label: Repository
+---
+tool_category: universe
