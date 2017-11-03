@@ -29,7 +29,7 @@ Data is often messy and needs cleaning and restructuring before it can
 be effectively used. It is often not feasible to modify and
 redistribute the data due to licensing and other limitations (Editor's
 note: see our
-[Open Power System Data case study](/case-studies/open-power-system-data/)
+[Open Power System Data case study](/articles/open-power-system-data/)
 for more on this).
 
 We need to make it as easy as possible for contributors to
