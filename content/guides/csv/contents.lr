@@ -70,11 +70,11 @@ a small JSON-oriented structure for specifying what options a CSV uses.
 * CSV lacks any way to specify type information: that is, there is no way to
   distinguish "1" the string from 1 the number. This shortcoming can be
   addressed by adding some form of simple schema. For example [Table
-  Schema][jts] provides a very simple way to describe your schema externally
+  Schema][ts] provides a very simple way to describe your schema externally
   whilst [Linked CSV][linked-csv] is an example of doing this "inline" (that
   is, in the CSV).
 * No support for relationships between different "tables". This is similar to
-  the previous point and again [Table Schema][jts] provides a way to address
+  the previous point and again [Table Schema][ts] provides a way to address
   this by providing additional schema information externally.
 * CSV is really only for tabular data -- it is not so good for data with
   nesting or where structure is not especially tabular (though remember most
@@ -97,7 +97,7 @@ not intended to be comprehensive but is more at the electic end of the spectrum.
 
 ### Desktop
 
-All spreadsheet programmes including Excel, OpenOffice, Google Docs
+All spreadsheet programs including Excel, OpenOffice, Google Docs
 Spreadsheets supporting opening, editing and saving CSVs.
 
 ### View a CSV file in your Browser
@@ -185,14 +185,14 @@ and to [James Smith](http://theodi.org/blog/adapting-git-simple-data).
 [dp]: /guides/data-package
 [dp-main]: /data-packages
 [tdp]: /guides/tabular-data-package/
-[jts]: /guides/table-schema/
-[jts-types]: /specs/table-schema/#field-descriptors
+[ts]: /guides/table-schema/
+[ts-types]: /specs/table-schema/#field-descriptors
 [csv]: /guides/csv/
 [json]: http://en.wikipedia.org/wiki/JSON
 
 [spec-dp]: /specs/data-package/
 [spec-tdp]: /specs/tabular-data-package/
-[spec-jts]: /specs/table-schema/
+[spec-ts]: /specs/table-schema/
 [spec-csvddf]: /specs/csv-dialect/
 
 [publish]: /guides/publish/

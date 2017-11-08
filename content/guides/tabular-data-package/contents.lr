@@ -110,7 +110,7 @@ Here is an example of how the datapackage.json would look in this case:
 
 ## Table Schema
 
-The schema for each CSV resource follows [Table Schema][jts]. Its purpose
+The schema for each CSV resource follows [Table Schema][ts]. Its purpose
 is to provide crucial additional information about the fields (columns) in the
 CSV file, most importantly the type (string, number, date etc) of that data.
 
@@ -134,7 +134,7 @@ field descriptor. Field descriptors look like:
   ```
 
 The Table Schema spec has a [full list of data types that are
-supported][jts-types] including string, number, date etc.
+supported][ts-types] including string, number, date etc.
 
 ## Examples
 
@@ -166,14 +166,14 @@ Here's the `datapackage.json`:
 [dp]: /guides/data-package
 [dp-main]: /data-packages
 [tdp]: /guides/tabular-data-package/
-[jts]: /guides/table-schema/
-[jts-types]: /specs/table-schema/#field-descriptors
+[ts]: /guides/table-schema/
+[ts-types]: /specs/table-schema/#field-descriptors
 [csv]: /guides/csv/
 [json]: http://en.wikipedia.org/wiki/JSON
 
 [spec-dp]: /specs/data-package/
 [spec-tdp]: /specs/tabular-data-package/
-[spec-jts]: /specs/table-schema/
+[spec-ts]: /specs/table-schema/
 [spec-csvddf]: /specs/csv-dialect/
 
 [publish]: /guides/publish/

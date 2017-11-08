@@ -141,7 +141,7 @@ resource.validate()
 
 # more explicit version might look like
 var schema = resource.schemaAsJSON()
-var jtsValidator = new JTSValidator(schema)
+var tsValidator = new TSValidator(schema)
 # validate a data stream
 schema.validate(resource.stream())
 ```
@@ -162,7 +162,6 @@ import_datapackage_into_sql(pathToDataPackage, sqlDatabaseInfo)
 import_datapackage_into_bigquery(pathToDataPackage, bigQueryInfo)
 ```
 
-
 ## Examples
 
 ### Python
@@ -171,7 +170,7 @@ The main Python library for working with Data Packages is `datapackage`:
 
 See <http://github.com/frictionlessdata/datapackage-py>
 
-Additional functionality such as JTS and JTS integration:
+Additional functionality such as TS and TS integration:
 
 * <https://github.com/frictionlessdata/tableschema-py>
 * <https://github.com/frictionlessdata/tableschema-sql-py>
@@ -200,14 +199,14 @@ Related blog post: <http://okfnlabs.org/blog/2017/10/05/frictionless-data-specs-
 [dp]: /guides/data-package
 [dp-main]: /data-packages
 [tdp]: /guides/tabular-data-package/
-[jts]: /guides/table-schema/
-[jts-types]: /specs/table-schema/#field-descriptors
+[ts]: /guides/table-schema/
+[ts-types]: /specs/table-schema/#field-descriptors
 [csv]: /guides/csv/
 [json]: http://en.wikipedia.org/wiki/JSON
 
 [spec-dp]: /specs/data-package/
 [spec-tdp]: /specs/tabular-data-package/
-[spec-jts]: /specs/table-schema/
+[spec-ts]: /specs/table-schema/
 [spec-csvddf]: /specs/csv-dialect/
 
 [publish]: /guides/publish/

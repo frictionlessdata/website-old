@@ -24,7 +24,7 @@ The main specifications are:
 for sharing between tools and people
 * [Tabular Data Package][tdp], a format for packaging tabular
 data that builds on Data Package and which uses:
-  * [Table Schema][jts], a specification for defining a *schema* for tabular data
+  * [Table Schema][ts], a specification for defining a *schema* for tabular data
   * [CSV Dialect Description Format][spec-csvddf] (CSV-DDF), a specification for defining a *dialect* for CSV data.
 
 ### How do these specifications relate?
@@ -54,8 +54,8 @@ For more information on each specification, see below:
 
 ## Table Schema
 
-- [Overview][jts]
-- [Full Specification][spec-jts]
+- [Overview][ts]
+- [Full Specification][spec-ts]
 
 ## CSV Dialect Description Format
 
@@ -64,14 +64,14 @@ For more information on each specification, see below:
 [dp]: /guides/data-package
 [dp-main]: /data-packages
 [tdp]: /guides/tabular-data-package/
-[jts]: /guides/table-schema/
-[jts-types]: /specs/table-schema/#field-descriptors
+[ts]: /guides/table-schema/
+[ts-types]: /specs/table-schema/#field-descriptors
 [csv]: /guides/csv/
 [json]: http://en.wikipedia.org/wiki/JSON
 
 [spec-dp]: /specs/data-package/
 [spec-tdp]: /specs/tabular-data-package/
-[spec-jts]: /specs/table-schema/
+[spec-ts]: /specs/table-schema/
 [spec-csvddf]: /specs/csv-dialect/
 
 [publish]: /guides/publish/
