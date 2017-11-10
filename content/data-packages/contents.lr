@@ -38,7 +38,7 @@ consumes Tabular Data Packages therefore must be able to understand
 not only the full Data Package specification, but also Table
 Schema and CSV-DDF.
 
-<img src="https://docs.google.com/drawings/d/19DTSTlxkOdTgieTWhnTNLAZtxn_ie63DV-vEGW_TP_E/pub?w=960&amp;h=720">
+![Tabular Data Package](tabulardatapackage.png)
 
 For more information on each specification, see below:
 
