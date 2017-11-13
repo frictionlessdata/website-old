@@ -53,7 +53,7 @@ There are three options for creating the `datapackage.json`:
 **Option 1:** Use the online [datapackage.json creator tool][dp-creator] - just answer
 a few questions and give it your data files and it will spit out a
 datapackage.json for you to include in your project
-[dp-creator]: http://data.okfn.org/tools/create
+[dp-creator]: http://datapackagist.openknowledge.io
 
 **Option 2:** Do it yourself - if you're familiar with JSON you can just create
 this yourself. Take a look at the [Data Package][dp] and [Tabular Data
