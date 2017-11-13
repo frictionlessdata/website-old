@@ -60,7 +60,7 @@ data themselves. Providing mechanisms for doing this will likely
 become important over the next ten years.
 
 [^jupyter]: Jupyter Notebook: <http://jupyter.org/>
-[^resource]: Data Package Resource: <http://frictionlessdata.io/specs/data-packages/#resource-information>
+[^resource]: Data Package Resource: <http://frictionlessdata.io/specs/data-package/#resource-information>
 [^numpy]: NumPy: Python package for scientific computing: <http://www.numpy.org>
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
 [^datapackage]: Data Packages: <http://frictionlessdata.io/data-packages/>

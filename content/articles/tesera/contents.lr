@@ -289,7 +289,7 @@ utility to citizens, scientists, and consultants alike.
 
 
 [^jupyter]: Jupyter Notebook: <http://jupyter.org/>
-[^resource]: Data Package Resource: <http://frictionlessdata.io/specs/data-packages/#resource-information>
+[^resource]: Data Package Resource: <http://frictionlessdata.io/specs/data-package/#resource-information>
 [^numpy]: NumPy: Python package for scientific computing: <http://www.numpy.org>
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
 [^datapackages]: Data Packages: <http://frictionlessdata.io/specs/data-package/>
