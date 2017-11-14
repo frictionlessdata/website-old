@@ -348,9 +348,10 @@ Use a field of type [GeoJSON](http://specs.frictionlessdata.io/table-schema/#geo
 
 #### CSV
 
-| Office | Location                          |
-|--------|-----------------------------------|
-| Dalby  | {"lon":151.2660, "lat": -27.1944} |
+| Office | Location                                           |
+|--------|----------------------------------------------------|
+| Dalby  | {"type":"Point","coordinates":[151.2660,-27.1994]} |
+
 #### Data Package fragment
 
 ```
