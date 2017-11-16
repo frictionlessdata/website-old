@@ -16,4 +16,4 @@ featured: yes
 ---
 tags: service
 ---
-order: 3
+priority: 3

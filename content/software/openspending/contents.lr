@@ -18,4 +18,4 @@ tool_category: platforms
 ---
 featured: yes
 ---
-order: 1
+priority: 1

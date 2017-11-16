@@ -12,4 +12,4 @@ link2_label: Issue Tracker
 ---
 tool_category: apps
 ---
-order: 4
+priority: 4
