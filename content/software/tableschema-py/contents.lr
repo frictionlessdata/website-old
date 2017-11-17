@@ -7,3 +7,5 @@ link1: https://github.com/frictionlessdata/tableschema-py
 link1_label: Repository
 ---
 tool_category: libraries
+---
+priority: 4

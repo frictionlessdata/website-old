@@ -17,3 +17,5 @@ featured: yes
 tags: service
 ---
 featured_colour: 01578A
+---
+priority: 2

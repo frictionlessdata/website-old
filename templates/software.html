@@ -21,54 +21,45 @@
 <div class="container">
   <div class="tool-list-description" id="category_description"></div>
   <div class="tool-list">
-    {% for category in site.query('/tool-categories') %}
-    {% if category.children %}
-    {% for child in category.children %}
-    {% if child.featured %}
-    <div class="tool-item cat-{{ category._id }} featured">
-      <div class="inner"{% if child.featured_colour %} style="background-color: #{{ child.featured_colour }}; border-color: #{{ child.featured_colour }}"{% endif %}>
+    {% for tool in site.query('/software') %}
+    {% if tool.featured %}
+    <div class="tool-item cat-{{ tool.tool_category }} featured">
+      <div class="inner"{% if tool.featured_colour %} style="background-color: #{{ tool.featured_colour }}; border-color: #{{ tool.featured_colour }}"{% endif %}>
         <h3>
-          {{ child.title }}{% for item in child.tags %} <small>{{ item }}</small>{% endfor %}
+          {{ tool.title }}{% for item in tool.tags %} <small>{{ item }}</small>{% endfor %}
         </h3>
-        {{ child.description }}
+        {{ tool.description }}
 
-        {% if child.link1 %}
-        <a href="{{ child.link1 }}" class="btn" rel="external"{% if child.featured_colour %} style="color: #{{ child.featured_colour }}"{% endif %}>{% if child.link1_label %}{{ child.link1_label  }}{% else %}{{ child.link1.host }}{% endif %}</a>
+        {% if tool.link1 %}
+        <a href="{{ tool.link1 }}" class="btn" rel="external"{% if tool.featured_colour %} style="color: #{{ tool.featured_colour }}"{% endif %}>{% if tool.link1_label %}{{ tool.link1_label  }}{% else %}{{ tool.link1.host }}{% endif %}</a>
         {% endif %}
-        {% if child.link2 %}
-        <a href="{{ child.link2 }}" class="btn" rel="external"{% if child.featured_colour %} style="color: #{{ child.featured_colour }}"{% endif %}>{% if child.link2_label %}{{ child.link2_label  }}{% else %}{{ child.link2.host }}{% endif %}</a>
+        {% if tool.link2 %}
+        <a href="{{ tool.link2 }}" class="btn" rel="external"{% if tool.featured_colour %} style="color: #{{ tool.featured_colour }}"{% endif %}>{% if tool.link2_label %}{{ tool.link2_label  }}{% else %}{{ tool.link2.host }}{% endif %}</a>
         {% endif %}
-        {% if child.link3 %}
-        <a href="{{ child.link3 }}" class="btn" rel="external"{% if child.featured_colour %} style="color: #{{ child.featured_colour }}"{% endif %}>{% if child.link3_label %}{{ child.link3_label  }}{% else %}{{ child.link3.host }}{% endif %}</a>
+        {% if tool.link3 %}
+        <a href="{{ tool.link3 }}" class="btn" rel="external"{% if tool.featured_colour %} style="color: #{{ tool.featured_colour }}"{% endif %}>{% if tool.link3_label %}{{ tool.link3_label  }}{% else %}{{ tool.link3.host }}{% endif %}</a>
         {% endif %}
       </div>
     </div>
-    {% endif %}
-    {% endfor %}
-
-    {% for child in category.children %}
-    {% if not child.featured %}
-    <div class="tool-item cat-{{ category._id }}">
+    {% else %}
+    <div class="tool-item cat-{{ tool.tool_category }}">
       <div class="inner">
         <h3>
-          {{ child.title }}{% for item in child.tags %} <small>{{ item }}</small>{% endfor %}
+          {{ tool.title }}{% for item in tool.tags %} <small>{{ item }}</small>{% endfor %}
         </h3>
-        {{ child.description }}
+        {{ tool.description }}
 
-        {% if child.link1 %}
-        <a href="{{ child.link1 }}" class="btn" rel="external">{% if child.link1_label %}{{ child.link1_label  }}{% else %}{{ child.link1.host }}{% endif %}</a>
+        {% if tool.link1 %}
+        <a href="{{ tool.link1 }}" class="btn" rel="external">{% if tool.link1_label %}{{ tool.link1_label  }}{% else %}{{ tool.link1.host }}{% endif %}</a>
         {% endif %}
-        {% if child.link2 %}
-        <a href="{{ child.link2 }}" class="btn" rel="external">{% if child.link2_label %}{{ child.link2_label  }}{% else %}{{ child.link2.host }}{% endif %}</a>
+        {% if tool.link2 %}
+        <a href="{{ tool.link2 }}" class="btn" rel="external">{% if tool.link2_label %}{{ tool.link2_label  }}{% else %}{{ tool.link2.host }}{% endif %}</a>
         {% endif %}
-        {% if child.link3 %}
-        <a href="{{ child.link3 }}" class="btn" rel="external">{% if child.link3_label %}{{ child.link3_label  }}{% else %}{{ child.link3.host }}{% endif %}</a>
+        {% if tool.link3 %}
+        <a href="{{ tool.link3 }}" class="btn" rel="external">{% if tool.link3_label %}{{ tool.link3_label  }}{% else %}{{ tool.link3.host }}{% endif %}</a>
         {% endif %}
       </div>
     </div>
-    {% endif %}
-    {% endfor %}
-
     {% endif %}
     {% endfor %}
   </div>
