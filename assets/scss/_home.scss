@@ -150,6 +150,7 @@
 
       @include media-breakpoint-up(md) {
         display: flex;
+        align-items: flex-end;
       }
 
       .mc-field-group {
