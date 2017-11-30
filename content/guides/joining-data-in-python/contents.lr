@@ -74,7 +74,7 @@ library and passing the Data Package url to its `DataPackage` method.
 We are also importing the standard Python `json` library to read and
 write our GeoJSON file.
 
-{% highlight python %}
+```python
 import json
 import datapackage
 
@@ -83,16 +83,16 @@ gdp_url = 'https://raw.githubusercontent.com/frictionlessdata/example-data-packa
 
 countries_dp = datapackage.DataPackage(countries_url)
 gdp_dp = datapackage.DataPackage(gdp_url)
-{% endhighlight %}
+```
 
 Our GeoJSON data is stored as a `bytes` object in the `data` attribute
 of the first (and only) element of the Data Package `resources` array.
 To create our `world` GeoJSON dict, we first need to decode this
 `bytes` object to a UTF-8 string and pass it to `json.loads`.
 
-{% highlight python %}
+```python
 world = json.loads(countries_dp.resources[0].data.decode('utf-8'))
-{% endhighlight %}
+```
 
 At this point, joining the data can be accomplished by iterating
 through each country in the `world['features']` array and adding a
@@ -101,14 +101,14 @@ object matches "ISO_A3" on the given GeoJSON feature.  The value of
 "GDP (2014)" is derived from the "Value" column on the `gdp_dp` Data
 Package object.
 
-{% highlight python %}
+```python
 for feature in world['features']:
     matches = [gdp['Value'] for gdp in gdp_dp.resources[0].data if gdp['Country Code'] == feature['properties']['ISO_A3']]
     if matches:
         feature['properties']['GDP (2014)'] = float(matches[0])
     else:
         feature['properties']['GDP (2014)'] = 0
-{% endhighlight %}
+```
 
 Finally, we can output our consolidated GeoJSON dataset into a new
 file called "world_gdp_2014.geojson" using `json.dump` and create a
@@ -117,7 +117,7 @@ creating a Data Package, please consult the
 [Creating Data Packages in Python](/guides/creating-tabular-data-packages-in-python/)
 guide.
 
-{% highlight python %}
+```python
 with open('world_gdp_2014.geojson', 'w') as f:
     json.dump(world, f)
 
@@ -132,7 +132,7 @@ new_dp.descriptor['resources'] = [
 
 with open('datapackage.json','w') as f:
     f.write(new_dp.to_json())
-{% endhighlight %}
+```
 
 We can now quickly render this GeoJSON file into a
 [chloropleth map](https://en.wikipedia.org/wiki/Choropleth_map) using
