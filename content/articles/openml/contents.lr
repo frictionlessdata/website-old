@@ -34,6 +34,8 @@ The metadata is free-form information about the dataset. It is mostly key-value 
 
 We firmly believe that  if data packages become the go-to specification for sharing data in scientific communities, accessibility to data that’s currently ‘hidden’ in data platforms and university libraries will improve vastly, and are keen to adopt and use the specification on OpenML in the coming months.
 
+Interested in contributing to our quest to adopt the [data package specification](http://frictionlessdata.io/specs/data-package/) as an import and export option for data on the OpenML platform? [Start here](https://github.com/openml/OpenML/issues/482).
+
 ---
 article_type: case-studies
 ---
