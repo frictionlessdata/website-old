@@ -1,7 +1,7 @@
 {
   "name": "frictionlessdata",
   "version": "1.0.0",
-  "specsBranchOrTag": "website-integration",
+  "specsBranchOrTag": "master",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "bootstrap": "4.0.0-beta",
