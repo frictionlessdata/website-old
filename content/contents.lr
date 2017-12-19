@@ -36,9 +36,9 @@ feature3_link_url: articles
 ---
 feature1_icon: package
 ---
-feature2_icon: docs
+feature2_icon: software
 ---
-feature3_icon: tools
+feature3_icon: docs
 ---
 about_image: diagram.png
 ---
