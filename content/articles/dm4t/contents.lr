@@ -39,14 +39,14 @@ Output was tracked here: https://github.com/frictionlessdata/pilot-dm4t/issues
 
 ## The work
 
-We will use the `refit-cleaned` dataset to show how the Frictionless Data specs and software capabilities. For this work limit the size of this dataset in order to preserve reasonable showcasing time. However, by design the Frictionless Data software has a very good scalability and this process could be reproduced for the whole dataset. But for now it is worth noting that the speed for such a big datastes could be a bottle neck for a research work. 
+We will use the `refit-cleaned` dataset to show how the Frictionless Data specs and software capabilities. For this work limit the size of this dataset in order to preserve reasonable showcasing time. However, by design the Frictionless Data software has a very good scalability and this process could be reproduced for the whole dataset. But for now it is worth noting that the speed for such a big datastes could be a bottle neck for a research work.
 
 ### REFIT: Electrical Load Measurements (Cleaned)
 
 > Link to the dataset: https://github.com/frictionlessdata/pilot-dm4t/tree/delivery/datasets/refit-cleaned
 
 For each house in the study, this dataset consists of granular readings of electrical load.  There were 20 houses in total, and each house had a different mix of devices plugged into the electrical load sensor.  The dataset was distributed as a zipped file (~500MB) containing 20 CSVs with a combined ~120 million rows.
- 
+
 ```
 Time,Unix,Aggregate,Appliance1,Appliance2,Appliance3,Appliance4,Appliance5,Appliance6,Appliance7,Appliance8,Appliance9
 2013-10-09 13:06:17,1381323977,523,74,0,69,0,0,0,0,0,1
@@ -75,11 +75,11 @@ One of the main purposes of the Frictionless Data project is data containerizati
 - use the Frictionless Data tooling for reading and validating datasets
 - enable usage of other software which supports Frictionless Data specifications
 
-First, we used the `datapackage-pipeline` library to create a data package from the raw dataset. We need a declarative file called `datapackage-pipelines.yaml` to describe data transformations steps: 
+First, we used the `datapackage-pipeline` library to create a data package from the raw dataset. We need a declarative file called `datapackage-pipelines.yaml` to describe data transformations steps:
 
 > datapackage-pipelines.yaml
 
-```yml
+```yaml
 refit-cleaned:
   pipeline:
     - run: add_metadata
@@ -98,7 +98,7 @@ refit-cleaned:
         name: 'house-1'
         url: 'datasets/refit-cleaned/House_1.csv'
         format: csv
-    
+
     # Other resources are omitted
 
     - run: stream_remote_resources
@@ -139,7 +139,7 @@ refit-cleaned:
             description: Electric Heater
 
     # Other resources are omitted
-    
+
     - run: dump.to_path
       parameters:
           out-path: packages/refit-cleaned
@@ -251,9 +251,9 @@ After this step we have a data package containing a descriptor:
         ]
       }
     },
-    
+
     # Other resources is omitted
-    
+
   ]
 }
 ```
@@ -270,9 +270,9 @@ house-12.csv  house-16.csv  house-19.csv  house-21.csv  house-4.csv  house-7.csv
 ### Validating a data package using Goodtables
 
 
-Goodtables is a software family for tabular data validation. It's' avialable as a Python library, a command line tool, [web application](http://try.goodtables.io/) and [continious validation service](http://goodtables.io/). 
+Goodtables is a software family for tabular data validation. It's' avialable as a Python library, a command line tool, [web application](http://try.goodtables.io/) and [continious validation service](http://goodtables.io/).
 
-The main features of Goodtales are as follows: 
+The main features of Goodtales are as follows:
 
 - structural checks: Ensure that there are no empty rows, no blank headers, etc.
 - content checks: Ensure that the values have the correct types ("string", "number", "date", etc.), that their format is valid ("string must be an e-mail"), and that they respect the constraints ("age must be a number greater than 18").
@@ -318,11 +318,11 @@ One important feature of the `datapakcage-pipelines` project that it works as a 
 
 > pipelines-spec.yml
 
-```yml
+```yaml
 refit-cleaned:
 
     # Initial steps are omitted
-    
+
     - run: aws.dump.to_s3
       parameters:
         bucket: pilot-dm4t
@@ -407,7 +407,7 @@ Here we we're able to get averages for electricity consumption grouped by hour. 
 
 > Link to the export script: https://github.com/frictionlessdata/pilot-dm4t/blob/delivery/scripts/refit-cleaned.py
 
-The Frictionless Data software provides plugins to export data to various backends like SQL, BigQuery etc. We will export the first resources from our data package for future analysis: 
+The Frictionless Data software provides plugins to export data to various backends like SQL, BigQuery etc. We will export the first resources from our data package for future analysis:
 
 ```python
 from elasticsearch import Elasticsearch
@@ -436,7 +436,7 @@ $ http http://localhost:9200/_cat/indices?v
 
 ### Getting insight from data using Kibana
 
-To demonstrate how the Frictionless Data specs and software empower the usage of other analytics tools we will use Elasticsearch/Kibana project. On the previous step we have improted our data package into an Elasticseach cluster. It allows us to visualize data using simple UI:  
+To demonstrate how the Frictionless Data specs and software empower the usage of other analytics tools we will use Elasticsearch/Kibana project. On the previous step we have improted our data package into an Elasticseach cluster. It allows us to visualize data using simple UI:
 
 ![](https://i.imgur.com/Fm373F4.png)
 
@@ -459,7 +459,7 @@ The central challenge of working with these datasets is the size.  Publishing th
 
 ### Next Steps
 
-- improve the speed of the `datapackage-pipelines`  library
+- improve the speed of the data package creation step
 
 ### Find Out More
 
