@@ -122,7 +122,7 @@ interpolation.  If you know where to look to find gaps in your data,
 this is quickly done.  However, if you are doing this kind of data
 wrangling for the first time (and you don’t really want to do it, but
 rather you want to learn something about solar power in Switzerland)
-then this is, of course, the a long detour for a lot of our users.
+then this is, of course, a long detour for a lot of our users.
 
 We collect time series data for renewable and thermal power
 plants, each of which we compile into a dataset that follows the
