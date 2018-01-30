@@ -48,7 +48,7 @@ about_body:
 
 Informed by our work building and deploying [CKAN](http://ckan.org/) and learning about various data publication workflows, we have learned that there is too much friction in working with data.  The frictions we seek to remove---in getting, sharing, and validating data---stop people from truly benefiting from the wealth of data being opened up every day.  This kills the cycle of *find/improve/share* that makes for a dynamic and productive data ecosystem.
 
-We provide a simple wrapper and basic structure for transportation of data that significantly reduces the friction in data sharing and integration, supports automation and does this without imposing major changes on the underlying data being packaged.  We focus on [tabular data](/guides/tabular-data-package/) but any kind of data can be "packaged". Its lightweight and simple nature it is easy to adopt both for data publishers, data users and data tool makers.
+We provide a simple wrapper and basic structure for transportation of data that significantly reduces the friction in data sharing and integration, supports automation and does this without imposing major changes on the underlying data being packaged.  We focus on [tabular data](/docs/tabular-data-package/) but any kind of data can be "packaged". Its lightweight and simple nature it is easy to adopt both for data publishers, data users and data tool makers.
 
 We have been working on these and similar issues for nearly a decade, and we think that the time is right for *frictionless data*. Check the GET INVOLVED section above and learn how to help us get there.
 
@@ -62,13 +62,13 @@ We currently consider transporting data between and among tools to be comparable
 
 **1. Focused**: Focus on one part of the data chain, one specific feature (e.g. packaging), and a few specific types of data (e.g. tabular).
 
-**2. Web-oriented**: Build for the web using formats that work naturally with HTTP such as JSON, a common data exchange format for web APIs, and [CSV](/guides/csv/), which is easily streamable.
+**2. Web-oriented**: Build for the web using formats that work naturally with HTTP such as JSON, a common data exchange format for web APIs, and [CSV](/docs/csv/), which is easily streamable.
 
 **3. Distributed**: Design for a distributed ecosystem with no centralized, single point of failure or dependence.
 
 **4. Open**: Make things that anyone can freely and openly use and reuse with a community that is open to everyone.
 
-**5. Built Around Existing Software**: Integrate with existing software while also designing for direct use---for example, when a [Tabular Data Package](/guides/tabular-data-package/) integration is unavailable, fall back to CSV.
+**5. Built Around Existing Software**: Integrate with existing software while also designing for direct use---for example, when a [Tabular Data Package](/docs/tabular-data-package/) integration is unavailable, fall back to CSV.
 
 **6. Simple**: Keep the formats and metadata simple and lightweight, and make things easy to learn and use by doing the least required.
 ---
@@ -80,13 +80,13 @@ section2_heading: Get involved.
 ---
 feature4_body: Learn how to get started using and developing with Data Packages through our guides, tutorials and documentation.
 ---
-feature4_heading: Guides
+feature4_heading: Documentation
 ---
 feature4_icon: book
 ---
-feature4_link_text: Go to guides
+feature4_link_text: Go to docs
 ---
-feature4_link_url: guides
+feature4_link_url: docs
 ---
 feature5_body: We also have a chat room dedicated to technical discussion about Frictionless Data. Feel free to stop by and introduce yourself.
 ---

@@ -1,0 +1,12 @@
+{% macro render_doc_list(post, from_index=false) %}
+  <li class="preview">
+  {% if from_index %}
+    <a href="{{ post|url }}">{{ post.title }}</a>
+      {% for item in post.tags %}
+      <span class="badge badge-info">{{ item }}</span>
+    {% endfor %}
+  {% else %}
+    {{ post.title }}
+  {% endif %}
+  </li>
+{% endmacro %}

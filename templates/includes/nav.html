@@ -36,13 +36,13 @@
   </a>
 </li>
 
-{% elif href == '/guides' %}
+{% elif href == '/docs' %}
 <li class="{% if this._path == href %}active{% endif %} {% if this._path.startswith(href) %}active-parent{% endif %}">
   <a href="{{ href|url }}">
     {{ title }}
   </a>
   <ul>
-  {% for t in site.query('/guide-categories') %}
+  {% for t in site.query('/doc-categories') %}
     {% set children = t.children %}
     {% if children %}
     <li class="mm-divider">
