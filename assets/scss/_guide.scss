@@ -1,0 +1,251 @@
+// landing page
+.guides-template {
+  .banner {
+    background-color: theme-color("primary");
+    font-weight: 600;
+    line-height: 1.5;
+
+    h1 {
+      font-weight: 800;
+      margin-top: 0.5em;
+
+      small {
+        display: block;
+        font-size: 0.25em;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0.1em;
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-up(md) {
+      p {
+        font-size: 17px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../img/field-guide-banner-bg.png');
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      padding: 0;
+
+      .container {
+        background-image: url('../img/field-guide-banner-img.png');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: right top;
+        height: map-get($container-max-widths, lg)/2.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h1 {
+        font-size: map-get($container-max-widths, lg)/12;
+        margin-top: 0;
+      }
+      p {
+        max-width: 50%;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      .container {
+        height: map-get($container-max-widths, xl)/2.5;
+      }
+      h1 {
+        font-size: map-get($container-max-widths, xl)/12;
+      }
+      p {
+        font-size: round(map-get($container-max-widths, xl)/64);
+      }
+    }
+  }
+
+  .guide-list {
+    margin: 0;
+    padding: 0;
+    @include make-row();
+    font-size: 15px;
+
+    li {
+      display: inline-flex;
+      font-family: $font-family-sans-serif;
+      @include make-col-ready();
+
+      @include media-breakpoint-up(lg) {
+        @include make-col(6);
+      }
+
+      @include media-breakpoint-up(xl) {
+        align-items: center;
+      }
+
+      .image {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          background-size: cover;
+          background-position: center;
+          border-radius: 50%;
+          border: solid 3px $gray-800;
+          flex-shrink: 0;
+          margin-right: $spacer;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 132px;
+          height: 132px;
+          border-width: 4px;
+        }
+      }
+
+      h1 {
+        font-size: 22px;
+
+        a {
+          color: inherit;
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// article page
+.guide-template {
+
+  .main .content {
+    position: static;
+  }
+
+  header {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+
+    h1 {
+      font-weight: 800;
+    }
+
+    .image {
+      & > img {
+        display: none;
+      }
+      & > div {
+        display: none;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      font-size: 22px;
+
+      h1 {
+        font-size: 64px;
+      }
+
+      .text {
+        width: ceil((100% / 3) *2);
+        flex-shrink: 0;
+      }
+
+      .image {
+
+        & > img {
+          display: block;
+          visibility: hidden;
+        }
+
+        & > div {
+          display: block;
+          position: absolute;
+          left: 50%;
+          width: 50%;
+          z-index: -1;
+          overflow: hidden;
+          margin-top: -10px;
+
+          img {
+            margin-left: round(((map-get($container-max-widths, lg) / 400) * 66) + 30);
+          }
+        }
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .image {
+        & > div {
+          img {
+            margin-left: round(((map-get($container-max-widths, xl) / 400) * 90) + 60);
+          }
+        }
+      }
+    }
+  }
+
+  .meta {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: $font-family-sans-serif;
+    margin-bottom: $spacer;
+
+    dl {
+      display: inline-flex;
+      flex-wrap: wrap;
+      background-color: $gray-200;
+      align-items: center;
+      margin-right: 2px;
+      padding: $spacer*0.25 $spacer/2 $spacer*0.25 $spacer;
+
+      dt {
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+
+        &::after {
+          content: ':';
+        }
+      }
+
+      dd {
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+
+        a {
+          display: inline-block;
+          @include rev-out;
+          font-weight: 600;
+          padding: 0.25em 1em;
+          margin: $spacer/2;
+
+          &:hover {
+            color: $body-bg;
+          }
+        }
+      }
+
+      &.tools {
+        dd a {
+          background-color: theme-color("primary");
+        }
+      }
+    }
+  }
+}

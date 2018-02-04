@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% from "macros/guides.html" import render_guide_list %}
+{% block body %}
+
+<div class="banner">
+  <div class="container">
+    <h1><small>{{ this.pretitle }}</small> {{ this.title }}</h1>
+    {{ this.intro }}
+  </div>
+</div>
+
+<div class="container">
+  <div class="main">
+    <ul class="guide-list">
+      {% for child in this.children %}
+      {{ render_guide_list(child) }}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
