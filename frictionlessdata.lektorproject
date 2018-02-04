@@ -11,3 +11,6 @@ lektor-markdown-admonition = 0.1
 name = S3
 enabled = yes
 target = s3://frictionlessdata.io
+
+[servers.ghpages]
+target = ghpages://frictionlessdata/website
