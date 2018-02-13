@@ -1,0 +1,13 @@
+title: Data Package Creator
+---
+description: A web service for creating Data Packages.
+---
+link1: http://create.frictionlessdata.io
+---
+link1_label: Website
+---
+link2: https://github.com/frictionlessdata/datapackage-ui
+---
+link2_label: Repository
+---
+tool_category: apps
