@@ -2,11 +2,9 @@ title: Auto validated tabular data
 ---
 intro: Auto validation means you'll be the first to know if a change in your data is going to cause a problem. Learn how to incorporate autovalidation into your workflow.
 ---
-body:
-
-
+body: 
 ---
-ft_img: featured-img.png
+ft_img: auto-validate.png
 ---
 required: Command-line
 ---

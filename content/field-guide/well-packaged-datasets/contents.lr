@@ -2,12 +2,10 @@ title: Well packaged datasets
 ---
 intro: There's an art to creating a good collection of data. Improve the quality of your datasets; making use of schemas, metadata, and data packages.
 ---
-body:
-
-
+body: 
 ---
-ft_img: featured-img.png
+ft_img: well-packaged.png
 ---
-required:
+required: 
 ---
 tools: goodtables
