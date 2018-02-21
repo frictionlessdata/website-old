@@ -9,3 +9,5 @@ ft_img: auto-validate.png
 required: Command-line
 ---
 tools: Goodtables
+---
+sort_key: 5
