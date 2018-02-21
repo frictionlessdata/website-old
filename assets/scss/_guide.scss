@@ -76,6 +76,7 @@
       display: inline-flex;
       font-family: $font-family-sans-serif;
       @include make-col-ready();
+      padding-bottom: $spacer*2;
 
       @include media-breakpoint-up(lg) {
         @include make-col(6);
@@ -87,27 +88,32 @@
 
       .image {
         display: none;
+        order: 2;
 
         @include media-breakpoint-up(sm) {
           display: inline-block;
-          width: 80px;
-          height: 80px;
-          background-size: cover;
+          width: 150px;
+          height: 100%;
+          background-size: contain;
           background-position: center;
-          border-radius: 50%;
-          border: solid 3px $gray-800;
+          background-repeat: no-repeat;
           flex-shrink: 0;
-          margin-right: $spacer;
+          margin-left: $spacer*2;
         }
         @include media-breakpoint-up(xl) {
-          width: 132px;
-          height: 132px;
+          width: 190px;
+          height: 100%;
           border-width: 4px;
         }
       }
 
       h1 {
-        font-size: 22px;
+        font-weight: 800;
+        font-size: 28px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 32px;
+        }
 
         a {
           color: inherit;
