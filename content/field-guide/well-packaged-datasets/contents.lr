@@ -4,7 +4,7 @@ intro: There's an art to creating a good collection of data. Improve the quality
 ---
 body:
 
-# Write a Table Schema
+## Write a Table Schema
 
 !! Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.
 
@@ -57,7 +57,7 @@ If your dataset has other data resources, add them by scrolling to the bottom of
 ![](figure-4.png)
 *Figure 4: Prompt to add more data resources*
 
-# Add your dataset's metadata
+## Add your dataset's metadata
 
 In the previous section, we described metadata for each of our datasets, but we're still missing metadata for our collection of datasets. You can add it via the **Metadata** section on the left side bar, describing things like the dataset name, description, author, license, etc.
 
@@ -89,7 +89,7 @@ This message appears when there is some validation error like if we miss some re
 
 All good! This message means that your data package is valid, and we can download it.
 
-# Download your Data Package
+## Download your Data Package
 
 As we said earlier, the base requirement for a valid Data Package profile is the *datapackage.json* file, which contains your data schema and metadata. We call this the descriptor file. You can download your descriptor file by clicking on the **Download** button.
 
