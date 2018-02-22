@@ -151,7 +151,7 @@ To summarize, these are the folders, files, and their respective contents in thi
 
 ** (Optional) Step 3. Enable automatic tabular data validation **
 
-You can automatically validate your tabular data files using [goodtables.io][gt.io]. This will take only a few minutes, and will ensure you'll always know when there are errors with your dataset, maintaining its quality. [Read the walkthrough here](/auto-validated-tabular-data).
+You can automatically validate your tabular data files using [goodtables.io][gt.io]. This will take only a few minutes, and will ensure you'll always know when there are errors with your dataset, maintaining its quality. [Read the walkthrough here](/field-guide/auto-validated-tabular-data).
 
 The sample datasets used in this example, that is, List of schools in Birmingham, UK are available [in this repository](https://github.com/vitorbaptista/birmingham_schools).
 
@@ -168,8 +168,8 @@ The sample datasets used in this example, that is, List of schools in Birmingham
 ---
 ft_img: visible.png
 ---
-required:
+required: 
 ---
-tools:
+tools: Goodtables
 ---
 sort_key: 2
