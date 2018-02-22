@@ -16,7 +16,7 @@ We will show how to set up automated tabular data validations for data published
  These are the storage solutions we officially support. However, even if you publish your data somewhere else, you can still implement automatic data validation, it'll just require some technical knowledge. [Find out how to set up a standalone goodtables instance](#).
 
 
-## 1. CKAN
+## 1. Auto-validate tabular data on CKAN
 
 !! [CKAN](https://ckan.org/) is an open source platform for publishing data online. It is widely used across the planet, including by the federal governments of the USA, United Kingdom, Brazil, and others.
 
@@ -31,20 +31,104 @@ To automatically validate tabular data on CKAN, enable the [ckanext-validation](
 The installation and usage instructions for [ckanext-validation](https://github.com/frictionlessdata/ckanext-validation) extension are available on [Github](https://github.com/frictionlessdata/ckanext-validation).
 
 
-## 2. GitHub
+## 2. Auto-validate tabular data on GitHub
 
-If your data is hosted on GitHub, you can use goodtables web service to automatically validate it on every change. Find a detailed set of instructions [here](https://docs.goodtables.io/getting_started/github.html).
+If your data is hosted on GitHub, you can use goodtables web service to automatically validate it on every change.
 
-## 3. Amazon S3
+For this section, you will first need to create a [GitHub repository](https://help.github.com/articles/create-a-repo/) and add tabular data to it.
 
-If your data is hosted on Amazon S3, you can use [goodtables web service](https://goodtables.io) to automatically validate it on every change. Find a detailed set of instructions [here](https://docs.goodtables.io/getting_started/s3.html).
+Once you have tabular data in your Github repository:
+
+1. Login on [goodtables.io](https://goodtables.io/) using your GitHub account and accept the permissions confirmation.
+1. Once we've synchronized your repository list, go to the [Manage Sources](https://goodtables.io/settings) page and enable the repository with the data you want to validate.
+    * If you can't find the repository, try clicking on the Refresh button on the Manage Sources page
+
+Goodtables will then validate all tabular data files (CSV, XLS, XLSX, ODS) and [data packages](https://frictionlessdata.io/data-packages/) in the repository. These validations will be executed on every change, including pull requests.
+
+
+## 3. Auto-validate tabular data on Amazon S3
+
+If your data is hosted on Amazon S3, you can use [goodtables web service](https://goodtables.io) to automatically validate it on every change.
+
+While it is a fairly technical process to set up, subsequent validation of your datasets will be fast and efficient.
+
+For this section, you will need:
+* A [GitHub][github] login
+* An [Amazon S3][s3] login
+
+**Setting up Amazon S3 bucket and read-only user**
+
+1. [Create a bucket on S3][howto-s3bucket] to hold your data
+    * Create the bucket on the `us-west-2` region. It's a [current limitation][s3-region-bug] of goodtables.io that we're working to fix.
+1. [Create a new IAM user][howto-iamuser]. This user will be used by goodtables.io to read your bucket.
+    * Make sure you take note of the AWS Access Key ID, AWS Secret Access Key, and the User ARN.
+1. Go to your [bucket's overview page][bucket-overview], click on the `Permissions` tab, and find the `Bucket Policy` link. We need the permissions:
+    * _s3:ListBucket_: To list the bucket's contents
+    * _s3:GetObject_: To read the bucket's files
+    * _s3:GetBucketPolicy_, _s3:PutBucketPolicy_, _s3:GetBucketLocation_, and _s3:PutBucketNotification_: To set up the AWS Lambda functions that notifies goodtables.io when a new file is added
+
+The final bucket policy should look like:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "statement1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "IAM_USER_ARN"
+            },
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketNotification"
+            ],
+            "Resource": "arn:aws:s3:::BUCKET_NAME"
+        },
+        {
+            "Sid": "statement2",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "IAM_USER_ARN"
+            },
+            "Action": ["s3:GetObject"],
+            "Resource": "arn:aws:s3:::BUCKET_NAME/*"
+        }
+    ]
+}
+```
+
+With your IAM User ARN and Bucket Name substituting the `IAM_USER_ARN` and `BUCKET_NAME`.
+
+**Setting up goodtables.io**
+
+1. Login on [goodtables.io][gtio] using your GitHub account.
+1. Go to the [Manage Sources][gtio-managesources] page, click on the `Amazon` tab, and on the plus sign on the right of the Filter input.
+1. Fill in the `Access Key Id`, `Secret Access Key` and `Bucket Name` with the IAM User and bucket you just created in the previous section.
+
+We're all set. Goodtables will automatically validate whenever a file is added or modified in the bucket. You can now [upload data to your bucket][howto-s3upload] and goodtables will automatically validate any tabular files (CSV, XLS, ODS, ...) and tabular data packages.
+
 
 ## Set up a standalone instance of goodtables
 
 If none of the options above are relevant for you i.e. because you use a different data publishing and storage platform, you can run goodtables as part of your data publishing process, either by executing the command-line tool, or using it with Python. Although this will potentially require custom development, it is the most flexible option, allowing you to specify exactly when and how the data is validated. For example, if you aggregate data from multiple sources, you could validate the unmodified data, to catch errors early, along with validating your modified data before publication. Find a detailed set of instructions [here on GitHub](https://github.com/frictionlessdata/goodtables-py/).
 
-
-
+gtio]: https://goodtables.io/ "Goodtables.io"
+[github]: https://github.com/ "GitHub"
+[s3]: https://aws.amazon.com/s3/ "Amazon S3"
+[s3-region-bug]: https://github.com/frictionlessdata/goodtables.io/issues/136 "Can't add S3 bucket with other region that Oregon (us-west-2)"
+[howto-s3bucket]: https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html "How do I create an S3 Bucket?"
+[howto-s3upload]: https://docs.aws.amazon.com/AmazonS3/latest/user-guide/upload-objects.html "How do I upload files and folders to an S3 Bucket?"
+[howto-iamuser]: http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html?icmpid=docs_iam_console "Create an IAM User in your AWS account"
+[bucket-overview]: https://s3.console.aws.amazon.com/s3/buckets/ "Amazon S3 Bucket list"
+[gh-new-repo]: https://help.github.com/articles/create-a-repo/ "GitHub: Create new repository tutorial"
+[gtio-managesources]: https://goodtables.io/settings "Goodtables.io: Manage sources"
+[datapackage]: https://frictionlessdata.io/data-packages/ "Data Package"
+[gtio-dataschema]: writing_data_schema.html "Writing a data schema"
+[gtio-configuring]: configuring.html "Configuring goodtables.io"
 
 ---
 ft_img: auto-validate.png
