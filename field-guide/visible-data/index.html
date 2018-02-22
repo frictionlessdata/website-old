@@ -1341,6 +1341,21 @@
         <a href="../../field-guide/visible-data/">Introduction</a>
       </li>
       
+      <li>
+        <a href="../../field-guide/visible-data/#1.-publish-packaged-data-in-our-community-ckan-instance">1. Publish Packaged Data in our community CKAN instance</a>
+        
+      </li>
+      
+      <li>
+        <a href="../../field-guide/visible-data/#2.-publish-packaged-data-on-datahub.io">2. Publish Packaged Data on DataHub.io</a>
+        
+      </li>
+      
+      <li>
+        <a href="../../field-guide/visible-data/#3.-publish-packaged-data-on-github">3. Publish Packaged Data on GitHub</a>
+        
+      </li>
+      
     </ul>
 
   </li>
@@ -2714,6 +2729,21 @@
         <a href="../../field-guide/visible-data/">Introduction</a>
       </li>
       
+      <li>
+        <a href="../../field-guide/visible-data/#1.-publish-packaged-data-in-our-community-ckan-instance">1. Publish Packaged Data in our community CKAN instance</a>
+        
+      </li>
+      
+      <li>
+        <a href="../../field-guide/visible-data/#2.-publish-packaged-data-on-datahub.io">2. Publish Packaged Data on DataHub.io</a>
+        
+      </li>
+      
+      <li>
+        <a href="../../field-guide/visible-data/#3.-publish-packaged-data-on-github">3. Publish Packaged Data on GitHub</a>
+        
+      </li>
+      
     </ul>
 
   </li>
@@ -2805,7 +2835,172 @@
         
       </div>
 
-      
+      <p>This section requires knowledge on how to <a href="../../field-guide/visible-data/well-packaged-datasets/#write-a-table-schema">write a Table Schema</a>, <a href="../../field-guide/visible-data/well-packaged-datasets/#add-your-dataset-s-metadata">attach metadata</a> to your data and <a href="../../field-guide/visible-data/well-packaged-datasets/#download-your-data-package">create a Data Package</a>.</p>
+<p>Creating and Sharing Data Packages is important for both data publishers and data users because it provides a common and open specification to describe your dataset's metadata. This facilitates data reuse, as users don't need to understand each data publisher's specific metadata format, and as the specification is machine-readable, it also allows tools to parse the metadata. This enables software to:</p>
+<ul>
+<li>Import the data packages into different tools and languages, like Python and R</li>
+<li>Validate the data contents according to the schema described in the data package</li>
+<li>Convert the data package into other formats, for example loading it into a SQL database for further analysis</li>
+</ul>
+<p>Although these reasons are not unique to publishing data as data packages, here's why we think data publishers should consider publishing in this format:</p>
+<ul>
+<li><p>Archiving data collections using data packages ensure data publishers can update data  more efficiently at any time. The associated schema is a guide on existing data fields and acceptable data types for individual tabular data resources and can be easily built upon.</p>
+</li>
+<li><p>Sharing data with descriptive metadata and its associated schema provides context for your data no matter where it is used, and significantly cuts down on time spent researching data provenance before using acquired data.</p>
+</li>
+<li><p>Data Packages allow for accountability and enrich the feedback process as data publishers can add metadata with contact information for users to reach out to them and licensing to spell out accepted use of published data.</p>
+</li>
+</ul>
+<p>If don't need your own data portal, there are many platforms where you can publish your data (if you need your own, check <a href="https://ckan.org/">CKAN</a>). In the section below, we dive into a few options. Read along and decide what option is most suitable:</p>
+<h2 id="1.-publish-packaged-data-in-our-community-ckan-instance">1. Publish Packaged Data in our community CKAN instance</h2><div class="admonition admonition-info"><p>CKAN is an open source platform for publishing data that makes it easy to discover, use and share data. <a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a> is a public instance of CKAN that allows anyone to publish their data.</p></div><p>Here’s why you should consider creating an organization on <a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a> and publishing datasets therein:</p>
+<ul>
+<li><a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a> is free for all to use! The file upload size limit on the platform is currently 100mb.</li>
+<li>The decision on whether to publicly or privately publish datasets rests with data publishers.</li>
+<li><a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a> organizations allow for multiple users to collaborate with varied privileges:<ul>
+<li><strong>Admin</strong>: Can add/edit and delete datasets, as well as manage organization members.</li>
+<li><strong>Editor</strong>: Can add and edit datasets, but not manage organization members.</li>
+<li><strong>Member</strong>: Can view the organization's private datasets, but not add new datasets.</li>
+</ul>
+</li>
+</ul>
+<p>To publish data on <a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a>:</p>
+<ol>
+<li><p>Request for a new Organization to be created on the platform for you via <a href="https://discuss.okfn.org/c/open-knowledge-labs/datahub">our community page</a>.
+  This is required only to ensure spammers don’t take up space and hog resources on the platform.</p>
+<p>The request format is simple and requires:</p>
+<ul>
+<li><p><strong>Title</strong>: This will be the name of your Organization on <a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a> i.e.<br/>
+<em>My New Organization</em></p>
+</li>
+<li><p><strong>Slug</strong>: This is an acronym, word or hyphenated phrase that will be added to the end of the <a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a> url to uniquely identify your Organization and associate your data collections with it i.e.<br/>
+  <em>my-new-organization</em></p>
+</li>
+<li><p><strong>Username</strong>: The username you provide is associated with an email address on <a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a> and allows us to give you admin access to your Organization on <a href="../../field-guide/visible-data/datahub.ckan.io">datahub.ckan.io</a>.</p>
+</li>
+</ul>
+</li>
+<li><p>Log In and add new datasets</p>
+<p>Adding datasets on <a href="http://datahub.ckan.io">datahub.ckan.io</a> is no different from using any other CKAN platform, but <a href="http://okfnlabs.org/blog/2016/07/25/publish-data-packages-to-datahub-ckan.html">here’s a good guide by Dan Fowler</a> for first timers.</p>
+</li>
+</ol>
+<p>3.Publish and share public datasets widely.</p>
+<p>On <a href="http://datahub.ckan.io">datahub.ckan.io</a>, you can either publish datasets privately, meaning only members of your organization have access to them, or publicly, as open data. <a href="http://okfnlabs.org/blog/2016/07/25/publish-data-packages-to-datahub-ckan.html">Find out more</a>.</p>
+<h2 id="2.-publish-packaged-data-on-datahub.io">2. Publish Packaged Data on DataHub.io</h2><div class="admonition admonition-info"><p>DataHub.io is a platform for finding, sharing and publishing high quality data online.</p></div><p><a href="../../field-guide/visible-data/datahub.io">DataHub.io</a> and <a href="http://datahub.ckan.io">datahub.ckan.io</a> share the same name for historical reasons. <a href="http://datahub.ckan.io">Datahub.ckan.io</a> used to be the DataHub, but was moved to its current address, and the current DataHub uses new software developed from scratch.</p>
+<ol>
+<li><p>Set up a data publisher / user account on <a href="../../field-guide/visible-data/datahub.io">DataHub.io</a></p>
+<p>Join the <a href="https://gitter.im/datahubio/chat">datahub.io community group</a>, introduce yourself and request for an account.</p>
+</li>
+<li><p>Publish Datasets on <a href="../../field-guide/visible-data/datahub.io">DataHub.io</a></p>
+<p><a href="http://datahub.io/docs/getting-started/publishing-data">This post</a> provides helpful information on publishing datasets on <a href="../../field-guide/visible-data/datahub.io">DataHub.io</a>.</p>
+</li>
+</ol>
+<h2 id="3.-publish-packaged-data-on-github">3. Publish Packaged Data on GitHub</h2><div class="admonition admonition-info"><p>GitHub is the largest repository of source code, with <a href="https://github.com/blog/2345-celebrating-nine-years-of-github-with-an-anniversary-sale">more than 20 million
+users</a>. Although the focus is on hosting source code, any type of file can be hosted. Documents, thesis, images, shapefiles, you can even host an entire static website with <a href="https://pages.github.com/">GitHub Pages</a>.</p></div><p>By using GitHub, you get all the advantages of using a version control system as Git, where every modification to your files is tracked. You also get an issue ticketing system, wiki pages, milestones tracking, and other useful
+collaboration tools.</p>
+<p><strong> What types of datasets can be hosted on GitHub?</strong></p>
+<p>Although GitHub offers many useful functionalities, not all datasets are a good fit for it. The main limitations are:</p>
+<ul>
+<li>Invidivual files have less than 100 MB</li>
+<li>Entire repository have less than 1 GB<ul>
+<li>The repository size includes not only the current files, but all of their previous versions.</li>
+</ul>
+</li>
+</ul>
+<p>You can store larger files using <a href="https://git-lfs.github.com/">git-lfs</a>, but we won't go in details about it on this post.</p>
+<p>It's also useful if your data files use text-based file formats like CSV or GeoJSON, as then git is able to show you exactly what changed between two versions of the files. However, even if you use binary file formats like XLS, GitHub is still useful.</p>
+<p><strong> Step 1. Organise your dataset folder structure </strong></p>
+<p>The way to structure your dataset depends on your data, and what extra artifacts it contains (e.g. images, scripts, reports, etc.). In this section, we'll show a complete example with:</p>
+<ul>
+<li><strong>Data files</strong>: The files with the actual data (e.g. CSV, XLS, GeoJSON, ...)</li>
+<li><strong>Documentation</strong>: How was the data collected, any caveats, how to update it, etc.</li>
+<li><strong>Metadata</strong>: Where the data comes from, what's in the files, what's their source and license, etc.</li>
+<li><strong>Scripts</strong>: Software scripts that were used to generate, update, or modify the data.</li>
+</ul>
+<p>Even though we'll see an example that has all of these different types of files, this isn't always the case. For example, datasets that were manually collected might not have any scripts.</p>
+<p>This is the final structure:</p>
+<pre><code>data/
+    schools.csv
+    cities.csv
+docs/
+    screenshot.png
+scripts/
+    clean_data.py
+Makefile
+datapackage.json
+README.md
+</code></pre>
+<ul>
+<li><strong>data/</strong>: All data files are contained in this folder. In our example, there are two: <code>data/schools.csv</code> and <code>data/cities.csv</code>.</li>
+<li><strong>docs/</strong>: Images, sample analysis, and other documentation files regarding the dataset. The main documentation is in <code>README.md</code>, but in this folder you can add any images used in the README, and other writings about the dataset.</li>
+<li><strong>scripts/</strong>: All scripts are contained in this folder. There could be scripts to scrape the data, join different files, clean them, etc. Depending on the programming language you use, you might also add requirements files like <code>requirements.txt</code> for Python, or <code>package.json</code> for NodeJS.</li>
+<li><strong>Makefile</strong>: The scripts are only part of the puzzle, we also need to know how to run them. In which order they should be executed, which one should I run to update the data, and so on. You could document this information textually in the <code>README.md</code> file, but the <code>Makefile</code> allows you to have executable documentation. You can think of it as a script to run the scripts. If you have never written a Makefile, read <a href="https://bost.ocks.org/mike/make/">Why Use Make</a>.</li>
+<li><strong>datapackage.json</strong>: This file describes the dataset's metadata. For example, what is the dataset, where are its files, what they contain, what each column means (for tabular data), what's the source, license, and authors, and so on. As it's a machine-readable specification, other software can import and validate your files. See HOW TO CREATE A DATA PACKAGE on instructions on writing this file.</li>
+<li><strong>README.md</strong>: This is where the dataset is described for humans. We recommend the following sections:<ul>
+<li><strong>Introduction</strong>: A short description of the dataset, what it contains, the time or geographical area it covers</li>
+<li><strong>Data</strong>: What the data structure? Does it use any codes? How do you define missing values (e.g. 'N/A' or '-1')</li>
+<li><strong>Preparation</strong>: How was the data collected? How do I update the data? Was it modified in any way? If you have a <code>Makefile</code>, this section will mostly document how to run it. Otherwise you can describe how to run the scripts, or how to collect the data manually.</li>
+<li><strong>License</strong>: There are two issues here: the license of the data itself, and the license of the package you are creating (including any scripts). Our recommendation is to license the package you created as <a href="https://creativecommons.org/publicdomain/zero/1.0/" title="Creative Commons Public Domain Dedication">CC0</a>, and add any relevant information or disclaimers regarding the source data's license.</li>
+</ul>
+</li>
+</ul>
+<p>To summarize, these are the folders, files, and their respective contents in this structure:</p>
+<table>
+<thead><tr>
+<th>Path</th>
+<th>Type</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data/</td>
+<td>Data</td>
+<td>Dataset's data files.</td>
+</tr>
+<tr>
+<td>docs/</td>
+<td>Documentation</td>
+<td>Images, analysis, and other documentation files.</td>
+</tr>
+<tr>
+<td>scripts/</td>
+<td>Scripts</td>
+<td>Scripts used for creating, modifying, or analysing the dataset.</td>
+</tr>
+<tr>
+<td>Makefile</td>
+<td>Scripts</td>
+<td>Executable documentation on how to run the scripts.</td>
+</tr>
+<tr>
+<td>datapackage.json</td>
+<td>Metadata</td>
+<td>Data Package descriptor file.</td>
+</tr>
+<tr>
+<td>README.md</td>
+<td>Documentation</td>
+<td>Textual description of the dataset with description, preparation steps, license, etc.</td>
+</tr>
+</tbody>
+</table>
+<p><strong> Step 2. Upload the dataset to GitHub </strong></p>
+<ol>
+<li>Login (or create) a new account on GitHub</li>
+<li>Create <a href="https://github.com/new" title="GitHub New Repository">a new repository</a><ul>
+<li>Write a short description about the dataset</li>
+</ul>
+</li>
+<li>On your repository page, click on the "Upload files" link</li>
+<li>Upload the files you created in the previous step<ul>
+<li>If your have files larger than 25 MB, you'll need to either <a href="https://help.github.com/articles/adding-a-file-to-a-repository-using-the-command-line/" title="Adding a file to a repository using the command line">upload using the command line</a>, or the <a href="https://desktop.github.com/">GitHub Desktop client</a>.</li>
+</ul>
+</li>
+</ol>
+<p><strong> (Optional) Step 3. Enable automatic tabular data validation </strong></p>
+<p>You can automatically validate your tabular data files using <a href="https://goodtables.io">goodtables.io</a>. This will take only a few minutes, and will ensure you'll always know when there are errors with your dataset, maintaining its quality. <a href="../../auto-validated-tabular-data">Read the walkthrough here</a>.</p>
+<p>The sample datasets used in this example, that is, List of schools in Birmingham, UK are available <a href="https://github.com/vitorbaptista/birmingham_schools">in this repository</a>.</p>
+
     </article>
   </div>
 </div>
