@@ -1314,6 +1314,21 @@
         <a href="../../field-guide/well-packaged-datasets/">Introduction</a>
       </li>
       
+      <li>
+        <a href="../../field-guide/well-packaged-datasets/#write-a-table-schema">Write a Table Schema</a>
+        
+      </li>
+      
+      <li>
+        <a href="../../field-guide/well-packaged-datasets/#add-your-dataset-s-metadata">Add your dataset's metadata</a>
+        
+      </li>
+      
+      <li>
+        <a href="../../field-guide/well-packaged-datasets/#download-your-data-package">Download your Data Package</a>
+        
+      </li>
+      
     </ul>
 
   </li>
@@ -2672,6 +2687,21 @@
         <a href="../../field-guide/well-packaged-datasets/">Introduction</a>
       </li>
       
+      <li>
+        <a href="../../field-guide/well-packaged-datasets/#write-a-table-schema">Write a Table Schema</a>
+        
+      </li>
+      
+      <li>
+        <a href="../../field-guide/well-packaged-datasets/#add-your-dataset-s-metadata">Add your dataset's metadata</a>
+        
+      </li>
+      
+      <li>
+        <a href="../../field-guide/well-packaged-datasets/#download-your-data-package">Download your Data Package</a>
+        
+      </li>
+      
     </ul>
 
   </li>
@@ -2760,10 +2790,42 @@
             <img src="../../field-guide/well-packaged-datasets/well-packaged.png" width="382.0" height="268.0" alt="">
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
           </div>
           
           
           <img src="../../field-guide/well-packaged-datasets/well-packaged.png" width="382.0" height="268.0" alt="">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           
           
         </div>
@@ -2777,7 +2839,7 @@
           </dt>
           
           <dd>
-            <a>goodtables</a>
+            <a>Data Package Creator</a>
           </dd>
           
         </dl>
@@ -2786,7 +2848,85 @@
         
       </div>
 
-      
+      <h1 id="write-a-table-schema">Write a Table Schema</h1><div class="admonition admonition-info"><p>Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.</p></div><p>For this section, we will use the <a href="https://create.frictionlessdata.io">Data Package Creator</a> and <a href="http://datahub.io/core/gdp">Gross Domestic Product dataset for all countries (1960 - 2014)</a>.</p>
+<div class="admonition admonition-info"><p><strong>Data Package</strong> is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it. All contextual information, such as metadata and your data schema, is published in a JSON file named <em>datapackage.json</em>.</p></div><div class="admonition admonition-info"><p><strong>Data Package Creator</strong> is an online service that facilitates the creation and editing of data packages. The service automatically generates a <em>datapackage.json</em> file for you as you add and edit data that is part of your data collection. We refer to each piece of data in a data collection as a <strong>data resource</strong>.</p></div><p><a href="https://create.frictionlessdata.io">Data Package Creator</a> loads with dummy data to make it easy to understand how metadata and sample resources help generate the <em>datapackage.json</em> file. There are three ways in which a user can add data resources on <a href="https://create.frictionlessdata.io">Data Package Creator</a>:</p>
+<ol>
+<li><p>Provide a hyperlink to your data resource (highly recommended).</p>
+<p>If your data resource is publicly available, like on GitHub or in a data repository, simply obtain the URL and paste it in the <strong>Path</strong> section. To learn how to publish your data resource online, check the publish your dataset section.</p>
+</li>
+<li><p>Create your data resource within the service.</p>
+<p>If your data resource isn't published online, you'll have to define its fields from scratch. Depending on how complex is your data, this can be time consuming, but it's still easier than creating the descriptor JSON file from scratch.This option is time consuming, as a user has to manually create each field of a data resource. However, this is simpler than learning how to create a JSON file from scratch.</p>
+</li>
+<li><p><strong>Load a Data Package</strong> option</p>
+<p>With this option, you can load a pre-existing <em>datapackage.json</em> file to view and edit its metadata and resource fields.</p>
+</li>
+</ol>
+<p>Our <a href="https://github.com/frictionlessdata/example-data-packages/blob/master/gross-domestic-product-all/data/gdp.csv">Gross Domestic Product dataset for all countries (1960 - 2014)</a> dataset is publicly available on GitHub.
+!!! Obtain a link to the raw CSV file by clicking on the Raw button at the top right corner of the GitHub file preview page, as shown in figure 1 below. The resulting hyperlink looks like <a href="https://raw.githubusercontent.com/…">https://raw.githubusercontent.com/…</a></p>
+<p><img src="../../field-guide/well-packaged-datasets/figure-1.png" alt="">
+<em>Figure 1: Above, raw button highlighted in red</em></p>
+<p>Paste your hyperlink in the <em>Path</em> section and click on the <em>Load</em> button. Each column in your table translates to a <em>field</em>. You should be prompted to add all fields identified in your data resource, as in Figure 2 below. Click on the prompt to load the fields.</p>
+<p><img src="../../field-guide/well-packaged-datasets/figure-2.png" alt="">
+<em>Figure 2: annotated in red, a prompt to add all fields inferred from your data resource</em></p>
+<p>The page that follows looks like Figure 3 below. Each column from the GDP dataset has been mapped to a <em>field</em>. The data type for each column has been inferred correctly, and we can preview data under each field by hovering over the field name. It is also possible to edit all sections of our data resource’s fields as we can see below.</p>
+<p><img src="../../field-guide/well-packaged-datasets/figure-3.png" alt="">
+<em>Figure 3: all fields inferred from your data resource</em></p>
+<p>You can now edit data types and formats as necessary, and optionally add titles and descriptive information to your fields. For example, the data type for our {Year} field should be <strong><em>year</em></strong> and not <strong><em>integer</em></strong>. Our {Value} column has numeric information with decimal places.</p>
+<p>By definition, values under the <strong><em>integer</em></strong> data type are whole numbers. The <strong><em>number</em></strong> data type is more appropriate for the {Value} column. When in doubt about what data type to use, consult the <a href="https://frictionlessdata.io/specs/table-schema/#types-and-formats">Table Schema data types cheat sheet</a>.</p>
+<p>Click on the <img src="../../field-guide/well-packaged-datasets/settings.png" alt=""> icon to pick a suitable profile for your data resource. <a href="https://frictionlessdata.io/specs/profiles/">Here’s more information about Frictionless Data profiles</a>.</p>
+<p>If your dataset has other data resources, add them by scrolling to the bottom of the page, clicking on Add Resource, and repeating the same process as we just did.</p>
+<p>If your dataset has other data resources, add them by scrolling to the bottom of the page, clicking on <strong>Add Resource</strong>, and repeating the same process as we just did.</p>
+<p><img src="../../field-guide/well-packaged-datasets/figure-4.png" alt="">
+<em>Figure 4: Prompt to add more data resources</em></p>
+<h1 id="add-your-dataset-s-metadata">Add your dataset's metadata</h1><p>In the previous section, we described metadata for each of our datasets, but we're still missing metadata for our collection of datasets. You can add it via the <strong>Metadata</strong> section on the left side bar, describing things like the dataset name, description, author, license, etc.</p>
+<p><img src="../../field-guide/well-packaged-datasets/figure-5.png" alt=""></p>
+<p>The <strong>Profile</strong> section under metadata allows us to specify what kind of data collection we are packaging.</p>
+<ul>
+<li><p><em>Data Package</em>
+This is the base, more general profile. Use it if your dataset contains resources of mixed formats, like tabular and geographical data. The base requirement for a valid Data Package profile is the <em>datapackage.json</em> file. See the <a href="http://frictionlessdata.io/specs/data-package/">Data Package specification</a> for more information.</p>
+</li>
+<li><p><em>Tabular Data Package</em>
+If your data contains only tabular resources like CSVs and spreadsheets, use the Tabular Data Package profile. See the <a href="http://frictionlessdata.io/specs/tabular-data-package/">Tabular Data Package specification</a> for more information.</p>
+</li>
+<li><em>Fiscal Data Package</em>
+If your data contains fiscal information like budgets and expenditure data, use the  Fiscal Data Package profile. See the <a href="http://frictionlessdata.io/specs/fiscal-data-package/">Fiscal Data Package specification</a> for more information.</li>
+</ul>
+<p>In our example, as we only have a CSV data resource, the <em>Tabular Data Package</em> profile is the best option.</p>
+<p>In the <strong>Keywords</strong> section, you can add any keywords that helps make your data collection more discoverable. For our dataset, we might use the keywords <em>GDP, National Accounts, National GDP, Regional GDP</em>. Other datasets could include the country name, dataset area (e.g. "health" or "environmental"), etc.</p>
+<p>Now that we have created a Data Package, we can <strong>Validate</strong> or <strong>Download</strong> it. But first, let’s see what our datapackage.json file looks like. With every addition and modification, the <a href="https://create.frictionlessdata.io">Data Package Creator</a> has been populating the <em>datapackage.json</em> file for us. Click on the <strong>{···}</strong> icon to view the <em>datapackage.json</em> file. As you can see below, any edit we make to the description of the Value field reflects on the JSON file in real time.</p>
+<p>The <strong>Validate</strong> button allows us to confirm whether we chose the correct Profile for our Data Package. The two possible outcomes at this stage are:</p>
+<p><img src="../../field-guide/well-packaged-datasets/figure-6.png" alt=""></p>
+<p>This message appears when there is some validation error like if we miss some required attribute (e.g. the data package name), or have picked an incorrect profile (e.g. Tabular Data Package with geographical data).. Review the metadata and profiles to find the mistake and try validating again.</p>
+<p><img src="../../field-guide/well-packaged-datasets/figure-7.png" alt=""></p>
+<p>All good! This message means that your data package is valid, and we can download it.</p>
+<h1 id="download-your-data-package">Download your Data Package</h1><p>As we said earlier, the base requirement for a valid Data Package profile is the <em>datapackage.json</em> file, which contains your data schema and metadata. We call this the descriptor file. You can download your descriptor file by clicking on the <strong>Download</strong> button.</p>
+<ul>
+<li><p>If your data resources, like ours, were linked from an online public source, sharing the <em>datapackage.json</em> file is sufficient, since it contains URLs to your data resources.</p>
+</li>
+<li><p>If you manually created a data resource and its fields, remember to add all your data resources and the downloaded <em>datapackage.json</em> file in one folder before sharing it.</p>
+</li>
+</ul>
+<p>The way to structure your dataset depends on your data, and what extra artifacts it contains (e.g. images, scripts, reports, etc.). In this section, we'll show a complete example with:</p>
+<ul>
+<li><strong>Data files</strong>: The files with the actual data (e.g. CSV, XLS, GeoJSON, ...)</li>
+<li><strong>Documentation</strong>: How was the data collected, any caveats, how to update it, etc.</li>
+<li><strong>Metadata</strong>: Where the data comes from, what's in the files, what's their source and license, etc.</li>
+<li><strong>Scripts</strong>: Software scripts that were used to generate, update, or modify the data.</li>
+</ul>
+<p>Your final Data Package file directory should look like this:</p>
+<pre><code>data/
+    dataresource1.csv
+    dataresource2.csv
+datapackage.json
+</code></pre>
+<ul>
+<li><p><strong>data/</strong>: All data files are contained in this folder. In our example, there is only one: <code>data/gdp.csv</code> .</p>
+</li>
+<li><p><strong>datapackage.json</strong>: This file describes the dataset's metadata. For example, what is the dataset, where are its files, what they contain, what each column means (for tabular data), what's the source, license, and authors, and so on. As it's a machine-readable specification, other software can import and validate your files.</p>
+</li>
+</ul>
+<p>Congratulations! You have now created a schema for your data, and combined it with descriptive metadata and your data collection to create your first data package!</p>
+
     </article>
   </div>
 </div>
