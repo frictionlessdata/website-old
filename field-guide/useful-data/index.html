@@ -3202,68 +3202,7 @@ datapackage.json
 </ol>
 <p>Goodtables will then validate all tabular data files (CSV, XLS, XLSX, ODS) and <a href="https://frictionlessdata.io/data-packages/">data packages</a> in the repository. These validations will be executed on every change, including pull requests.</p>
 <h3 id="3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</h3><p>If your data is hosted on Amazon S3, you can use <a href="https://goodtables.io">goodtables web service</a> to automatically validate it on every change.</p>
-<p>While it is a fairly technical process to set up, subsequent validation of your datasets will be fast and efficient.</p>
-<p>For this section, you will need:</p>
-<ul>
-<li>A <a href="https://github.com/" title="GitHub">GitHub</a> login</li>
-<li>An <a href="https://aws.amazon.com/s3/" title="Amazon S3">Amazon S3</a> login</li>
-</ul>
-<p><strong>Setting up Amazon S3 bucket and read-only user</strong></p>
-<ol>
-<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html" title="How do I create an S3 Bucket?">Create a bucket on S3</a> to hold your data<ul>
-<li>Create the bucket on the <code>us-west-2</code> region. It's a <a href="https://github.com/frictionlessdata/goodtables.io/issues/136" title="Can&#39;t add S3 bucket with other region that Oregon (us-west-2)">current limitation</a> of goodtables.io that we're working to fix.</li>
-</ul>
-</li>
-<li><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html?icmpid=docs_iam_console" title="Create an IAM User in your AWS account">Create a new IAM user</a>. This user will be used by goodtables.io to read your bucket.<ul>
-<li>Make sure you take note of the AWS Access Key ID, AWS Secret Access Key, and the User ARN.</li>
-</ul>
-</li>
-<li>Go to your <a href="https://s3.console.aws.amazon.com/s3/buckets/" title="Amazon S3 Bucket list">bucket's overview page</a>, click on the <code>Permissions</code> tab, and find the <code>Bucket Policy</code> link. We need the permissions:<ul>
-<li><em>s3:ListBucket</em>: To list the bucket's contents</li>
-<li><em>s3:GetObject</em>: To read the bucket's files</li>
-<li><em>s3:GetBucketPolicy</em>, <em>s3:PutBucketPolicy</em>, <em>s3:GetBucketLocation</em>, and <em>s3:PutBucketNotification</em>: To set up the AWS Lambda functions that notifies goodtables.io when a new file is added</li>
-</ul>
-</li>
-</ol>
-<p>The final bucket policy should look like:</p>
-<div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;Version&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-10-17&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;Statement&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;Sid&quot;</span><span class="p">:</span> <span class="s2">&quot;statement1&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Effect&quot;</span><span class="p">:</span> <span class="s2">&quot;Allow&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Principal&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;AWS&quot;</span><span class="p">:</span> <span class="s2">&quot;IAM_USER_ARN&quot;</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;Action&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="s2">&quot;s3:ListBucket&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;s3:GetBucketLocation&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;s3:GetBucketPolicy&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;s3:PutBucketPolicy&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;s3:PutBucketNotification&quot;</span>
-            <span class="p">],</span>
-            <span class="nt">&quot;Resource&quot;</span><span class="p">:</span> <span class="s2">&quot;arn:aws:s3:::BUCKET_NAME&quot;</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;Sid&quot;</span><span class="p">:</span> <span class="s2">&quot;statement2&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Effect&quot;</span><span class="p">:</span> <span class="s2">&quot;Allow&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Principal&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;AWS&quot;</span><span class="p">:</span> <span class="s2">&quot;IAM_USER_ARN&quot;</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;Action&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;s3:GetObject&quot;</span><span class="p">],</span>
-            <span class="nt">&quot;Resource&quot;</span><span class="p">:</span> <span class="s2">&quot;arn:aws:s3:::BUCKET_NAME/*&quot;</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
-<span class="p">}</span>
-</pre></div>
-<p>With your IAM User ARN and Bucket Name substituting the <code>IAM_USER_ARN</code> and <code>BUCKET_NAME</code>.</p>
-<p><strong>Setting up goodtables.io</strong></p>
-<ol>
-<li>Login on <a href="https://goodtables.io/" title="Goodtables.io">goodtables.io</a> using your GitHub account.</li>
-<li>Go to the <a href="https://goodtables.io/settings" title="Goodtables.io: Manage sources">Manage Sources</a> page, click on the <code>Amazon</code> tab, and on the plus sign on the right of the Filter input.</li>
-<li>Fill in the <code>Access Key Id</code>, <code>Secret Access Key</code> and <code>Bucket Name</code> with the IAM User and bucket you just created in the previous section.</li>
-</ol>
-<p>We're all set. Goodtables will automatically validate whenever a file is added or modified in the bucket. You can now <a href="https://docs.aws.amazon.com/AmazonS3/latest/user-guide/upload-objects.html" title="How do I upload files and folders to an S3 Bucket?">upload data to your bucket</a> and goodtables will automatically validate any tabular files (CSV, XLS, ODS, ...) and tabular data packages.</p>
+<p>While it is a fairly technical process to set up, subsequent validation of your datasets will be fast and efficient. Find a detailed set of instructions <a href="https://docs.goodtables.io/getting_started/s3.html">here</a>.</p>
 <h3 id="set-up-a-standalone-instance-of-goodtables">Set up a standalone instance of goodtables</h3><p>If none of the options above are relevant for you i.e. because you use a different data publishing and storage platform, you can run goodtables as part of your data publishing process, either by executing the command-line tool, or using it with Python. Although this will potentially require custom development, it is the most flexible option, allowing you to specify exactly when and how the data is validated. For example, if you aggregate data from multiple sources, you could validate the unmodified data, to catch errors early, along with validating your modified data before publication. Find a detailed set of instructions <a href="https://github.com/frictionlessdata/goodtables-py/">here on GitHub</a>.</p>
 <hr>
 <h2 id="publish-packaged-data">Publish Packaged Data</h2><p>Creating and Sharing Data Packages is important for both data publishers and data users because it provides a common and open specification to describe your dataset's metadata. This facilitates data reuse, as users don't need to understand each data publisher's specific metadata format, and as the specification is machine-readable, it also allows tools to parse the metadata. This enables software to:</p>
