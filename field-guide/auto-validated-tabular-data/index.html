@@ -1410,17 +1410,17 @@
         
         <ul>
       <li>
-        <a href="../../field-guide/useful-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -1472,17 +1472,17 @@
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -2897,17 +2897,17 @@
         
         <ul>
       <li>
-        <a href="../../field-guide/useful-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -2959,17 +2959,17 @@
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -3069,7 +3069,8 @@
 <p>These are the storage solutions we officially support. However, even if you publish your data somewhere else, you can still implement automatic data validation, it'll just require some technical knowledge. <a href="../../field-guide/auto-validated-tabular-data/#set-up-a-standalone-instance-of-goodtables">Find out how to set up a standalone goodtables instance</a>.</p>
 </li>
 </ol>
-<h2 id="1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</h2><div class="admonition admonition-info"><p><a href="https://ckan.org/">CKAN</a> is an open source platform for publishing data online. It is widely used across the planet, including by the federal governments of the USA, United Kingdom, Brazil, and others.</p></div><p>To automatically validate tabular data on CKAN, enable the <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension, which uses goodtables to run continuous checks on your data. The <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension:</p>
+<h2 id="validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</h2><p><a href="https://ckan.org/">CKAN</a> is an open source platform for publishing data online. It is widely used across the planet, including by the federal governments of the USA, United Kingdom, Brazil, and others.</p>
+<p>To automatically validate tabular data on CKAN, enable the <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension, which uses goodtables to run continuous checks on your data. The <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension:</p>
 <ul>
 <li>adds a badge next to each dataset showing the status of their validation (valid or invalid), and</li>
 <li>allows users to access the validation report, making it possible for errors to be identified and fixed.</li>
@@ -3077,7 +3078,7 @@
 <p><img src="../../field-guide/auto-validated-tabular-data/figure-1.png" alt="">
 <em>Figure 1: annotated in red, automated validation checks on datasets in CKAN</em></p>
 <p>The installation and usage instructions for <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension are available on <a href="https://github.com/frictionlessdata/ckanext-validation">Github</a>.</p>
-<h2 id="2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</h2><p>If your data is hosted on GitHub, you can use goodtables web service to automatically validate it on every change.</p>
+<h2 id="validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</h2><p>If your data is hosted on GitHub, you can use goodtables web service to automatically validate it on every change.</p>
 <p>For this section, you will first need to create a <a href="https://help.github.com/articles/create-a-repo/">GitHub repository</a> and add tabular data to it.</p>
 <p>Once you have tabular data in your Github repository:</p>
 <ol>
@@ -3088,7 +3089,7 @@
 </li>
 </ol>
 <p>Goodtables will then validate all tabular data files (CSV, XLS, XLSX, ODS) and <a href="https://frictionlessdata.io/data-packages/">data packages</a> in the repository. These validations will be executed on every change, including pull requests.</p>
-<h2 id="3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</h2><p>If your data is hosted on Amazon S3, you can use <a href="https://goodtables.io">goodtables web service</a> to automatically validate it on every change.</p>
+<h2 id="validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</h2><p>If your data is hosted on Amazon S3, you can use <a href="https://goodtables.io">goodtables web service</a> to automatically validate it on every change.</p>
 <p>While it is a fairly technical process to set up, subsequent validation of your datasets will be fast and efficient. Find a detailed set of instructions <a href="https://docs.goodtables.io/getting_started/s3.html">here</a>.</p>
 <h2 id="set-up-a-standalone-instance-of-goodtables">Set up a standalone instance of goodtables</h2><p>If none of the options above are relevant for you i.e. because you use a different data publishing and storage platform, you can run goodtables as part of your data publishing process, either by executing the command-line tool, or using it with Python. Although this will potentially require custom development, it is the most flexible option, allowing you to specify exactly when and how the data is validated. For example, if you aggregate data from multiple sources, you could validate the unmodified data, to catch errors early, along with validating your modified data before publication. Find a detailed set of instructions <a href="https://github.com/frictionlessdata/goodtables-py/">here on GitHub</a>.</p>
 <p>gtio]: <a href="https://goodtables.io/">https://goodtables.io/</a> "Goodtables.io"</p>

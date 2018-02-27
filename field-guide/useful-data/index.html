@@ -1410,17 +1410,17 @@
         
         <ul>
       <li>
-        <a href="../../field-guide/useful-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -1472,17 +1472,17 @@
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -2897,17 +2897,17 @@
         
         <ul>
       <li>
-        <a href="../../field-guide/useful-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -2959,17 +2959,17 @@
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -3091,8 +3091,11 @@
         
       </div>
 
-      <h2 id="include-a-data-schema">Include a data schema</h2><div class="admonition admonition-info"><p>Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.</p></div><p>For this section, we will use the <a href="https://create.frictionlessdata.io">Data Package Creator</a> and <a href="http://datahub.io/core/gdp">Gross Domestic Product dataset for all countries (1960 - 2014)</a>.</p>
-<div class="admonition admonition-info"><p><strong>Data Package</strong> is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it. All contextual information, such as metadata and your data schema, is published in a JSON file named <em>datapackage.json</em>.</p></div><div class="admonition admonition-info"><p><strong>Data Package Creator</strong> is an online service that facilitates the creation and editing of data packages. The service automatically generates a <em>datapackage.json</em> file for you as you add and edit data that is part of your data collection. We refer to each piece of data in a data collection as a <strong>data resource</strong>.</p></div><p><a href="https://create.frictionlessdata.io">Data Package Creator</a> loads with dummy data to make it easy to understand how metadata and sample resources help generate the <em>datapackage.json</em> file. There are three ways in which a user can add data resources on <a href="https://create.frictionlessdata.io">Data Package Creator</a>:</p>
+      <h2 id="include-a-data-schema">Include a data schema</h2><p>Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.</p>
+<p>For this section, we will use the <a href="https://create.frictionlessdata.io">Data Package Creator</a> and <a href="http://datahub.io/core/gdp">Gross Domestic Product dataset for all countries (1960 - 2014)</a>.</p>
+<p><strong>Data Package</strong> is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it. All contextual information, such as metadata and your data schema, is published in a JSON file named <em>datapackage.json</em>.</p>
+<p><strong>Data Package Creator</strong> is an online service that facilitates the creation and editing of data packages. The service automatically generates a <em>datapackage.json</em> file for you as you add and edit data that is part of your data collection. We refer to each piece of data in a data collection as a <strong>data resource</strong>.</p>
+<p><a href="https://create.frictionlessdata.io">Data Package Creator</a> loads with dummy data to make it easy to understand how metadata and sample resources help generate the <em>datapackage.json</em> file. There are three ways in which a user can add data resources on <a href="https://create.frictionlessdata.io">Data Package Creator</a>:</p>
 <ol>
 <li><p>Provide a hyperlink to your data resource (highly recommended).</p>
 <p>If your data resource is publicly available, like on GitHub or in a data repository, simply obtain the URL and paste it in the <strong>Path</strong> section. To learn how to publish your data resource online, check the publish your dataset section.</p>
@@ -3182,7 +3185,8 @@ datapackage.json
 <p>These are the storage solutions we officially support. However, even if you publish your data somewhere else, you can still implement automatic data validation, it'll just require some technical knowledge. <a href="../../field-guide/useful-data/#set-up-a-standalone-instance-of-goodtables">Find out how to set up a standalone goodtables instance</a>.</p>
 </li>
 </ol>
-<h3 id="1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</h3><div class="admonition admonition-info"><p><a href="https://ckan.org/">CKAN</a> is an open source platform for publishing data online. It is widely used across the planet, including by the federal governments of the USA, United Kingdom, Brazil, and others.</p></div><p>To automatically validate tabular data on CKAN, enable the <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension, which uses goodtables to run continuous checks on your data. The <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension:</p>
+<h3 id="validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</h3><p><a href="https://ckan.org/">CKAN</a> is an open source platform for publishing data online. It is widely used across the planet, including by the federal governments of the USA, United Kingdom, Brazil, and others.</p>
+<p>To automatically validate tabular data on CKAN, enable the <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension, which uses goodtables to run continuous checks on your data. The <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension:</p>
 <ul>
 <li>adds a badge next to each dataset showing the status of their validation (valid or invalid), and</li>
 <li>allows users to access the validation report, making it possible for errors to be identified and fixed.</li>
@@ -3190,7 +3194,7 @@ datapackage.json
 <p><img src="../../field-guide/useful-data/figure-8.png" alt="">
 <em>Figure 8: annotated in red, automated validation checks on datasets in CKAN</em></p>
 <p>The installation and usage instructions for <a href="https://github.com/frictionlessdata/ckanext-validation">ckanext-validation</a> extension are available on <a href="https://github.com/frictionlessdata/ckanext-validation">Github</a>.</p>
-<h3 id="2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</h3><p>If your data is hosted on GitHub, you can use goodtables web service to automatically validate it on every change.</p>
+<h3 id="validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</h3><p>If your data is hosted on GitHub, you can use goodtables web service to automatically validate it on every change.</p>
 <p>For this section, you will first need to create a <a href="https://help.github.com/articles/create-a-repo/">GitHub repository</a> and add tabular data to it.</p>
 <p>Once you have tabular data in your Github repository:</p>
 <ol>
@@ -3201,7 +3205,7 @@ datapackage.json
 </li>
 </ol>
 <p>Goodtables will then validate all tabular data files (CSV, XLS, XLSX, ODS) and <a href="https://frictionlessdata.io/data-packages/">data packages</a> in the repository. These validations will be executed on every change, including pull requests.</p>
-<h3 id="3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</h3><p>If your data is hosted on Amazon S3, you can use <a href="https://goodtables.io">goodtables web service</a> to automatically validate it on every change.</p>
+<h3 id="validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</h3><p>If your data is hosted on Amazon S3, you can use <a href="https://goodtables.io">goodtables web service</a> to automatically validate it on every change.</p>
 <p>While it is a fairly technical process to set up, subsequent validation of your datasets will be fast and efficient. Find a detailed set of instructions <a href="https://docs.goodtables.io/getting_started/s3.html">here</a>.</p>
 <h3 id="set-up-a-standalone-instance-of-goodtables">Set up a standalone instance of goodtables</h3><p>If none of the options above are relevant for you i.e. because you use a different data publishing and storage platform, you can run goodtables as part of your data publishing process, either by executing the command-line tool, or using it with Python. Although this will potentially require custom development, it is the most flexible option, allowing you to specify exactly when and how the data is validated. For example, if you aggregate data from multiple sources, you could validate the unmodified data, to catch errors early, along with validating your modified data before publication. Find a detailed set of instructions <a href="https://github.com/frictionlessdata/goodtables-py/">here on GitHub</a>.</p>
 <hr>
@@ -3221,7 +3225,8 @@ datapackage.json
 </li>
 </ul>
 <p>If don't need your own data portal, there are many platforms where you can publish your data (if you need your own, check <a href="https://ckan.org/">CKAN</a>). In the section below, we dive into a few options. Read along and decide what option is most suitable:</p>
-<h3 id="1.-publish-packaged-data-in-our-community-ckan-instance">1. Publish Packaged Data in our community CKAN instance</h3><div class="admonition admonition-info"><p>CKAN is an open source platform for publishing data that makes it easy to discover, use and share data. <a href="../../field-guide/useful-data/datahub.ckan.io">datahub.ckan.io</a> is a public instance of CKAN that allows anyone to publish their data.</p></div><p>Here’s why you should consider creating an organization on <a href="../../field-guide/useful-data/datahub.ckan.io">datahub.ckan.io</a> and publishing datasets therein:</p>
+<h3 id="1.-publish-packaged-data-in-our-community-ckan-instance">1. Publish Packaged Data in our community CKAN instance</h3><p>CKAN is an open source platform for publishing data that makes it easy to discover, use and share data. <a href="../../field-guide/useful-data/datahub.ckan.io">datahub.ckan.io</a> is a public instance of CKAN that allows anyone to publish their data.</p>
+<p>Here’s why you should consider creating an organization on <a href="../../field-guide/useful-data/datahub.ckan.io">datahub.ckan.io</a> and publishing datasets therein:</p>
 <ul>
 <li><a href="../../field-guide/useful-data/datahub.ckan.io">datahub.ckan.io</a> is free for all to use! The file upload size limit on the platform is currently 100mb.</li>
 <li>The decision on whether to publicly or privately publish datasets rests with data publishers.</li>
@@ -3254,7 +3259,8 @@ datapackage.json
 </ol>
 <p>3.Publish and share public datasets widely.</p>
 <p>On <a href="http://datahub.ckan.io">datahub.ckan.io</a>, you can either publish datasets privately, meaning only members of your organization have access to them, or publicly, as open data. <a href="http://okfnlabs.org/blog/2016/07/25/publish-data-packages-to-datahub-ckan.html">Find out more</a>.</p>
-<h3 id="2.-publish-packaged-data-on-datahub.io">2. Publish packaged data on DataHub.io</h3><div class="admonition admonition-info"><p>DataHub.io is a platform for finding, sharing and publishing high quality data online.</p></div><p><a href="../../field-guide/useful-data/datahub.io">DataHub.io</a> and <a href="http://datahub.ckan.io">datahub.ckan.io</a> share the same name for historical reasons. <a href="http://datahub.ckan.io">Datahub.ckan.io</a> used to be the DataHub, but was moved to its current address, and the current DataHub uses new software developed from scratch.</p>
+<h3 id="2.-publish-packaged-data-on-datahub.io">2. Publish packaged data on DataHub.io</h3><p>DataHub.io is a platform for finding, sharing and publishing high quality data online.</p>
+<p><a href="../../field-guide/useful-data/datahub.io">DataHub.io</a> and <a href="http://datahub.ckan.io">datahub.ckan.io</a> share the same name for historical reasons. <a href="http://datahub.ckan.io">Datahub.ckan.io</a> used to be the DataHub, but was moved to its current address, and the current DataHub uses new software developed from scratch.</p>
 <ol>
 <li><p>Set up a data publisher / user account on <a href="../../field-guide/useful-data/datahub.io">DataHub.io</a></p>
 <p>Join the <a href="https://gitter.im/datahubio/chat">datahub.io community group</a>, introduce yourself and request for an account.</p>
@@ -3263,8 +3269,9 @@ datapackage.json
 <p><a href="http://datahub.io/docs/getting-started/publishing-data">This post</a> provides helpful information on publishing datasets on <a href="../../field-guide/useful-data/datahub.io">DataHub.io</a>.</p>
 </li>
 </ol>
-<h3 id="3.-publish-packaged-data-on-github">3. Publish Packaged Data on GitHub</h3><div class="admonition admonition-info"><p>GitHub is the largest repository of source code, with <a href="https://github.com/blog/2345-celebrating-nine-years-of-github-with-an-anniversary-sale">more than 20 million
-users</a>. Although the focus is on hosting source code, any type of file can be hosted. Documents, thesis, images, shapefiles, you can even host an entire static website with <a href="https://pages.github.com/">GitHub Pages</a>.</p></div><p>By using GitHub, you get all the advantages of using a version control system as Git, where every modification to your files is tracked. You also get an issue ticketing system, wiki pages, milestones tracking, and other useful
+<h3 id="3.-publish-packaged-data-on-github">3. Publish Packaged Data on GitHub</h3><p>GitHub is the largest repository of source code, with <a href="https://github.com/blog/2345-celebrating-nine-years-of-github-with-an-anniversary-sale">more than 20 million
+users</a>. Although the focus is on hosting source code, any type of file can be hosted. Documents, thesis, images, shapefiles, you can even host an entire static website with <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+<p>By using GitHub, you get all the advantages of using a version control system as Git, where every modification to your files is tracked. You also get an issue ticketing system, wiki pages, milestones tracking, and other useful
 collaboration tools.</p>
 <p><strong> What types of datasets can be hosted on GitHub?</strong></p>
 <p>Although GitHub offers many useful functionalities, not all datasets are a good fit for it. The main limitations are:</p>

@@ -1410,17 +1410,17 @@
         
         <ul>
       <li>
-        <a href="../../field-guide/useful-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -1472,17 +1472,17 @@
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -2897,17 +2897,17 @@
         
         <ul>
       <li>
-        <a href="../../field-guide/useful-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/useful-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/useful-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -2959,17 +2959,17 @@
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#1.-auto-validate-tabular-data-on-ckan">1. Auto-validate tabular data on CKAN</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-ckan">Validate tabular data automatically on CKAN</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#2.-auto-validate-tabular-data-on-github">2. Auto-validate tabular data on GitHub</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-github">Validate tabular data automatically on GitHub</a>
         
       </li>
       
       <li>
-        <a href="../../field-guide/auto-validated-tabular-data/#3.-auto-validate-tabular-data-on-amazon-s3">3. Auto-validate tabular data on Amazon S3</a>
+        <a href="../../field-guide/auto-validated-tabular-data/#validate-tabular-data-automatically-on-amazon-s3">Validate tabular data automatically on Amazon S3</a>
         
       </li>
       
@@ -3076,8 +3076,11 @@
         
       </div>
 
-      <h2 id="write-a-table-schema">Write a Table Schema</h2><div class="admonition admonition-info"><p>Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.</p></div><p>For this section, we will use the <a href="https://create.frictionlessdata.io">Data Package Creator</a> and <a href="http://datahub.io/core/gdp">Gross Domestic Product dataset for all countries (1960 - 2014)</a>.</p>
-<div class="admonition admonition-info"><p><strong>Data Package</strong> is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it. All contextual information, such as metadata and your data schema, is published in a JSON file named <em>datapackage.json</em>.</p></div><div class="admonition admonition-info"><p><strong>Data Package Creator</strong> is an online service that facilitates the creation and editing of data packages. The service automatically generates a <em>datapackage.json</em> file for you as you add and edit data that is part of your data collection. We refer to each piece of data in a data collection as a <strong>data resource</strong>.</p></div><p><a href="https://create.frictionlessdata.io">Data Package Creator</a> loads with dummy data to make it easy to understand how metadata and sample resources help generate the <em>datapackage.json</em> file. There are three ways in which a user can add data resources on <a href="https://create.frictionlessdata.io">Data Package Creator</a>:</p>
+      <h2 id="write-a-table-schema">Write a Table Schema</h2><p>Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.</p>
+<p>For this section, we will use the <a href="https://create.frictionlessdata.io">Data Package Creator</a> and <a href="http://datahub.io/core/gdp">Gross Domestic Product dataset for all countries (1960 - 2014)</a>.</p>
+<p><strong>Data Package</strong> is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it. All contextual information, such as metadata and your data schema, is published in a JSON file named <em>datapackage.json</em>.</p>
+<p><strong>Data Package Creator</strong> is an online service that facilitates the creation and editing of data packages. The service automatically generates a <em>datapackage.json</em> file for you as you add and edit data that is part of your data collection. We refer to each piece of data in a data collection as a <strong>data resource</strong>.</p>
+<p><a href="https://create.frictionlessdata.io">Data Package Creator</a> loads with dummy data to make it easy to understand how metadata and sample resources help generate the <em>datapackage.json</em> file. There are three ways in which a user can add data resources on <a href="https://create.frictionlessdata.io">Data Package Creator</a>:</p>
 <ol>
 <li><p>Provide a hyperlink to your data resource (highly recommended).</p>
 <p>If your data resource is publicly available, like on GitHub or in a data repository, simply obtain the URL and paste it in the <strong>Path</strong> section. To learn how to publish your data resource online, check the publish your dataset section.</p>
