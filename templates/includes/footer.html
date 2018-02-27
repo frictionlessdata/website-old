@@ -7,7 +7,15 @@
       <h6>{{ bag('global_content').with_support_from }}</h6>
       {% for s, a in bag('supporters').iteritems() %}
       <a{% for i, v in a.iteritems() %}{% if i == 'url' %} href="{{ v }}" rel="external"{% endif %}{% endfor %}>
-        <img src="{{ '/img/supporters/'|url }}{% for i, v in a.iteritems() %}{% if i == 'logo' %}{{ v }}{% endif %}{% endfor %}" alt="{% for i, v in a.iteritems() %}{% if i == 'name' %}{{ v }}{% endif %}{% endfor %}"{% for i, v in a.iteritems() %}{% if i == 'logo_width_multiplier' %} width="{{ v| float * 26 }}"{% endif %}{% endfor %} height="26" />
+        <img
+          src="{{ '/img/supporters/'|url }}{% for i, v in a.iteritems() %}{% if i == 'logo' %}{{ v }}{% endif %}{% endfor %}"
+          alt="{% for i, v in a.iteritems() %}{% if i == 'name' %}{{ v }}{% endif %}{% endfor %}"
+          {% for i, v in a.iteritems() %}
+            {% if i == 'logo_width_multiplier' %}
+              width="{{ (v | float * 26) | round | int }}"
+            {% endif %}
+          {% endfor %}
+          height="26" />
       </a>
       {% endfor %}
     </div>
