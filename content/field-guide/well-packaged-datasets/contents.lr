@@ -6,13 +6,13 @@ body:
 
 ## Write a Table Schema
 
-!! Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.
+Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.
 
 For this section, we will use the [Data Package Creator](https://create.frictionlessdata.io) and [Gross Domestic Product dataset for all countries (1960 - 2014)](http://datahub.io/core/gdp).
 
-!! **Data Package** is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it. All contextual information, such as metadata and your data schema, is published in a JSON file named *datapackage.json*.
+**Data Package** is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it. All contextual information, such as metadata and your data schema, is published in a JSON file named *datapackage.json*.
 
-!! **Data Package Creator** is an online service that facilitates the creation and editing of data packages. The service automatically generates a *datapackage.json* file for you as you add and edit data that is part of your data collection. We refer to each piece of data in a data collection as a **data resource**.
+**Data Package Creator** is an online service that facilitates the creation and editing of data packages. The service automatically generates a *datapackage.json* file for you as you add and edit data that is part of your data collection. We refer to each piece of data in a data collection as a **data resource**.
 
 [Data Package Creator](https://create.frictionlessdata.io) loads with dummy data to make it easy to understand how metadata and sample resources help generate the *datapackage.json* file. There are three ways in which a user can add data resources on [Data Package Creator](https://create.frictionlessdata.io):
 

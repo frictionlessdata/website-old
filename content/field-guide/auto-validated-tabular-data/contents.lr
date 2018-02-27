@@ -18,7 +18,7 @@ We will show how to set up automated tabular data validations for data published
 
 ## Validate tabular data automatically on CKAN
 
-!! [CKAN](https://ckan.org/) is an open source platform for publishing data online. It is widely used across the planet, including by the federal governments of the USA, United Kingdom, Brazil, and others.
+[CKAN](https://ckan.org/) is an open source platform for publishing data online. It is widely used across the planet, including by the federal governments of the USA, United Kingdom, Brazil, and others.
 
 To automatically validate tabular data on CKAN, enable the [ckanext-validation](https://github.com/frictionlessdata/ckanext-validation) extension, which uses goodtables to run continuous checks on your data. The [ckanext-validation](https://github.com/frictionlessdata/ckanext-validation) extension:
 
