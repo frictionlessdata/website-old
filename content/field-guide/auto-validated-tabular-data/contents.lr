@@ -25,8 +25,12 @@ To automatically validate tabular data on CKAN, enable the [ckanext-validation](
 * adds a badge next to each dataset showing the status of their validation (valid or invalid), and
 * allows users to access the validation report, making it possible for errors to be identified and fixed.
 
-![](figure-1.png)
-*Figure 1: annotated in red, automated validation checks on datasets in CKAN*
+<figure>
+  <img src="figure-1.png" alt="Annotated in red, automated validation checks on datasets in CKAN">
+  <figcaption>
+    Figure 1: Annotated in red, automated validation checks on datasets in CKAN.
+  </figcaption>
+</figure>
 
 The installation and usage instructions for [ckanext-validation](https://github.com/frictionlessdata/ckanext-validation) extension are available on [Github](https://github.com/frictionlessdata/ckanext-validation).
 

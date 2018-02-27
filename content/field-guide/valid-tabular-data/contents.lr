@@ -45,8 +45,12 @@ In this section we will illustrate how to check tabular data for structural erro
 
 Copy and paste the file's URL to the **{Source}** input. When you click on the **{Validate}** button, [try.goodtables.io](https://try.goodtables.io/) presents an exhaustive list of structural errors in your dataset.
 
-![](figure-6.png)
-*Figure 6: Add dataset link in the Source field, or select the Upload file option*
+<figure>
+  <img src="figure-1.png" alt="Add dataset link in the Source field, or select the Upload file option">
+  <figcaption>
+    Figure 1: Add dataset link in the Source field, or select the Upload file option.
+  </figcaption>
+</figure>
 
 If needed, you can disable two types of validation checks:
 
@@ -58,16 +62,23 @@ If needed, you can disable two types of validation checks:
 
  We will leave all boxes unchecked for our example. On validate, we receive a list of 12 errors as we can see in figure 7 below.
 
-![](figure-7.png)
-*Figure 7: dataset errors outlined on try.goodtables.io*
+ <figure>
+   <img src="figure-2.png" alt="dataset errors outlined on try.goodtables.io">
+   <figcaption>
+     Figure 2: dataset errors outlined on try.goodtables.io.
+   </figcaption>
+ </figure>
 
 [try.goodtables.io](try.goodtables.io) points us to specific cells containing errors so they can be fixed easily. We can use this list as a guide to fix all errors in our data manually, and run a second validation test to confirm that all issues are resolved. If there no validations could be found, the ensuing message will be as in figure 8 below:
 
-![](figure-8.png)<br/>
-*Figure 8: valid data message on goodtables.io*
+<figure>
+  <img src="figure-3.png" alt="valid data message on goodtables.io">
+  <figcaption>
+    Figure 3: valid data message on goodtables.io.
+  </figcaption>
+</figure>
 
 Improving data quality is an iterative process that should involve data publishers and maintainers. Tools such as [try.goodtables.io](try.goodtables.io) allow you to focus on complex errors like if the presented data is correct, instead of wasting time with simple (but very common) errors like incorrect date formats.
-
 
 **Validating tabular data with a schema**
 
@@ -81,7 +92,6 @@ In any given Data Package, the *datapackage.json* file contains the schema and t
 
 Often, you will find that you may be working in workflows that involve many datasets, which are updated regularly. In cases such as this, one-time validation on try.goodtables.io is probably not the answer. But fear not! Goodtables has the ability to automate the validation process so that errors are checked for continually.  Find out more in our continuous and [automated data validation section](/field-guide/auto-validated-tabular-data).
 
-
 ## One-time data validation with goodtables command line tool
 
 The same validations that we've done on try.goodtables.io, can also be done in your local machine using goodtables. This is especially useful for big datasets, or if your data is not publicly accessible online. However, this is a slightly technical task, which requires basic knowledge of the command line (CLI). If you don't know how to use the CLI, or are a bit rusty, we recommend you to read the [Introduction to the command-line tutorial](https://tutorial.djangogirls.org/en/intro_to_command_line/) before proceeding.
@@ -93,15 +103,23 @@ For this section, you will need:
 
 Once Python is set up, open your **Terminal** and install goodtables using the package manager, PIP. The command `pip install goodtables`.
 
-![](figure-9.gif)<br/>
-*Figure 9: installing goodtables command-line tool with pip in Terminal*
+<figure>
+  <img src="figure-4.gif" alt="installing goodtables command-line tool with pip in Terminal">
+  <figcaption>
+    Figure 4: installing goodtables command-line tool with pip in Terminal.
+  </figcaption>
+</figure>
 
 To validate a data file, type goodtables followed by the path to your file i.e. `goodtables path/to/file.csv`. You can pass multiple file paths one after the other, or even the path to a *datapackage.json* file.
 
 For our first example, we will download and check [this simple location CSV data file](https://github.com/frictionlessdata/datapackage-py/blob/master/data/data.csv) for errors. In the second instance, we will validate this [Department of Data Expenses dataset](sample CSV file with errors).
 
-![](figure-10.gif)<br/>
-*Figure 10: Validating data files using goodtables in Terminal*
+<figure>
+  <img src="figure-5.gif" alt="Validating data files using goodtables in Terminal">
+  <figcaption>
+    Figure 5: Validating data files using goodtables in Terminal.
+  </figcaption>
+</figure>
 
 You can see the list of options by running `goodtables --help`. The full documentation, including the list of validation checks that can be run, is available [on the goodtables-py repository on GitHub](https://github.com/frictionlessdata/goodtables-py).
 
@@ -113,7 +131,7 @@ If you regularly update your data or maintain many different datasets, running t
 ---
 ft_img: valid.png
 ---
-required: 
+required:
 ---
 tools: goodtables
 ---
