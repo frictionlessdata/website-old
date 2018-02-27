@@ -13,7 +13,7 @@ We will show how to set up automated tabular data validations for data published
  2. [GitHub](https://github.com/), a web platform for collaborating on projects as well as publishing, sharing and storing resources, such as data files;
  3. [Amazon S3](https://aws.amazon.com/s3/), a data storage service by Amazon.
 
- These are the storage solutions we officially support. However, even if you publish your data somewhere else, you can still implement automatic data validation, it'll just require some technical knowledge. [Find out how to set up a standalone goodtables instance](#).
+ These are the storage solutions we officially support. However, even if you publish your data somewhere else, you can still implement automatic data validation, it'll just require some technical knowledge. [Find out how to set up a standalone goodtables instance](#set-up-a-standalone-instance-of-goodtables).
 
 
 ## 1. Auto-validate tabular data on CKAN
