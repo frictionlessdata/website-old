@@ -1,6 +1,6 @@
-title: Auto validated tabular data
+title: Automatically validated tabular data
 ---
-intro: Auto validation means you'll be the first to know if a change in your data is going to cause a problem. Learn how to incorporate autovalidation into your workflow.
+intro: Automatic validation means you'll be the first to know if a change in your data causes a problem. Learn how to incorporate automatic validation into your workflow.
 ---
 body:
 
@@ -11,11 +11,23 @@ Running continuous checks on data provides regular feedback and contributes to b
 In this section, you will learn how to setup automatic tabular data validation using goodtables, so your data is validated every time it's updated. Although not strictly necessary, it's useful to [know about Data Packages and Table Schema](/field-guide/well-packaged-datasets) before proceeding, as they allow you to describe your data in more detail, allowing more advanced validations.
 
 We will show how to set up automated tabular data validations for data published on:
- 1. [CKAN](https://ckan.org/), an open source platform for publishing data in the open, that makes it easy to discover, use and share data;
- 2. [GitHub](https://github.com/), a web platform for collaborating on projects as well as publishing, sharing and storing resources, such as data files;
- 3. [Amazon S3](https://aws.amazon.com/s3/), a data storage service by Amazon.
 
- These are the storage solutions we officially support. However, even if you publish your data somewhere else, you can still implement automatic data validation, it'll just require some technical knowledge. [Find out how to set up a standalone goodtables instance](#set-up-a-standalone-instance-of-goodtables).
+* [CKAN](https://ckan.org/), an open source data publishing platform;
+* [GitHub](https://github.com/), a hosting service;
+* [Amazon S3](https://aws.amazon.com/s3/), a data storage service.
+
+If you don't use any of these platforms, you can still setup the validation using [goodtables-py][gt-py], it will just require some technical knowledge
+
+If you do use some of these platforms, the data validation report look like:
+
+<figure>
+  <a href="https://goodtables.io/github/vitorbaptista/birmingham_schools/jobs/3" rel="external">
+    <img src="goodtablesio-screenshot.png" alt="Figure 1: Goodtables.io tabular data validation report">
+  </a>
+  <figcaption>
+    Figure 1: Goodtables.io tabular data validation report.
+  </figcaption>
+</figure>
 
 
 ## Validate tabular data automatically on CKAN
@@ -24,13 +36,13 @@ We will show how to set up automated tabular data validations for data published
 
 To automatically validate tabular data on CKAN, enable the [ckanext-validation](https://github.com/frictionlessdata/ckanext-validation) extension, which uses goodtables to run continuous checks on your data. The [ckanext-validation](https://github.com/frictionlessdata/ckanext-validation) extension:
 
-* adds a badge next to each dataset showing the status of their validation (valid or invalid), and
-* allows users to access the validation report, making it possible for errors to be identified and fixed.
+* Adds a badge next to each dataset showing the status of their validation (valid or invalid), and
+* Allows users to access the validation report, making it possible for errors to be identified and fixed.
 
 <figure>
-  <img src="figure-1.png" alt="Annotated in red, automated validation checks on datasets in CKAN">
+  <img src="ckan-validation.png" alt="Figure 2: Annotated in red, automated validation checks on datasets in CKAN">
   <figcaption>
-    Figure 1: Annotated in red, automated validation checks on datasets in CKAN.
+    Figure 2: Annotated in red, automated validation checks on datasets in CKAN.
   </figcaption>
 </figure>
 
@@ -54,16 +66,19 @@ Goodtables will then validate all tabular data files (CSV, XLS, XLSX, ODS) and [
 
 ## Validate tabular data automatically on Amazon S3
 
-If your data is hosted on Amazon S3, you can use [goodtables web service](https://goodtables.io) to automatically validate it on every change.
+If your data is hosted on Amazon S3, you can use [goodtables.io][gtio] to automatically validate it on every change.
 
-While it is a fairly technical process to set up, subsequent validation of your datasets will be fast and efficient. Find a detailed set of instructions [here](https://docs.goodtables.io/getting_started/s3.html).
+It is a technical process to set up, as you need to know how to configure your Amazon S3 bucket. However, once it's configured, the validations happen automatically on any tabular data created or updated. Find the detailed instructions [here][gtio:s3].
 
 
-## Set up a standalone instance of goodtables
+## Custom setup of automatic tabular data validation
 
-If none of the options above are relevant for you i.e. because you use a different data publishing and storage platform, you can run goodtables as part of your data publishing process, either by executing the command-line tool, or using it with Python. Although this will potentially require custom development, it is the most flexible option, allowing you to specify exactly when and how the data is validated. For example, if you aggregate data from multiple sources, you could validate the unmodified data, to catch errors early, along with validating your modified data before publication. Find a detailed set of instructions [here on GitHub](https://github.com/frictionlessdata/goodtables-py/).
+If you don't use any of the oficially supported data publishing platforms, you can use [goodtables-py][gt-py] directly to validate your data. This is the most flexible option, as you can configure exactly when, and how your tabular data is validated. For example, if your data come from an external source, you could validate it once before you process it (so you catch errors in the source data), and once after cleaning, just before you publish it, so you catch errors introduced by your data processing.
 
-[gtio]: https://goodtables.io/ "goodtables.io"
+The instructions on how to do this are technical, and can be found on [https://github.com/frictionlessdata/goodtables-py][gt-py].
+
+[gtio]: https://goodtables.io/ "Goodtables.io"
+[gtio:s3]: https://docs.goodtables.io/getting_started/s3.html "Goodtables.io Amazon S3 instructions"
 [github]: https://github.com/ "GitHub"
 [s3]: https://aws.amazon.com/s3/ "Amazon S3"
 [s3-region-bug]: https://github.com/frictionlessdata/goodtables.io/issues/136 "Can't add S3 bucket with other region that Oregon (us-west-2)"
@@ -76,6 +91,7 @@ If none of the options above are relevant for you i.e. because you use a differe
 [datapackage]: https://frictionlessdata.io/data-packages/ "Data Package"
 [gtio-dataschema]: writing_data_schema.html "Writing a data schema"
 [gtio-configuring]: configuring.html "Configuring goodtables.io"
+[gt-py]: https://github.com/frictionlessdata/goodtables-py
 
 ---
 ft_img: auto-validate.png

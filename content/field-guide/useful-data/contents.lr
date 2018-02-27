@@ -29,6 +29,7 @@ For this section, we will use the [Data Package Creator](https://create.friction
   With this option, you can load a pre-existing *datapackage.json* file to view and edit its metadata and resource fields.
 
 Our [Gross Domestic Product dataset for all countries (1960 - 2014)](https://github.com/frictionlessdata/example-data-packages/blob/master/gross-domestic-product-all/data/gdp.csv) dataset is publicly available on GitHub.
+
 !!! Obtain a link to the raw CSV file by clicking on the Raw button at the top right corner of the GitHub file preview page, as shown in figure 1 below. The resulting hyperlink looks like https://raw.githubusercontent.com/…
 
 <figure>
@@ -158,12 +159,12 @@ Running continuous checks on data provides regular feedback and contributes to b
 In this section, you will learn how to setup automatic tabular data validation using goodtables, so your data is validated every time it's updated. Although not strictly necessary, it's useful to [know about Data Packages and Table Schema](/field-guide/well-packaged-datasets) before proceeding, as they allow you to describe your data in more detail, allowing more advanced validations.
 
 We will show how to set up automated tabular data validations for data published on:
- 1. [CKAN](https://ckan.org/), an open source platform for publishing data in the open, that makes it easy to discover, use and share data;
- 2. [GitHub](https://github.com/), a web platform for collaborating on projects as well as publishing, sharing and storing resources, such as data files;
- 3. [Amazon S3](https://aws.amazon.com/s3/), a data storage service by Amazon.
 
- These are the storage solutions we officially support. However, even if you publish your data somewhere else, you can still implement automatic data validation, it'll just require some technical knowledge. [Find out how to set up a standalone goodtables instance](#set-up-a-standalone-instance-of-goodtables).
+* [CKAN](https://ckan.org/), an open source platform for publishing data in the open, that makes it easy to discover, use and share data;
+* [GitHub](https://github.com/), a web platform for collaborating on projects as well as publishing, sharing and storing resources, such as data files;
+* [Amazon S3](https://aws.amazon.com/s3/), a data storage service by Amazon.
 
+Even if you don't use any of these platforms, you can still setup the validation using [goodtables-py][gt-py], it will just require some technical knowledge
 
 ### Validate tabular data automatically on CKAN
 
@@ -171,7 +172,7 @@ We will show how to set up automated tabular data validations for data published
 
 To automatically validate tabular data on CKAN, enable the [ckanext-validation](https://github.com/frictionlessdata/ckanext-validation) extension, which uses goodtables to run continuous checks on your data. The [ckanext-validation](https://github.com/frictionlessdata/ckanext-validation) extension:
 
-* adds a badge next to each dataset showing the status of their validation (valid or invalid), and
+* Adds a badge next to each dataset showing the status of their validation (valid or invalid), and
 * allows users to access the validation report, making it possible for errors to be identified and fixed.
 
 <figure>
@@ -187,13 +188,13 @@ The installation and usage instructions for [ckanext-validation](https://github.
 
 ### Validate tabular data automatically on GitHub
 
-If your data is hosted on GitHub, you can use goodtables web service to automatically validate it on every change.
+If your data is hosted on GitHub, you can use [https://goodtables.io][gt.io] to automatically validate it on every change.
 
 For this section, you will first need to create a [GitHub repository](https://help.github.com/articles/create-a-repo/) and add tabular data to it.
 
 Once you have tabular data in your Github repository:
 
-1. Login on [goodtables.io](https://goodtables.io/) using your GitHub account and accept the permissions confirmation.
+1. Login on [goodtables.io][gt.io] using your GitHub account and accept the permissions confirmation.
 1. Once we've synchronized your repository list, go to the [Manage Sources](https://goodtables.io/settings) page and enable the repository with the data you want to validate.
     * If you can't find the repository, try clicking on the Refresh button on the Manage Sources page
 
@@ -201,20 +202,20 @@ Goodtables will then validate all tabular data files (CSV, XLS, XLSX, ODS) and [
 
 ### Validate tabular data automatically on Amazon S3
 
-If your data is hosted on Amazon S3, you can use [goodtables web service](https://goodtables.io) to automatically validate it on every change.
+If your data is hosted on Amazon S3, you can use [https://goodtables.io][gt.io] to automatically validate it on every change.
 
-While it is a fairly technical process to set up, subsequent validation of your datasets will be fast and efficient. Find a detailed set of instructions [here](https://docs.goodtables.io/getting_started/s3.html).
+It is a technical process to set up, as you need to know how to configure your Amazon S3 bucket. However, once it's configured, the validations happen automatically on any tabular data created or updated. Find the detailed instructions [here][gt.io:s3].
 
+### Custom setup of automatic tabular data validation
 
-### Set up a standalone instance of goodtables
+If you don't use any of the oficially supported data publishing platforms, you can use [goodtables-py][gt-py] directly to validate your data. This is the most flexible option, as you can configure exactly when, and how your tabular data is validated. For example, if your data come from an external source, you could validate it once before you process it (so you catch errors in the source data), and once after cleaning, just before you publish it, so you catch errors introduced by your data processing.
 
-If none of the options above are relevant for you i.e. because you use a different data publishing and storage platform, you can run goodtables as part of your data publishing process, either by executing the command-line tool, or using it with Python. Although this will potentially require custom development, it is the most flexible option, allowing you to specify exactly when and how the data is validated. For example, if you aggregate data from multiple sources, you could validate the unmodified data, to catch errors early, along with validating your modified data before publication. Find a detailed set of instructions [here on GitHub](https://github.com/frictionlessdata/goodtables-py/).
-
+The instructions on how to do this are technical, and can be found on [https://github.com/frictionlessdata/goodtables-py][gt-py].
 
 ----
 
 
-## Publish Packaged Data
+## Publish packaged data
 
 Creating and Sharing Data Packages is important for both data publishers and data users because it provides a common and open specification to describe your dataset's metadata. This facilitates data reuse, as users don't need to understand each data publisher's specific metadata format, and as the specification is machine-readable, it also allows tools to parse the metadata. This enables software to:
 
@@ -232,57 +233,57 @@ Although these reasons are not unique to publishing data as data packages, here'
 
 If don't need your own data portal, there are many platforms where you can publish your data (if you need your own, check [CKAN](https://ckan.org/)). In the section below, we dive into a few options. Read along and decide what option is most suitable:
 
-### Publish Packaged Data in our community CKAN instance
+### Publish packaged data in our community CKAN instance
 
-CKAN is an open source platform for publishing data that makes it easy to discover, use and share data. [datahub.ckan.io](datahub.ckan.io) is a public instance of CKAN that allows anyone to publish their data.
+CKAN is an open source platform for publishing data that makes it easy to discover, use and share data. [datahub.ckan.io][ckan-datahub] is a public instance of CKAN that allows anyone to publish their data.
 
-Here’s why you should consider creating an organization on [datahub.ckan.io](datahub.ckan.io) and publishing datasets therein:
-* [datahub.ckan.io](datahub.ckan.io) is free for all to use! The file upload size limit on the platform is currently 100mb.
+Here’s why you should consider creating an organization on [datahub.ckan.io][ckan-datahub] and publishing datasets therein:
+* [datahub.ckan.io][ckan-datahub] is free for all to use! The file upload size limit on the platform is currently 100mb.
 * The decision on whether to publicly or privately publish datasets rests with data publishers.
-* [datahub.ckan.io](datahub.ckan.io) organizations allow for multiple users to collaborate with varied privileges:
+* [datahub.ckan.io][ckan-datahub] organizations allow for multiple users to collaborate with varied privileges:
  * **Admin**: Can add/edit and delete datasets, as well as manage organization members.
  * **Editor**: Can add and edit datasets, but not manage organization members.
  * **Member**: Can view the organization's private datasets, but not add new datasets.
 
-To publish data on [datahub.ckan.io](datahub.ckan.io):
+To publish data on [datahub.ckan.io][ckan-datahub]:
 
 1. Request for a new Organization to be created on the platform for you via [our community page](https://discuss.okfn.org/c/open-knowledge-labs/datahub).
      This is required only to ensure spammers don’t take up space and hog resources on the platform.
 
      The request format is simple and requires:
-    * **Title**: This will be the name of your Organization on [datahub.ckan.io](datahub.ckan.io) i.e.<br/>
+    * **Title**: This will be the name of your Organization on [datahub.ckan.io][ckan-datahub] i.e.<br/>
       *My New Organization*
 
-    * **Slug**: This is an acronym, word or hyphenated phrase that will be added to the end of the [datahub.ckan.io](datahub.ckan.io) url to uniquely identify your Organization and associate your data collections with it i.e.<br/>
+    * **Slug**: This is an acronym, word or hyphenated phrase that will be added to the end of the [datahub.ckan.io][ckan-datahub] url to uniquely identify your Organization and associate your data collections with it i.e.<br/>
     	*my-new-organization*
 
-    * **Username**: The username you provide is associated with an email address on [datahub.ckan.io](datahub.ckan.io) and allows us to give you admin access to your Organization on [datahub.ckan.io](datahub.ckan.io).
+    * **Username**: The username you provide is associated with an email address on [datahub.ckan.io][ckan-datahub] and allows us to give you admin access to your Organization on [datahub.ckan.io][ckan-datahub].
 
 2. Log In and add new datasets
 
-  Adding datasets on [datahub.ckan.io](http://datahub.ckan.io) is no different from using any other CKAN platform, but [here’s a good guide by Dan Fowler](http://okfnlabs.org/blog/2016/07/25/publish-data-packages-to-datahub-ckan.html) for first timers.
+  Adding datasets on [datahub.ckan.io][ckan-datahub] is no different from using any other CKAN platform, but [here’s a good guide by Dan Fowler](http://okfnlabs.org/blog/2016/07/25/publish-data-packages-to-datahub-ckan.html) for first timers.
 
 3.Publish and share public datasets widely.
 
-  On [datahub.ckan.io](http://datahub.ckan.io), you can either publish datasets privately, meaning only members of your organization have access to them, or publicly, as open data. [Find out more](http://okfnlabs.org/blog/2016/07/25/publish-data-packages-to-datahub-ckan.html).
+  On [datahub.ckan.io][ckan-datahub], you can either publish datasets privately, meaning only members of your organization have access to them, or publicly, as open data. [Find out more](http://okfnlabs.org/blog/2016/07/25/publish-data-packages-to-datahub-ckan.html).
 
 
 ### Publish packaged data on DataHub.io
 
 DataHub.io is a platform for finding, sharing and publishing high quality data online.
 
-[DataHub.io](datahub.io) and [datahub.ckan.io](http://datahub.ckan.io) share the same name for historical reasons. [Datahub.ckan.io](http://datahub.ckan.io) used to be the DataHub, but was moved to its current address, and the current DataHub uses new software developed from scratch.
+[DataHub.io][datahub] and [datahub.ckan.io][ckan-datahub] share the same name for historical reasons. [Datahub.ckan.io][ckan-datahub] used to be the DataHub, but was moved to its current address, and the current DataHub uses new software developed from scratch.
 
-1. Set up a data publisher / user account on [DataHub.io](datahub.io)
+1. Set up a data publisher / user account on [DataHub.io][datahub]
 
   Join the [datahub.io community group](https://gitter.im/datahubio/chat), introduce yourself and request for an account.
 
-2. Publish Datasets on [DataHub.io](datahub.io)
+2. Publish Datasets on [DataHub.io][datahub]
 
-  [This post](http://datahub.io/docs/getting-started/publishing-data) provides helpful information on publishing datasets on [DataHub.io](datahub.io).
+  [This post](http://datahub.io/docs/getting-started/publishing-data) provides helpful information on publishing datasets on [DataHub.io][datahub].
 
 
-### Publish Packaged Data on GitHub
+### Publish packaged data on GitHub
 
 GitHub is the largest repository of source code, with [more than 20 million
 users](https://github.com/blog/2345-celebrating-nine-years-of-github-with-an-anniversary-sale). Although the focus is on hosting source code, any type of file can be hosted. Documents, thesis, images, shapefiles, you can even host an entire static website with [GitHub Pages](https://pages.github.com/).
@@ -423,7 +424,12 @@ Finally, to maintain an active community of data users as a data publisher:
 [publish-faq]: https://frictionlessdata.io/guides/publish-faq/ "Publishing Data Packages - FAQ"
 [gt.io]: https://goodtables.io
 [gt.io:github]: https://docs.goodtables.io/getting_started/github.html "Validating data on GitHub"
+[gt.io:s3]: https://docs.goodtables.io/getting_started/s3.html "Validating data on Amazon S3"
+[gt-py]: https://github.com/frictionlessdata/goodtables-py "Goodtables.py"
 [cc0]: https://creativecommons.org/publicdomain/zero/1.0/ "Creative Commons Public Domain Dedication"
+[ckan]: https://ckan.org
+[ckan-datahub]: https://datahub.ckan.io
+[datahub]: https://datahub.io
 [gh:newrepo]: https://github.com/new "GitHub New Repository"
 [gh:desktop]: https://desktop.github.com/
 [gh:addfiles]: https://help.github.com/articles/adding-a-file-to-a-repository/ "Adding a file to a repository"
