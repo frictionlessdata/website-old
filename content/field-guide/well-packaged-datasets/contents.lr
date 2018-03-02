@@ -4,6 +4,10 @@ intro: There's an art to creating a good collection of data. Improve the quality
 ---
 body:
 
+When sharing multiple datasets on a specific subject with a varied audience, it is important to ensure that whoever accesses the data understands the context around it, and can quickly access licensing and other attribution information.
+
+In this section, you will learn how to collate related datasets in one place, and easily create a schema that contains descriptive metadata for your data collection.
+
 ## Write a Table Schema
 
 Simply put, a schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. You can think of it as a data dictionary. Having a table schema at hand makes it possible to run more precise validation checks on your data, both at a structural and content level.

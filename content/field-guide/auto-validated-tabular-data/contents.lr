@@ -4,7 +4,9 @@ intro: Auto validation means you'll be the first to know if a change in your dat
 ---
 body:
 
-Running continuous checks on data provides regular feedback and contributes to better data quality as errors can be flagged and fixed early on.
+One-off validation of your tabular datasets can be hectic, especially where plenty of published data is maintained and updated fairly regularly.
+
+Running continuous checks on data provides regular feedback and contributes to better data quality as errors can be flagged and fixed early on. This section introduces you to tools that continually check your data for errors and flag content and structural issues as they arise. By eliminating the need to run manual checks on tabular datasets every time they are updated, they make your data workflow more efficient.
 
 In this section, you will learn how to setup automatic tabular data validation using goodtables, so your data is validated every time it's updated. Although not strictly necessary, it's useful to [know about Data Packages and Table Schema](/field-guide/well-packaged-datasets) before proceeding, as they allow you to describe your data in more detail, allowing more advanced validations.
 

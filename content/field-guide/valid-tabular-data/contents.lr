@@ -4,11 +4,13 @@ intro: When it comes to validating tabular data, you have some great tools at yo
 ---
 body:
 
-This section assumes that you already know what a data schema and a data package are, and how to create them. If not, [start here](/field-guide/well-packaged-datasets).
+Errors in data are not uncommon. They also often get in the way of quick and timely data analysis for many data users. What if there was a way to quickly identify errors in your data to accelerate the process by which you fix them before sharing your data or using it for analysis?
 
 In this section, we will learn how to carry out one-time data validation using
 * a free web tool called [try.goodtables.io](try.goodtables.io),
-* the goodtables command line tool which you use in your local machine .
+* the goodtables command line tool which you use in your local machine.
+
+Our working assumption is that you already know what a data schema and a data package are, and how to create them. If not, [start here](/field-guide/well-packaged-datasets).
 
 ## One-time data validation with try.goodtables.io
 
