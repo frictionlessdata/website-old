@@ -46,12 +46,12 @@ In this example, LICENSE.pdf would be in the root of the data package folder, e.
 
 ```
 folder
-  |-- datapackage.json
-  |-- LICENSE.pdf
-  |-- README.md
-  |-- data
-      |-- data.csv
-      |-- reference-data.csv
+  |- datapackage.json
+  |- LICENSE.pdf
+  |- README.md
+  |- data
+      |- data.csv
+      |- reference-data.csv
 
 ```
 
