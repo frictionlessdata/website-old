@@ -76,7 +76,7 @@
       display: inline-flex;
       font-family: $font-family-sans-serif;
       @include make-col-ready();
-      padding-bottom: $spacer*2;
+      padding-bottom: $spacer*3;
 
       @include media-breakpoint-up(lg) {
         @include make-col(6);
