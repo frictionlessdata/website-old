@@ -1,0 +1,2052 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<link rel="icon" href="../favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<title>Articles</title>
+<body class="articles-template">
+  <div class="wrapper">
+    <header class="site-header">
+      <div class="container">
+        <a class="logo-symbol" href="../">
+          <svg><use xlink:href="#icon-f" /></svg>
+        </a>
+        <a class="logo-type">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-807 437.3 183.8 26.7">
+<title>Frictionless Data</title>
+<polygon points="-806.8,450.9 -804.7,450.9 -804.7,445.1 -799,445.1 -799,443.3 -804.7,443.3 -804.7,439.3 -797.9,439.3
+	-797.9,437.4 -806.8,437.4 "/>
+<path d="M-787.4,445.2c0.3-0.2,0.6-0.5,0.8-0.9c0.2-0.4,0.4-0.8,0.5-1.2c0.1-0.4,0.2-0.9,0.2-1.3c0-0.6-0.1-1.1-0.3-1.6
+	c-0.2-0.5-0.5-1-0.9-1.4c-0.4-0.4-0.8-0.8-1.3-1c-0.5-0.3-1.1-0.4-1.7-0.4h-5.8v13.5h2.1v-4.7h3.1l2.9,4.7h2.4l-3.2-5.1
+	C-788,445.7-787.7,445.5-787.4,445.2z M-789.2,444.1c-0.3,0.1-0.5,0.2-0.8,0.2h-3.7v-5h3.6c0.3,0,0.6,0.1,0.8,0.2
+	c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.2,0.4,0.5,0.5,0.8c0.1,0.3,0.2,0.7,0.2,1c0,0.3,0,0.7-0.1,1c-0.1,0.3-0.2,0.6-0.4,0.8
+	C-788.7,443.9-788.9,444-789.2,444.1z"/>
+<rect x="-783.3" y="437.4" width="2.1" height="13.5"/>
+<path d="M-769.5,447.9c-0.3,0.3-0.6,0.5-0.9,0.7c-0.3,0.2-0.6,0.3-1,0.4c-0.3,0.1-0.7,0.1-1,0.1c-0.6,0-1.2-0.1-1.8-0.4
+	c-0.5-0.3-1-0.6-1.4-1.1c-0.4-0.5-0.7-1-0.9-1.6c-0.2-0.6-0.3-1.2-0.3-1.9c0-0.6,0.1-1.2,0.3-1.8c0.2-0.6,0.5-1.1,0.8-1.6
+	c0.4-0.5,0.8-0.9,1.3-1.1c0.6-0.3,1.2-0.4,1.9-0.4c0.3,0,0.7,0,1,0.1c0.3,0.1,0.7,0.2,1,0.4c0.3,0.2,0.6,0.4,0.9,0.7
+	c0.3,0.3,0.5,0.6,0.7,1l1.6-1c-0.5-0.9-1.1-1.6-2-2.1c-0.9-0.6-2-0.9-3.1-0.9c-1,0-1.9,0.2-2.8,0.6c-0.8,0.4-1.5,0.9-2.1,1.6
+	c-0.6,0.6-1,1.4-1.3,2.2c-0.6,1.6-0.6,3.4,0,5c0.3,0.8,0.8,1.6,1.3,2.2c0.6,0.7,1.2,1.2,2,1.6c0.8,0.4,1.7,0.6,2.6,0.6
+	c0.5,0,1.1-0.1,1.6-0.2c0.5-0.1,1.1-0.3,1.6-0.6c0.5-0.3,0.9-0.6,1.3-1c0.4-0.4,0.7-0.8,0.9-1.3l-1.8-1
+	C-769.1,447.3-769.3,447.6-769.5,447.9z"/>
+<polygon points="-766.5,439.3 -762,439.3 -762,450.9 -759.8,450.9 -759.8,439.3 -755.4,439.3 -755.4,437.4 -766.5,437.4 "/>
+<rect x="-753.6" y="437.4" width="2.1" height="13.5"/>
+<path d="M-738.1,439.5c-0.6-0.6-1.2-1.2-2-1.6c-0.8-0.4-1.7-0.6-2.7-0.6c-0.9,0-1.8,0.2-2.6,0.6c-0.8,0.4-1.4,0.9-2,1.5
+	c-0.6,0.6-1,1.4-1.4,2.2c-0.3,0.8-0.5,1.7-0.5,2.6c0,0.9,0.2,1.7,0.5,2.5c0.3,0.8,0.7,1.5,1.3,2.2c0.6,0.6,1.2,1.2,2,1.5
+	c1.7,0.8,3.6,0.8,5.2,0c0.8-0.4,1.5-0.9,2.1-1.5c0.6-0.6,1-1.4,1.4-2.2c0.6-1.6,0.6-3.4,0-5.1C-737.1,440.9-737.5,440.1-738.1,439.5
+	z M-738.8,446c-0.2,0.6-0.5,1.1-0.8,1.6c-0.4,0.5-0.8,0.9-1.3,1.1c-0.6,0.3-1.2,0.4-1.8,0.4c-0.6,0-1.2-0.1-1.8-0.4
+	c-0.5-0.3-1-0.6-1.4-1.1c-0.4-0.5-0.7-1-0.9-1.6c-0.2-0.6-0.3-1.2-0.3-1.8c0-0.6,0.1-1.3,0.3-1.9c0.2-0.6,0.5-1.1,0.8-1.6
+	c0.4-0.5,0.8-0.8,1.3-1.1c1.1-0.6,2.5-0.6,3.6,0c0.5,0.3,1,0.6,1.3,1.1c0.4,0.5,0.7,1,0.9,1.6C-738.4,443.5-738.4,444.8-738.8,446
+	L-738.8,446z"/>
+<polygon points="-724.7,447.1 -732.4,437.4 -734.1,437.4 -734.1,450.9 -732,450.9 -732,441.4 -724.3,450.9 -722.6,450.9
+	-722.6,437.4 -724.7,437.4 "/>
+<polygon points="-717.4,437.4 -719.5,437.4 -719.5,450.9 -710.2,450.9 -710.2,449 -717.4,449 "/>
+<polygon points="-706.3,444.9 -700.3,444.9 -700.3,443.1 -706.3,443.1 -706.3,439.3 -699.3,439.3 -699.3,437.4 -708.4,437.4
+	-708.4,450.9 -699.2,450.9 -699.2,449 -706.3,449 "/>
+<path d="M-689,444.5c-0.4-0.3-0.9-0.6-1.4-0.7c-0.6-0.2-1.2-0.4-1.8-0.6l-1.5-0.4c-0.3-0.1-0.7-0.2-1-0.4c-0.2-0.1-0.5-0.3-0.6-0.5
+	c-0.1-0.2-0.2-0.5-0.2-0.8c0-0.5,0.2-1,0.6-1.4c0.6-0.4,1.3-0.5,2-0.5c0.4,0,0.8,0,1.2,0.1c0.4,0.1,0.7,0.2,1.1,0.3
+	c0.3,0.1,0.6,0.3,0.9,0.5c0.2,0.1,0.4,0.3,0.5,0.4l1-1.8c-0.6-0.4-1.3-0.8-2-1.1c-0.8-0.3-1.7-0.4-2.6-0.4c-0.7,0-1.3,0.1-1.9,0.3
+	c-0.6,0.2-1.1,0.4-1.5,0.8c-0.4,0.4-0.8,0.8-1,1.3c-0.3,0.5-0.4,1.2-0.4,1.8c0,0.5,0.1,0.9,0.3,1.4c0.2,0.4,0.4,0.7,0.8,1
+	c0.4,0.3,0.8,0.5,1.2,0.7c0.6,0.2,1.2,0.4,1.8,0.6c0.6,0.2,1.1,0.3,1.6,0.4c0.4,0.1,0.8,0.3,1.2,0.5c0.3,0.1,0.5,0.3,0.7,0.6
+	c0.2,0.2,0.3,0.6,0.3,0.9c0,0.5-0.2,1-0.7,1.3c-0.6,0.3-1.3,0.5-1.9,0.4c-0.5,0-1-0.1-1.5-0.2c-0.5-0.1-0.9-0.3-1.3-0.4
+	c-0.4-0.2-0.7-0.3-1.1-0.6c-0.3-0.2-0.5-0.3-0.7-0.5l-1,1.8c0.8,0.6,1.7,1.1,2.6,1.4c1,0.3,2,0.5,3,0.5c0.6,0,1.3-0.1,1.9-0.2
+	c0.6-0.1,1.1-0.4,1.6-0.7c0.4-0.3,0.8-0.7,1.1-1.2c0.3-0.5,0.4-1.2,0.4-1.8c0-0.5-0.1-1.1-0.3-1.5
+	C-688.2,445.2-688.6,444.8-689,444.5z"/>
+<path d="M-677.4,444.5c-0.4-0.3-0.9-0.6-1.4-0.7c-0.6-0.2-1.2-0.4-1.8-0.6l-1.5-0.4c-0.3-0.1-0.7-0.2-1-0.4
+	c-0.2-0.1-0.5-0.3-0.6-0.5c-0.1-0.2-0.2-0.5-0.2-0.8c0-0.5,0.2-1,0.6-1.4c0.6-0.4,1.3-0.5,2-0.5c0.4,0,0.8,0,1.2,0.1
+	c0.4,0.1,0.7,0.2,1.1,0.3c0.3,0.1,0.6,0.3,0.9,0.5c0.2,0.1,0.4,0.3,0.5,0.4l1-1.8c-0.6-0.4-1.3-0.8-2-1.1c-0.8-0.3-1.7-0.5-2.7-0.4
+	c-0.7,0-1.3,0.1-1.9,0.3c-0.6,0.2-1.1,0.4-1.5,0.8c-0.4,0.4-0.8,0.8-1,1.3c-0.3,0.5-0.4,1.2-0.4,1.8c0,0.5,0.1,0.9,0.3,1.4
+	c0.2,0.4,0.4,0.7,0.8,1c0.4,0.3,0.8,0.5,1.2,0.7c0.6,0.2,1.2,0.4,1.8,0.6c0.6,0.2,1.1,0.3,1.6,0.4c0.4,0.1,0.8,0.3,1.2,0.5
+	c0.3,0.1,0.5,0.3,0.7,0.6c0.2,0.2,0.3,0.6,0.3,0.9c0,0.5-0.2,1-0.7,1.3c-0.6,0.3-1.3,0.5-1.9,0.4c-0.5,0-1-0.1-1.5-0.2
+	c-0.5-0.1-0.9-0.3-1.3-0.4c-0.4-0.2-0.7-0.3-1.1-0.6c-0.3-0.2-0.5-0.3-0.7-0.5l-1,1.8c0.8,0.6,1.7,1.1,2.6,1.4c1,0.3,2,0.5,3,0.5
+	c0.6,0,1.3-0.1,1.9-0.2c0.6-0.1,1.1-0.4,1.6-0.7c0.4-0.3,0.8-0.7,1.1-1.2c0.3-0.5,0.4-1.2,0.4-1.8c0-0.5-0.1-1.1-0.3-1.5
+	C-676.7,445.2-677,444.8-677.4,444.5z"/>
+<path d="M-659.7,439.4c-0.6-0.6-1.3-1.1-2-1.4c-0.9-0.4-1.9-0.6-2.9-0.5h-4.8v13.5h4.8c0.9,0,1.9-0.1,2.7-0.5
+	c0.8-0.3,1.5-0.8,2.1-1.4c0.6-0.6,1-1.3,1.3-2.1c0.3-0.9,0.5-1.8,0.4-2.8c0-0.9-0.1-1.8-0.4-2.6C-658.7,440.7-659.1,440-659.7,439.4
+	z M-660.4,446.1c-0.2,0.6-0.5,1.1-0.8,1.5c-0.4,0.4-0.9,0.8-1.4,1c-0.6,0.3-1.2,0.4-1.9,0.4h-2.7v-9.7h2.7c0.6,0,1.3,0.1,1.9,0.4
+	c0.5,0.2,1,0.6,1.4,1c0.4,0.4,0.7,1,0.9,1.5c0.2,0.6,0.3,1.3,0.3,2C-660.2,444.8-660.2,445.5-660.4,446.1z"/>
+<path d="M-652.2,437.4l-5.4,13.5h2.3l1.4-3.7h5.2l1.4,3.7h2.2l-5.3-13.5H-652.2z M-653.6,445.7l2.2-5.8l2.2,5.8H-653.6z"/>
+<polygon points="-634.8,437.4 -646,437.4 -646,439.3 -641.5,439.3 -641.5,450.9 -639.3,450.9 -639.3,439.3 -634.8,439.3 "/>
+<path d="M-628.5,437.4h-1.9l-5.4,13.5h2.3l1.4-3.7h5.2l1.4,3.7h2.2L-628.5,437.4z M-631.7,445.7l2.2-5.8l2.2,5.8H-631.7z"/>
+<path d="M-802.1,457.9c-0.2-0.3-0.5-0.5-0.9-0.6c-0.4-0.1-0.7-0.2-1.1-0.2c-0.6,0-1.2,0.1-1.6,0.4c-0.3,0.3-0.5,0.7-0.5,1.1
+	c0,0.2,0,0.4,0.1,0.6c0.1,0.2,0.2,0.3,0.4,0.4c0.2,0.1,0.4,0.2,0.7,0.3c0.3,0.1,0.6,0.2,1,0.2c0.4,0.1,0.7,0.2,1,0.3
+	c0.3,0.1,0.6,0.2,0.8,0.4c0.2,0.1,0.4,0.3,0.5,0.5c0.1,0.2,0.2,0.5,0.2,0.8c0,0.3-0.1,0.5-0.2,0.8c-0.1,0.2-0.3,0.4-0.5,0.6
+	c-0.2,0.2-0.5,0.3-0.8,0.3c-0.3,0.1-0.7,0.1-1,0.1c-0.5,0-1-0.1-1.5-0.3c-0.5-0.2-0.9-0.5-1.3-0.8l0.2-0.2c0.3,0.3,0.7,0.6,1.1,0.8
+	c0.5,0.2,1,0.3,1.5,0.3c0.6,0,1.1-0.1,1.6-0.4c0.4-0.2,0.6-0.7,0.6-1.1c0-0.2,0-0.4-0.1-0.6c-0.1-0.2-0.2-0.3-0.4-0.4
+	c-0.2-0.1-0.5-0.2-0.7-0.3c-0.3-0.1-0.7-0.2-1-0.3c-0.4-0.1-0.7-0.2-1-0.2c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.3-0.5-0.5
+	c-0.1-0.2-0.2-0.5-0.1-0.7c0-0.3,0.1-0.6,0.2-0.8c0.1-0.2,0.3-0.4,0.5-0.6c0.2-0.2,0.5-0.3,0.8-0.4c0.3-0.1,0.7-0.1,1-0.1
+	c0.4,0,0.8,0.1,1.2,0.2c0.4,0.1,0.7,0.4,1,0.6L-802.1,457.9z"/>
+<path d="M-799.7,463.9v-7.1h2.9c0.3,0,0.6,0.1,0.8,0.2c0.2,0.1,0.5,0.3,0.6,0.5c0.2,0.2,0.3,0.4,0.4,0.7c0.1,0.3,0.2,0.5,0.2,0.8
+	c0,0.3-0.1,0.6-0.2,0.8c-0.1,0.3-0.2,0.5-0.4,0.7c-0.2,0.2-0.4,0.4-0.6,0.5c-0.2,0.1-0.5,0.2-0.8,0.2h-2.6v2.7H-799.7z
+	 M-799.4,460.9h2.6c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.2,0.5-0.4c0.1-0.2,0.3-0.4,0.3-0.6c0.1-0.2,0.1-0.4,0.1-0.7
+	c0-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.3-0.3-0.5-0.4c-0.2-0.1-0.4-0.2-0.7-0.2h-2.5V460.9z"/>
+<path d="M-788.3,463.6v0.3h-4.7v-7.1h4.6v0.3h-4.3v3h3.7v0.3h-3.7v3.1H-788.3z"/>
+<path d="M-787,460.3c0-0.4,0.1-0.9,0.2-1.3c0.1-0.4,0.4-0.8,0.7-1.1c0.3-0.3,0.7-0.6,1.1-0.8c0.4-0.2,0.9-0.3,1.4-0.3
+	c0.6,0,1.1,0.1,1.6,0.4c0.4,0.3,0.8,0.7,1,1.1l-0.3,0.1c-0.1-0.2-0.3-0.5-0.5-0.6c-0.2-0.2-0.4-0.3-0.6-0.4
+	c-0.2-0.1-0.4-0.2-0.6-0.2c-0.2,0-0.4-0.1-0.7-0.1c-0.4,0-0.9,0.1-1.3,0.3c-0.4,0.2-0.7,0.4-0.9,0.8c-0.3,0.3-0.4,0.6-0.6,1
+	c-0.1,0.4-0.2,0.8-0.2,1.2c0,0.4,0.1,0.9,0.2,1.2c0.1,0.4,0.4,0.7,0.6,1.1c0.3,0.3,0.6,0.5,1,0.7c0.4,0.2,0.8,0.3,1.2,0.3
+	c0.5,0,0.9-0.1,1.3-0.3c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.4-0.4,0.5-0.6l0.3,0.1c-0.1,0.3-0.3,0.5-0.5,0.7
+	c-0.2,0.2-0.4,0.4-0.7,0.5c-0.3,0.1-0.5,0.2-0.8,0.3c-0.3,0.1-0.6,0.1-0.8,0.1c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.8
+	c-0.3-0.3-0.5-0.7-0.7-1.2C-786.9,461.2-787,460.8-787,460.3z"/>
+<path d="M-779.1,463.9v-7.1h0.4v7.1H-779.1z"/>
+<path d="M-776.3,463.9v-7.1h4.6v0.3h-4.3v3h3.6v0.3h-3.6v3.5H-776.3z"/>
+<path d="M-769.8,463.9v-7.1h0.4v7.1H-769.8z"/>
+<path d="M-767.6,460.3c0-0.4,0.1-0.9,0.2-1.3c0.1-0.4,0.4-0.8,0.7-1.1c0.3-0.3,0.6-0.6,1-0.8c0.4-0.2,0.9-0.3,1.4-0.3
+	c0.6,0,1.1,0.1,1.6,0.4c0.4,0.3,0.8,0.7,1,1.1l-0.3,0.1c-0.1-0.2-0.3-0.5-0.5-0.6c-0.2-0.2-0.4-0.3-0.6-0.4
+	c-0.2-0.1-0.4-0.2-0.6-0.2c-0.2,0-0.4-0.1-0.7-0.1c-0.4,0-0.9,0.1-1.3,0.3c-0.4,0.2-0.7,0.4-0.9,0.8c-0.3,0.3-0.4,0.6-0.6,1
+	c-0.1,0.4-0.2,0.8-0.2,1.2c0,0.4,0.1,0.9,0.2,1.3c0.1,0.4,0.4,0.7,0.6,1.1c0.3,0.3,0.6,0.5,1,0.7c0.4,0.2,0.8,0.3,1.2,0.3
+	c0.2,0,0.5,0,0.7-0.1c0.2-0.1,0.5-0.1,0.7-0.3c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.4-0.4,0.5-0.6l0.3,0.1c-0.1,0.3-0.3,0.5-0.5,0.7
+	c-0.2,0.2-0.4,0.4-0.7,0.5c-0.3,0.1-0.5,0.2-0.8,0.3c-0.3,0.1-0.6,0.1-0.8,0.1c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.8
+	c-0.3-0.3-0.5-0.7-0.7-1.2C-767.4,461.3-767.5,460.8-767.6,460.3z"/>
+<path d="M-757.5,456.8h0.3l3,7.1h-0.4l-1-2.4h-3.6l-1,2.4h-0.4L-757.5,456.8z M-755.7,461.2l-1.7-3.9l-1.7,3.9H-755.7z"/>
+<path d="M-748.3,457.2h-2.7v6.8h-0.3v-6.8h-2.7v-0.3h5.7L-748.3,457.2z"/>
+<path d="M-746.7,463.9v-7.1h0.4v7.1H-746.7z"/>
+<path d="M-741.1,464c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.8c-0.3-0.3-0.5-0.7-0.7-1.1c-0.2-0.4-0.2-0.9-0.2-1.3
+	c0-0.5,0.1-0.9,0.2-1.4c0.2-0.4,0.4-0.8,0.7-1.1c0.3-0.3,0.6-0.6,1-0.8c0.4-0.2,0.9-0.3,1.3-0.3c0.5,0,0.9,0.1,1.3,0.3
+	c0.4,0.2,0.7,0.5,1,0.8c0.3,0.3,0.5,0.7,0.7,1.1c0.5,1.3,0.2,2.8-0.7,3.8c-0.3,0.3-0.6,0.6-1,0.8C-740.1,463.9-740.6,464-741.1,464z
+	 M-744.1,460.4c0,0.4,0.1,0.8,0.2,1.2c0.1,0.4,0.3,0.7,0.6,1c0.3,0.3,0.6,0.6,0.9,0.7c0.4,0.2,0.8,0.3,1.2,0.3
+	c0.4,0,0.8-0.1,1.2-0.3c0.4-0.2,0.7-0.4,0.9-0.7c0.3-0.3,0.5-0.7,0.6-1c0.1-0.4,0.2-0.8,0.2-1.2c0-0.4-0.1-0.8-0.2-1.2
+	c-0.1-0.4-0.4-0.7-0.6-1c-0.3-0.3-0.6-0.5-0.9-0.7c-0.8-0.4-1.6-0.4-2.4,0c-0.4,0.2-0.7,0.4-0.9,0.8
+	C-743.8,458.8-744,459.6-744.1,460.4L-744.1,460.4z"/>
+<path d="M-735.5,457.5v6.4h-0.4v-7.1h0.3l5.2,6.6v-6.6h0.3v7.1h-0.3L-735.5,457.5z"/>
+<path d="M-723.5,457.9c-0.2-0.3-0.5-0.5-0.9-0.6c-0.4-0.1-0.7-0.2-1.1-0.2c-0.6,0-1.2,0.1-1.6,0.4c-0.3,0.3-0.5,0.7-0.5,1.1
+	c0,0.2,0,0.4,0.1,0.6c0.1,0.2,0.2,0.3,0.4,0.4c0.2,0.1,0.4,0.2,0.7,0.3c0.3,0.1,0.6,0.2,1,0.2c0.4,0.1,0.7,0.2,1,0.3
+	c0.3,0.1,0.6,0.2,0.8,0.4c0.2,0.1,0.4,0.3,0.5,0.5c0.1,0.2,0.2,0.5,0.2,0.8c0,0.3-0.1,0.5-0.2,0.8c-0.1,0.2-0.3,0.4-0.5,0.6
+	c-0.2,0.2-0.5,0.3-0.8,0.3c-0.3,0.1-0.7,0.1-1,0.1c-0.5,0-1-0.1-1.5-0.3c-0.5-0.2-0.9-0.5-1.3-0.8l0.2-0.2c0.3,0.3,0.7,0.6,1.1,0.8
+	c0.5,0.2,1,0.3,1.4,0.3c0.5,0,1.1-0.1,1.5-0.4c0.4-0.2,0.6-0.7,0.6-1.1c0-0.2,0-0.4-0.1-0.6c-0.1-0.2-0.2-0.3-0.4-0.4
+	c-0.2-0.1-0.5-0.2-0.7-0.3c-0.3-0.1-0.7-0.2-1-0.3c-0.4-0.1-0.7-0.2-1-0.2c-0.3-0.1-0.5-0.2-0.8-0.3c-0.2-0.1-0.4-0.3-0.5-0.5
+	c-0.1-0.2-0.2-0.5-0.2-0.7c0-0.3,0.1-0.6,0.2-0.8c0.1-0.2,0.3-0.4,0.5-0.6c0.2-0.2,0.5-0.3,0.8-0.4c0.3-0.1,0.7-0.1,1-0.1
+	c0.4,0,0.8,0.1,1.2,0.2c0.4,0.1,0.7,0.4,1,0.6L-723.5,457.9z"/>
+<path d="M-716,456.8h0.3l3,7.1h-0.3l-1-2.4h-3.6l-1,2.4h-0.4L-716,456.8z M-714.2,461.2l-1.7-3.9l-1.7,3.9L-714.2,461.2z"/>
+<path d="M-710.7,457.5v6.4h-0.3v-7.1h0.3l5.2,6.6v-6.6h0.4v7.1h-0.3L-710.7,457.5z"/>
+<path d="M-702.8,463.9v-7.1h2.3c0.5,0,1,0.1,1.5,0.3c0.4,0.2,0.7,0.4,1,0.8c0.3,0.3,0.5,0.7,0.6,1.1c0.1,0.4,0.2,0.9,0.2,1.4
+	c0,0.5-0.1,1-0.2,1.5c-0.1,0.4-0.4,0.8-0.7,1.1c-0.3,0.3-0.7,0.6-1,0.7c-0.4,0.2-0.9,0.3-1.4,0.2H-702.8z M-697.5,460.4
+	c0-0.4-0.1-0.9-0.2-1.3c-0.1-0.4-0.3-0.7-0.6-1c-0.3-0.3-0.6-0.5-1-0.7c-0.4-0.2-0.8-0.2-1.3-0.2h-2v6.4h2c0.4,0,0.9-0.1,1.3-0.2
+	c0.4-0.2,0.7-0.4,0.9-0.7c0.3-0.3,0.4-0.6,0.6-1C-697.5,461.3-697.4,460.8-697.5,460.4z"/>
+<path d="M-683.3,464c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.8c-0.3-0.3-0.5-0.7-0.7-1.1c-0.2-0.4-0.2-0.9-0.2-1.3
+	c0-0.5,0.1-0.9,0.2-1.4c0.2-0.4,0.4-0.8,0.7-1.1c0.3-0.3,0.6-0.6,1-0.8c0.4-0.2,0.9-0.3,1.3-0.3c0.5,0,0.9,0.1,1.4,0.3
+	c0.4,0.2,0.7,0.5,1,0.8c0.3,0.3,0.5,0.7,0.7,1.1c0.5,1.3,0.2,2.8-0.7,3.8c-0.3,0.3-0.6,0.6-1,0.8C-682.4,463.9-682.9,464-683.3,464z
+	 M-686.3,460.4c0,0.4,0.1,0.8,0.2,1.2c0.1,0.4,0.3,0.7,0.6,1c0.3,0.3,0.6,0.6,0.9,0.7c0.4,0.2,0.8,0.3,1.2,0.3
+	c0.4,0,0.8-0.1,1.2-0.3c0.4-0.2,0.7-0.4,0.9-0.7c0.3-0.3,0.5-0.7,0.6-1c0.1-0.4,0.2-0.8,0.2-1.2c0-0.4-0.1-0.8-0.2-1.2
+	c-0.1-0.4-0.4-0.7-0.6-1c-0.3-0.3-0.6-0.5-0.9-0.7c-0.8-0.4-1.6-0.4-2.4,0c-0.4,0.2-0.7,0.4-0.9,0.8
+	C-686,458.8-686.3,459.6-686.3,460.4L-686.3,460.4z"/>
+<path d="M-689.3,457.7c-0.2-0.3-0.5-0.5-0.9-0.6c-0.4-0.1-0.7-0.2-1.1-0.2c-0.6,0-1.2,0.1-1.6,0.4c-0.3,0.3-0.5,0.7-0.5,1.1
+	c0,0.2,0,0.4,0.1,0.6c0.1,0.2,0.2,0.3,0.4,0.4c0.2,0.1,0.4,0.2,0.7,0.3c0.3,0.1,0.6,0.2,1,0.2c0.4,0.1,0.7,0.2,1,0.3
+	c0.3,0.1,0.6,0.2,0.8,0.4c0.2,0.1,0.4,0.3,0.5,0.5c0.1,0.2,0.2,0.5,0.2,0.8c0,0.3-0.1,0.5-0.2,0.8c-0.1,0.2-0.3,0.4-0.5,0.6
+	c-0.2,0.2-0.5,0.3-0.8,0.3c-0.3,0.1-0.7,0.1-1,0.1c-0.5,0-1-0.1-1.5-0.3c-0.5-0.2-0.9-0.5-1.3-0.8l0.2-0.2c0.3,0.3,0.7,0.6,1.1,0.8
+	c0.5,0.2,1,0.3,1.5,0.3c0.6,0,1.1-0.1,1.6-0.4c0.4-0.2,0.6-0.7,0.6-1.1c0-0.2,0-0.4-0.1-0.6c-0.1-0.2-0.2-0.3-0.4-0.4
+	c-0.2-0.1-0.5-0.2-0.7-0.3c-0.3-0.1-0.7-0.2-1-0.3c-0.4-0.1-0.7-0.2-1-0.2c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.3-0.5-0.5
+	c-0.1-0.2-0.2-0.5-0.2-0.7c0-0.3,0.1-0.6,0.2-0.8c0.1-0.2,0.3-0.4,0.5-0.6c0.2-0.2,0.5-0.3,0.8-0.4c0.3-0.1,0.7-0.1,1-0.1
+	c0.4,0,0.8,0.1,1.2,0.2c0.4,0.1,0.7,0.4,1,0.6L-689.3,457.7z"/>
+<path d="M-678.3,464v-7.1h4.6v0.3h-4.3v3h3.6v0.3h-3.6v3.5H-678.3z"/>
+<path d="M-666.3,457.2h-2.7v6.8h-0.3v-6.8h-2.7v-0.3h5.7L-666.3,457.2z"/>
+<path d="M-652,456.9h0.3l3,7.1h-0.4l-1-2.4h-3.6l-1,2.4h-0.4L-652,456.9z M-650.2,461.2l-1.7-3.9l-1.7,3.9H-650.2z"/>
+<path d="M-636.6,463.7v0.3h-4.7v-7.1h4.6v0.3h-4.3v3h3.7v0.3h-3.7v3.1H-636.6z"/>
+<g>
+	<g>
+		<path d="M-662.5,463.8l-2.3-6.9l0.3-0.2l2.3,6.9L-662.5,463.8z"/>
+		<path d="M-662.5,463.9l2.1-7l0.2,0.1l-2.1,7L-662.5,463.9z"/>
+	</g>
+	<g>
+		<path d="M-657.8,463.8l-2.5-6.9l0.3-0.2l2.5,6.9L-657.8,463.8z"/>
+		<path d="M-657.7,463.9l2.3-7l0.3,0.1l-2.3,7L-657.7,463.9z"/>
+	</g>
+</g>
+<path d="M-647.7,464v-7.1h2.9c0.3,0,0.6,0.1,0.8,0.2c0.2,0.1,0.5,0.3,0.6,0.5c0.2,0.2,0.3,0.4,0.4,0.7c0.1,0.3,0.2,0.5,0.2,0.8
+	c0,0.3-0.1,0.6-0.2,0.8c-0.1,0.3-0.2,0.5-0.4,0.7c-0.2,0.2-0.4,0.4-0.6,0.5c-0.2,0.1-0.5,0.2-0.8,0.2h-2.6v2.7H-647.7z
+	 M-647.4,460.9h2.6c0.2,0,0.5-0.1,0.7-0.2c0.2-0.1,0.4-0.2,0.5-0.4c0.1-0.2,0.3-0.4,0.3-0.6c0.1-0.2,0.1-0.4,0.1-0.7
+	c0-0.2,0-0.5-0.1-0.7c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.3-0.3-0.5-0.4c-0.2-0.1-0.4-0.2-0.7-0.2h-2.5V460.9z"/>
+<path d="M-643,464l-1.8-3l0.3-0.2l1.8,3L-643,464z"/>
+</svg>
+        </a>
+
+        <div class="main-nav dropdown">
+          <a href="#main-nav" class="dropdown-toggle btn">
+
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            Articles
+          </a>
+
+          <nav id="main-nav">
+            <ul>
+ <li>
+   <a class="" href="../">
+     Home
+   </a>
+ </li>
+ 
+
+ 
+ <li class="active active-parent">
+   <a href="../articles/">
+     Articles
+   </a>
+   <ul>
+   
+     
+     
+     <li class="mm-divider">
+       Pilots
+     </li>
+
+     
+     <li class="">
+       <a href="../articles/elife/">eLife</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/causa-natura-pescando-datos/">Causa Natura - Pescando Datos</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/university-of-cambridge/">University of Cambridge - Retinal Mosaics</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/pacific-northwest-national-laboratory-active-data-biology/">Pacific Northwest National Laboratory - Active Data Biology</a>
+     </li>
+     
+     
+  
+     
+     
+     <li class="mm-divider">
+       Case Studies
+     </li>
+
+     
+     <li class="">
+       <a href="../articles/zegami/">Zegami</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/center-for-data-science-and-public-policy-workforce-data-initiative/">Center for Data Science and Public Policy, Workforce Data Initiative</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/collections-as-data/">Collections as Data Facets - Carnegie Museum of Art Collection Data</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/the-data-retriever/">The Data Retriever</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/cmso/">Cell Migration Standardization Organization</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/dataworld/">data.world</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/john-snow-labs/">John Snow Labs</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/dataship/">Dataship</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/open-power-system-data/">Open Power System Data</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/tesera/">Tesera</a>
+     </li>
+     
+     
+  
+     
+     
+     <li class="mm-divider">
+       Grantee Profiles
+     </li>
+
+     
+     <li class="">
+       <a href="../articles/daniel-fireman/">Daniel Fireman</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/georges-labreche/">Georges Labrèche</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/matt-thompson/">Matt Thompson</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/open-knowledge-greece/">Open Knowledge Greece</a>
+     </li>
+     
+     <li class="">
+       <a href="../articles/ori-hoch/">Ori Hoch</a>
+     </li>
+     
+     
+  
+     
+     
+  
+  </ul>
+</li>
+
+
+ 
+
+ 
+<li class="">
+  <a href="../software/">
+    Software
+  </a>
+</li>
+
+
+ 
+
+ 
+<li class=" ">
+  <a href="../guides/">
+    Guides
+  </a>
+  <ul>
+  
+    
+    
+    <li class="mm-divider">
+      Working with Data Packages
+    </li>
+
+    
+    <li class="">
+      <a href="../guides/using-data-packages-in-python/">Using Data Packages in Python</a>
+      <ul>
+        <li class="">
+          <a href="../guides/using-data-packages-in-python/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/using-data-packages-in-python/#setup">Setup</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/using-data-packages-in-python/#reading-basic-metadata">Reading Basic Metadata</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/using-data-packages-in-python/#reading-data">Reading Data</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/using-data-packages-in-python/#loading-into-an-sql-database">Loading into an SQL database</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/using-data-packages-in-python/#loading-into-bigquery">Loading into BigQuery</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/using-data-packages-in-python/#loading-into-amazon-redshift">Loading into Amazon RedShift</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/creating-tabular-data-packages-in-python/">Creating Data Packages in Python</a>
+      <ul>
+        <li class="">
+          <a href="../guides/creating-tabular-data-packages-in-python/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/creating-tabular-data-packages-in-python/#setup">Setup</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/creating-tabular-data-packages-in-python/#creating-basic-metadata">Creating Basic Metadata</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/creating-tabular-data-packages-in-python/#inferring-a-csv-schema">Inferring a CSV Schema</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/creating-tabular-data-packages-in-python/#publishing">Publishing</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/creating-tabular-data-packages-in-javascript/">Creating Data Packages in JavaScript</a>
+      <ul>
+        <li class="">
+          <a href="../guides/creating-tabular-data-packages-in-javascript/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/creating-tabular-data-packages-in-javascript/#setup">Setup</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/creating-tabular-data-packages-in-javascript/#creating-a-package">Creating a package</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/joining-data-in-python/">Joining Data</a>
+      <ul>
+        <li class="">
+          <a href="../guides/joining-data-in-python/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/joining-data-in-python/#example-data">Example Data</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/joining-data-in-python/#reading-and-joining-data">Reading and Joining Data</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/joining-tabular-data-in-python/">Joining Tabular Data</a>
+      <ul>
+        <li class="">
+          <a href="../guides/joining-tabular-data-in-python/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/joining-tabular-data-in-python/#data">Data</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/joining-tabular-data-in-python/#gdp">GDP</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/joining-tabular-data-in-python/#cpi">CPI</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/joining-tabular-data-in-python/#loading-the-data">Loading the Data</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/joining-tabular-data-in-python/#joining-the-data">Joining the Data</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/joining-tabular-data-in-python/#creating-a-new-data-package">Creating a New Data Package</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/packaging-data/">Packaging Data</a>
+      <ul>
+        <li class="">
+          <a href="../guides/packaging-data/">Introduction</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    
+ 
+    
+    
+    <li class="mm-divider">
+      Validating Data
+    </li>
+
+    
+    <li class="">
+      <a href="../guides/validating-data/">Validating Data</a>
+      <ul>
+        <li class="">
+          <a href="../guides/validating-data/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/validating-data/#goodtables">goodtables</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/validating-data/#python-goodtables">Python + goodtables</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/validating-data/#validating-structure">Validating Structure</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/validating-data/#validating-schema">Validating Schema</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/validating-data/#continuous-data-validation">Continuous Data Validation</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    
+ 
+    
+    
+    <li class="mm-divider">
+      Publishing Data
+    </li>
+
+    
+    <li class="">
+      <a href="../guides/publish-any/">Publish Any Kind of Data as a Data Package</a>
+      <ul>
+        <li class="">
+          <a href="../guides/publish-any/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/publish-any/#1.-get-your-data-together">1. Get your data together</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-any/#2.-add-a-datapackage.json-file">2. Add a datapackage.json file</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-any/#3.-put-the-data-package-online">3. Put the data package online</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/publish-tabular/">Publish Tabular Data as a Data Package</a>
+      <ul>
+        <li class="">
+          <a href="../guides/publish-tabular/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/publish-tabular/#1.-create-a-directory-folder">1. Create a Directory (Folder)</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-tabular/#2.-create-your-csv-files">2. Create your CSV files</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-tabular/#3.-add-a-datapackage.json-file">3. Add a datapackage.json file</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-tabular/#4.-put-the-data-package-online">4. Put the data package online</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-tabular/#appendix:-examples-of-tabular-data-packages">Appendix: Examples of Tabular Data Packages</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/publish/">Publish Data as Data Packages - Overview</a>
+      <ul>
+        <li class="">
+          <a href="../guides/publish/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/publish/#i-want-to-package-up-and-publish-data-that-is-hellip;">I want to package up and publish data that is &hellip;</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/publish/#tabular">Tabular</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish/#geospatial">Geospatial</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish/#any-kind">Any Kind</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/publish-online/">Publish Your Data Package Online</a>
+      <ul>
+        <li class="">
+          <a href="../guides/publish-online/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/publish-online/#it-s-just-files-online">It's Just Files Online</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-online/#github-bitbucket-etc">Github, Bitbucket etc</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-online/#s3-google-storage-etc">S3, Google Storage etc</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-online/#google-drive">Google Drive</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-online/#dropbox">Dropbox</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-online/#key-tips">Key Tips</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/publish-faq/">Publishing Data Packages - FAQ</a>
+      <ul>
+        <li class="">
+          <a href="../guides/publish-faq/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#data-package-name">Data Package Name</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#resource-and-file-names">Resource and File Names</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#descriptor-datapackage.json">Descriptor <code>datapackage.json</code></a>
+          
+          <ul>
+        <li>
+          <a href="../guides/publish-faq/#alignment">Alignment</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#contributors-fields">Contributors fields</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#data-package-folder-names-and-structure">Data Package Folder Names and Structure</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#readme">README</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/publish-faq/#formatting">Formatting</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#file-name">File Name</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#sections">Sections</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/publish-faq/#introduction">Introduction</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#data">Data</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#preparation">Preparation</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#license">License</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#validate-and-preview-your-data-package">Validate and preview your Data Package</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/publish-faq/#examples">Examples</a>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/publish-geo/">Publishing Geospatial Data as a Data Package</a>
+      <ul>
+        <li class="">
+          <a href="../guides/publish-geo/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/publish-geo/#geo-data-packages">Geo Data Packages</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/publish-geo/#examples">Examples</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/publish-geo/#[exemplar-geo-data-package]-https://github.com/datasets/ex-geojson"><a href="https://github.com/datasets/ex-geojson">Exemplar Geo Data Package</a></a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    
+ 
+    
+    
+ 
+    
+    
+    <li class="mm-divider">
+      General
+    </li>
+
+    
+    <li class="">
+      <a href="../guides/tutorial-template/">How to do a thing using a tool</a>
+      <ul>
+        <li class="">
+          <a href="../guides/tutorial-template/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/tutorial-template/#what-you-ll-need">What you'll need</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/tutorial-template/#introduction">Introduction</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/tutorial-template/#1.-import-the-data">1. Import the data</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/tutorial-template/#2.-generate-a-table-schema">2. Generate a table schema</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/tutorial-template/#3.-create-a-data-package">3. Create a data package</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/tutorial-template/#4.-publish-the-data-package">4. Publish the data package</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/tutorial-template/#congratulations">Congratulations</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/tutorial-template/#learn-more">Learn more</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/tutorial-template/#related-guides">Related Guides</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/tutorial-template/#references">References</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/csv/">CSV - Comma Separated Values</a>
+      <ul>
+        <li class="">
+          <a href="../guides/csv/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#the-format">The Format</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/csv/#what-a-csv-looks-like">What a CSV looks like</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#dialects-of-csvs">Dialects of CSVs</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#what-is-missing-in-csv?">What is Missing in CSV?</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#links">Links</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#tools">Tools</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/csv/#desktop">Desktop</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#view-a-csv-file-in-your-browser">View a CSV file in your Browser</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#unix-command-line-manipulation">Unix Command Line Manipulation</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#power-tools">Power Tools</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#libraries">Libraries</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/csv/#python">Python</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#node">Node</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/csv/#tips-and-tricks">Tips and Tricks</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/csv/#csvs-and-git">CSVs and Git</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/data-package/">Data Package</a>
+      <ul>
+        <li class="">
+          <a href="../guides/data-package/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/data-package/#getting-started">Getting Started</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/data-package/#datapackage.json">datapackage.json</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/data-package/#software">Software</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/data-package/#examples">Examples</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/data-package/#world-gdp">World GDP</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/data-package/#topojson-example">TopoJSON example</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/developer-guide/">Developer Guide</a>
+      <ul>
+        <li class="">
+          <a href="../guides/developer-guide/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#asking-questions-and-getting-help">Asking questions and getting help</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#example-and-test-data-packages">Example and Test Data Packages</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#key-concepts-and-pre-requisites">Key Concepts and Pre-requisites</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#implementing-a-data-package-tool-stack">Implementing a Data Package Tool Stack</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/developer-guide/#general-introduction">General Introduction</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#programming-language">Programming Language</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#specific-software-and-platforms">Specific Software and Platforms</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#examples">Examples</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/developer-guide/#python">Python</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#javascript">Javascript</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/developer-guide/#sql-integration">SQL Integration</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/point-location-data/">Point location data in CSV files</a>
+      <ul>
+        <li class="">
+          <a href="../guides/point-location-data/">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#introduction">Introduction</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#point-data">Point data</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#1.-geopoint-default">1. Geopoint, default</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#csv">CSV</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#data-package-fragment">Data Package fragment</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#thoughts">Thoughts</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#2.-geopoint-array">2. Geopoint, array</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#csv">CSV</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#data-package-fragment">Data Package fragment</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#thoughts">Thoughts</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#3.-geopoint-object">3. Geopoint, object</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#csv">CSV</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#data-package-fragment">Data Package fragment</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#thoughts">Thoughts</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#4.-numbers-with-constraints">4. Numbers with constraints</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#csv">CSV</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#data-package-fragment">Data Package fragment</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#thoughts">Thoughts</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#5.-string-and-foreign-key-reference-to-well-known-place-name">5. String and Foreign key reference to well-known place-name</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#csv">CSV</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#data-package-fragment">Data Package fragment</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#thoughts">Thoughts</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#6.-use-a-uniform-resource-identifier-to-reference-a-location">6. Use a Uniform Resource Identifier to reference a location</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#csv">CSV</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#data-package-fragment">Data Package fragment</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#thoughts">Thoughts</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#7.-geojson">7. GeoJSON</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#csv">CSV</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#data-package-fragment">Data Package fragment</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#thoughts">Thoughts</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#related-work">Related Work</a>
+          
+          <ul>
+        <li>
+          <a href="../guides/point-location-data/#frictionless-data">Frictionless data</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#world-wide-web-consortium-w3c">World Wide Web Consortium (W3C)</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#australian-government-csv-geo-au">Australian Government - CSV GEO AU</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#ietf-geojson">IETF - GeoJSON</a>
+          
+        </li>
+        
+        <li>
+          <a href="../guides/point-location-data/#ogc-simple-feature-access">OGC - Simple Feature Access</a>
+          
+        </li>
+        </ul>
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="">
+      <a href="../guides/table-schema/">Table Schema</a>
+      <ul>
+        <li class="">
+          <a href="../guides/table-schema/">Introduction</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    
+ 
+    
+    
+ 
+    
+    
+ 
+ </ul>
+</li>
+
+
+ 
+
+ 
+<li class="">
+  <a href="../specs">
+    Specifications
+  </a>
+
+  <ul>
+    <li class="mm-divider">
+      Introduction
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    <li>
+      <a href="https://pre-v1.frictionlessdata.io/" rel="external">Pre v1</a>
+    </li>
+ </ul>
+
+</li>
+
+
+ 
+</ul>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+    <div class="page">
+      
+
+<div class="banner">
+  <div class="container">
+    <h1>Articles</h1>
+    <div class="filter-button-group">
+      <button class="btn selected" data-filter="*" description="<p>Through our <strong>Pilots</strong>, we are working directly with organizations to
+solve real problems managing data. <br/> In our <strong>Case Study series</strong>, we are highlighting projects and organisations who are working with the Frictionless Data specifications and software in interesting and innovative ways. <br/> Our <strong>Grantee Profile</strong> series shines a light on individuals and organizations that are building Frictionless Data libraries in additional programming languages.</p>
+">All</button>
+      
+      
+      <button class="btn" data-filter=".cat-pilots" description="Through our Pilots, we are working directly with organisations to solve real problems managing data.">Pilots</button>
+      
+      
+      
+      <button class="btn" data-filter=".cat-case-studies" description="In our Case Study series, we are highlighting projects and organisations who are working with the Frictionless Data specifications and software in interesting and innovative ways.">Case Studies</button>
+      
+      
+      
+      <button class="btn" data-filter=".cat-grantee-profiles" description="Our Grantee Profile series shines a light on individuals and organizations that are building Frictionless Data libraries in additional programming languages.">Grantee Profiles</button>
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="article-list-description" id="category_description"></div>
+  <div class="article-list">
+
+    
+    
+  <div class="pilots preview cat-pilots">
+    <div class="has image">
+      <a href="../articles/elife/"  style="background-image: url(../articles/elife/elife-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      <span class="type">Pilot</span>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/elife/">eLife</a></h3>
+
+  
+  <p class="summary">
+    Investigating the applicability of the goodtables library to facilitate data validation in the field of Life and Biomedical Sciences and make a case for the reusability of data shared with eLife as additional or supporting files.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/zegami/"  style="background-image: url(../articles/zegami/zegami-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/zegami/">Zegami</a></h3>
+
+  
+  <p class="summary">
+    As a visual data exploration and analytics platform, Zegami makes the exploration of large collections of image rich information quick and simple.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="pilots preview cat-pilots">
+    <div class="has image">
+      <a href="../articles/causa-natura-pescando-datos/"  style="background-image: url(../articles/causa-natura-pescando-datos/causanatura.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      <span class="type">Pilot</span>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/causa-natura-pescando-datos/">Causa Natura - Pescando Datos</a></h3>
+
+  
+  <p class="summary">
+    Using goodtables to improve quality of data to support fisher communities and advocacy groups.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/center-for-data-science-and-public-policy-workforce-data-initiative/"  style="background-image: url(../articles/center-for-data-science-and-public-policy-workforce-data-initiative/chicago.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/center-for-data-science-and-public-policy-workforce-data-initiative/">Center for Data Science and Public Policy, Workforce Data Initiative</a></h3>
+
+  
+  <p class="summary">
+    Supporting state and local workforce boards in managing and publishing data.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="pilots preview cat-pilots">
+    <div class="has image">
+      <a href="../articles/university-of-cambridge/"  style="background-image: url(../articles/university-of-cambridge/cambridge.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      <span class="type">Pilot</span>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/university-of-cambridge/">University of Cambridge - Retinal Mosaics</a></h3>
+
+  
+  <p class="summary">
+    Investigating the applicability of the Data Package concept to facilitate data reuse in the field of Computational Neuroscience.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/collections-as-data/"  style="background-image: url(../articles/collections-as-data/cmoa-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/collections-as-data/">Collections as Data Facets - Carnegie Museum of Art Collection Data</a></h3>
+
+  
+  <p class="summary">
+    Use of Frictionless Data specifications in the release of Carnegie Museum of Arts’ Collection Data for public access &amp; creative use
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="pilots preview cat-pilots">
+    <div class="has image">
+      <a href="../articles/pacific-northwest-national-laboratory-active-data-biology/"  style="background-image: url(../articles/pacific-northwest-national-laboratory-active-data-biology/pnnl.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      <span class="type">Pilot</span>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/pacific-northwest-national-laboratory-active-data-biology/">Pacific Northwest National Laboratory - Active Data Biology</a></h3>
+
+  
+  <p class="summary">
+    Using goodtables to validate metadata stored as part of an biological application on GitHub.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/the-data-retriever/"  style="background-image: url(../articles/the-data-retriever/data-retriever-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/the-data-retriever/">The Data Retriever</a></h3>
+
+  
+  <p class="summary">
+    The Data Retriever is a package manager for data. It downloads, cleans, and stores publicly available data, so that analysts spend less time cleaning and managing data, and more time analyzing it.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/cmso/"  style="background-image: url(../articles/cmso/cmso-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/cmso/">Cell Migration Standardization Organization</a></h3>
+
+  
+  <p class="summary">
+    Building standards for cell migration data in order to enable data sharing in the field.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/dataworld/"  style="background-image: url(../articles/dataworld/data-world-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/dataworld/">data.world</a></h3>
+
+  
+  <p class="summary">
+    Allow users to download a version of a data.world dataset that retains the structured metadata and schema for offline analysis
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/john-snow-labs/"  style="background-image: url(../articles/john-snow-labs/john-snow-labs-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/john-snow-labs/">John Snow Labs</a></h3>
+
+  
+  <p class="summary">
+    Turnkey data to data science, analytics and software teams in healthcare industry.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/dataship/"  style="background-image: url(../articles/dataship/dataship-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/dataship/">Dataship</a></h3>
+
+  
+  <p class="summary">
+    A way to share data and analysis, from simple charts to complex machine learning, with anyone in the world easily and for free.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/open-power-system-data/"  style="background-image: url(../articles/open-power-system-data/opsd-logo.svg);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/open-power-system-data/">Open Power System Data</a></h3>
+
+  
+  <p class="summary">
+    A free-of-charge and open platform providing the data needed for power system analysis and modeling.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="case-studies preview cat-case-studies">
+    <div class="has image">
+      <a href="../articles/tesera/"  style="background-image: url(../articles/tesera/tesera-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      <span class="type">Case Study</span>
+      
+      
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/tesera/">Tesera</a></h3>
+
+  
+  <p class="summary">
+    Creating data-driven applications in the cloud.
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="grantee-profiles preview cat-grantee-profiles">
+    <div class="has image">
+      <a href="../articles/daniel-fireman/"  style="background-image: url(../articles/daniel-fireman/daniel-fireman-image.jpg);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      
+      
+      <span class="type">Grantee Profile</span>
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/daniel-fireman/">Daniel Fireman</a></h3>
+
+  
+  <p class="summary">
+    Tool Fund Grantee - Go
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="grantee-profiles preview cat-grantee-profiles">
+    <div class="has image">
+      <a href="../articles/georges-labreche/"  style="background-image: url(../articles/georges-labreche/georges-labreche-image.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      
+      
+      <span class="type">Grantee Profile</span>
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/georges-labreche/">Georges Labrèche</a></h3>
+
+  
+  <p class="summary">
+    Tool Fund Grantee - Java
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="grantee-profiles preview cat-grantee-profiles">
+    <div class="has image">
+      <a href="../articles/matt-thompson/"  style="background-image: url(../articles/matt-thompson/matt-thompson-image.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      
+      
+      <span class="type">Grantee Profile</span>
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/matt-thompson/">Matt Thompson</a></h3>
+
+  
+  <p class="summary">
+    Tool Fund Grantee - Clojure
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="grantee-profiles preview cat-grantee-profiles">
+    <div class="has image">
+      <a href="../articles/open-knowledge-greece/"  style="background-image: url(../articles/open-knowledge-greece/open-knowledge-greece-logo.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      
+      
+      <span class="type">Grantee Profile</span>
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/open-knowledge-greece/">Open Knowledge Greece</a></h3>
+
+  
+  <p class="summary">
+    Tool Fund Grantee - R
+  </p>
+  
+  </div>
+
+    
+    
+  <div class="grantee-profiles preview cat-grantee-profiles">
+    <div class="has image">
+      <a href="../articles/ori-hoch/"  style="background-image: url(../articles/ori-hoch/ori-hoch-image.png);">
+
+        
+        
+        
+      </a>
+      
+      
+      
+      
+      
+      
+      <span class="type">Grantee Profile</span>
+      
+      
+      
+      
+    </div>
+    <h3 class="article-heading"><a href="../articles/ori-hoch/">Ori Hoch</a></h3>
+
+  
+  <p class="summary">
+    Tool Fund Grantee - PHP
+  </p>
+  
+  </div>
+
+    
+
+  </div>
+
+  
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+  <div class="footer-primary">
+    <a class="footer-logo" href="https://okfn.org/">
+      <img src="https://a.okfn.org/img/oki/landscape-white-468x122.png" alt="Open Knowledge International">
+    </a>
+    <div class="supporters">
+      <h6>With support from</h6>
+      
+      <a href="http://www.sloan.org/" rel="external">
+        <img src="../img/supporters/sloan-foundation.svg" alt="Sloan Foundation" width="416.494" height="26" />
+      </a>
+      
+      <a href="http://www.google.org/" rel="external">
+        <img src="../img/supporters/google.svg" alt="Google" width="120.848" height="26" />
+      </a>
+      
+      <a href="https://theodi.org/" rel="external">
+        <img src="../img/supporters/open-data-institute.svg" alt="Open Data Institute" width="109.954" height="26" />
+      </a>
+      
+    </div>
+  </div>
+  <div class="footer-secondary">
+  <p>
+    <a href="https://okfn.org/terms-of-use/">Terms of use</a> | <a href="https://okfn.org/privacy-policy/">Privacy policy</a>
+  </p>
+  <ul class="footer-links">
+    <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=admin@okfn.org&lc=GB&item_name=Frictionless Data%20Donation%20to%20Open%20Knowledge&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest" rel="external"><svg><use xlink:href="#icon-heart" /></svg> <span class="text">Donate</span></a></li>
+    <li><a href="https://discuss.okfn.org/c/frictionless-data" rel="external"><svg><use xlink:href="#icon-forum" /></svg> <span class="text">Forum</span></a></li>
+    <li><a href="https://gitter.im/frictionlessdata/chat" rel="external"><svg><use xlink:href="#icon-gitter" /></svg> <span class="text">Chat</span></a></li>
+    <li><a href="https://github.com/frictionlessdata" rel="external"><svg><use xlink:href="#icon-github" /></svg> <span class="text">GitHub</span></a></li>
+  </ul>
+  </div>
+</div>
+    </footer>
+    <svg class="svgstore"><symbol viewBox="0 0 52.15 56.65" id="icon-book"><title>book</title><path class="a" d="M3.34,26.53h6.71a1.34,1.34,0,1,0,0-2.68H3.34A1.34,1.34,0,0,0,2,25.19,1.37,1.37,0,0,0,3.34,26.53Z"/><path class="a" d="M3.34,33.2h6.71a1.34,1.34,0,1,0,0-2.68H3.34a1.34,1.34,0,1,0,0,2.68Z"/><path class="a" d="M3.34,19.82h6.71a1.34,1.34,0,1,0,0-2.68H3.34a1.34,1.34,0,1,0,0,2.68Z"/><path class="a" d="M3.34,13.1h6.71a1.34,1.34,0,1,0,0-2.68H3.34a1.34,1.34,0,1,0,0,2.68Z"/><path class="a" d="M41.86,2H8.38a3,3,0,0,0-3,3V7A1.34,1.34,0,0,0,8,7V5c0-.24.1-.34.34-.34h7.15V52.35H8.38c-.24,0-.34-.1-.34-.34V50.47a1.34,1.34,0,0,0-2.68,0V52a3,3,0,0,0,3,3H41.86a3,3,0,0,0,3-3V5A3,3,0,0,0,41.86,2Zm.34,3V52c0,.24-.1.34-.34.34H18.06V4.71H41.86C42.09,4.71,42.2,4.81,42.2,5Z"/><path class="a" d="M48.42,5.39a1.34,1.34,0,0,0-1.34,1.34v43.6a1.34,1.34,0,1,0,2.68,0V6.73A1.34,1.34,0,0,0,48.42,5.39Z"/><path class="a" d="M3.34,39.92h6.71a1.34,1.34,0,1,0,0-2.68H3.34a1.34,1.34,0,1,0,0,2.68Z"/><path class="a" d="M11.39,45.29A1.34,1.34,0,0,0,10.05,44H3.34a1.34,1.34,0,1,0,0,2.68h6.71A1.34,1.34,0,0,0,11.39,45.29Z"/></symbol><symbol viewBox="0 0 45.24 51.74" id="icon-docs"><title>docs</title><path class="a" d="M43.13,18.08A46.14,46.14,0,0,0,38.71,13a45.56,45.56,0,0,0-5.05-4.42C31.07,6.72,29.83,6.5,29.12,6.5H10.44A3.94,3.94,0,0,0,6.5,10.44V47.81a3.94,3.94,0,0,0,3.94,3.94H41.31a3.94,3.94,0,0,0,3.94-3.94V22.62c0-.71-.22-2-2.12-4.55ZM40.29,19.3l.16.2h-8.2V11.3l.2.16m9.8,36.35a1,1,0,0,1-.94.94H10.44a1,1,0,0,1-.94-.94V10.44a1,1,0,0,1,.94-.94H29.25V21a1.5,1.5,0,0,0,1.5,1.5h11.5Z"/><path class="a" d="M22.62,0H3.94A3.94,3.94,0,0,0,0,3.94V41.31a4,4,0,0,0,3,3.82V3.94A1,1,0,0,1,3.94,3H28.3c-.41-.33-.8-.63-1.14-.88C24.58.22,23.33,0,22.62,0Z"/></symbol><symbol viewBox="0 0 768 768" id="icon-external"><title>external</title>  <path fill="#000" d="M576 384c-19.2 0-32 12.8-32 32v192c0 19.2-12.8 32-32 32h-352c-19.2 0-32-12.8-32-32v-352c0-19.2 12.8-32 32-32h192c19.2 0 32-12.8 32-32s-12.8-32-32-32h-192c-54.4 0-96 41.6-96 96v352c0 54.4 41.6 96 96 96h352c54.4 0 96-41.6 96-96v-192c0-19.2-12.8-32-32-32z"/> <path fill="#000" d="M700.8 83.2c-3.2-6.4-9.6-12.8-16-16-3.2-3.2-9.6-3.2-12.8-3.2h-192c-19.2 0-32 12.8-32 32s12.8 32 32 32h115.2l-297.6 297.6c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 12.8 9.6 22.4 9.6s16-3.2 22.4-9.6l297.6-297.6v115.2c0 19.2 12.8 32 32 32s32-12.8 32-32v-192c0-3.2 0-9.6-3.2-12.8z"/> </symbol><symbol viewBox="0 0 52.15 56.65" id="icon-f"><title>f</title><polygon class="a" points="23.38 33.72 43.41 33.72 43.41 22.55 23.4 22.55 20.85 25.1 12.2 33.74 12.2 44.29 22.69 54.78 23.38 54.78 23.38 33.72"/><polygon class="a" points="19.91 26.3 19.91 13.73 43.41 13.73 43.41 2.48 8.74 2.48 8.74 37.49 11.29 34.94 19.93 26.3 19.91 26.3"/></symbol><symbol viewBox="0 0 55.03 55.03" id="icon-forum"><title>forum</title><path class="a" d="M47.48,0H7.55A7.56,7.56,0,0,0,0,7.56V53.18A1.84,1.84,0,0,0,1.15,54.9a1.91,1.91,0,0,0,.71.14h0a1.8,1.8,0,0,0,1.28-.54L14,43.63H47.48A7.56,7.56,0,0,0,55,36.07V7.56A7.56,7.56,0,0,0,47.48,0Zm3.85,36.08a3.87,3.87,0,0,1-3.85,3.85H13.26a1.87,1.87,0,0,0-1.31.54L3.7,48.72V7.56A3.87,3.87,0,0,1,7.55,3.7H47.48a3.87,3.87,0,0,1,3.85,3.85Z"/></symbol><symbol viewBox="0 0 49.11 52.67" id="icon-github"><title>github</title><path class="a" d="M49.11,19.49a14.71,14.71,0,0,0-3.18-9.07l-.07-.09,0-.11a14.63,14.63,0,0,0-.68-8.84A1.84,1.84,0,0,0,44,.13C42.7-.19,39.67-.21,34,3.34L34,3.39l-.1,0a33.52,33.52,0,0,0-15.1,0l-.1,0-.09-.06C12.94-.21,9.92-.19,8.62.14A1.82,1.82,0,0,0,7.41,1.36a12,12,0,0,0-.69,8.84l0,.12-.08.1A15.32,15.32,0,0,0,3.5,19.49C3.5,29.37,7.81,35.1,16.68,37l.26.06-.07.26a15.46,15.46,0,0,0-.68,4.31v.44l-.2,0c-4.85.93-6.61-.89-8.55-3.56-1-1.42-2.4-3.36-4.92-3.82A2.32,2.32,0,0,0,1,35,1.74,1.74,0,0,0,0,36.14,2.33,2.33,0,0,0,.3,37.7a1.74,1.74,0,0,0,1.16.91A7.16,7.16,0,0,1,4.14,41C6,43.55,8.92,47.38,15.9,46.45l.28,0v4.21a1.93,1.93,0,0,0,2.06,2.05,1.93,1.93,0,0,0,2.06-2.05v-9A5.8,5.8,0,0,1,22,37.3a1.6,1.6,0,0,0,.43-2l0-.08a2,2,0,0,0-1.66-1.43C14.39,32.93,7.61,31,7.61,19.72a10.6,10.6,0,0,1,2.83-7.31,2,2,0,0,0,.41-2.06,10.13,10.13,0,0,1-.24-5.9l.06-.23.23,0a15.52,15.52,0,0,1,6.1,3,2,2,0,0,0,1.84.19A27.9,27.9,0,0,1,34,7.49a2.23,2.23,0,0,0,1.67-.21,19.22,19.22,0,0,1,6-3l.24-.06.06.24a9.28,9.28,0,0,1-.24,5.68c-.25,1-.13,1.68.37,2A10.22,10.22,0,0,1,45,19.49c0,11.21-6.64,13.41-13.14,14.08A1.71,1.71,0,0,0,30.24,35a2.26,2.26,0,0,0,.4,2.07,6.36,6.36,0,0,1,1.69,4.56v9a2.06,2.06,0,0,0,4.11,0V41.86a6.93,6.93,0,0,0-.67-4.27l-.15-.29.32-.07C44.68,35.41,49.11,29.44,49.11,19.49Z"/></symbol><symbol viewBox="0 0 35.66 50.55" id="icon-gitter"><title>gitter</title><rect class="a" x="10.64" y="8.51" width="3.75" height="42.04"/><rect class="a" width="3.76" height="31.4"/><rect class="a" x="21.27" y="8.51" width="3.75" height="42.04"/><rect class="a" x="31.91" y="8.51" width="3.76" height="22.9"/></symbol><symbol viewBox="0 0 60.92 52.19" id="icon-heart"><title>heart</title><path class="a" d="M44.73,0C38.86,0,33.33,4.6,30.55,7.34l-.09.09-.09-.09C27.6,4.6,22.07,0,16.19,0,6.05,0,0,5.93,0,15.85,0,24.08,7.66,31,7.74,31.05L29,51.61a2,2,0,0,0,2.83,0L53.21,31.06c1.81-1.73,7.71-7.95,7.71-15.21C60.92,5.93,54.87,0,44.73,0Zm5.64,28.07h0l0,0L30.46,47.26l-.09-.08L10.54,28.06c-.67-.63-6.42-6.23-6.42-12.21,0-9.7,6.57-11.73,12.07-11.73,5.15,0,10.91,5.53,12.69,7.66a2.13,2.13,0,0,0,3.15,0c1.79-2.13,7.55-7.66,12.69-7.66,5.51,0,12.07,2,12.07,11.73C56.8,21.68,51.45,27.05,50.37,28.07Z"/></symbol><symbol viewBox="0 0 52.15 56.65" id="icon-package"><title>package</title><path class="a" d="M52.09,12.36s0-.07,0-.11a1.49,1.49,0,0,0-.12-.26l-.09-.12a1.48,1.48,0,0,0-.16-.19l-.12-.1-.09-.08-.12-.06-.08-.05L26.73.14a1.5,1.5,0,0,0-1.25,0L.88,11.39l-.08.05-.12.06-.09.08-.12.1a1.49,1.49,0,0,0-.16.19L.21,12a1.49,1.49,0,0,0-.12.26s0,.07,0,.11a1.49,1.49,0,0,0-.06.39V44.1a1.5,1.5,0,0,0,.89,1.37l24.6,11,.13,0,.11,0a1.35,1.35,0,0,0,.75,0l.11,0,.14,0,24.55-11.4a1.5,1.5,0,0,0,.87-1.36v-31A1.49,1.49,0,0,0,52.09,12.36Zm-26-9.21L47,12.71l-20.86,9-20.9-9ZM3,15l12.48,5.38,9.12,3.93V52.83L3,43.13ZM27.6,52.8V24.34l14.23-6.14L49.15,15V42.79Z"/></symbol><symbol viewBox="0 0 512 512" id="icon-play"><title>play</title><path d="M256,0C114.62,0,0,114.61,0,256S114.61,512,256,512,512,397.38,512,256,397.39,0,256,0Zm0,464C141.13,464,48,370.87,48,256S141.13,48,256,48s208,93.13,208,208S370.88,464,256,464ZM192,144,384,256,192,368Z"/></symbol><symbol viewBox="0 0 512 512" id="icon-rocket"><title>rocket</title>  <path d="M352 32l-160 160h-96l-96 128c0 0 101.708-28.326 161.033-15.042l-161.033 207.042 210.951-164.072c29.419 67.327-18.951 164.072-18.951 164.072l128-96v-96l160-160 32-160-160 32z"/> </symbol><symbol viewBox="0 0 54.52 54.78" id="icon-tools"><title>tools</title><path class="a" d="M40.18,21.25a10.43,10.43,0,0,0,3.26.49,11.15,11.15,0,0,0,7.95-3.26A10.56,10.56,0,0,0,53.6,6.67,1.21,1.21,0,0,0,52.7,6a1.26,1.26,0,0,0-1.08.36l-5.88,5.92a.57.57,0,0,1-.81,0L42.41,9.72a.56.56,0,0,1,0-.81l6-6a1.22,1.22,0,0,0,.36-1.07A1.18,1.18,0,0,0,48,1,10.56,10.56,0,0,0,36.17,3.09a11.41,11.41,0,0,0-2.68,11.33L14.34,33.53A10.43,10.43,0,0,0,11.08,33,11.15,11.15,0,0,0,3.13,36.3,10.56,10.56,0,0,0,.92,48.11a1.21,1.21,0,0,0,2,.35l5.88-5.92a.79.79,0,0,1,.45-.22.42.42,0,0,1,.36.09l2.52,2.65a.5.5,0,0,1,.15.37.64.64,0,0,1-.2.45L6.2,51.74a1.23,1.23,0,0,0-.36,1.08,1.26,1.26,0,0,0,.67.91,10.32,10.32,0,0,0,11.89-2,11.41,11.41,0,0,0,2.68-11.33ZM18.58,40.48h0a8.92,8.92,0,0,1-1.89,9.46,7.91,7.91,0,0,1-7.41,2.17l4.5-4.54a3,3,0,0,0,0-4.22L11.3,40.7A3.1,3.1,0,0,0,7,40.79L2.56,45.3A8.28,8.28,0,0,1,4.84,38a8.86,8.86,0,0,1,6.24-2.54,8,8,0,0,1,3.1.61,1.32,1.32,0,0,0,1.32-.25L35.73,15.59A1.21,1.21,0,0,0,36,14.25,8.93,8.93,0,0,1,37.87,4.8a7.91,7.91,0,0,1,7.41-2.17L40.75,7.16a2.89,2.89,0,0,0-.9,2.07,3,3,0,0,0,.9,2.16l2.52,2.52a3.06,3.06,0,0,0,4.27,0L52,9.43a8.28,8.28,0,0,1-2.27,7.3,8.87,8.87,0,0,1-6.24,2.54,8,8,0,0,1-3.1-.61,1.3,1.3,0,0,0-1.32.25L18.83,39.15A1.21,1.21,0,0,0,18.58,40.48Z"/><path class="a" d="M5.4,10.51a1.21,1.21,0,0,0,1.71,0l.83-.83L20.55,22.3a1.19,1.19,0,0,0,1.71,0,1.23,1.23,0,0,0,.36-.91,1.11,1.11,0,0,0-.36-.8L9.64,8l.83-.83a1.24,1.24,0,0,0,0-1.75l-5-5A1.22,1.22,0,0,0,4.57,0h0a1.1,1.1,0,0,0-.8.36L.36,3.76A1.23,1.23,0,0,0,0,4.67a1.11,1.11,0,0,0,.36.8ZM2.88,4.62,4.53,3,7.86,6.3,6.21,7.95Z"/><path class="a" d="M36.57,29.87a1.18,1.18,0,0,0-.91-.36,1.1,1.1,0,0,0-.8.36,1.23,1.23,0,0,0-.36.91,1.1,1.1,0,0,0,.36.8L51.7,48.41a.56.56,0,0,1,0,.82l-2.43,2.55a.61.61,0,0,1-.85,0L31.54,35a1.17,1.17,0,0,0-.91-.36,1.1,1.1,0,0,0-.8.36,1.23,1.23,0,0,0-.36.91,1.1,1.1,0,0,0,.36.8L46.75,53.49a3,3,0,0,0,4.31,0L53.45,51a3,3,0,0,0,0-4.27Z"/></symbol></svg>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.7/jquery.mmenu.all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-packery@2/packery-mode.pkgd.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  <script src="../js/global.js"></script>
+  <script src="../js/modernizr.js"></script>
+  
+  
+  
+  <script src="../js/articles.js"></script>
+  
+
+</body>
