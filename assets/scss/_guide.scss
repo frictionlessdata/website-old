@@ -30,19 +30,21 @@
 
     @include media-breakpoint-up(lg) {
       background-image: url('../img/field-guide-banner-bg.png');
-      background-size: auto 100%;
+      background-size: auto map-get($container-max-widths, lg)/2;
       background-repeat: repeat-x;
+      background-position: center bottom;
       padding: 0;
 
       .container {
         background-image: url('../img/field-guide-banner-img.png');
-        background-size: auto 100%;
+        background-size: auto map-get($container-max-widths, lg)/2;
         background-repeat: no-repeat;
-        background-position: right top;
-        height: map-get($container-max-widths, lg)/2.5;
+        background-position: right bottom;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top: map-get($container-max-widths, lg)/16;
+        padding-bottom: map-get($container-max-widths, lg)/12;
       }
       h1 {
         font-size: map-get($container-max-widths, lg)/12;
@@ -54,8 +56,12 @@
     }
 
     @include media-breakpoint-up(xl) {
+      background-size: auto map-get($container-max-widths, xl)/2;
+
       .container {
-        height: map-get($container-max-widths, xl)/2.5;
+        background-size: auto map-get($container-max-widths, xl)/2;
+        padding-top: map-get($container-max-widths, xl)/16;
+        padding-bottom: map-get($container-max-widths, xl)/12;
       }
       h1 {
         font-size: map-get($container-max-widths, xl)/12;
