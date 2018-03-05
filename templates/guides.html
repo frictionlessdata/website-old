@@ -7,11 +7,16 @@
   <div class="container">
     <h1><small>{{ this.pretitle }}</small> {{ this.title }}</h1>
     {{ this.intro }}
+    {% if this.text_heading %}
+    <div class="actions">
+      <a class="btn btn-dark" href="#guides">{{ this.cta_list }}</a> <a class="btn btn-light" href="#{{ this.text_heading |replace(" ", "-") |lower }}">{{ this.cta_text }}</a>
+    </div>
+    {% endif %}
   </div>
 </div>
 
-<div class="container">
-  <div class="main">
+<div id="guides" class="main">
+  <div class="container">
     <ul class="guide-list">
       {% for child in this.children %}
       {{ render_guide_list(child) }}
@@ -20,4 +25,16 @@
   </div>
 </div>
 
+{% if this.text %}
+<section id="{{ this.text_heading |replace(" ", "-") |lower }}" class="text">
+  <article class="container">
+    {% if this.text_heading %}
+    <h2>{{ this.text_heading }}</h2>
+    {% endif %}
+    <div>
+      {{ this.text }}
+    </div>
+  </article>
+</section>
+{% endif %}
 {% endblock %}

@@ -22,6 +22,15 @@
       font-size: 16px;
     }
 
+    .btn {
+      margin: $spacer/2 $spacer $spacer/2 0;
+    }
+
+    .btn-light,
+    .btn-light:hover {
+      color: theme-color("primary");
+    }
+
     @include media-breakpoint-up(md) {
       p {
         font-size: 17px;
@@ -135,6 +144,36 @@
 
       p {
         margin: 0;
+      }
+    }
+  }
+
+  .page > section {
+    &:nth-child(odd) {
+      background-color: $gray-100;
+    }
+
+    &.text {
+      padding-top: $spacer*4;
+      padding-bottom: $spacer*4;
+    }
+
+    .container {
+      & > h1,
+      & > h2 {
+        font-size: 2em;
+        font-weight: normal;
+        color: rgba($body-color, 0.75);
+      }
+
+      & > div {
+        font-family: $font-family-sans-serif;
+        margin-top: 1em;
+        
+        @include media-breakpoint-up(lg) {
+          column-count: 2;
+          column-gap: $spacer*2;
+        }
       }
     }
   }
