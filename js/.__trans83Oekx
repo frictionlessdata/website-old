@@ -47,3 +47,18 @@ $(document).ready(function() {
   });
 
 });
+
+
+$(document).ready(function() {
+    $("#my-menu").mmenu({
+       // options
+    }, {
+       // configuration
+       classNames: {
+          fixedElements: {
+             fixed: "fix",
+             sticky: "stick"
+          }
+       }
+    });
+ });
