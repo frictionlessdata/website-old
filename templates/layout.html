@@ -12,7 +12,7 @@
   </head>
   <body class="{{ this._model }}-template">
     <div class="wrapper">
-      <header class="site-header">
+      <header class="site-header contains-menu">
         <div class="container">
           <a class="logo-symbol" href="{{ '/'|url }}">
             <svg><use xlink:href="#icon-f" /></svg>
@@ -20,7 +20,7 @@
           <a class="logo-type">
             {% include 'includes/logo.svg' %}
           </a>
-
+          <span class="offset"></span>
           <div class="main-nav dropdown">
             <a href="#main-nav" class="dropdown-toggle btn">
 

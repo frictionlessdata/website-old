@@ -15,6 +15,13 @@ $(document).ready(function() {
      navbar: {
        title: ""
      }
+  }, {
+    // configuration
+    classNames: {
+      fixedElements: {
+        sticky: "contains-menu"
+      }
+    }
   });
 
   $("#context-nav").mmenu({
