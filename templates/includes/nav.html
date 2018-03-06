@@ -154,7 +154,7 @@
   </a>
   <ul>
   {% for child in site.query('/field-guide') %}
-  <li class="{% if this._path.startswith(href) %}active-parent{% endif %}">
+  <li class="{% if this._path.startswith(child.path) %}active-parent{% endif %}">
     <a href="{{ child.path|url }}">{{ child.title }}</a>
 
     <ul>
