@@ -63,7 +63,7 @@ While it is a fairly technical process to set up, subsequent validation of your 
 
 If none of the options above are relevant for you i.e. because you use a different data publishing and storage platform, you can run goodtables as part of your data publishing process, either by executing the command-line tool, or using it with Python. Although this will potentially require custom development, it is the most flexible option, allowing you to specify exactly when and how the data is validated. For example, if you aggregate data from multiple sources, you could validate the unmodified data, to catch errors early, along with validating your modified data before publication. Find a detailed set of instructions [here on GitHub](https://github.com/frictionlessdata/goodtables-py/).
 
-gtio]: https://goodtables.io/ "Goodtables.io"
+[gtio]: https://goodtables.io/ "goodtables.io"
 [github]: https://github.com/ "GitHub"
 [s3]: https://aws.amazon.com/s3/ "Amazon S3"
 [s3-region-bug]: https://github.com/frictionlessdata/goodtables.io/issues/136 "Can't add S3 bucket with other region that Oregon (us-west-2)"
@@ -82,6 +82,6 @@ ft_img: auto-validate.png
 ---
 required: Command-line
 ---
-tools: Goodtables
+tools: goodtables
 ---
 sort_key: 5
