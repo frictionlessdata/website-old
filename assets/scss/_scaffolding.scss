@@ -1,3 +1,5 @@
+$header-height: 90px;
+
 .svgstore {
   display: none;
 }
@@ -112,16 +114,31 @@ img {
 .site-header {
   @include rev-out;
   font-family: $font-family-sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+  .offset {
+    height: $header-height;
+  }
+
+  @include media-breakpoint-up(xl) {
+    position: static;
+
+    .offset {
+      height: 0;
+    }
+  }
 
   .container {
     display: flex;
-    height: 90px;
+    height: $header-height;
     align-items: center;
   }
 
   .logo-symbol {
-    width: 90px;
-    height: 90px;
+    width: $header-height;
+    height: $header-height;
   }
 
   .logo-type {

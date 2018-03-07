@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% from "macros/docs.html" import render_doc_list %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="banner">
+  <div class="container">
+    <h1>{{ this.title }}</h1>
+    {% if this.subtitle %}
+    <span>{{ this.subtitle }}</span>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="main card-columns">
+    {% for category in site.query('/doc-categories') %}
+    {% if category.children %}
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">
+          <!--<a href="{{ category|url }}">-->
+            {{ category.name }}
+          <!--</a>-->
+        </h2>
+        {% if category.description %}
+        <p>
+          {{ category.description }}
+        </p>
+        {% endif %}
+      </div>
+      <div class="card-body">
+        <ul>
+          {% for child in category.children %}
+          {{ render_doc_list(child, from_index=true) }}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  {% endblock %}
+
+</div>

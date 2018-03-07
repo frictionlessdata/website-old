@@ -14,7 +14,55 @@
     </aside>
 
     <article class="content">
-      <h1>{{ this.title }}</h1>
+      <header>
+        <div class="text">
+          <h1>{{ this.title }}</h1>
+          {{ this.intro }}
+        </div>
+        <div class="image">
+          <div>
+            {% for image in this.attachments.images %}
+            {% if image|url == this.ft_img|url %}
+            <img src="{{ image|url }}" width="{{ image.width / 2 }}" height="{{ image.height / 2 }}" alt="">
+            {% endif %}
+            {% endfor %}
+          </div>
+          {% for image in this.attachments.images %}
+          {% if image|url == this.ft_img|url %}
+          <img src="{{ image|url }}" width="{{ image.width / 2 }}" height="{{ image.height / 2 }}" alt="">
+          {% endif %}
+          {% endfor %}
+        </div>
+      </header>
+
+      <div class="meta">
+        {% if this.tools %}
+        <dl class="tools">
+          <dt>
+            {{ bag('global_content').tools_used }}
+          </dt>
+          {% for item in this.tools %}
+          <dd>
+            <a>{{ item }}</a>
+          </dd>
+          {% endfor %}
+        </dl>
+        {% endif %}
+
+        {% if this.required %}
+        <dl>
+          <dt>
+            {{ bag('global_content').knowledge_required }}
+          </dt>
+          {% for item in this.required %}
+          <dd>
+            <a>{{ item }}</a>
+          </dd>
+          {% endfor %}
+        </dl>
+        {% endif %}
+      </div>
+
       {{ this.body }}
     </article>
   </div>

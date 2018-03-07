@@ -29,7 +29,7 @@ In a certain sense, a Tabular Data Package is sort of like an open-source, cross
 
 To read more about Data Package integration at [data.world][dataworld], read our post: [Try This: Frictionless data.world](https://meta.data.world/try-this-frictionless-data-world-ad36b6422ceb#.rbbf8k40t).  Sign up, and starting playing with data.
 
-[^package]: Tabular Data Package: <http://frictionlessdata.io/guides/tabular-data-package/>
+[^package]: Tabular Data Package: <http://frictionlessdata.io/docs/tabular-data-package/>
 [^datapackage]: Data Packages: <http://frictionlessdata.io/data-packages/>
 [^rdf]: RDF: Resource Description Framework: <https://www.w3.org/RDF/>
 [^tdp]: Tabular Data Package specifications: <http://frictionlessdata.io/specs/tabular-data-package/>

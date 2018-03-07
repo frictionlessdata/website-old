@@ -1,0 +1,309 @@
+// landing page
+.guides-template {
+  .banner {
+    background-color: theme-color("primary");
+    font-weight: 600;
+    line-height: 1.5;
+
+    h1 {
+      font-weight: 800;
+      margin-top: 0.5em;
+
+      small {
+        display: block;
+        font-size: 0.25em;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0.1em;
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .btn {
+      margin: $spacer/2 $spacer $spacer/2 0;
+    }
+
+    .btn-light,
+    .btn-light:hover {
+      color: theme-color("primary");
+    }
+
+    @include media-breakpoint-up(md) {
+      p {
+        font-size: 17px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../img/field-guide-banner-bg.png');
+      background-size: auto map-get($container-max-widths, lg)/2;
+      background-repeat: repeat-x;
+      background-position: center bottom;
+      padding: 0;
+
+      .container {
+        background-image: url('../img/field-guide-banner-img.png');
+        background-size: auto map-get($container-max-widths, lg)/2;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: map-get($container-max-widths, lg)/16;
+        padding-bottom: map-get($container-max-widths, lg)/12;
+      }
+      h1 {
+        font-size: map-get($container-max-widths, lg)/12;
+        margin-top: 0;
+      }
+      p {
+        max-width: 50%;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      background-size: auto map-get($container-max-widths, xl)/2;
+
+      .container {
+        background-size: auto map-get($container-max-widths, xl)/2;
+        padding-top: map-get($container-max-widths, xl)/16;
+        padding-bottom: map-get($container-max-widths, xl)/12;
+      }
+      h1 {
+        font-size: map-get($container-max-widths, xl)/12;
+      }
+      p {
+        font-size: round(map-get($container-max-widths, xl)/64);
+      }
+    }
+  }
+
+  .guide-list {
+    margin: 0;
+    padding: 0;
+    @include make-row();
+    font-size: 15px;
+
+    li {
+      display: inline-flex;
+      font-family: $font-family-sans-serif;
+      @include make-col-ready();
+      padding-bottom: $spacer*3;
+
+      @include media-breakpoint-up(lg) {
+        @include make-col(6);
+      }
+
+      @include media-breakpoint-up(xl) {
+        align-items: center;
+      }
+
+      .image {
+        display: none;
+        order: 2;
+
+        @include media-breakpoint-up(sm) {
+          display: inline-block;
+          width: 150px;
+          height: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          flex-shrink: 0;
+          margin-left: $spacer*2;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 190px;
+          height: 100%;
+          border-width: 4px;
+        }
+      }
+
+      .read {
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 0.5em;
+        font-size: 1.1em;
+      }
+
+      h1 {
+        font-weight: 800;
+        font-size: 28px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 32px;
+        }
+
+        a {
+          color: inherit;
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .page > section {
+    &:nth-child(odd) {
+      background-color: $gray-100;
+    }
+
+    &.text {
+      padding-top: $spacer*4;
+      padding-bottom: $spacer*4;
+    }
+
+    .container {
+      & > h1,
+      & > h2 {
+        font-size: 2em;
+        font-weight: normal;
+        color: rgba($body-color, 0.75);
+      }
+
+      & > div {
+        font-family: $font-family-sans-serif;
+        margin-top: 1em;
+        
+        @include media-breakpoint-up(lg) {
+          column-count: 2;
+          column-gap: $spacer*2;
+        }
+      }
+    }
+  }
+}
+
+// article page
+.guide-template {
+
+  .main .content {
+    position: static;
+  }
+
+  header {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+
+    h1 {
+      font-weight: 800;
+    }
+
+    .image {
+      & > img {
+        display: none;
+      }
+      & > div {
+        display: none;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      font-size: 22px;
+
+      h1 {
+        font-size: 64px;
+      }
+
+      .text {
+        width: ceil((100% / 3) *2);
+        flex-shrink: 0;
+      }
+
+      .image {
+
+        & > img {
+          display: block;
+          visibility: hidden;
+        }
+
+        & > div {
+          display: block;
+          position: absolute;
+          left: 50%;
+          width: 50%;
+          z-index: -1;
+          overflow: hidden;
+          margin-top: -10px;
+
+          img {
+            margin-left: round(((map-get($container-max-widths, lg) / 400) * 66) + 30);
+          }
+        }
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .image {
+        & > div {
+          img {
+            margin-left: round(((map-get($container-max-widths, xl) / 400) * 90) + 60);
+          }
+        }
+      }
+    }
+  }
+
+  .meta {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: $font-family-sans-serif;
+    margin-bottom: $spacer;
+
+    dl {
+      display: inline-flex;
+      flex-wrap: wrap;
+      background-color: $gray-200;
+      align-items: center;
+      margin-right: 2px;
+      padding: $spacer*0.25 $spacer/2 $spacer*0.25 $spacer;
+
+      dt {
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+
+        &::after {
+          content: ':';
+        }
+      }
+
+      dd {
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+
+        a {
+          display: inline-block;
+          @include rev-out;
+          font-weight: 600;
+          padding: 0.25em 1em;
+          margin: $spacer/2;
+
+          &:hover {
+            color: $body-bg;
+          }
+        }
+      }
+
+      &.tools {
+        dd a {
+          background-color: theme-color("primary");
+        }
+      }
+    }
+  }
+}

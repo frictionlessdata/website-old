@@ -1,0 +1,121 @@
+title: Data publication workflow example
+---
+intro: There's a lot to see in the world of Frictionless Data. If you're confused about how it all comes together, take a look at our publication workflow example.
+---
+body:
+
+In this section, we will walk through the process of publishing, using a dataset of the periodic table of elements as an example. We will define its metadata by creating a data package, describe the structure of the CSV using a Table Schema, validate it on Goodtables, and finally publish to a public CKAN instance. Let's start.
+
+First, let's look at the data. It is available as a CSV file on [this link][data.csv]. The first five rows look like:
+
+| atomic number | symbol | name      | atomic mass | metal or nonmetal?   |
+|           --- | ---    | ---       |         --- | ---                  |
+|             1 | H      | Hydrogen  |     1.00794 | nonmetal             |
+|             2 | He     | Helium    |    4.002602 | noble gas            |
+|             3 | Li     | Lithium   |       6.941 | alkali metal         |
+|             4 | Be     | Beryllium |    9.012182 | alkaline earth metal |
+|             5 | B      | Boron     |      10.811 | metalloid            |
+
+As we can see, there are some numeric fields, both integers (atomic number) and floating point (atomic mass), and others are textual with strings. Our first objective is to describe the metadata by creating a Data Package, and its contents by creating a Table Schema.
+
+## Step 1. Package our data as a Data Package
+
+The easiest way to create a data package is using the [Data Package Creator][dp:creator]. It provides a graphical interface to describe the data package's metadata, add resources, and define the schema for tabular resources. This is what you should see when you first open it:
+
+![Data Package Creator](dp-creator.png)
+
+The left side bar contains the metadata for the Data Package as a whole, and the main part on the right contains the metadata for each specific resource.
+
+Let's add our CSV resource. On the main section of the page, fill the inputs with:
+
+* **Name**: periodic-table
+* **Path**: https://raw.githubusercontent.com/frictionlessdata/example-data-packages/d2b96aaed6ab12db41d73022a2988eeb292116e9/periodic-table/data.csv
+
+!! Resource and data package names must be unique, lowercase, can contain only letters, numbers, and the characters ".", "-" and "_".
+
+And click on the *Load* button. After a few seconds, a new box should appear with the text "Add all inferred fields (data has 5 extra column(s))". Click on it, and the fields will be created, with their data types and formats inferred from the data. This saves us time, as we don't need to start from scratch.
+
+The Data Package Creator got almost all data types correctly, except the {atomic mass} column. It inferred the column as having integer values, but as we can see from the data, the numbers aren't whole, they have floating points. Just change the type to **number**, and that's it.
+
+!! You can view a sample of the data in each column by hovering the mouse below its name.
+
+Usually, we would now add titles and descriptions to each field. However, as this is a simple dataset, the field names should be enough. In the end, the fields are:
+
+| Name               | Data type | Data format |
+| ---                | ---       | ---         |
+| atomic number      | integer   | default     |
+| symbol             | string    | default     |
+| name               | string    | default     |
+| atomic mass        | number    | default     |
+| metal or nonmetal? | string    | default     |
+
+We can add more information about this resource by clicking on the gear icon to the left of the "Load" button. Add the following information:
+
+* **Title**: Periodic table
+* **Profile**: Tabular Data Resource
+* **Format**: csv
+* **Encoding**: (blank)
+* **Description**: (blank)
+
+After this, we're only missing metadata for the data package as a whole, available on the left side bar. Add:
+
+* **Name**: periodic-table
+* **Title**: Periodic table
+* **Profile**: Tabular Data Package
+* **Description**: Periodic table of chemical elements
+* **Home Page**: https://github.com/frictionlessdata/example-data-packages/tree/master/periodic-table
+* **Version**: 1.0.0
+* **License**: CC0-1.0
+* **Author**: (blank)
+
+![](dp-creator-filled.png)
+
+Let's validate the data package, to ensure we haven't missed anything. Just click on the *Validate* button on the bottom left, and you should see a green message "Data package is valid!". This means that the data package is valid, but not necessarily its contents (we'll check them in the next step).
+
+Save the data package by clicking on the *Download* button. This will download a "datapackage.json" file that contains everything we added here. Our next step is to use it to validate the data.
+
+## Step 2. Validate our data package and its contents
+
+We now have a data package with our CSV file, including with a table schema describing the contents and types of its columns. Our final step before publishing is validating the data, so we can avoid publishing data with errors. To do so, we'll use goodtables.
+
+[Goodtables][goodtables] is a tabular data validator that allows you to automatically check for errors such as blank headers, duplicate rows, data with the wrong type (e.g. should be a number but is a date), and others. As it supports data packages, we can simply load the one we created in the previous step. Let's do it.
+
+1. Go to https://try.goodtables.io
+1. On the *Source* input, click on the *Upload File* link.
+1. Click on *Browse...* and select the *datapackage.json* file you downloaded in the previous step
+1. Click on *Validate*
+
+After a few seconds, you should see:
+
+![try.goodtables](try-goodtables.png)
+
+This means that:
+
+* The data package is valid
+* The CSV file is valid
+* There are no blank rows or headers, or duplicate rows
+* The data is valid according to the table schema we created (numbers are numbers, and so on)
+
+Although it can't tell you if your data is correct, for example if the Aluminium
+atomic mass is 26.9815386, it does ensure you that all atomic mass values are
+numbers, among the other validations.
+
+Now that we've created a data package, described our data with a table schema,
+and validated it, we can finally publish it.
+
+## Step 3. Publish the data
+
+TODO: publish to datahub.ckan.io.
+
+[data.csv]: https://raw.githubusercontent.com/frictionlessdata/example-data-packages/d2b96aaed6ab12db41d73022a2988eeb292116e9/periodic-table/data.csv
+[dp:creator]: https://create.frictionlessdata.io/ "Data Package Creator"
+[goodtables]: https://goodtables.io
+
+---
+ft_img: workflow.png
+---
+required: 
+---
+tools: Data Package Creator, Goodtables
+---
+sort_key: 6

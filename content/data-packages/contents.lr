@@ -61,12 +61,12 @@ For more information on each specification, see below:
 
 - [Full Specification][spec-csvddf]
 
-[dp]: /guides/data-package
+[dp]: /docs/data-package
 [dp-main]: /data-packages
-[tdp]: /guides/tabular-data-package/
-[ts]: /guides/table-schema/
+[tdp]: /docs/tabular-data-package/
+[ts]: /docs/table-schema/
 [ts-types]: /specs/table-schema/#field-descriptors
-[csv]: /guides/csv/
+[csv]: /docs/csv/
 [json]: http://en.wikipedia.org/wiki/JSON
 
 [spec-dp]: /specs/data-package/
@@ -74,12 +74,12 @@ For more information on each specification, see below:
 [spec-ts]: /specs/table-schema/
 [spec-csvddf]: /specs/csv-dialect/
 
-[publish]: /guides/publish/
-[pub-tabular]: /guides/publish-tabular/
-[pub-online]: /guides/publish-online/
-[pub-any]: /guides/publish-any/
-[pub-geo]: /guides/publish-geo/
-[pub-faq]: /guides/publish-faq/
+[publish]: /docs/publish/
+[pub-tabular]: /docs/publish-tabular/
+[pub-online]: /docs/publish-online/
+[pub-any]: /docs/publish-any/
+[pub-geo]: /docs/publish-geo/
+[pub-faq]: /docs/publish-faq/
 
 [tools]: /software/
 [dp-creator]: http://data.okfn.org/tools/create

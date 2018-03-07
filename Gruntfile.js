@@ -62,6 +62,16 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      options: {
+        separator: ';',
+      },
+      guides: {
+        src: ['node_modules/smooth-scroll/dist/js/smooth-scroll.js', 'assets/js/src/guides.js'],
+        dest: 'assets/js/guides.js',
+      },
+    },
+
 		watch: {
 			css: {
 				files: '**/*.scss',
@@ -95,6 +105,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks("grunt-modernizr");
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('icons', ['svgstore']);
   grunt.registerTask('default',['watch']);

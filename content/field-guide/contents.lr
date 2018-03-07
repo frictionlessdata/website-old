@@ -1,0 +1,27 @@
+_model: guides
+---
+pretitle: Frictionless Data
+---
+title: Field guide
+---
+intro:
+
+The Frictionless Data Field Guide provides step-by-step instructions for improving your data publishing workflow. This field guide will introduce new ways of working informed by Frictionless Data software, that can be used on their own, or adapted into your own personal and organisational workflows. 
+---
+text:
+
+For many open data users, getting insight from data is not always a straightforward process. Data is often hard to find, archived in difficult to use formats, poorly structured and/or incomplete. These issues create friction and make it difficult to use, publish and share data. The Frictionless Data initiative at Open Knowledge International aims to reduce friction in working with data, with a goal to make it effortless to transport data among different tools and platforms for further analysis.
+
+The Frictionless Data Field Guide is designed to provided step-by-step instructions for improving your data publishing workflow. This field guide will introduce new ways of working informed by Frictionless Data software, that can be used on their own, or adapted into your own personal and organisational workflows.
+
+We think that it’s important for everybody involved in the publication of data to have access to tools that help automate and improve the quality of data, and this Field Guide details open data publication approaches with a focus on user-facing tools for anyone interested in publishing data. 
+
+All Frictionless Data tools mentioned in this field guide are built with open data publication workflows in mind, with a focus on tabular data, and there is a high degree of flexibility for extended use cases, which includes handling different types of open data.
+
+Split into six sections, the format for this field guide allows you to pick and choose what is useful for you. 
+---
+text_heading: About the Field Guide
+---
+cta_list: Sounds good
+---
+cta_text: Tell me more
