@@ -12,7 +12,7 @@ In this section, you will learn how to setup automatic tabular data validation u
 
 We will show how to set up automated tabular data validations for data published on:
 
-* [CKAN](https://ckan.org/), an open source data publishing platform;
+* [CKAN][ckan], an open source data publishing platform;
 * [GitHub](https://github.com/), a hosting service;
 * [Amazon S3](https://aws.amazon.com/s3/), a data storage service.
 
@@ -73,7 +73,7 @@ It is a technical process to set up, as you need to know how to configure your A
 
 ## Custom setup of automatic tabular data validation
 
-If you don't use any of the oficially supported data publishing platforms, you can use [goodtables-py][gt-py] directly to validate your data. This is the most flexible option, as you can configure exactly when, and how your tabular data is validated. For example, if your data come from an external source, you could validate it once before you process it (so you catch errors in the source data), and once after cleaning, just before you publish it, so you catch errors introduced by your data processing.
+If you don't use any of the officially supported data publishing platforms, you can use [goodtables-py][gt-py] directly to validate your data. This is the most flexible option, as you can configure exactly when, and how your tabular data is validated. For example, if your data come from an external source, you could validate it once before you process it (so you catch errors in the source data), and once after cleaning, just before you publish it, so you catch errors introduced by your data processing.
 
 The instructions on how to do this are technical, and can be found on [https://github.com/frictionlessdata/goodtables-py][gt-py].
 

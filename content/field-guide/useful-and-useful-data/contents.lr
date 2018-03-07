@@ -1,4 +1,4 @@
-title: Used, useful, utilised data
+title: Used and useful data
 ---
 intro: Concerned that your data is just not being used? We've got some great tips, and best practices to improve the uptake in your data use
 ---
@@ -362,7 +362,7 @@ To summarize, these are the folders, files, and their respective contents in thi
 
 ** (Optional) Step 3. Enable automatic tabular data validation **
 
-You can automatically validate your tabular data files using [goodtables.io][gt.io]. This will take only a few minutes, and will ensure you'll always know when there are errors with your dataset, maintaining its quality. [Read the walkthrough here](/field-guide/auto-validated-tabular-data).
+You can automatically validate your tabular data files using [goodtables.io][gt.io]. This will take only a few minutes, and will ensure you'll always know when there are errors with your dataset, maintaining its quality. [Read the walkthrough here](/field-guide/automatically-validated-tabular-data).
 
 The sample datasets used in this example, that is, List of schools in Birmingham, UK are available [in this repository](https://github.com/vitorbaptista/birmingham_schools).
 
@@ -389,7 +389,7 @@ Some best practices:
   Examples of feedback loops that data publishers can set up include:
 
   * Adding a comments section in a data platform. Needless to say, the comments section should be monitored closely to ensure that responses are sent in time, and that discussions remain respectful and on topic.
-  * A dedicated social platform channel, such as a Google Group or Facebook group,with a prominently placed link from the data platform for sharing updates, collating and responding to feedback.
+  * A dedicated social platform channel, such as a Google Group or Facebook group, with a prominently placed link from the data platform for sharing updates, collating and responding to feedback.
   * An e-mail address where users can contact the people responsible for the datasets for clarifications, suggestions, or to report errors.
 
 3. Meet open data communities in the places they already meet
