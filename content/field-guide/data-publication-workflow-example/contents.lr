@@ -105,11 +105,31 @@ and validated it, we can finally publish it.
 
 ## Step 3. Publish the data
 
-TODO: publish to datahub.ckan.io.
+Our final step is to publish the dataset. The specifics instructions will vary depend on where you're publishing to. In this example, we'll see how to publish to a public [CKAN][ckan] instance, the [https://datahub.ckan.io][datahub]. If you want to use it and don't have an account yet, you can request one via [our community page][datahub:request-org]. Let's start.
+
+After you're logged in, go to the [datasets list page][datahub:dataset-list] and click on the [Import Data Package][datahub:import-dp] button. On this form, click on "Upload", select the `datapackage.json` file we created in the previous step, and choose your organisation. We'll keep the visibility as private for now, so we can review the dataset before it's made public.
+
+![Importing a data packate to the DataHub](datahub-import-datapackage.png)
+
+!! If you don't see the "Import Data Package" button in your CKAN instance, install the [ckanext-datapackager][ckanext-datapackager] extension to add support for importing and exporting your datasets as data packages.
+
+You will be redirected to the newly created dataset on CKAN, with its metadata and resource extracted from the data package. Double check if everything seems fine, and when you're finished, click on the "Manage" button and change the visibility to "Public".
+
+[![Data package in CKAN](datahub-dataset.png)][datahub:dataset]
+
+That's it! CKAN supports data packages via the [ckanext-datapackager][ckanext-datapackager] extension, so importing (and exporting) data packages is trivial, as all the work on describing the dataset was done while creating the data package.
 
 [data.csv]: https://raw.githubusercontent.com/frictionlessdata/example-data-packages/d2b96aaed6ab12db41d73022a2988eeb292116e9/periodic-table/data.csv
 [dp:creator]: https://create.frictionlessdata.io/ "Data Package Creator"
 [goodtables]: https://goodtables.io
+[published-dataset]: https://datahub.ckan.io/dataset/period-table-9896953431
+[ckan]: https://ckan.org
+[datahub]: https://datahub.ckan.io
+[datahub:request-org]: https://discuss.okfn.org/c/open-knowledge-labs/datahub
+[datahub:dataset-list]: https://datahub.ckan.io/dataset
+[datahub:import-dp]: https://datahub.ckan.io/import_datapackage
+[datahub:dataset]: https://datahub.ckan.io/dataset/period-table-9896953431
+[ckanext-datapackager]: https://github.com/frictionlessdata/ckanext-datapackager
 
 ---
 ft_img: workflow.png
