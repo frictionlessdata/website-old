@@ -92,6 +92,7 @@ The instructions on how to do this are technical, and can be found on [https://g
 [gtio-dataschema]: writing_data_schema.html "Writing a data schema"
 [gtio-configuring]: configuring.html "Configuring goodtables.io"
 [gt-py]: https://github.com/frictionlessdata/goodtables-py
+[ckan]: https://ckan.org
 
 ---
 ft_img: auto-validate.png
