@@ -133,8 +133,8 @@ If you regularly update your data or maintain many different datasets, running t
 ---
 ft_img: valid.png
 ---
-required:
+required: Command-line
 ---
-tools: goodtables
+tools: try.goodtables.io, goodtables commandline tool
 ---
 sort_key: 3

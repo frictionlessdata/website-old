@@ -97,8 +97,8 @@ The instructions on how to do this are technical, and can be found on [https://g
 ---
 ft_img: auto-validate.png
 ---
-required: Command-line
+required: 
 ---
-tools: goodtables
+tools: goodtables.io
 ---
 sort_key: 5

@@ -134,8 +134,8 @@ That's it! CKAN supports data packages via the [ckanext-datapackager][ckanext-da
 ---
 ft_img: workflow.png
 ---
-required: 
+required:
 ---
-tools: Data Package Creator, Goodtables
+tools: Data Package Creator, goodtables.io
 ---
 sort_key: 6
