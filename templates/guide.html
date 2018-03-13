@@ -43,7 +43,17 @@
           </dt>
           {% for item in this.tools %}
           <dd>
+            {% if item == "Data Package Creator" %}
+            <a href="https://create.frictionlessdata.io/" target="_blank">{{ item }}</a>
+            {% elif item == "Goodtables" or item == "goodtables.io" %}
+            <a href="https://goodtables.io/" target="_blank">Goodtables</a>
+            {% elif item == "try.goodtables.io" %}
+            <a href="https://try.goodtables.io/" target="_blank">{{ item }}</a>
+            {% elif item == "Goodtables CLI" %}
+            <a href="https://github.com/frictionlessdata/goodtables-py" target="_blank">{{ item }}</a>
+            {% else %}
             <a>{{ item }}</a>
+            {% endif %}
           </dd>
           {% endfor %}
         </dl>

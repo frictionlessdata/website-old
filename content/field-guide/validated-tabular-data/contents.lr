@@ -135,6 +135,6 @@ ft_img: valid.png
 ---
 required: Command-line
 ---
-tools: try.goodtables.io, goodtables commandline tool
+tools: try.goodtables.io, Goodtables CLI
 ---
 sort_key: 3
