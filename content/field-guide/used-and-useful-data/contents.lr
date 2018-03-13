@@ -295,11 +295,11 @@ collaboration tools.
 
 Although GitHub offers many useful functionalities, not all datasets are a good fit for it. The main limitations are:
 
-* Invidivual files have less than 100 MB
+* Individual files have less than 100 MB
 * Entire repository have less than 1 GB
   * The repository size includes not only the current files, but all of their previous versions.
 
-You can store larger files using [git-lfs](https://git-lfs.github.com/), but we won't go in details about it on this post.
+You can store larger files using [git-lfs](https://git-lfs.github.com/), but we won't go in details about it in this section.
 
 It's also useful if your data files use text-based file formats like CSV or GeoJSON, as then git is able to show you exactly what changed between two versions of the files. However, even if you use binary file formats like XLS, GitHub is still useful.
 
@@ -314,7 +314,7 @@ The way to structure your dataset depends on your data, and what extra artifacts
 
 Even though we'll see an example that has all of these different types of files, this isn't always the case. For example, datasets that were manually collected might not have any scripts.
 
-This is the final structure:
+Consider this folder structure:
 
 ```
 data/
@@ -333,7 +333,7 @@ README.md
 * **docs/**: Images, sample analysis, and other documentation files regarding the dataset. The main documentation is in `README.md`, but in this folder you can add any images used in the README, and other writings about the dataset.
 * **scripts/**: All scripts are contained in this folder. There could be scripts to scrape the data, join different files, clean them, etc. Depending on the programming language you use, you might also add requirements files like `requirements.txt` for Python, or `package.json` for NodeJS.
 * **Makefile**: The scripts are only part of the puzzle, we also need to know how to run them. In which order they should be executed, which one should I run to update the data, and so on. You could document this information textually in the `README.md` file, but the `Makefile` allows you to have executable documentation. You can think of it as a script to run the scripts. If you have never written a Makefile, read [Why Use Make](https://bost.ocks.org/mike/make/).
-* **datapackage.json**: This file describes the dataset's metadata. For example, what is the dataset, where are its files, what they contain, what each column means (for tabular data), what's the source, license, and authors, and so on. As it's a machine-readable specification, other software can import and validate your files. See HOW TO CREATE A DATA PACKAGE on instructions on writing this file.
+* **datapackage.json**: This file describes the dataset's metadata. For example, what is the dataset, where are its files, what they contain, what each column means (for tabular data), what's the source, license, and authors, and so on. As it's a machine-readable specification, other software can import and validate your files. See [how to create a data package](/field-guide/well-packaged-datasets) on instructions on writing this file.
 * **README.md**: This is where the dataset is described for humans. We recommend the following sections:
   * **Introduction**: A short description of the dataset, what it contains, the time or geographical area it covers
   * **Data**: What the data structure? Does it use any codes? How do you define missing values (e.g. 'N/A' or '-1')
@@ -386,11 +386,14 @@ Some best practices:
   * they allow data publishers to understand what communities need and publish data driven by user demand, increasing the chance it'll be used
   * they provide an avenue for data publishers to learn how their data is used, so they can gauge its impact.
 
+
   Examples of feedback loops that data publishers can set up include:
+  
 
   * Adding a comments section in a data platform. Needless to say, the comments section should be monitored closely to ensure that responses are sent in time, and that discussions remain respectful and on topic.
   * A dedicated social platform channel, such as a Google Group or Facebook group, with a prominently placed link from the data platform for sharing updates, collating and responding to feedback.
   * An e-mail address where users can contact the people responsible for the datasets for clarifications, suggestions, or to report errors.
+
 
 3. Meet open data communities in the places they already meet
 
