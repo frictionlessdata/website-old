@@ -108,7 +108,7 @@ You can indicate that copyright has been waived by referencing a waiver at a URL
 
 ```
 "licenses": [{
-  "name": "CC0-1.0"  
+  "name": "CC0-1.0"
   "path": "https://creativecommons.org/publicdomain/zero/1.0/",
   "title": "CC0 1.0"
 }]
@@ -157,7 +157,7 @@ Some licenses require that data consumers provide the copyright notice in the at
 Some data publishers may waive some of their rights under a license, e.g.
 
 > [Noosa Wedding Locations](https://data.gov.au/dataset/noosa-wedding-locations) data by [Noosa Shire Council](https://www.noosa.qld.gov.au) is licensed under a [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) licence.
-
+>
 > Noosa Shire Council waives the requirements of attribution under this licence, for this data.
 
 You can include this information, either:
@@ -202,7 +202,7 @@ Sometimes data in a resource may be combined from multiple sources that are lice
     "path": "https://creativecommons.org/licenses/by-sa/4.0/",
     "title": "Creative Commons Attribution Share-Alike 4.0"
   }]
-```  
+```
 
 ### License may become legally binding
 
