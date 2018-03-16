@@ -6,14 +6,12 @@ body:
 
 Applying licenses, waivers or public domain marks to [data packages](https://frictionlessdata.io/specs/data-package/) and [data resources](https://frictionlessdata.io/specs/data-resource/) helps people understand how they can use, modify and share the contents of a data package.
 
-*In this guide, "license", can be read as "license, waiver or public domain mark"*
+It is recommended to that you apply a license, waiver or public domain mark to a data package using the [`licenses`](https://frictionlessdata.io/specs/data-package/#licenses) property. The value assigned to the data package `licenses` property applies to all the data, files and metadata in the data package unless specified otherwise.
 
-It is recommended to [apply a license to a data package](https://frictionlessdata.io/specs/data-package/#licenses). This license applies to all the data, files and metadata in the data package unless specified otherwise.
-
-You can optionally [apply a license to a data resource](https://frictionlessdata.io/specs/data-resource/#optional-properties). This allows a license that differs from the data package license to be applied to the data resource. If a license is not specified, the data resource inherits the license from the data package.
+You can optionally apply a license to a data resource. This allows a license that differs from the data package license to be applied to the data resource. If the data resource [`licenses`](https://frictionlessdata.io/specs/data-resource/#optional-properties) property is not specified, it inherits the data package `licenses`.
 
 ## Specifying a license
-The Frictionless Data specification states that a [license](https://frictionlessdata.io/specs/data-package/#licenses) must contain a `name` property and/or a `path` property and may contain a `title` property.
+The Frictionless Data specification states that a [license](https://frictionlessdata.io/specs/data-package/#licenses) must contain a `name` property and/or a `path` property, and may contain a `title` property.
 
 > * `name`: The name MUST be an [Open Definition license ID](http://licenses.opendefinition.org)
 > * `path`: A [url-or-path](https://frictionlessdata.io/specs/data-resource/#url-or-path) string, that is a fully qualified HTTP address, or a relative POSIX path
@@ -145,10 +143,10 @@ If you have not decided what license to apply but still want to publish the data
 
 It can be helpful to data consumers to provide additional copyright or attribution information such as:
 
-* copyright notice - this property allows a data publisher to specify a short copyright notice that can be used directly
-* copyright statement - this property allows you specify a URL for the copyright statement
-* preferred attribution text - the text to be used when attributing the creator of some data
-* attribution URL - this is the URL to be used when building an attribution link
+* copyright notice - this allows a data publisher to specify a short copyright notice
+* copyright statement URL - a URL to a copyright statement
+* preferred attribution text - the text to be used when attributing the creator(s) of the data
+* attribution URL - a URL to be used when building an attribution link
 
 This is explained in the ODI [Publisher's Guide to the Open Data Rights Statement Vocabulary](https://theodi.org/guides/publishers-guide-to-the-open-data-rights-statement-vocabulary) and [Re-users Guide to the Open Data Rights Statement Vocabulary](https://theodi.org/guides/odrs-reusers-guide).
 
@@ -157,14 +155,13 @@ Some licenses require that data consumers provide the copyright notice in the at
 Some data publishers may waive some of their rights under a license, e.g.
 
 > [Noosa Wedding Locations](https://data.gov.au/dataset/noosa-wedding-locations) data by [Noosa Shire Council](https://www.noosa.qld.gov.au) is licensed under a [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) licence.
->
 > Noosa Shire Council waives the requirements of attribution under this licence, for this data.
 
 You can include this information, either:
 * in the file containing license information (e.g. README.md)
-* as metadata properties in the datapackage.json
+* as additional metadata properties in the datapackage.json
 
-The data package specification supports [adding addition metadata properties](https://frictionlessdata.io/specs/data-package/#descriptor) to the datapackage.json, e.g.
+The data package specification supports adding [additional metadata properties](https://frictionlessdata.io/specs/data-package/#descriptor) to the datapackage.json, e.g.
 
 ```
 {
@@ -189,7 +186,7 @@ The data package specification supports [adding addition metadata properties](ht
 
 ### Copyright belongs to multiple parties
 
-Sometimes data in a resource may be combined from multiple sources that are licensed in different ways. You can indicate this by placing two or more licenses in the `licenses` property. Further explaination should be given in the `README.md`.
+Sometimes data in a resource may be combined from multiple sources that are licensed in different ways. You can indicate this by placing two or more licenses in the `licenses` property. Further explanation should be given in the `README.md`.
 
 ```
 "licenses": [{
@@ -210,17 +207,15 @@ The [specification](https://frictionlessdata.io/specs/data-package/#licenses) fo
 
 > **This property is not legally binding and does not guarantee the package is licensed under the terms defined in this property.**
 
-A data package may be uploaded to a data platform and the `licenses` applied to the data resources and publicly displayed. This may make the license legally binding. Please check your specific situation before publishing the data.
+A data package may be uploaded to a data platform and the `licenses` applied to the data resources may be publicly displayed. This may make, or give the perception that, the license is legally binding. Please check your specific situation before publishing the data.
 
 ### Software may not fully support the Frictionless Data specification
 
-Be aware that some data platforms or software do not fully support the Frictionless Data specification. This may result in license information being lost or other issues.
-
-Always test your data publication to ensure you communicate the correct license information.
+Be aware that some data platforms or software do not fully support the Frictionless Data specification. This may result in license information being lost or other issues. Always test your data publication to ensure you communicate the correct license information.
 
 As examples:
 
-* [CKAN Data Package extension](https://github.com/frictionlessdata/ckanext-datapackager):
+* [CKAN Data Package extension](https://github.com/frictionlessdata/ckanext-datapackager) at the time of writing:
   * does not upload the README.md file in a data package. If you have described licence information in the README.md file, this will be lost ([issue #60](https://github.com/frictionlessdata/ckanext-datapackager/issues/60))
   * does not display license information in the datapackage.json file correctly ([issue #62](https://github.com/frictionlessdata/ckanext-datapackager/issues/62))
 
