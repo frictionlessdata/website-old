@@ -211,11 +211,11 @@ A data package may be uploaded to a data platform and the `licenses` applied to 
 
 ### Software may not fully support the Frictionless Data specification
 
-Be aware that some data platforms or software do not fully support the Frictionless Data specification. This may result in license information being lost or other issues. Always test your data publication to ensure you communicate the correct license information.
+Be aware that some data platforms or software may not fully support the Frictionless Data specification. This may result in license information being lost or other issues. Always test your data publication to ensure you communicate the correct license information.
 
-As examples:
+For example, at the time of writing:
 
-* [CKAN Data Package extension](https://github.com/frictionlessdata/ckanext-datapackager) at the time of writing:
+* [CKAN Data Package extension](https://github.com/frictionlessdata/ckanext-datapackager):
   * does not upload the README.md file in a data package. If you have described licence information in the README.md file, this will be lost ([issue #60](https://github.com/frictionlessdata/ckanext-datapackager/issues/60))
   * does not display license information in the datapackage.json file correctly ([issue #62](https://github.com/frictionlessdata/ckanext-datapackager/issues/62))
 
