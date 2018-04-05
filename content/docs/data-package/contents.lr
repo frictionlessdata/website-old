@@ -230,4 +230,3 @@ DataHub does not currently support the TopoJSON format. You can use “Vega Grap
 [tools]: /software/
 [dp-creator]: http://data.okfn.org/tools/create
 [dp-viewer]: http://data.okfn.org/tools/view
-[dpm]: https://github.com/okfn/dpm
