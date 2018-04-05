@@ -200,12 +200,12 @@ See also the following thread <https://discuss.okfn.org/t/copyright-on-data-sour
 
 ## Validate and preview your Data Package
 
-Use the [Online validator](/tools/#validate) to check that your datapackage.json
-and Data Package are good to go. Simply drop the URL to your Data Package in
-the input box, and press `Validate`. If everything is fine, `Status: Valid` is
+Use the [Data Package Creator][dp-creator] to check that your `datapackage.json`
+and Data Package are good to go. Simply drop the URL to your `datapackage.json` file in
+the input box, or upload from a local source, and press `Validate`. If everything is fine, `Status: Valid` is
 returned.
 
-Then use the [Online Data Package viewer app](/software/#view) to have a preview of
+Then use the [Online Data Package viewer app][dp-viewer] to have a preview of
 your Data Package.
 
 ----
@@ -238,6 +238,5 @@ For examples of well-structured Data Package see:
 [pub-faq]: /docs/publish-faq/
 
 [tools]: /software/
-[dp-creator]: http://data.okfn.org/tools/create
+[dp-creator]: http://create.frictionlessdata.io
 [dp-viewer]: http://data.okfn.org/tools/view
-[dpm]: https://github.com/okfn/dpm
