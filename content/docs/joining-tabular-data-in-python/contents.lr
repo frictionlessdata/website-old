@@ -10,10 +10,10 @@ In a [separate guide](/docs/joining-data-in-python/), I walked through joining
 a tabular dataset with one containing geographic information.  In this
 guide, I will demonstrate an example of joining two tabular datasets.
 
-*Note: There are, of course, various, more robust ways of joining
+!! There are, of course, various, more robust ways of joining
  tabular data.  The example listed below is intended to demonstrate
  how the current libraries and specifications work together to perform
- this common task.*
+ this common task.
 
 ## Data
 
@@ -62,7 +62,7 @@ gdp_dp = datapackage.DataPackage('https://raw.githubusercontent.com/frictionless
 
 Given that our source data has already been packaged in
 [Tabular Data Package](/docs/tabular-data-package/) format, we know
-that we have a [*schema*](/docs/json-table-schema/) for each CSV
+that we have a [*schema*](/docs/table-schema/) for each CSV
 which specifies useful information for each column.  We'd like to
 merge and preserve this schema information as we'll need it for
 specifying the combined schema in our new Data Package.  Note that
@@ -119,9 +119,8 @@ Package directly or save the whole thing as a zip file using the
 `save` method.
 
 ```python
-dp = datapackage.DataPackage()
+dp = datapackage.Package()
 dp.descriptor['name'] = 'real-gdp'
-dp.descriptor['resources'] = [
     {
      'name': 'data',
      'path': 'real_gdp.csv',
