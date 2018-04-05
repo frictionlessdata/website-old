@@ -29,12 +29,9 @@ This entity diagram gives an overview of how the main different objects fit toge
 
 This guide will focus on [Tabular Data Packages][tdp] as that is the most commonly used form of Data Packages and is suited to most tools.
 
-<img src="https://docs.google.com/drawings/d/1hSu1ip0EzL1w4jLGBM3sh8vIHrb19Fg7UQUvuK2rnhc/pub?w=628&h=651" alt="" />
-
+![overview of data packages and tabular data packages](overview-of-data-packages.png)
 
 This guide will assume you already have some high-level familiarity with the [Data Package family of specifications][dp-main]. Please a take a few minutes to take a look at the [overview][dp-main] if you are not yet familiar with those specs.
-
-
 
 ## Implementing a Data Package Tool Stack
 
@@ -42,7 +39,7 @@ Here's a diagram that illustrates some of the core components of a full Data Pac
 
 The *italicised items* are there to indicate that this functionality is less important and is often not included in implementations.
 
-<img src="https://docs.google.com/drawings/d/1VdcWNb-PnP9QyrlMlvMWBBvSGTy_Rfdcr77Xn1HpUOI/pub?w=331&h=400" alt="" />
+![core components of a full Data Package implementation](data-package-core-components.png)
 
 ### General Introduction
 
@@ -182,17 +179,17 @@ Additional functionality such as TS and TS integration:
 
 Here's an overview of the Python libraries available and how they fit together:
 
-<img src="https://docs.google.com/drawings/d/1akNQUw1xOmdMOFAaJd-83O2gbB5kWcqg5lSYzmo0M5o/pub?w=646&h=793" alt="Python libraries">
+![how the different tableschema libraries in python fit together](tableschema-python.png)
 
 ### Javascript
 
 Following "Node" style we have partitioned the Javascript library into pieces, see this list of libraries:
 
-* <https://github.com/frictionlessdata?utf8=%E2%9C%93&query=js>
+* <https://github.com/frictionlessdata?language=javascript>
 
 ### SQL Integration
 
-*Coming soon: walk-through of Python SQL integration*.
+[Here's a walk-through](https://github.com/frictionlessdata/tableschema-sql-py) of the SQL integration for [Table Schema][spec-ts] written in python. This integration allows you to generate SQL tables, load and extract data based on [Table Schema][spec-ts] descriptors.
 
 Related blog post: <http://okfnlabs.org/blog/2017/10/05/frictionless-data-specs-v1-updates.html>
 
