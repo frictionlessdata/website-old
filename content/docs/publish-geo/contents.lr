@@ -31,16 +31,6 @@ imagery or raster data).*
 
 ### Examples
 
-#### [Exemplar Geo Data Package](https://github.com/datasets/ex-geojson)
-
-Demonstrates `multipolygon` and `point` geometry
-
-[View it with the Data Package Viewer][view-1]
-
-[view-1]: http://data.okfn.org/tools/view?url=https%3A%2F%2Fgithub.com%2Fdatasets%2Fex-geojson
-
-<script src="http://gist-it.appspot.com/github/datasets/ex-geojson/blob/master/datapackage.json"></script>
-
 #### [Traffic signs of Hansbeke, Belgium](https://github.com/peterdesmet/traffic-signs-hansbeke)
 
 Example of using `point` geometries with described properties in real world situation.
@@ -49,7 +39,9 @@ Example of using `point` geometries with described properties in real world situ
 
 [view-2]: http://data.okfn.org/tools/view?url=https%3A%2F%2Fgithub.com%2Fpeterdesmet%2Ftraffic-signs-hansbeke
 
-<script src="http://gist-it.appspot.com/github/datasets/ex-geojson/blob/master/datapackage.json"></script>
+<script src="https://raw.githubusercontent.com/peterdesmet/traffic-signs-hansbeke/master/datapackage.json"></script>
+
+#### [GeoJSON example on DataHub](https://datahub.io/examples/geojson-tutorial)
 
 
 [dp]: /docs/data-package
@@ -74,5 +66,4 @@ Example of using `point` geometries with described properties in real world situ
 
 [tools]: /software/
 [dp-creator]: http://data.okfn.org/tools/create
-[dp-viewer]: http://data.okfn.org/tools/view
-[dpm]: https://github.com/okfn/dpm
+[dp-viewer]: http://create.frictionlessdata.io
