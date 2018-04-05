@@ -53,7 +53,6 @@ There are three options for creating the `datapackage.json`:
 **Option 1:** Use the online [datapackage.json creator tool][dp-creator] - just answer
 a few questions and give it your data files and it will spit out a
 datapackage.json for you to include in your project
-[dp-creator]: http://datapackagist.openknowledge.io
 
 **Option 2:** Do it yourself - if you're familiar with JSON you can just create
 this yourself. Take a look at the [Data Package][dp] and [Tabular Data
@@ -61,9 +60,7 @@ Format][tdp] specs.
 [dp]: /docs/data-package/
 [tdp]: /docs/tabular-data-package/
 
-**Option 3:** Use our [Data Package Manager][dpm] tool for the command line if
-you are comfortable with that interface (requires node.js).
-[dpm]: https://github.com/okfn/dpm
+**Option 3:** Use the [Python][dp-py], [JavaScript][dp-js], PHP[dp-php], Julia[dp-jl], R[dp-r], Clojure[dp-clj], Java[dp-java], Ruby[dp-rb] or Go[dp-go] libraries for working with data packages.
 
 ### 4. Put the data package online
 
@@ -101,6 +98,5 @@ Pay special attention to the scripts directory (and look at the commit logs!)
 [pub-faq]: /docs/publish-faq/
 
 [tools]: /software/
-[dp-creator]: http://data.okfn.org/tools/create
+[dp-creator]: http://create.frictionlessdata.io
 [dp-viewer]: http://data.okfn.org/tools/view
-[dpm]: https://github.com/okfn/dpm
