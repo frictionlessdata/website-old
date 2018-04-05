@@ -19,16 +19,16 @@ simple as [putting it online][online] or sending an email.
 
 Rows and columns like in a spreadsheet? It's tabular &hellip;
 
-[Go](/docs/publish-tabular)
+[Here's a tutorial on publishing tabular data](/docs/publish-tabular)
 
 ### Geospatial
 
 Map or location related? It's geospatial &hellip;
 
-[Go](/docs/publish-geo)
+[Here's a tutorial on publishing geodata](/docs/publish-geo)
 
 ### Any Kind
 
 Any kind of data you have - graph, binary, RDF &hellip;
 
-[Go](/docs/publish-any)
+[Here's a tutorial on publishing other types of data](/docs/publish-any)
