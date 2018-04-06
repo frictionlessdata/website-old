@@ -60,7 +60,7 @@ Format][tdp] specs.
 [dp]: /docs/data-package/
 [tdp]: /docs/tabular-data-package/
 
-**Option 3:** Use the [Python][dp-py], [JavaScript][dp-js], PHP[dp-php], Julia[dp-jl], R[dp-r], Clojure[dp-clj], Java[dp-java], Ruby[dp-rb] or Go[dp-go] libraries for working with data packages.
+**Option 3:** Use the [Python][dp-py], [JavaScript][dp-js], [PHP][dp-php], [Julia][dp-jl], [R][dp-r], [Clojure][dp-clj], [Java][dp-java], [Ruby][dp-rb] or [Go][dp-go] libraries for working with data packages.
 
 ### 4. Put the data package online
 
