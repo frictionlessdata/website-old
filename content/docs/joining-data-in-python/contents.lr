@@ -81,9 +81,14 @@ import datapackage
 countries_url = 'https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/geo-countries/datapackage.json'
 gdp_url = 'https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/gross-domestic-product-2014/datapackage.json'
 
-countries_dp = datapackage.DataPackage(countries_url)
-gdp_dp = datapackage.DataPackage(gdp_url)
+countries_dp = datapackage.Package(countries_url)
+gdp_dp = datapackage.Package(gdp_url)
+
+world = json.loads(countries_dp.get_resource('countries').raw_read().decode('UTF-8'))
+
 ```
+
+!!! Learn more about creating data packages in Python [in this tutorial](/docs/creating-tabular-data-packages-in-python).
 
 Our GeoJSON data is stored as a `bytes` object in the `data` attribute
 of the first (and only) element of the Data Package `resources` array.
@@ -91,8 +96,9 @@ To create our `world` GeoJSON dict, we first need to decode this
 `bytes` object to a UTF-8 string and pass it to `json.loads`.
 
 ```python
-world = json.loads(countries_dp.resources[0].data.decode('utf-8'))
+world = json.loads(countries_dp.get_resource('countries').raw_read().decode('UTF-8'))
 ```
+
 
 At this point, joining the data can be accomplished by iterating
 through each country in the `world['features']` array and adding a
@@ -118,10 +124,7 @@ creating a Data Package, please consult the
 guide.
 
 ```python
-with open('world_gdp_2014.geojson', 'w') as f:
-    json.dump(world, f)
-
-new_dp = datapackage.DataPackage()
+new_dp = datapackage.Package()
 new_dp.descriptor['name'] = 'consolidated-dataset'
 new_dp.descriptor['resources'] = [
   {
@@ -129,9 +132,8 @@ new_dp.descriptor['resources'] = [
     'path': 'world_gdp_2014.geojson'
   }
 ]
-
-with open('datapackage.json','w') as f:
-    f.write(new_dp.to_json())
+new_dp.commit()
+new_dp.save('datapackage.zip')
 ```
 
 We can now quickly render this GeoJSON file into a
