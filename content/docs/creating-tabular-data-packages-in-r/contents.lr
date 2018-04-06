@@ -65,7 +65,6 @@ We will use periodic-table data from [remote path](https://raw.githubusercontent
 | 8             | O      | Oxygen    | 15.9994     | nonmetal             |
 | 9             | F      | Fluorine  | 18.9984032  | halogen              |
 | 10            | Ne     | Neon      | 20.1797     | noble gas            |
-{: .table .table-striped .table-bordered style="display: table; overflow:auto"}
 
 We can guess our CSV's [schema][ts] by using `infer` from the Table Schema library. We pass directly the remote link to the infer function, the result of which is an inferred schema. For example, if the processor detects only integers in a given column, it will assign `integer` as a column type.
 
