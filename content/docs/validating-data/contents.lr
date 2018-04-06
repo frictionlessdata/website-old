@@ -101,7 +101,7 @@ Start your continuous data validation here: <https://goodtables.io>
 
 Blog post on goodtables python library and goodtables web service: <http://okfnlabs.org/blog/2017/05/22/introducing-the-new-goodtables-library-and-goodtablesio.html>
 
-
+!! Find more examples on validating tabular data in the [Frictionless Data Field Guide][field-guide]
 
 See the `README.md` for more information.
 
@@ -112,6 +112,7 @@ See the `README.md` for more information.
 [ts-types]: /specs/table-schema/#field-descriptors
 [csv]: /docs/csv/
 [json]: http://en.wikipedia.org/wiki/JSON
+[field-guide]: /field-guide
 
 [spec-dp]: /specs/data-package/
 [spec-tdp]: /specs/tabular-data-package/

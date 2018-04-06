@@ -77,6 +77,9 @@ Pay special attention to the scripts directory (and look at the commit logs!)
 - [datahub.io/core/co2-fossil-global](https://datahub.io/core/co2-fossil-global)
 - [datahub.io/core/imf-weo](https://datahub.io/core/imf-weo)
 
+!! Recommended reading: Find out how to use Frictionless Data software to improve your data publishing workflow in our new and comprehensive [Frictionless Data Field Guide][field-guide].
+
+
 [[dp]: /docs/data-package
 [dp-main]: /data-packages
 [tdp]: /docs/tabular-data-package/
@@ -96,6 +99,7 @@ Pay special attention to the scripts directory (and look at the commit logs!)
 [pub-any]: /docs/publish-any/
 [pub-geo]: /docs/publish-geo/
 [pub-faq]: /docs/publish-faq/
+[field-guide]: /field-guide
 
 [tools]: /software/
 [dp-creator]: http://create.frictionlessdata.io

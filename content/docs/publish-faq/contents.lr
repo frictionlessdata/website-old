@@ -217,6 +217,9 @@ For examples of well-structured Data Package see:
 * For tabular data: <http://datahub.io/core/corruption-perceptions-index>
 * For geospatial data: <http://datahub.io/core/geo-nuts-administrative-boundaries>
 
+!! Recommended reading: Find out how to use Frictionless Data software to improve your data publishing workflow in our new and comprehensive [Frictionless Data Field Guide][field-guide].
+
+
 [dp]: /docs/data-package
 [dp-main]: /data-packages
 [tdp]: /docs/tabular-data-package/
@@ -236,6 +239,7 @@ For examples of well-structured Data Package see:
 [pub-any]: /docs/publish-any/
 [pub-geo]: /docs/publish-geo/
 [pub-faq]: /docs/publish-faq/
+[field-guide]: /field-guide
 
 [tools]: /software/
 [dp-creator]: http://create.frictionlessdata.io

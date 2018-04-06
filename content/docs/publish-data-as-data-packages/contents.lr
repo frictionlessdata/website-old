@@ -16,6 +16,10 @@ You can package any kind of data as a Data Package.
          1. Just answer a few questions and give it your data files and it will spit out a datapackage.json for you to include in your project
       1. Use the [Python][dp-py], [JavaScript][dp-js], PHP[dp-php], Julia[dp-jl], R[dp-r], Clojure[dp-clj], Java[dp-java], Ruby[dp-rb] or Go[dp-go] libraries for working with data packages.
 
+!! Recommended reading: Find out how to use Frictionless Data software to improve your data publishing workflow in our new and comprehensive [Frictionless Data Field Guide][field-guide].
+
+[field-guide]: /field-guide
+
 [dp-creator]: http://create.frictionlessdata.io
 
 [dp-js]: https://github.com/frictionlessdata/datapackage-js

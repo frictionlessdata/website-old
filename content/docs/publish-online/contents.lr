@@ -115,3 +115,7 @@ mind:
   software will compute the full path from the location of the `datapackage.json`
   itself plus the relative path for the file give in the `datapackage.json`
   resources section.
+
+!! Recommended reading: Find out how to use Frictionless Data software to improve your data publishing workflow in our new and comprehensive [Frictionless Data Field Guide][field-guide].
+
+[field-guide]: /field-guide

@@ -43,6 +43,8 @@ Example of using `point` geometries with described properties in real world situ
 
 #### [GeoJSON example on DataHub](https://datahub.io/examples/geojson-tutorial)
 
+!! Recommended reading: Find out how to use Frictionless Data software to improve your data publishing workflow in our new and comprehensive [Frictionless Data Field Guide][field-guide].
+
 
 [dp]: /docs/data-package
 [dp-main]: /data-packages
@@ -63,6 +65,7 @@ Example of using `point` geometries with described properties in real world situ
 [pub-any]: /docs/publish-any/
 [pub-geo]: /docs/publish-geo/
 [pub-faq]: /docs/publish-faq/
+[field-guide]: /field-guide
 
 [tools]: /software/
 [dp-creator]: http://data.okfn.org/tools/create

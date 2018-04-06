@@ -40,6 +40,9 @@ this yourself. Take a look at the [Data Package][dp] tutorial.
 
 See the [step-by-step instructions for putting your Data Package online][pub-online].
 
+!! Recommended reading: Find out how to use Frictionless Data software to improve your data publishing workflow in our new and comprehensive [Frictionless Data Field Guide][field-guide].
+
+
 [dp]: /docs/data-package
 [dp-main]: /data-packages
 [tdp]: /docs/tabular-data-package/
@@ -59,6 +62,7 @@ See the [step-by-step instructions for putting your Data Package online][pub-onl
 [pub-any]: /docs/publish-any/
 [pub-geo]: /docs/publish-geo/
 [pub-faq]: /docs/publish-faq/
+[field-guide]: /field-guide
 
 [tools]: /software/
 [dp-creator]: http://create.frictionlessdata.io
