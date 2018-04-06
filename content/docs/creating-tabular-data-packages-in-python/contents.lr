@@ -72,10 +72,12 @@ package.infer('**/*.csv')
 package.descriptor
 ```
 
-We are now ready to save our `datapackage.json` file locally. The dp.commit() function makes this possible.
+We are now ready to save our `datapackage.json` file locally. The dp.save() function makes this possible.
 
 ```python
 dp.commit()
+
+dp.save('datapackage.json')
 ```
 
 The `datapackage.json`
@@ -93,7 +95,7 @@ column is a `string`.
     'name': 'data',
     'format': 'csv',
     'mediatype': 'text/csv',
-    'encoding': 'utf-8',
+    'encoding': 'UTF-8',
     'schema': {
       'fields': [{
           'name': 'atomic number',
