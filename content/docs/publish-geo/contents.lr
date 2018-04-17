@@ -43,8 +43,9 @@ Example of using `point` geometries with described properties in real world situ
 
 #### [GeoJSON example on DataHub](https://datahub.io/examples/geojson-tutorial)
 
-!! Recommended reading: Find out how to use Frictionless Data software to improve your data publishing workflow in our new and comprehensive [Frictionless Data Field Guide][field-guide].
+#### See more Geo Data Packages in the [example data packages](https://github.com/frictionlessdata/example-data-packages) GitHub repository.
 
+!! Recommended reading: Find out how to use Frictionless Data software to improve your data publishing workflow in our new and comprehensive [Frictionless Data Field Guide][field-guide].
 
 [dp]: /docs/data-package
 [dp-main]: /data-packages

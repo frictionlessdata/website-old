@@ -75,8 +75,6 @@ package.descriptor
 We are now ready to save our `datapackage.json` file locally. The dp.save() function makes this possible.
 
 ```python
-dp.commit()
-
 dp.save('datapackage.json')
 ```
 

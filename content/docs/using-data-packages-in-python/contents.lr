@@ -130,12 +130,15 @@ from sqlalchemy import create_engine
 engine = create_engine('sqlite:///periodic-table-datapackage.db')
 dp.save(storage='sql', engine=engine)
 
-# now push the data to the database
-list(engine.execute('SELECT * from data')))
-
 ```
 
-If you have `sqlite3` installed, you can inspect and play with your
+One way to check if your data has been saved successfully is by running
+
+```Python
+list(engine.execute('SELECT * from data')))
+```
+
+Alternatively, if you have `sqlite3` installed, you can inspect and play with your
 newly created database.  Note that column type information has been
 translated from the Table Schema format to native SQLite types:
 
@@ -143,6 +146,9 @@ translated from the Table Schema format to native SQLite types:
 $ sqlite3 periodic-table-datapackage.db
 SQLite version 3.19.3 2017-06-27 16:48:08
 Enter ".help" for usage hints.
+
+/*check database schema*/
+
 sqlite> .schema
 CREATE TABLE data (
 	"atomic number" INTEGER,
@@ -151,6 +157,10 @@ CREATE TABLE data (
 	"atomic mass" FLOAT,
 	"metal or nonmetal?" TEXT
 );
+
+/*view all records in the data table*/
+
+SELECT * from data;
 
 ```
 
