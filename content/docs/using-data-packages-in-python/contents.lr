@@ -233,9 +233,10 @@ table into AWS RedShift.
 REDSHIFT_URL = 'postgres://<user>:<pass>@<host>.redshift.amazonaws.com:5439/<database>'
 from sqlalchemy import create_engine
 
+# load and save table to RedShift
 engine = create_engine(REDSHIFT_URL)
 dp.save(storage='sql', engine=engine)
 
-# now push the data to the database
+# check if data has been saved successfully
 list(engine.execute('SELECT * from data'))))
 ```
