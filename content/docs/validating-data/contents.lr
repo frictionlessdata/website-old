@@ -20,13 +20,14 @@ We will walk through two methods of performing validation:
 
 [goodtables](http://goodtables.io/) is a free, open-source, hosted
 service for validating tabular data. goodtables checks your data for
-its *structure*, and, optionally, its adherence to a specified *schema*.
-goodtables will give quick and simple feedback on where your tabular
+its *structure*, and, optionally, its adherence to a specified *schema*. Where the latter fails, goodtables highlights content errors so you can fix them speedily.
+
+!! goodtables will give quick and simple feedback on where your tabular
 data may not yet be quite perfect.
 
 ![goodtables screenshot](goodtables-screenshot.png)
 
-To start, all you need to do is upload or provide a link to a CSV
+To get started with one-off validation of your tabular datasets, use [try.goodtables.io](http://try.goodtables.io). All you need to do is upload or provide a link to a CSV
 file and hit the "Validate" button.
 
 ![goodtables Provide URL](goodtables-provide-data.png)
@@ -102,6 +103,8 @@ Blog post on goodtables python library and goodtables web service: <http://okfnl
 
 See the `README.md` for more information.
 
+!! Find more examples on validating tabular data in the [Frictionless Data Field Guide][field-guide]
+
 [dp]: /docs/data-package
 [dp-main]: /data-packages
 [tdp]: /docs/tabular-data-package/
@@ -109,6 +112,7 @@ See the `README.md` for more information.
 [ts-types]: /specs/table-schema/#field-descriptors
 [csv]: /docs/csv/
 [json]: http://en.wikipedia.org/wiki/JSON
+[field-guide]: /field-guide
 
 [spec-dp]: /specs/data-package/
 [spec-tdp]: /specs/tabular-data-package/

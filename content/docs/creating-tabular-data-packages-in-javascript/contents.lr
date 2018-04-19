@@ -10,10 +10,29 @@ This tutorial will show you how to install the JavaScript libraries for working 
 
 ## Setup
 
-For this tutorial we will need [dpm](https://github.com/okfn/dpm) which is a library and command line manager for Data Packages.
+For this tutorial we will need [datapackage-js](https://github.com/frictionlessdata/datapackage-js) which is a JavaScript library for working with Data Packages.
 
-Using Node Package Manager (`npm`), install `dpm` by entering the following into your command line:
-```npm install datapackage -g```
+Using Node Package Manager (`npm`), install the latest version of `datapackage-js` by entering the following into your command line:
+```bash
+npm install datapackage@latest
+```
+
+Run the `datapackage --help` command to find out all options available to you.
 
 ## Creating a package
-Now that a package has been created, create a directory for your project and use `dpm init` to get started with a new package. This creates a `datapackage.json` file in this directory.
+
+The basic building block of a data package is the `datapackage.json` file. It contains the schema and metadata of your data collections.
+
+Now that the node package for working with data packages has been installed, create a directory for your project, and use the command `datapackage infer path/to/file.csv` to generate a schema for your dataset. To save this file in the directory for editing and sharing, simply append `> datapackage.json` to the command above, like so:
+
+```bash
+datapackage infer path/to/file.csv > datapackage.json
+```
+
+This creates a `datapackage.json` file in this directory.
+
+## Publishing
+
+Now that you have created your Data Package, you might want to
+[publish your data online](/docs/publish-online/) so that you can
+share it with others.

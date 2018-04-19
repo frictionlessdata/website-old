@@ -4,31 +4,35 @@ doc_category: specifications
 ---
 body:
 
-A Data Package is a simple way of "packaging" up and describing data so that it can be easily shared and used. The format is **very simple**, **web friendly** and **extensible**.
+A Data Package is a simple way of putting collections of data and their descriptions in one place so that they can be easily shared and used. The Data Package format is **very simple**, **web friendly** and **extensible**.
 
 Creating a Data Package is very easy: all you need to do is put a `datapackage.json` "descriptor" file in the top-level directory of your set of data files.
 
 ### Full Spec
-There is a full **[RFC-style specification of Data Package format](/specs/data-package/)**
-on the Data Protocols website to complement this quick introduction.
+Here is a full **[RFC-style specification of Data Package format](/specs/data-package/)** to complement this quick introduction.
 
 
 ### Tabular Data
-[Tabular Data Package](/docs/tabular-data-package/) extends Data Packages for tabular data. It supports providing additional information such as data types
-of columns.
 
-Software
+The [Tabular Data Package](/docs/tabular-data-package/) format extends Data Packages for tabular data. It supports providing additional information such as data types of columns.
+
+### Software
+
 There is a growing set of [online and offline software](/software) for working with Data
 Packages including for creating, viewing and validating.
 
 
 ## Getting Started
+
 A minimal example Data Package would look like this on disk:
 
 ```
 datapackage.json
-# a data file (CSV in this case but could be any type of data)
-data.csv
+
+# a data file(s) (CSV in this case but could be any type of data). Data files may go either in data subdirectory or in the main directory
+data
+data/more-data.csv
+
 # (Optional!) A README (in markdown format)
 README.md
 ```
@@ -38,22 +42,24 @@ or analyzing the data) and other material may be provided but are not required.
 
 ## datapackage.json
 
-`datapackage.json` is the file that makes a Data Package a Data Package and is
+`datapackage.json` file is the basic building block of a Data Package and is
 the only required file. It provides:
 
-* General metadata such as the name of the package, its license, its publisher
+* General metadata such as the name of the package, its license, its publisher and source,
   etc
 * A "manifest" in the the form of a list of the data resources (data files)
   included in this data package along with information on those files (e.g.
-  size and schema)
+  schema)
 
-As its file extension indicates it must be a [JSON][json] file. Here's a very
+As its file extension indicates, it must be a [JSON][json] file. Here's a very
 minimal example of a `datapackage.json` file:
 
 ```json
 {
   "name": "a-unique-human-readable-and-url-usable-identifier",
   "title": "A nice title",
+  "licenses" : [ ... ],
+  "sources" : [...],
   "resources": [{
     // see below for what a resource descriptor looks like
   }]
@@ -88,7 +94,7 @@ Here is a much more extensive example of a datapackage JSON file:
     "name": "World Bank and OECD",
     "web": "http://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
   }],
-  "contributors":[ {
+  "contributors":[{
     "name": "Joe Bloggs",
     "email": "joe@bloggs.com",
     "web": "http://www.bloggs.com"
@@ -164,12 +170,11 @@ The [Data Package Viewer](http://data.okfn.org/tools/view) will display a [Recli
 
 There is a growing set of [online and offline software](/software) for working with Data
 Packages including tools for creating, viewing, validating, publishing and
-managing Data Packages. See the [Data Package software page for more](/software).
+managing Data Packages. See the [Frictionless Data software page for more](/software).
 
 
 ## Examples
-Many exemplar data packages can be found in the [datasets organization on
-github][datasets]. Specific examples:
+Many exemplar data packages can be found on [datahub][]. Specific examples:
 
 ### World GDP
 
@@ -179,7 +184,7 @@ A Data Package which includes the data locally in the repo (data is CSV).
 
 Here's the `datapackage.json`:
 
-<script src="http://gist-it.appspot.com/github/datasets/gdp/blob/master/datapackage.json"></script>
+<script src="https://pkgstore.datahub.io/core/gdp/9/datapackage.json"></script>
 
 ### S&P 500 Companies Data
 
@@ -189,19 +194,17 @@ This is an example with more than one resource in the data package.
 
 Here's the `datapackage.json`:
 
-<script src="http://gist-it.appspot.com/github/datasets/s-and-p-500-companies/blob/master/datapackage.json"></script>
+<script src="https://pkgstore.datahub.io/core/s-and-p-500-companies/10/datapackage.json"></script>
 
-### TopoJSON example
+### GeoJSON and TopoJSON
 
-This data package has TopoJSON and the data is external to the repo.
+You can see an example on how to package GeoJSON files [here](https://datahub.io/examples/geojson-tutorial).
 
-<https://github.com/datasets/ex-topojson>
+DataHub does not currently support the TopoJSON format. You can use “Vega Graph Spec” and display you TopoJSON data using the [Vega specification][vega]. See an example [here](https://datahub.io/examples/vega-views-tutorial-topojson).
 
-Here's the `datapackage.json`:
 
-<script src="http://gist-it.appspot.com/github/datasets/ex-topojson/blob/master/datapackage.json"></script>
-
-[datasets]: https://github.com/datasets
+[datahub]: https://datahub.io/core
+[vega]: https://vega.github.io/vega/
 [ISO 3166-2 country codes]: https://github.com/datasets/country-codes
 
 [dp]: /docs/data-package
@@ -227,4 +230,3 @@ Here's the `datapackage.json`:
 [tools]: /software/
 [dp-creator]: http://data.okfn.org/tools/create
 [dp-viewer]: http://data.okfn.org/tools/view
-[dpm]: https://github.com/okfn/dpm
