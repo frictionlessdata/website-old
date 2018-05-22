@@ -1,0 +1,5 @@
+{% set tracking_id = bag('google_analytics').tracking_id %}
+{% if tracking_id %}
+  <script>var okiConsent = {analyticsTrackingID: '{{ tracking_id }}'}</script>
+  <script src="https://a.okfn.org/html/oki/consent/assets/js/consent.js"></script>
+{% endif %}
