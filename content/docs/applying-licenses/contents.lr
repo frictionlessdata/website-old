@@ -68,6 +68,7 @@ These scenarios apply to either the data package or a data resource.
 3. [Apply a waiver](#apply-a-waiver)
 4. [Apply a public domain mark](#apply-a-public-domain-mark)
 5. [Do not apply a license](#do-not-apply-a-license)
+6. [Apply different licenses to the data package and data resources](#apply-different-licenses-to-the-data-package-and-data-resources)
 
 Other considerations:
 * [Provide additional license information](#provide-additional-license-information)
@@ -137,6 +138,33 @@ If you have not decided what license to apply but still want to publish the data
 "licenses": [{
   "path": "README.md"
 }]
+```
+
+### Apply different licenses to the data package and data resources
+
+Sometimes you may want to license the data package metadata (i.e. the contents of the datapackage.json file) differently to the data resources the data package contains. The `licenses` in the datapackage.json below:
+
+- license the data package metadata (i.e. the datapackage.json file) using a Creative Commons Zero (CC0)
+- license the data (i.e. my-data.xls) using the Creative Commons Attribution Share-Alike 4.0 (CC BY SA)
+
+```
+{
+  "name": "my-data-package",
+  "licenses": [{
+      "name": "CC0-1.0",
+      "title": "CC0 1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }],
+  "resources": [{
+      "name": "my-data",
+      "path": "my-data.xls",
+      "licenses": [{
+          "name": "CC-BY-SA-4.0",
+          "title": "Creative Commons Attribution Share-Alike 4.0",
+          "path": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }]
+    }]
+}
 ```
 
 ## Other considerations

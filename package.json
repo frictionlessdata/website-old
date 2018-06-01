@@ -21,5 +21,8 @@
   },
   "scripts": {
     "build": "grunt specs && grunt icons && grunt sass && grunt postcss && grunt modernizr"
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
   }
 }
