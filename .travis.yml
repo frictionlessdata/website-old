@@ -12,7 +12,7 @@ install:
 - pip list
 - npm install
 - npm run build
-- ag yaml
+- ag yaml --hidden
 script:
 - lektor build
 deploy:
