@@ -4,7 +4,7 @@ name = Frictionless Data
 [packages]
 lektor-s3 = 0.5.0
 lektor-markdown-highlighter = 0.2
-lektor-markdown-header-anchors = 0.2
+lektor-markdown-header-anchors = 0.3
 lektor-markdown-admonition = 0.1
 
 [servers.s3]
