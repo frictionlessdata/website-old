@@ -79,7 +79,7 @@ First, we used the `datapackage-pipeline` library to create a data package from 
 
 > datapackage-pipelines.yaml
 
-```yaml
+```
 refit-cleaned:
   pipeline:
     - run: add_metadata
@@ -318,7 +318,7 @@ One important feature of the `datapackage-pipelines` project that it works as a 
 
 > pipelines-spec.yml
 
-```yaml
+```
 refit-cleaned:
 
     # Initial steps are omitted
