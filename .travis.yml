@@ -1,6 +1,8 @@
 language: python
 python:
 - '2.7'
+before_install:
+- sudo apt-get install -y silversearcher-ag
 install:
 - nvm install 8
 - nvm use 8
@@ -10,8 +12,10 @@ install:
 - pip list
 - npm install
 - npm run build
+- rm package-lock.json
+- ag yaml --hidden
 script:
-- lektor build
+- lektor build -v
 deploy:
   provider: script
   script: lektor deploy s3
