@@ -142,7 +142,7 @@ The data sheet has a single header row, but it also has this header row repeated
 
 For machine processing, this isn’t ideal. In fact, it will fail our goodtables validation processor with the following (truncated) report:
 
-```yaml
+```json
 {
     "time": 0.466,
     "valid": false,
