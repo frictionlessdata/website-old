@@ -14,7 +14,7 @@ install:
 - npm run build
 - ag yaml --hidden
 script:
-- lektor build
+- lektor build -v
 deploy:
   provider: script
   script: lektor deploy s3
