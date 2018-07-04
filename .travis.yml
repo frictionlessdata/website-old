@@ -12,6 +12,7 @@ install:
 - pip list
 - npm install
 - npm run build
+- rm package-lock.json
 - ag yaml --hidden
 script:
 - lektor build -v
