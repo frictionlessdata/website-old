@@ -70,7 +70,7 @@ As well as defining source locations, we also want to provide a way to customise
 
 Below is an example yaml source-spec for two entries, demonstrating various configuration options.
 
-```yaml
+```
 entries:
 
   civil-servant-survey:   # entry name
@@ -123,7 +123,7 @@ Below are examples of  issues revealed by validation that can occur when working
 
 The [“Au Pairing” dataset](http://reshare.ukdataservice.ac.uk/851656/) has a single .xls resource we’re interested in harvesting. The file contains four sheets, and we’re interested in the second one, which contains the data. So we specify our entry:
 
-```yaml
+```
 au-pairing:
     source:
       - url: http://reshare.ukdataservice.ac.uk/851656/6/GumtreeAds_AuPairsAnalysis1.xls
@@ -177,7 +177,7 @@ You can find the full report [here](https://gist.github.com/brew/8401e2875ec6d82
 
 The report tells us there are 13 errors, and lists where they are. In this case they indicate that duplicate rows are present (the repeated header). This can either be fixed within Reshare, or we can add a parameter to our entry specification to skip each row that contains the duplicate header:
 
-```yaml
+```
 au-pairing:
     source:
       - url: http://reshare.ukdataservice.ac.uk/851656/6/GumtreeAds_AuPairsAnalysis1.xls
@@ -202,7 +202,7 @@ Additionally, there is no header row specified at the top of the file, so the re
 
 We can fix both of these issues in our entry specification:
 
-```yaml
+```
 uk-gov-petitions:
     source:
       - url: http://reshare.ukdataservice.ac.uk/851614/1/gov_pet_metadata.tab
@@ -227,7 +227,7 @@ We can also use the `headers` parameter to define which row contains header info
 
 This example file has its headers defined in row three, with other information, and an empty row in the first two rows. We can tell our pipeline which row contains headers by specifying it in the entry configuration:
 
-```yaml
+```
 example-entry:
     source:
       - url: http://www.newcastle.gov.uk/sites/drupalncc.newcastle.gov.uk/files/wwwfileroot/your-council/local_transparency/january_2012.csv
