@@ -127,6 +127,5 @@ See the `README.md` for more information.
 [pub-faq]: /docs/publish-faq/
 
 [tools]: /software/
-[dp-creator]: http://data.okfn.org/tools/create
-[dp-viewer]: http://data.okfn.org/tools/view
-[dpm]: https://github.com/okfn/dpm
+[dp-creator]: http://create.frictionlessdata.io
+[dp-viewer]: http://create.frictionlessdata.io

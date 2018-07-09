@@ -293,7 +293,6 @@ utility to citizens, scientists, and consultants alike.
 [^numpy]: NumPy: Python package for scientific computing: <http://www.numpy.org>
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
 [^datapackages]: Data Packages: <http://frictionlessdata.io/specs/data-package/>
-[^dpm]: Data Package Manager (dpm): <https://github.com/frictionlessdata/dpm>
 [^goodtables]: goodtables: <http://goodtables.okfnlabs.org/>
 [^tableschema]: Table Schema: <http://frictionlessdata.io/specs/table-schema/>
 [^amazons3]: Amazon Simple Storage Service (Amazon S3): <https://aws.amazon.com/s3/>

@@ -4,11 +4,11 @@ description: View Data Package metadata in human-readable form.
 ---
 tool_category: apps
 ---
-link1: http://data.okfn.org/tools/view
+link1: http://create.frictionlessdata.io
 ---
 link1_label: Website
 ---
-link2: https://github.com/okfn/data.okfn.org-new
+link2: https://github.com/frictionlessdata/datapackage-ui
 ---
 link2_label: Repository
 ---

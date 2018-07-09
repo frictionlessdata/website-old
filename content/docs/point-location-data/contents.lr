@@ -413,5 +413,5 @@ The Open Geospatial Consortium - [OpenGIS Simple Feature Access](http://www.open
 [pub-faq]: /docs/publish-faq/
 
 [tools]: /software/
-[dp-creator]: http://data.okfn.org/tools/create
-[dp-viewer]: http://data.okfn.org/tools/view
+[dp-creator]: http://create.frictionlessdata.io
+[dp-viewer]: http://create.frictionlessdata.io

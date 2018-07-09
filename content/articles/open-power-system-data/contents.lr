@@ -194,6 +194,8 @@ offered possibilities to filter the datasets for downloading of
 subsets. The filter criteria could be specified as part of the
 `datapackage.json`.
 
+!!! The old data package viewer, referenced above, is now deprecated. The new data package viewer, available on [create.frictionlessdata.io](http://create.frictionlessdata.io), addresses the issues raised above.
+
 Generally I think such an online Data Package viewer could be made
 more and more feature-rich as you go. It could, for example, also
 offer possibilities to download the data in alternative formats such

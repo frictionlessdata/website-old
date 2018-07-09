@@ -25,7 +25,7 @@ world.
 
 Every notebook on Dataship is also a Data Package[^datapackage]. Like
 other Data Packages it can be downloaded, along with its data, just by
-giving its URL to software like dpm[^dpm]. Additionally, working with
+giving its URL to software like data-cli[^data-cli]. Additionally, working with
 existing Data Packages is easy. Just as you can fork other notebooks,
 you can also fork existing Data Packages, even when they’re located
 somewhere else, like GitHub.
@@ -42,8 +42,9 @@ and writing images to the current directory.
 
 It would be useful to have a JavaScript version of some of the functionality in goodtables[^goodtables] available for use, specifically
 header detection in parsed csv contents (output of PapaParse), as well as an option in dpm to not put things in a ‘datapackages’
-folder, as I rarely need this when downloading
-a dataset.
+folder, as I rarely need this when downloading a dataset.
+
+!!! dpm, mentioned above, is now deprecated. Check out DataHub's [data-cli][^data-cli]
 
 My next task will be building and integrating the machine learning and
 neural network components into Dataship. After that I’ll be focusing
@@ -64,7 +65,7 @@ become important over the next ten years.
 [^numpy]: NumPy: Python package for scientific computing: <http://www.numpy.org>
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
 [^datapackage]: Data Packages: <http://frictionlessdata.io/data-packages/>
-[^dpm]: Data Package Manager (dpm): <https://github.com/frictionlessdata/dpm>
+[^data-cli]: DataHub's data commandline tool: <https://github.com/datahq/data-cli>
 [^goodtables]: goodtables: <http://goodtables.okfnlabs.org/>
 
 ---
