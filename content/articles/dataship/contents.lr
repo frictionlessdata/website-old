@@ -44,7 +44,7 @@ It would be useful to have a JavaScript version of some of the functionality in 
 header detection in parsed csv contents (output of PapaParse), as well as an option in dpm to not put things in a ‘datapackages’
 folder, as I rarely need this when downloading a dataset.
 
-!!! dpm, mentioned above, is now deprecated. Check out DataHub's [data-cli][^data-cli]
+!! dpm, mentioned above, is now deprecated. Check out DataHub's [data-cli](https://github.com/datahq/data-cli)
 
 My next task will be building and integrating the machine learning and
 neural network components into Dataship. After that I’ll be focusing
@@ -66,7 +66,7 @@ become important over the next ten years.
 [^pandas]: Pandas: Python package for data analysis: <http://pandas.pydata.org/>
 [^datapackage]: Data Packages: <http://frictionlessdata.io/data-packages/>
 [^data-cli]: DataHub's data commandline tool: <https://github.com/datahq/data-cli>
-[^goodtables]: goodtables: <http://goodtables.okfnlabs.org/>
+[^goodtables]: goodtables: <http://try.goodtables.io>
 
 ---
 article_type: case-studies

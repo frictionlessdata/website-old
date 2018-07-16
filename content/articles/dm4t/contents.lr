@@ -23,6 +23,8 @@ Energy Data
 - Goodtables: https://github.com/frictionlessdata/goodtables-py
 - Packagist: http://packagist.io/
 
+!! packagist.io has now moved to [create.frictionlessdata.io](http://create.frictionlessdata.io)
+
 ## Context
 
 ### Problem We Were Trying To Solve
@@ -39,7 +41,7 @@ Output was tracked here: https://github.com/frictionlessdata/pilot-dm4t/issues
 
 ## The work
 
-We will use the `refit-cleaned` dataset to show the Frictionless Data specs and software capabilities. For this work, we limited the size of this dataset in order to preserve a reasonable showcasing time. However, by design the Frictionless Data software has a very good scalability and this process could be reproduced for the whole dataset. But for now it is worth noting that the speed for such a big datastes could be a bottle neck for a research work.
+We will use the `refit-cleaned` dataset to show the Frictionless Data specs and software capabilities. For this work, we limited the size of this dataset in order to preserve a reasonable showcasing time. However, by design the Frictionless Data software has a very good scalability and this process could be reproduced for the whole dataset. But for now it is worth noting that the speed for such a big datasets could be a bottle neck for a research work.
 
 ### REFIT: Electrical Load Measurements (Cleaned)
 
@@ -296,7 +298,7 @@ DATASET
 
 ### Modifying a data package using Packagist
 
-If we need to modify our data package, we could use the [Packagist](pakagist.io). It incorporates a straightforward UI to modify and validate data package descriptors. With its easy to use interface we are able to:
+If we need to modify our data package, we could use the [Packagist](packagist.io). It incorporates a straightforward UI to modify and validate data package descriptors. With its easy to use interface we are able to:
 
 - Load/validate/save a data package
 - Update a data package metadata

@@ -20,7 +20,7 @@ Users typically store their data in all kinds of formats, which makes it hard to
 
 We first heard about the Frictionless Data project through [School of Data](https://schoolofdata.org). One of the OpenML core members is also involved in School of Data and used data packages in one of the open data workshops from School of Data Switzerland.  In the coming months, we are looking to adopt [Frictionless Data specifications](http://frictionlessdata.io/specs/) to improve user friendliness on OpenML. We hope to make it possible for users to upload and connect datasets in [data packages format](http://frictionlessdata.io/specs/data-package/). This will be a great shift because it would enable people to easily build and share machine learning models trained on any dataset in the frictionless data ecosystem.
 
-OpenML currently works with tabular data in Attribute Relation File Format ([ARFF](https://weka.wikispaces.com/ARFF+(stable+version))) accompanied by metadata in an xml or json file. It is actually very similar to Frictionless Data’s [tabular data package](http://frictionlessdata.io/tabular-data-package/) specification, but with ARFF instead of csv.
+OpenML currently works with tabular data in Attribute Relation File Format ([ARFF](https://weka.wikispaces.com/ARFF+%28stable+version%29)) accompanied by metadata in an XML or JSON file. It is actually very similar to Frictionless Data’s [tabular data package](/specs/tabular-data-package/) specification, but with ARFF instead of csv.
 
 ![](openml-dataset-list.png)
  *Image of dataset list on OpenML*

@@ -15,7 +15,7 @@ the following key features:
 
 As suggested by the name, Tabular Data Packages extend and specialize the [Data Package][dp] format for the specific case where the data is tabular.
 
-Read the full [RFC-style specification of Tabular Data Package](specs/tabular-data-package) to complement this quick introduction.
+Read the full [RFC-style specification of Tabular Data Package](/specs/tabular-data-package) to complement this quick introduction.
 
 ### Software
 There is a growing set of [online and offline](/software) for working with Tabular Data Packages including tools for creating, viewing and validating.

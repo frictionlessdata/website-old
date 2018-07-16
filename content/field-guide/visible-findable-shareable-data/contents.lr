@@ -4,7 +4,7 @@ intro: Getting your data out into the world is a crucial step towards its being 
 ---
 body:
 
-This section requires knowledge on how to [write a Table Schema](well-packaged-datasets/#write-a-table-schema) and [attach descriptive metadata](well-packaged-datasets/#add-your-dataset-s-metadata) to your data collection.
+This section requires knowledge on how to [write a Table Schema](/field-guide/well-packaged-datasets/#write-a-table-schema) and [attach descriptive metadata](/field-guide/well-packaged-datasets/#add-your-dataset-s-metadata) to your data collection.
 
 Creating and Sharing Data Packages is important for both data publishers and data users because it provides a common and open specification to describe your dataset's metadata. This facilitates data reuse, as users don't need to understand each data publisher's specific metadata format, and as the specification is machine-readable, it also allows tools to parse the metadata. This enables software to:
 
@@ -24,29 +24,29 @@ If don't need your own data portal, there are many platforms where you can publi
 
 ## Publish Packaged Data in our community CKAN instance
 
-CKAN is an open source platform for publishing data that makes it easy to discover, use and share data. [datahub.ckan.io](datahub.ckan.io) is a public instance of CKAN that allows anyone to publish their data.
+CKAN is an open source platform for publishing data that makes it easy to discover, use and share data. [datahub.ckan.io](http://datahub.ckan.io) is a public instance of CKAN that allows anyone to publish their data.
 
-Here’s why you should consider creating an organization on [datahub.ckan.io](datahub.ckan.io) and publishing datasets therein:
-* [datahub.ckan.io](datahub.ckan.io) is free for all to use! The file upload size limit on the platform is currently 100mb.
+Here’s why you should consider creating an organization on [datahub.ckan.io](http://datahub.ckan.io) and publishing datasets therein:
+* [datahub.ckan.io](http://datahub.ckan.ioo) is free for all to use! The file upload size limit on the platform is currently 100mb.
 * The decision on whether to publicly or privately publish datasets rests with data publishers.
-* [datahub.ckan.io](datahub.ckan.io) organizations allow for multiple users to collaborate with varied privileges:
+* [datahub.ckan.io](http://datahub.ckan.io) organizations allow for multiple users to collaborate with varied privileges:
  * **Admin**: Can add/edit and delete datasets, as well as manage organization members.
  * **Editor**: Can add and edit datasets, but not manage organization members.
  * **Member**: Can view the organization's private datasets, but not add new datasets.
 
-To publish data on [datahub.ckan.io](datahub.ckan.io):
+To publish data on [datahub.ckan.io](http://datahub.ckan.io):
 
 1. Request for a new Organization to be created on the platform for you via [our community page](https://discuss.okfn.org/c/open-knowledge-labs/datahub).
      This is required only to ensure spammers don’t take up space and hog resources on the platform.
 
      The request format is simple and requires:
-    * **Title**: This will be the name of your Organization on [datahub.ckan.io](datahub.ckan.io) i.e.<br/>
+    * **Title**: This will be the name of your Organization on [datahub.ckan.io](http://datahub.ckan.io) i.e.<br/>
       *My New Organization*
 
-    * **Slug**: This is an acronym, word or hyphenated phrase that will be added to the end of the [datahub.ckan.io](datahub.ckan.io) url to uniquely identify your Organization and associate your data collections with it i.e.<br/>
+    * **Slug**: This is an acronym, word or hyphenated phrase that will be added to the end of the [datahub.ckan.io](http://datahub.ckan.io) url to uniquely identify your Organization and associate your data collections with it i.e.<br/>
     	*my-new-organization*
 
-    * **Username**: The username you provide is associated with an email address on [datahub.ckan.io](datahub.ckan.io) and allows us to give you admin access to your Organization on [datahub.ckan.io](datahub.ckan.io).
+    * **Username**: The username you provide is associated with an email address on [datahub.ckan.io](http://datahub.ckan.io) and allows us to give you admin access to your Organization on [datahub.ckan.io](http://datahub.ckan.io).
 
 2. Log In and add new datasets
 
@@ -61,15 +61,15 @@ To publish data on [datahub.ckan.io](datahub.ckan.io):
 
 DataHub.io is a platform for finding, sharing and publishing high quality data online.
 
-[DataHub.io](datahub.io) and [datahub.ckan.io](http://datahub.ckan.io) share the same name for historical reasons. [Datahub.ckan.io](http://datahub.ckan.io) used to be the DataHub, but was moved to its current address, and the current DataHub uses new software developed from scratch.
+[DataHub.io](http://datahub.io) and [datahub.ckan.io](http://datahub.ckan.io) share the same name for historical reasons. [Datahub.ckan.io](http://datahub.ckan.io) used to be the DataHub, but was moved to its current address, and the current DataHub uses new software developed from scratch.
 
-1. Set up a data publisher / user account on [DataHub.io](datahub.io)
+1. Set up a data publisher / user account on [DataHub.io](http://datahub.io)
 
   Join the [datahub.io community group](https://gitter.im/datahubio/chat), introduce yourself and request for an account.
 
-2. Publish Datasets on [DataHub.io](datahub.io)
+2. Publish Datasets on [DataHub.io](http://datahub.io)
 
-  [This post](http://datahub.io/docs/getting-started/publishing-data) provides helpful information on publishing datasets on [DataHub.io](datahub.io).
+  [This post](http://datahub.io/docs/getting-started/publishing-data) provides helpful information on publishing datasets on [DataHub.io](http://datahub.io).
 
 
 ## Publish Packaged Data on GitHub
@@ -84,7 +84,7 @@ collaboration tools.
 
 Although GitHub offers many useful functionalities, not all datasets are a good fit for it. The main limitations are:
 
-* Invidivual files have less than 100 MB
+* Individual files have less than 100 MB
 * Entire repository have less than 1 GB
   * The repository size includes not only the current files, but all of their previous versions.
 

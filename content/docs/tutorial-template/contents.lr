@@ -28,7 +28,7 @@ You'll need a basic understanding of:
 To complete this tutorial you'll need:
 
 - a computer (macOS or Windows) with access to the internet
-- an account on datahub.io ([here's how](https://datahub.io/about))
+- an account on datahub.io ([here's how](https://datahub.ckan.io/about))
 
 
 
@@ -74,4 +74,4 @@ Now go {do something}
 
 ### References
 
-- Tabular Data Package specification - </specs/tabular-data-package/>
+- [Tabular Data Package specification](/specs/tabular-data-package/)

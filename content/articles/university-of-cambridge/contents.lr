@@ -25,10 +25,10 @@ More formally, Stephen wanted a way to include the following metadata with sampl
 
  1. Cell type: on center retinal ganglion cells
  2. Species: cat
- 3. Radius of [soma](https://en.wikipedia.org/wiki/Soma_(biology)): 10 um
+ 3. Radius of <a href="https://en.wikipedia.org/wiki/Soma_(biology)">soma</a>: 10 um
  4. Citation to original paper where data were presented: Wässle H, Boycott BB, Illing RB (1981) Morphology and mosaic of on- and off-beta cells in the cat retina and some functional considerations. Proc R Soc Lond B Biol Sci 212:177–195.
  5. Unit of measurement: micron.
- 6. (Optionally) A raw image from where the data where taken. e.g. http://www.damtp.cam.ac.uk/user/ sje30/data/mosaics/w81_scan/w81all.png
+ 6. (Optionally) A raw image from where the data where taken. e.g. http://www.damtp.cam.ac.uk/user/sje30/data/mosaics/w81_scan/w81all.png
 
 The long-term goal was to build a website/repository containing about 100+ examples of these “retinal mosaics”. The website would allow people to view the mosaics, download the data files, or run online some simple analysis.
 

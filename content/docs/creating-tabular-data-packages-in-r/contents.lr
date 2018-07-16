@@ -51,7 +51,7 @@ You can add useful metadata by adding keys to metadata dict attribute. Below, we
 
 ## Infer a CSV Schema
 
-We will use periodic-table data from [remote path](https://raw.githubusercontent.com/okgreece/datapackage-r/master/vignettes/example%20data/data.csv)
+We will use periodic-table data from [remote path](https://raw.githubusercontent.com/frictionlessdata/datapackage-r/9eed05d1710fd69a0cb74f7941c7f142563f571b/vignettes/example_data/data.csv)
 
 | atomic.number | symbol | name      | atomic.mass | metal.or.nonmetal.   |
 |---------------|--------|-----------|-------------|----------------------|

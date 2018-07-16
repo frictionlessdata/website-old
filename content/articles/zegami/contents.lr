@@ -29,7 +29,7 @@ We are currently using the specifications in the following ways:
 
 In the coming days, We plan on using
 - datapackage-pipelines[^dpp] as a spec for the way we treat joins and multi-step data operations in our system
-- tabulator in a polyglot persistence scenario[^polyglot] - storing data in both storage buckets and either elasticsearch[^elasticsearch] or another column store like [druid.io](druid.io).
+- tabulator in a polyglot persistence scenario[^polyglot] - storing data in both storage buckets and either elasticsearch[^elasticsearch] or another column store like [druid.io](http://druid.io).
 
 ![Diagram](zegami-1.jpg)
 

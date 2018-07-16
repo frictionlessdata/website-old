@@ -16,8 +16,8 @@ First, some key concepts:
 * To keep things simple, you should use [digital degrees](https://en.wikipedia.org/wiki/Decimal_degrees) `-27.1944, 151.32660`, not [degrees, minutes, seconds](https://en.wikipedia.org/wiki/Latitude#Preliminaries) or Northing and Eastings `27.1944° S, 151.2660° E`.
 * Representing locations other than points in a CSV can be complicated as the shape is represented by many coordinate pairs that combine to make the shape (think joining the dots).
 * A coordinate pair is inadequate to accurately show a location on a map. You also need a [coordinate reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) and sometimes a date.
-* A coordinate reference system describes the [datum](https://en.wikipedia.org/wiki/Datum_(geodesy)), [geoid](https://en.wikipedia.org/wiki/Geoid), [coordinate system](https://en.wikipedia.org/wiki/Coordinate_system), and [map projection](https://en.wikipedia.org/wiki/Map_projection) of the location data.
-* Dates detailing when the location was recorded are also important because things change over time, e.g. the shape of an [electoral boundary](http://boundaries.ecq.qld.gov.au/have-your-say/the-final-determination), or the [location of a continent](http://www.icsm.gov.au/gda2020/index.html).
+* A coordinate reference system describes the <a href="https://en.wikipedia.org/wiki/Datum_(geodesy)">datum</a>, [geoid](https://en.wikipedia.org/wiki/Geoid), [coordinate system](https://en.wikipedia.org/wiki/Coordinate_system), and [map projection](https://en.wikipedia.org/wiki/Map_projection) of the location data.
+* Dates detailing when the location was recorded are also important because things change over time, e.g. the shape of an [electoral boundary](https://www.ecq.qld.gov.au/__data/assets/pdf_file/0009/70956/26.5.17_Extraordinary-Gazette_QRC-Final-Determination.pdf), or the [location of a continent](http://www.icsm.gov.au/datum/what-gda2020).
 
 The key information to describe a point location is a:
 
@@ -209,7 +209,7 @@ Two columns of type [number](/specs/table-schema/#number) with [constraints](/sp
 
 ### 5. String and Foreign key reference to well-known place-name
 
-All the previous examples assume you know the coordinates of the location. What if you only know the name? You can use a name, of type: [string](/specs/table-schema/#string), to refer to an another data resource and use the name to determine the coordinates. This data resource is often called a [Gazetteer](https://en.wikipedia.org/wiki/Gazetteer). [Often](https://en.wikipedia.org/wiki/Gazetteer#List_of_gazetteers) a [website](http://www.icsm.gov.au/cgna/websites.html) or API is placed in front of the data so you can provide a name and the location data is returned
+All the previous examples assume you know the coordinates of the location. What if you only know the name? You can use a name, of type: [string](/specs/table-schema/#string), to refer to an another data resource and use the name to determine the coordinates. This data resource is often called a [Gazetteer](https://en.wikipedia.org/wiki/Gazetteer). [Often](https://en.wikipedia.org/wiki/Gazetteer#List_of_gazetteers) a website or API is placed in front of the data so you can provide a name and the location data is returned
 
 A date may be an additional field included in the foreign key relationship.
 

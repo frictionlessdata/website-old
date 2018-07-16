@@ -388,7 +388,7 @@ Some best practices:
 
 
   Examples of feedback loops that data publishers can set up include:
-  
+
 
   * Adding a comments section in a data platform. Needless to say, the comments section should be monitored closely to ensure that responses are sent in time, and that discussions remain respectful and on topic.
   * A dedicated social platform channel, such as a Google Group or Facebook group, with a prominently placed link from the data platform for sharing updates, collating and responding to feedback.
@@ -402,7 +402,7 @@ Some best practices:
 
   * Kickstarting and joining discussions in online forums
    * Blogs
-     As a data publisher, running a data blog is a great way to create awareness about the data you publish, and an avenue to highlight how data users are drawing insight from it. This encourages use and reuse of your data. If you don’t run a data blog, there are plenty of open data blogs that welcome external contributions i.e. [here’s how](https://blog.okfn.org/submit/) you can contribute guest posts on [blog.okfn.org](blog.okfn.org).
+     As a data publisher, running a data blog is a great way to create awareness about the data you publish, and an avenue to highlight how data users are drawing insight from it. This encourages use and reuse of your data. If you don’t run a data blog, there are plenty of open data blogs that welcome external contributions i.e. [here’s how](https://blog.okfn.org/submit/) you can contribute guest posts on [blog.okfn.org](http://blog.okfn.org).
 
    * Open Knowledge Discuss
      The Open Knowledge discussion platform is a great place to invoke and contribute to conversation on specific subjects. [Dive in](https://discuss.okfn.org)!
