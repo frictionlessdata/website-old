@@ -8,7 +8,7 @@ body:
 
 [Data Package M](https://github.com/nimblelearn/datapackage-m), also known as *datapackage-m*, is a set of functions written in [Power Query M](https://msdn.microsoft.com/query-bi/m/power-query-m-reference) for working with Tabular Data Packages in [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) and [Power Query for Excel](https://support.office.com/en-us/article/introduction-to-microsoft-power-query-for-excel-6e92e2f4-2079-4e1f-bad5-89f6269cd605) (also known as 'Get & Transform Data' in Excel 2016).
 
-Datapackage-m makes use of the Data Package, Data Resource, Tabular Data Package, Tabular Data Resource, and Table Schema specifications, enabling you to go from data to insight in Power BI and Excel, faster.
+datapackage-m makes use of the Data Package, Data Resource, Tabular Data Package, Tabular Data Resource, and Table Schema specifications, enabling you to go from data to insight in Power BI and Excel, faster.
 
 In 2014, while searching the web for high quality open data, we stumbled across the Frictionless Data project. On learning about [Data Packages](https://frictionlessdata.io/data-packages/), we spent some time getting acquainted with the specs and began to use Tabular Data Packages for some internal projects. datapackage-m then started off as an internal tool at Nimble Learn for working with Tabular Data Packages.
 
