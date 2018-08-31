@@ -21,5 +21,10 @@
   },
   "scripts": {
     "build": "grunt specs && grunt icons && grunt sass && grunt postcss && grunt modernizr"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "popper.js": "^1.14.4",
+    "uglify-js": "^2.8.29"
   }
 }
