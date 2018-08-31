@@ -8,7 +8,6 @@ install:
 - pip install lektor
 - pip install boto3
 - pip list
-- npm i -g npm
 - npm install
 - npm run build
 script:
