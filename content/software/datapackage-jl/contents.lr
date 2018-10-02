@@ -1,8 +1,8 @@
-title: datapackage-jl
+title: DataPackage.jl
 ---
 description: A Julia library for working with Data Packages.
 ---
-link1: https://github.com/frictionlessdata/datapackage-jl
+link1: https://github.com/frictionlessdata/datapackage.jl
 ---
 link1_label: Repository
 ---

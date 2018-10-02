@@ -1,8 +1,8 @@
-title: tableschema-jl
+title: TableSchema.jl
 ---
 description: A Julia library for working with Table Schema.
 ---
-link1: https://github.com/frictionlessdata/tableschema-jl
+link1: https://github.com/frictionlessdata/tableschema.jl
 ---
 link1_label: Repository
 ---
