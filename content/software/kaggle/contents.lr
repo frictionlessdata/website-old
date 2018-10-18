@@ -1,0 +1,17 @@
+title: Kaggle API
+---
+description: The Kaggle API follows the Data Package specification for specifying metadata when creating new Datasets and Dataset versions.
+---
+link1: https://github.com/Kaggle/kaggle-api
+---
+link1_label: Repository
+---
+link2: https://github.com/Kaggle/kaggle-api/wiki/Dataset-Metadata
+---
+link2_label: Wiki
+---
+link3: https://www.kaggle.com
+---
+link3_label: Website
+---
+tool_category: universe
