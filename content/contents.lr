@@ -88,7 +88,7 @@ feature4_link_text: Go to docs
 ---
 feature4_link_url: docs
 ---
-feature5_body: We also have a chat room dedicated to technical discussion about Frictionless Data. Feel free to stop by and introduce yourself.
+feature5_body: We also have a chat room on Gitter dedicated to technical discussion about Frictionless Data. Feel free to stop by and introduce yourself.
 ---
 feature5_heading: Chat
 ---
@@ -107,3 +107,35 @@ feature6_icon: forum
 feature6_link_text: Go to forum
 ---
 feature6_link_url: https://discuss.okfn.org/c/frictionless-data
+---
+feature7_body: All our code is open source and made available under the CC-by license. Code and documentation contributions and adoptions are highly encouraged.
+---
+feature7_heading: GitHub
+---
+feature7_icon: github
+---
+feature7_link_text: Go to GitHub
+---
+feature7_link_url: https://github.com/frictionlessdata
+---
+feature8_body: If you have adopted Frictionless Data specs, and noticed a problem, open an issue in our tracker. Feature requests and suggestions are  also welcome.
+---
+feature8_heading: Issue Tracker
+---
+feature8_icon: tools
+---
+feature8_link_text: Go to Issue Tracker
+---
+feature8_link_url: https://github.com/frictionlessdata/specs/issues
+---
+feature9_body: The Frictionless Data team runs workshops all year round. Find out where we'll be next and join us, or mail us an invite to your event: [frictionlessdata@okfn.org](emailto:frictionlessdata@okfn.org)
+---
+feature9_heading: Events Calendar
+---
+feature9_icon: rocket
+---
+feature9_link_text: Go to Events Calendar
+---
+feature9_link_url: https://calendar.google.com/calendar/embed?src=okfn.org_h97nm9d8qpntqq1sfsqfgm3pu0%40group.calendar.google.com
+---
+section3_heading: Get involved.
