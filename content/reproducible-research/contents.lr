@@ -4,11 +4,9 @@ pretitle: Frictionless Data for
 ---
 title: Reproducible Research
 ---
-intro: 
+intro: Frictionless Data for Reproducible Research is a second phase project [with funding from the Sloan Foundation](https://blog.okfn.org/2018/07/12/sloan-foundation-funds-frictionless-data-for-reproducible-research/) to support [Open Knowledge International](https://okfn.org) in applying Frictionless Data specifications and software to reproducible research across a range of scientific disciplines.
 ---
 body:
-
-Frictionless Data for Reproducible Research is a second phase project [with funding from the Sloan Foundation](https://blog.okfn.org/2018/07/12/sloan-foundation-funds-frictionless-data-for-reproducible-research/) to support [Open Knowledge International](https://okfn.org) in applying Frictionless Data specifications and software to reproducible research across a range of scientific disciplines.
 
 From September 2018 and over a period of three years, the Frictionless Data team will focus on enhanced dissemination and training activities, and further iterations on our [software](https://frictionlessdata.io/software/) and [specifications](https://frictionlessdata.io/specs/) via a range of deep [pilot projects](https://frictionlessdata.io/articles/) with research partners.
 
@@ -22,17 +20,17 @@ person1_body: Paul Walsh is the Chief Product Officer at Open Knowledge Internat
 ---
 person1_heading: Paul Walsh, Principal Investigator
 ---
-person1_image: paul
+person1_image: https://gravatar.com/avatar/7630147a63e1f0d9f1275b4aee414466?s=400
 ---
-person2_body: Jo Barratt is the Frictionless Data project manager and Delivery Manager at Open Knowledge International. He has over 10 years experience managing projects across a wide range of technology, arts and communications projects .
+person2_body: Jo Barratt is the Frictionless Data project manager and Delivery Manager at Open Knowledge International. He has over 10 years experience managing projects across a wide range of technology, arts and communications projects.
 ---
 person2_heading: Jo Barratt, Project Manager
 ---
-person2_image: jo
+person2_image: https://gravatar.com/avatar/5fb6338abdbf8ec14a607e9c691d6991?s=400
 ---
-person3_image: lilly
+person3_image: https://gravatar.com/avatar/ddf27d2815b3012cf25e82d8206d7c78?s=400
 ---
-person4_image: adria
+person4_image: https://gravatar.com/avatar/69f14e9af81f4441755fce755a925319?s=400
 ---
 person3_body: Lilly Winfree has her PhD in neuroscience from Oregon Health and Science University and is an open science and open data enthusiast. Lilly’s research interests include understanding the cultural motivations of scientists to share their data. As the Product Manager for Frictionless Data for Reproducible Research at Open Knowledge International, she is also exploring how computational tools can enhance researcher’s workflows with a goal of making scientific data more open, shareable, and reproducible.
 ---

@@ -1,0 +1,73 @@
+// reusable
+.researchers-template {
+
+  .banner {
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-weight: 800;
+      small {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 64px;
+
+        small {
+          font-size: 24px;
+        }
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 72px;
+      }
+    }
+
+    // with image
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      padding: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        background-repeat: no-repeat;
+        background-position: $grid-gutter-width/2 bottom;
+      }
+
+      .container {
+        padding-top: $spacer*2;
+        padding-bottom: $spacer*2;
+        padding-right: (map-get($container-max-widths, lg)/2) + ($grid-gutter-width /2);
+        min-height: 500px;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .container {
+        padding-right: (map-get($container-max-widths, xl)/2) + ($grid-gutter-width /2);
+      }
+    }
+  }
+}
+
+// template specific
+@include media-breakpoint-up(lg) {
+  .researchers-template .banner::before {
+    background-image: url("../img/research-banner-bg.png");
+    background-size: auto 474px;
+  }
+
+}

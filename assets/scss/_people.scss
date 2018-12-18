@@ -1,0 +1,37 @@
+.people {
+  padding: 0;
+  @include media-breakpoint-up(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: $grid-gutter-width;
+  }
+
+  li {
+    display: block;
+    margin-bottom: $grid-gutter-width;
+  }
+
+  .image {
+    width: 164px;
+    flex-shrink: 0;
+    margin-bottom: $spacer;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text {
+
+    .heading {
+      font-size: 1.3em;
+    }
+
+    & > a {
+      font-family: $font-family-sans-serif;
+      font-weight: bold;
+    }
+  }
+}

@@ -9,49 +9,53 @@
   </div>
 </div>
 
-<div id="guides" class="main">
+<div class="main">
   <div class="container">
     {{ this.body }}
-  </div>
-  <div>
-    <section class="features">
-      <div class="container">
 
-        <div>
-          <div class="feature">
-            <div class="image">
-              <img src="{{ this.person1_image|url }}" width="200" height="200" alt="">
-            </div>
-            <h3 class="feature-heading">{{ this.person1_heading }}</h3>
-            {{ this.person1_body }}
-            <a href="{{ this.person1_link_url }}">{{ this.person1_link_text }}</a>
-          </div>
-
-          <div class="feature">
-            <div class="image">
-              <img src="{{ this.person2_image|url }}" width="200" height="200" alt="">
-            </div>
-            <h3 class="feature-heading">{{ this.person2_heading }}</h3>
-            {{ this.person2_body }}
-            <a href="{{ this.person2_link_url }}">{{ this.person2_link_text }}</a>
-          </div>
-
-          <div class="feature">
-            <img src="{{ this.person3_image|url }}" width="200" height="200" alt="">
-            <h3 class="feature-heading">{{ this.person3_heading }}</h3>
-            {{ this.person3_body }}
-            <a href="{{ this.person3_link_url }}">{{ this.person3_link_text }}</a>
-          </div>
-
-          <div class="feature">
-            <img src="{{ this.person4_image|url }}" width="200" height="200" alt="">
-            <h3 class="feature-heading">{{ this.person4_heading }}</h3>
-            {{ this.person4_body }}
-            <a href="{{ this.person4_link_url }}">{{ this.person4_link_text }}</a>
-          </div>
+    <ul class="people">
+      <li>
+        <div class="image">
+          <img src="{{ this.person1_image }}" alt="">
         </div>
-      </div>
-    </section>
+        <div class="text">
+          <h3 class="heading">{{ this.person1_heading }}</h3>
+          {{ this.person1_body }}
+          <a href="{{ this.person1_link_url }}">{{ this.person1_link_text }}</a>
+        </div>
+      </li>
+      <li>
+        <div class="image">
+          <img src="{{ this.person2_image }}" alt="">
+        </div>
+        <div class="text">
+          <h3 class="heading">{{ this.person2_heading }}</h3>
+          {{ this.person2_body }}
+          <a href="{{ this.person2_link_url }}">{{ this.person2_link_text }}</a>
+        </div>
+      </li>
+      <li>
+        <div class="image">
+          <img src="{{ this.person3_image }}" alt="">
+        </div>
+        <div class="text">
+          <h3 class="heading">{{ this.person3_heading }}</h3>
+          {{ this.person3_body }}
+          <a href="{{ this.person3_link_url }}">{{ this.person3_link_text }}</a>
+        </div>
+      </li>
+      <li>
+        <div class="image">
+          <img src="{{ this.person4_image }}" alt="">
+        </div>
+        <div class="text">
+          <h3 class="heading">{{ this.person4_heading }}</h3>
+          {{ this.person4_body }}
+          <a href="{{ this.person4_link_url }}">{{ this.person4_link_text }}</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 
 {% endblock %}
