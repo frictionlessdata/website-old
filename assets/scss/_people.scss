@@ -2,13 +2,14 @@
   padding: 0;
   @include media-breakpoint-up(md) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: $grid-gutter-width;
   }
 
   li {
     display: block;
-    margin-bottom: $grid-gutter-width;
+    margin-top: $grid-gutter-width/2;
+    margin-bottom: $grid-gutter-width/2;
   }
 
   .image {

@@ -10,52 +10,86 @@
 </div>
 
 <div class="main">
-  <div class="container">
-    {{ this.body }}
-
-    <ul class="people">
-      <li>
-        <div class="image">
-          <img src="{{ this.person1_image }}" alt="">
-        </div>
-        <div class="text">
-          <h3 class="heading">{{ this.person1_heading }}</h3>
-          {{ this.person1_body }}
-          <a href="{{ this.person1_link_url }}">{{ this.person1_link_text }}</a>
-        </div>
-      </li>
-      <li>
-        <div class="image">
-          <img src="{{ this.person2_image }}" alt="">
-        </div>
-        <div class="text">
-          <h3 class="heading">{{ this.person2_heading }}</h3>
-          {{ this.person2_body }}
-          <a href="{{ this.person2_link_url }}">{{ this.person2_link_text }}</a>
-        </div>
-      </li>
-      <li>
-        <div class="image">
-          <img src="{{ this.person3_image }}" alt="">
-        </div>
-        <div class="text">
-          <h3 class="heading">{{ this.person3_heading }}</h3>
-          {{ this.person3_body }}
-          <a href="{{ this.person3_link_url }}">{{ this.person3_link_text }}</a>
-        </div>
-      </li>
-      <li>
-        <div class="image">
-          <img src="{{ this.person4_image }}" alt="">
-        </div>
-        <div class="text">
-          <h3 class="heading">{{ this.person4_heading }}</h3>
-          {{ this.person4_body }}
-          <a href="{{ this.person4_link_url }}">{{ this.person4_link_text }}</a>
-        </div>
-      </li>
-    </ul>
-  </div>
+  {% set body_content_count = 0 %}
+  {% if this.body %}
+  {% set body_content_count = body_content_count + 1 %}
+  {% endif %}
+  {% if this.body_2 %}
+  {% set body_content_count = body_content_count + 1 %}
+  {% endif %}
+  {% if this.body_3 %}
+  {% set body_content_count = body_content_count + 1 %}
+  {% endif %}
+  {% if body_content_count > 0 %}
+  <section class="body-content" data-items="{{ body_content_count }}">
+    <div class="container">
+      {% if this.body %}
+      <div>
+        {{ this.body }}
+      </div>
+      {% endif %}
+      {% if this.body_2 %}
+      <div>
+        {{ this.body_2 }}
+      </div>
+      {% endif %}
+      {% if this.body_3 %}
+      <div>
+        {{ this.body_3 }}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
+  <section>
+    <div class="container">
+      {% if this.people_heading %}
+      <h2>{{ this.people_heading }}</h2>
+      {% endif %}
+      <ul class="people">
+        <li>
+          <div class="image">
+            <img src="{{ this.person1_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person1_heading }}</h3>
+            {{ this.person1_body }}
+            <a href="{{ this.person1_link_url }}">{{ this.person1_link_text }}</a>
+          </div>
+        </li>
+        <li>
+          <div class="image">
+            <img src="{{ this.person2_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person2_heading }}</h3>
+            {{ this.person2_body }}
+            <a href="{{ this.person2_link_url }}">{{ this.person2_link_text }}</a>
+          </div>
+        </li>
+        <li>
+          <div class="image">
+            <img src="{{ this.person3_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person3_heading }}</h3>
+            {{ this.person3_body }}
+            <a href="{{ this.person3_link_url }}">{{ this.person3_link_text }}</a>
+          </div>
+        </li>
+        <li>
+          <div class="image">
+            <img src="{{ this.person4_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person4_heading }}</h3>
+            {{ this.person4_body }}
+            <a href="{{ this.person4_link_url }}">{{ this.person4_link_text }}</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </div>
 
 {% endblock %}

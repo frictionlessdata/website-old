@@ -8,13 +8,9 @@ intro: Frictionless Data for Reproducible Research is a second phase project [wi
 ---
 body:
 
+## The Plan
+
 From September 2018 and over a period of three years, the Frictionless Data team will focus on enhanced dissemination and training activities, and further iterations on our [software](https://frictionlessdata.io/software/) and [specifications](https://frictionlessdata.io/specs/) via a range of deep [pilot projects](https://frictionlessdata.io/articles/) with research partners.
-
-At the onset of this project, we spent a fair amount of time reflecting on [FAIR research principles in relation to Frictionless Data](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/), and expounded on the concept of data packages as an example of FAIRness.
-
-We welcome suggestions and invitations to collaborate from research communities in various domains. All correspondence sent to our team via frictionlessdata@okfn.org will be carefully mulled over and responded to.
-
-This is the team that’s driving this work:
 ---
 person1_body: Paul Walsh is the Chief Product Officer at Open Knowledge International, with overall responsibility for the technical product the organisation produces and maintains. Paul has over 10 years experience working on product, technology, and marketing in the commercial and nonprofit sectors.
 ---
@@ -47,3 +43,17 @@ person2_link_text: Email Jo
 person3_link_text: Email Lilly
 ---
 person4_link_text: Send Adrià a Tweet
+---
+people_heading: The Team
+---
+body_2:
+
+## FAIR Data
+
+At the onset of this project, we spent time reflecting on [FAIR research principles in relation to Frictionless Data](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/), and expounded on the concept of data packages as an example of FAIRness.
+---
+body_3:
+
+## Collaboration
+
+We welcome suggestions and invitations to collaborate from research communities in various domains. All correspondence sent to our team via [frictionlessdata@okfn.org](mailto:frictionlessdata@okfn.org) will be carefully mulled over and responded to.
