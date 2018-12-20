@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<div class="banner">
+  <div class="container">
+    <h1><small>{{ this.pretitle }}</small> {{ this.title }}</h1>
+    {{ this.intro }}
+  </div>
+</div>
+
+<div class="main">
+  {% set body_content_count = 0 %}
+  {% if this.body %}
+  {% set body_content_count = body_content_count + 1 %}
+  {% endif %}
+  {% if this.body_2 %}
+  {% set body_content_count = body_content_count + 1 %}
+  {% endif %}
+  {% if this.body_3 %}
+  {% set body_content_count = body_content_count + 1 %}
+  {% endif %}
+  {% if body_content_count > 0 %}
+  <section class="body-content" data-items="{{ body_content_count }}">
+    <div class="container">
+      {% if this.body %}
+      <div>
+        {{ this.body }}
+      </div>
+      {% endif %}
+      {% if this.body_2 %}
+      <div>
+        {{ this.body_2 }}
+      </div>
+      {% endif %}
+      {% if this.body_3 %}
+      <div>
+        {{ this.body_3 }}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
+  <section>
+    <div class="container">
+      {% if this.people_heading %}
+      <h2>{{ this.people_heading }}</h2>
+      {% endif %}
+      <ul class="people">
+        <li>
+          <div class="image">
+            <img src="{{ this.person1_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person1_heading }}</h3>
+            {{ this.person1_body }}
+          </div>
+        </li>
+        <li>
+          <div class="image">
+            <img src="{{ this.person2_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person2_heading }}</h3>
+            {{ this.person2_body }}
+          </div>
+        </li>
+        <li>
+          <div class="image">
+            <img src="{{ this.person3_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person3_heading }}</h3>
+            {{ this.person3_body }}
+          </div>
+        </li>
+        <li>
+          <div class="image">
+            <img src="{{ this.person4_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person4_heading }}</h3>
+            {{ this.person4_body }}
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+{% endblock %}

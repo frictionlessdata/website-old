@@ -40,6 +40,10 @@ Your submission will then undergo a review process, and once edits and suggestio
 
 All content on the Frictionless Data website is made available under the CC-BY license.
 
+### CSS
+
+Style changes should be made to the SCSS files. Use `grunt` to watch for changes, and compile to CSS.
+
 ### Notes
 
 If you get errors like below, ensure that there are not codeblocks in content with mentioned syntax (`yaml=` in this case). Make sure that you `npm run build` before checking to pull the latest specs documents. Lektor errors could be confusing because we use the TOC plugin - so it could show the same error for all documents while the real error is only inside one of them.
