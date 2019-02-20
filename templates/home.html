@@ -18,6 +18,11 @@
       {% if this.section1_heading %}
       <h2 class="section-heading">{{ this.section1_heading }}</h2>
       {% endif %}
+
+      <h2 class="tool-list-description">{{ this.toolfund_heading }}</h2>
+      {{ this.toolfund_intro }}
+      <a href="https://toolfund.frictionlessdata.io/">{{ this.toolfund_link_text }}</a>
+
       <div>
         <div class="feature">
           <a href="{{ this.feature1_link_url }}"><svg><use xlink:href="#icon-{{ this.feature1_icon }}" /></svg></a>
