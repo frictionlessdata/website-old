@@ -22,7 +22,7 @@ Data Curator enables open data producers to define all this information using th
 
 Data Curator uses the [Frictionless Data specification](https://frictionlessdata.io/specs/) and [software](https://frictionlessdata.io/software/ "Frictionless Data platforms, applications, and software libraries") to package the data and supporting information in a [Tabular Data Package](https://frictionlessdata.io/specs/tabular-data-package/ "Tabular Data Package specification").
 
-![Data Curator screenshot](https://i.imgur.com/gP76YWn.png)
+![Data Curator screenshot](data-curator.png)
 
 ## Using Data Curator
 
@@ -57,7 +57,7 @@ After adding data in Data Curator, to create a Table Schema:
 
 Using Data Curator, you can validate if the data complies with the field's `type`, `format` and `contraints`. Errors found can be filtered in different ways so you can correct errors by row, by column or by error type. 
 
-In some cases data errors cannot be corrected, as they should be corrected in the source system and not as part of the data packaging process. If your happy to publish the data with errors, the error messages can be appended to the provenance information.
+In some cases data errors cannot be corrected, as they should be corrected in the source system and not as part of the data packaging process. If you're happy to publish the data with errors, the error messages can be appended to the provenance information.
 
 ### Provide context
 
@@ -65,7 +65,7 @@ Data Curator lets you add provenance information to help people understand why a
 
 Provenance information can be entered using [Markdown](http://commonmark.org "Markdown specification"). You can preview the Markdown formatting in Data Curator. 
 
-![Add provenance information screenshot](https://i.imgur.com/S3pomlh.png)
+![Add provenance information screenshot](data-curator-2.png)
 
 
 You should follow the [Readme FAQ](https://frictionlessdata.io/docs/publish-faq/#readme "Publishing Data Packages - FAQ") when writing provenance information or, even easier, cut and paste from this [sample](https://github.com/ODIQueensland/data-curator/blob/develop/test/features/tools/sample-provenance-information.md "Sample Provenance Information Markdown file on GitHub").
@@ -86,7 +86,7 @@ Data Curator lets you save data as a comma, semicolon, or tab separated value fi
 
 Applying a license, waiver, or public domain mark to a [data package](https://frictionlessdata.io/specs/data-package/#licenses "The licenses property in the Data Package specification") and its [resources](https://frictionlessdata.io/specs/data-resource/#optional-properties "The licenses property in the Data Resource specification") helps people understand how they can use, modify, and share the contents of the data package.
 
-![Apply open license to data package screenshot](https://i.imgur.com/FUiPGFk.png)
+![Apply open license to data package screenshot](data-curator-3.png)
 
 
 Although there are many ways to [apply a licence, waiver or public domain mark](https://frictionlessdata.io/docs/applying-licenses/ "Guide to applying licenses, waivers or public domain marks to data packages") to a data package, Data Curator only allows you to use open licences - after all, its purpose is to share usable open data.
@@ -147,6 +147,6 @@ article_type: case-studies
 ---
 subject_context: Data Curator makes use of the Frictionless Data Specifications to allow users to define information about their data using their desktop computer, prior to publishing it on the Internet
 ---
-subject_img: ![Data Curator logo](https://github.com/ODIQueensland/data-curator/raw/develop/static/img/data-curator-banner.png)
+subject_img: data-curator-logo.png
 ---
 summary: Data Curator is a simple desktop editor to help describe, validate, and share usable open data.
