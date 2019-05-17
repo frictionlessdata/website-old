@@ -1,0 +1,9 @@
+title: datapackage-connector
+---
+description: Power BI Custom Connector for loading tables directly from Tabular Data Packages into Power BI through the 'Get Data' experience.
+---
+link1: https://github.com/nimblelearn/datapackage-connector
+---
+link1_label: Repository
+---
+tool_category: universe
