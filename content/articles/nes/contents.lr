@@ -4,9 +4,7 @@ article_type: grantee-profiles-2019
 ---
 body:
 
-# Carlos Eduardo Ribas and João Alexandre Peschansk from the Neuroscience Experiments System
-
-_This grantee profile features Carlos Eduardo Ribas and João Alexandre Peschanski for our series of Frictionless Data Tool Fund posts, written to shine a light on Frictionless Data’s Tool Fund grantees, their work and to let our technical community know how they can get involved._
+_This grantee profile features Carlos Eduardo Ribas and João Alexandre Peschanski from the Neuroscience Experiments System (NES) for our series of Frictionless Data Tool Fund posts, written to shine a light on Frictionless Data’s Tool Fund grantees, their work and to let our technical community know how they can get involved._
 
 
 ### Meet Carlos, João, and RIDC NeuroMat
@@ -45,3 +43,7 @@ The source code is available on [GitHub](https://github.com/neuromat/nes) ([docu
 As the RIDC NeuroMat has published [elsewhere](https://neuromat.numec.prp.usp.br/content/in-defense-of-public-scientific-data-sharing-a-neuromat-op-ed/), the work on NES is part of a broader agenda for the development of a database that allows public access to neuroscientific data (physiological measures and functional assessments). We hope our engagement with the Frictionless Data community will open up possibilities of sharing and partnering up for moving this agenda forward.
 ---
 summary: Tool Fund Grantee - NES
+---
+subject1_img: carlos.jpg
+---
+subject2_img: Joao.jpg
