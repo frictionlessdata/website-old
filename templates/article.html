@@ -83,6 +83,9 @@
 
       {% if this.article_type == 'grantee-profiles-2019' %}
       <div class="callout">
+        {% if this.subject_img %}
+        <div class="profile image"><span style="background-image: url({{ this.subject_img }});"></span></div>
+        {% endif %}
         {% if this.subject1_img %}
         <div class="profile image"><span style="background-image: url({{ this.subject1_img }});"></span></div>
         {% endif %}
