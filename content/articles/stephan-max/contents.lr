@@ -36,3 +36,5 @@ My goal is to add a Data Package import/export add-on to Google Sheets. I unders
 I think open source and data is a unique and wonderful opportunity to get access to the “wisdom of the crowd” and ensure that software and information is and remains accessible to everyone. In the first few weeks I will focus on getting a first prototype and sufficient documentation up, so you can all play with the Data Package import/export add-on as soon as possible. After that, I invite you to take a look at our Github repository ([https://github.com/frictionlessdata/googlesheets-datapackage-tools](https://github.com/frictionlessdata/googlesheets-datapackage-tools)), play around with the tool, and contribute. Raising an issue, opening a pull request, improving the documentation, giving feedback on the user experience—everything counts! I am so stoked to be part of this Frictionless Data journey and can’t wait to see what we will accomplish. Thank you very much in advance!
 ---
 summary: Tool Fund Grantee - Stephan Max
+---
+subject_img: stephanmax.jpg
