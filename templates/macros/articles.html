@@ -1,22 +1,25 @@
 {% macro render_post_preview(post, from_index=false) %}
   <div class="{{ post.article_type }} preview cat-{{ post.article_type }}">
-    <div class="{% if post.article_type != 'other' %}{% if post.subject_img %}has {% endif %}{% endif %}image">
-      <a href="{{ post|url }}" {% if post.article_type != 'other' %}{% if post.subject_img %} style="background-image: url({{ post|url }}{{ post.subject_img }});"{% endif %}{% endif %}>
-
+    <div class="{% if post.article_type != 'other' %}{% if post.subject_img %}{% elif post.subject1_img %}has {% endif %}{% endif %}image">
+      <a href="{{ post|url }}" {% if post.article_type != 'other' %}{% if post.subject1_img %} style="background-image: url({{ post|url }}{{ post.subject1_img }});"{% endif %}{% if post.subject_img %} style="background-image: url({{ post|url }}{{ post.subject_img }});"{% endif %}{% endif %}>
         {% if post.article_type != 'other' %}
         {% if not post.subject_img %}
-        <span class="letter">
-        {{ post.title|truncate(1, True, '') }}
-        </span>
+          {% if not post.subject1_img %}
+          <span class="letter">
+          {{ post.title|truncate(1, True, '') }}
+          </span>
+          {% endif %}
         {% endif %}
         {% endif %}
       </a>
+
       {% for t in site.query('/article-types') %}
       {% if t._id == post.article_type %}
       <span class="type">{{ t.singular }}</span>
       {% endif %}
       {% endfor %}
     </div>
+
     <h3 class="article-heading"><a href="{{ post|url }}">{{ post.title }}</a></h3>
 
   {% if post.summary %}

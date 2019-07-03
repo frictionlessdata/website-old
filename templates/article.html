@@ -10,6 +10,10 @@
     <p>
       {{ this.summary }}
     </p>
+    {% elif this.article_type == 'grantee-profiles-2019' %}
+    <p>
+      {{ this.summary }}
+    </p>
     {% elif this.interviewee %}
     <span class="author">
       {{ bag('global_content').an_interview_with }} {{ this.interviewee }}
@@ -73,6 +77,26 @@
           {% if this.github %}
           <a href="{{ this.github }}" rel="external">{{ this.github.host }}</a>
           {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if this.article_type == 'grantee-profiles-2019' %}
+      <div class="callout">
+        {% if this.subject_img %}
+        <div class="profile image"><span style="background-image: url({{ this.subject_img }});"></span></div>
+        {% endif %}
+        {% if this.subject1_img %}
+        <div class="profile image"><span style="background-image: url({{ this.subject1_img }});"></span></div>
+        {% endif %}
+        {% if this.subject2_img %}
+        <div class="profile image"><span style="background-image: url({{ this.subject2_img }});"></span></div>
+        {% endif %}
+        <div class="text">
+          <h2 class="profile-name">{{ this.title }}</h2>
+          <p>
+            {{ this.summary }}
+          </p>
         </div>
       </div>
       {% endif %}

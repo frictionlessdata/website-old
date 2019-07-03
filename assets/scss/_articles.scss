@@ -119,6 +119,16 @@
           }
         }
       }
+
+      &.grantee-profiles-2019 {
+        .image {
+          padding: 0;
+
+          a {
+            background-size: cover;
+          }
+        }
+      }
     }
   }
 }
