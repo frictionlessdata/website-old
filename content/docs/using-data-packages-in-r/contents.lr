@@ -25,7 +25,7 @@ For this tutorial, we will need the Data Package R library ([datapackage.r][dp-r
 
 And then install the development version of [datapackage.r][dp-r] from github.
 
-    devtools::install_github("frictionlessdata/datapackage.r")
+    devtools::install_github("frictionlessdata/datapackage-r")
 
 ## Load
 
