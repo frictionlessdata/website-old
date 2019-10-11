@@ -6,6 +6,6 @@ link1: https://github.com/frictionlessdata/testsuite-extended
 ---
 link1_label: Repository
 ---
-tool_category: apps
+tool_category: python
 ---
 tags: experimental
