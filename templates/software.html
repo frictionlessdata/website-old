@@ -9,21 +9,10 @@
       <button class="btn selected" data-filter="*" description="{{ this.description }}">{{ bag('global_content').all }}</button>
       {% for category in site.query('/tool-categories') %}
       {% if category.children %}
-      <button class="btn" id="{{ category.name }}" data-filter=".cat-{{ category._id }}" description="{{ category.description }}" >{{ category.name }}</button>
+      <button class="btn" data-filter=".cat-{{ category._id }}" description="{{ category.description }}">{{ category.name }}</button>
       {% endif %}
       {% endfor %}
     </div>
-
-<!-- <div class="filter-button-group">
-      <button class="btn selected" data-filter="*" description="{{ this.description }}">{{ bag('global_content').all }}</button>
-      {% for category in site.query('/tool-categories') %}
-      {% if category.children %}
-      <a id="{{x}}">
-      <button class="btn" id="{{ category.name }}" data-filter=".cat-{{ category._id }}" description="{{ category.description }}" onclick="location.hash='{{category.name}}'">{{ category.name }}</button>
-      {% endif %}
-      {% endfor %}
-    </div> -->
-
   </div>
 </div>
 

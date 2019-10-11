@@ -9,6 +9,6 @@ link1: https://github.com/frictionlessdata/datapackage-pipelines
 ---
 link1_label: Repository
 ---
-tool_category: python
+tool_category: apps
 ---
 priority: 4

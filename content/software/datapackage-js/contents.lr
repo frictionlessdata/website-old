@@ -6,6 +6,6 @@ link1: https://github.com/frictionlessdata/datapackage-js
 ---
 link1_label: Repository
 ---
-tool_category: js
+tool_category: libraries
 ---
 priority: 4

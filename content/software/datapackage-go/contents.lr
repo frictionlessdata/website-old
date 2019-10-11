@@ -6,4 +6,4 @@ link1: https://github.com/frictionlessdata/datapackage-go
 ---
 link1_label: Repository
 ---
-tool_category: go
+tool_category: libraries
