@@ -6,4 +6,4 @@ link1: https://github.com/frictionlessdata/datapackage-clj
 ---
 link1_label: Repository
 ---
-tool_category: libraries
+tool_category: clj
