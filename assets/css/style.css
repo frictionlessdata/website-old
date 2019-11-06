@@ -6718,10 +6718,10 @@ html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu:not(.mm-dropdown) {
       padding-bottom: 60px; } }
 
 .researchers-template .body-content .container > div {
-  margin-bottom: 2rem; }
+  padding-bottom: 20px; }
   .researchers-template .body-content .container > div:last-child,
   .researchers-template .body-content .container > div :last-child {
-    margin-bottom: 0; }
+    padding-bottom: 20; }
 
 @media (min-width: 992px) {
   .researchers-template .body-content[data-items='2'] .container, .researchers-template .body-content[data-items='3'] .container {
