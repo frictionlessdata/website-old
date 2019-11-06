@@ -12,32 +12,40 @@ body:
 
 From September 2018 and over a period of three years, the Frictionless Data team will focus on enhanced dissemination and training activities, and further iterations on our [software](https://frictionlessdata.io/software/) and [specifications](https://frictionlessdata.io/specs/) via a range of deep [pilot projects](https://frictionlessdata.io/articles/) with research partners.
 ---
-person1_body: Paul Walsh is the Chief Product Officer at Open Knowledge Foundation, with overall responsibility for the technical product the organisation produces and maintains. Paul has over 10 years experience working on product, technology, and marketing in the commercial and nonprofit sectors.
+person5_body: Paul Walsh is the CEO at Datopian. Paul has over 10 years experience working on product, technology, and marketing in the commercial and nonprofit sectors.
 ---
-person1_heading: Paul Walsh, Principal Investigator
+person5_heading: Paul Walsh, Principal Investigator
 ---
-person1_image: https://gravatar.com/avatar/7630147a63e1f0d9f1275b4aee414466?s=400
+person5_image: https://gravatar.com/avatar/7630147a63e1f0d9f1275b4aee414466?s=400
 ---
-person2_body: Jo Barratt is the Frictionless Data project manager and Delivery Manager at Open Knowledge Foundation. He has over 10 years experience managing projects across a wide range of technology, arts and communications projects.
+person1_body: Jo Barratt is the Frictionless Data project manager and Delivery Manager at Open Knowledge Foundation. He has over 10 years experience managing projects across a wide range of technology, arts and communications projects.
 ---
-person2_heading: Jo Barratt, Project Manager
+person1_heading: Jo Barratt, Project Manager
 ---
-person2_image: https://gravatar.com/avatar/5fb6338abdbf8ec14a607e9c691d6991?s=400
+person1_image: https://gravatar.com/avatar/5fb6338abdbf8ec14a607e9c691d6991?s=400
 ---
-person3_image: https://gravatar.com/avatar/ddf27d2815b3012cf25e82d8206d7c78?s=400
+person2_image: https://gravatar.com/avatar/ddf27d2815b3012cf25e82d8206d7c78?s=400
 ---
 person4_image: https://gravatar.com/avatar/69f14e9af81f4441755fce755a925319?s=400
 ---
-person3_body: Lilly Winfree has her PhD in neuroscience from Oregon Health and Science University and is an open science and open data enthusiast. Lilly’s research interests include understanding the cultural motivations of scientists to share their data. As the Product Manager for Frictionless Data for Reproducible Research at Open Knowledge Foundation, she is also exploring how computational tools can enhance researcher’s workflows with a goal of making scientific data more open, shareable, and reproducible.
+person3_image: https://d22739b8qd5enr.cloudfront.net/media/organisation/people/photos/Evgeny_Karev.jpg
 ---
-person3_heading: Lilly Winfree, PhD, Product Owner
+person2_body: Lilly Winfree has her PhD in neuroscience from Oregon Health and Science University and is an open science and open data enthusiast. Lilly’s research interests include understanding the cultural motivations of scientists to share their data. As the Product Manager for Frictionless Data for Reproducible Research at Open Knowledge Foundation, she is also exploring how computational tools can enhance researcher’s workflows with a goal of making scientific data more open, shareable, and reproducible.
+---
+person2_heading: Lilly Winfree, PhD, Product Owner
 ---
 person4_body: Adrià has over a decade of experience working in the Open Data and Civic Tech fields. He is an enthusiast of the Open Web, specially the communities built around Open Source projects and Open Standards. He is a member of the CKAN Technical Team and works across different projects at Open Knowledge Foundation. He has a Degree in Biology and an MSc in Geographic Information Systems. He currently lives near the shores of the Mediterranean, in the beautiful city of Tarragona.
 ---
-person4_heading: Adrià Mercader, Tech Lead
+person4_heading: Adrià Mercader, Developer
+---
+person3_body: Evgeny was born in Moscow. He's got an engineering degree at Moscow State Technical University. Evgeny worked as an entrepreneur and a consultant on various projects in Russia. Now, he is a passionate open source developer living in Moscow and Dubrovnik. At Open Knowledge Foundation, Evgeny works mostly on Frictionless Data project as a tech lead of the Frictionless Data implementations.
+---
+person3_heading: Evgeny Karev, Tech Lead
 ---
 people_heading: The Team
 ---
+
+
 body_2:
 
 ## FAIR Data
