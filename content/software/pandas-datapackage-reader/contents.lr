@@ -7,3 +7,5 @@ link1: https://github.com/rgieseke/pandas-datapackage-reader
 link1_label: Repository
 ---
 tool_category: python
+---
+priority: 2

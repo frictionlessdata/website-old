@@ -7,3 +7,5 @@ link1: https://github.com/frictionlessdata/tableschema-clj
 link1_label: Repository
 ---
 tool_category: clj
+---
+priority: 2
