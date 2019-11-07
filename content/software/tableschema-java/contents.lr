@@ -7,3 +7,5 @@ link1: https://github.com/frictionlessdata/tableschema-java
 link1_label: Repository
 ---
 tool_category: java
+---
+priority: 3

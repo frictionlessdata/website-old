@@ -38,6 +38,21 @@
         {{ this.body_3 }}
       </div>
       {% endif %}
+      {% if this.body_4 %}
+      <div>
+        {{ this.body_4 }}
+      </div>
+      {% endif %}
+      {% if this.body_5 %}
+      <div>
+        {{ this.body_5 }}
+      </div>
+      {% endif %}
+      {% if this.body_6 %}
+      <div>
+        {{ this.body_6 }}
+      </div>
+      {% endif %}
     </div>
   </section>
   {% endif %}
@@ -81,6 +96,15 @@
           <div class="text">
             <h3 class="heading">{{ this.person4_heading }}</h3>
             {{ this.person4_body }}
+          </div>
+        </li>
+        <li>
+          <div class="image">
+            <img src="{{ this.person5_image }}" alt="">
+          </div>
+          <div class="text">
+            <h3 class="heading">{{ this.person5_heading }}</h3>
+            {{ this.person5_body }}
           </div>
         </li>
       </ul>
