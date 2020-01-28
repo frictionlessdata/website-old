@@ -1,0 +1,13 @@
+title: Frictionless Darwin Core
+---
+description:
+
+A tool converting [Darwin Core Archive](https://en.wikipedia.org/wiki/Darwin_Core_Archive) into Frictionless Data Package.
+---
+link1: https://github.com/frictionlessdata/FrictionlessDarwinCore
+---
+link1_label: Repository
+---
+tool_category: python
+---
+priority: 2
