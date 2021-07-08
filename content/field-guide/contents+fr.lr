@@ -1,0 +1,27 @@
+_model: guides
+---
+pretitle: Frictionless Data
+---
+title: Guide pratique
+---
+intro:
+
+Le guide pratique Frictionless Data vous propose des instructions pas à pas pour améliorer votre façon de publier des données. Ce guide vous présentera des nouvelles méthodes de travail, outillées par les logiciels Frictionless Data, pouvant être utilisées seules ou intégrées dans vos propres processus personnels ou professionnels.
+---
+text:
+
+Pour beaucoup d'utilisateurs de données ouvertes (_open data_), appréhender les données n'est pas toujours un parcours aisé. Les données sont dures à trouver, enregistrées dans des formats difficiles à utiliser, mal structurées et/ou incomplètes. Ces problèmes génèrent de la friction et rendent compliqués l'utilisation, la publication et le partage des données. L'initiative Frictionless Data d'Open Knowledge International vise à réduire ces frictions, et se donne pour objectif de faciliter le transport des données entre différents outils et plateformes qui permettent leur traitement.
+
+Le guide pratique Frictionless Data est conçu pour vous proposer des instructions pas à pas pour améliorer votre façon de publier des données. Ce guide vous présentera des nouvelles méthodes de travail, outillées par les logiciels Frictionless Data, pouvant être utilisées seules ou intégrées dans vos propres processus personnels ou professionnels.
+
+Nous pensons qu'il est primordial que toutes les personnes impliquées dans la publication des données aient accès à des outils qui aident à automatiser et améliorer la qualité des données. Ce guide décrit des approches de publication de données ouvertes qui mettent l'accent sur des outils faciles d'accès et destinées à un public très large.
+
+Tous les outils Frictionless Data mentionnés dans ce guide pratique ont été conçus dans le but spécifique de publier des données ouvertes, en particulier des données tabulaires, mais en prenant en compte une variété de cas d'usages et de types de données ouvertes.
+
+Ce guide est divisé en six sections, vous permettant d'aller directement au plus pratique et utile pour vous.
+---
+text_heading: A propos du guide pratique
+---
+cta_list: C'est parti
+---
+cta_text: Plus d'infos
